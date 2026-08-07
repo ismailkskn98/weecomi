@@ -1,0 +1,1027 @@
+{
+  "Meta": {
+    "siteName": "WeeComi",
+    "defaultTitle": "WeeComi | Digital Technology Ecosystem",
+    "defaultDescription": "WeeComi builds commerce, AI, finance and business management solutions that help businesses, founders and users grow in the digital world."
+  },
+  "Nav": {
+    "home": "Home",
+    "ecosystem": "Ecosystem",
+    "solutions": "Solutions",
+    "corporate": "About",
+    "news": "News",
+    "gallery": "Gallery",
+    "contact": "Contact",
+    "login": "Log in",
+    "language": "Language",
+    "allProducts": "All products",
+    "comingSoon": "Coming soon",
+    "featured": "Featured",
+    "about": "About",
+    "search": "Search",
+    "searchPlaceholder": "Search...",
+    "searchDialogTitle": "Site search",
+    "searchDialogDescription": "Search pages and products",
+    "searchDialogPlaceholder": "Search pages or products...",
+    "searchEmpty": "No results found",
+    "searchPages": "Pages",
+    "searchProducts": "Products",
+    "megaMenuEyebrow": "WeeComi Ecosystem",
+    "megaMenuIntro": "Each product works independently in its own domain. WeeComi develops, supports and updates them all.",
+    "megaMenuFeaturedText": "Separate products for different needs, one trusted brand.",
+    "ctaStart": "Start a project"
+  },
+  "Categories": {
+    "business": "Business Solutions",
+    "commerce": "Commerce",
+    "ai": "AI & Automation",
+    "assets": "Digital Assets"
+  },
+  "Hero": {
+    "eyebrow": "INTERNATIONAL TECHNOLOGY COMPANY",
+    "title": "An international technology company building its own products",
+    "titleLines": ["AN INTERNATIONAL", "TECHNOLOGY COMPANY BUILDING", "ITS OWN PRODUCTS"],
+    "titleAccent": "Independent products.",
+    "titleSecondary": "One technology company.",
+    "rotatingPrefix": "Solutions for:",
+    "rotatingWords": ["commerce", "artificial intelligence", "finance", "business management"],
+    "subtitle": "WeeComi develops, supports and updates independent products across commerce, AI, finance and business management.",
+    "ctaPrimary": "START A PROJECT",
+    "ctaSecondary": "SEE PRODUCTS",
+    "trustLine": "11 INDEPENDENT PRODUCTS · 5 LANGUAGES · INTERNATIONAL TECHNOLOGY COMPANY",
+    "playLabel": "Play intro video",
+    "visualCaption": "Independent digital solutions developed by WeeComi",
+    "marqueeLabel": "Independent products"
+  },
+  "Ecosystem": {
+    "eyebrow": "Ecosystem",
+    "bracketTag": "ECOSYSTEM — 03",
+    "title": "INDEPENDENT TECHNOLOGY PRODUCTS",
+    "titleParts": ["Independent", "technology", "products"],
+    "subtitle": "Solutions developed, supported and updated by WeeComi — each operating independently in its own field.",
+    "learnMore": "Explore",
+    "visit": "Visit product",
+    "disclaimer": "The information provided is not investment advice. Trading in financial markets involves risk.",
+    "cursorLabel": "EXPLORE →",
+    "collab": {
+      "greeting": "ecosystem",
+      "eyebrow": "WeeNetwork",
+      "intro": "connecting",
+      "conjunction": "&",
+      "trailing": "",
+      "liveLabel": "Live · 4 products",
+      "cardDescription": "Digital business cards, QR menus and smart catalogs united in one platform.",
+      "collaborator1": "WeeCard",
+      "collaborator2": "WeeMenu"
+    },
+    "alisveriskapidaCard": {
+      "badge": "E-commerce",
+      "title": "Shopping delivered to your door",
+      "description": "A consumer commerce experience with product discovery, campaigns and mobile shopping flows.",
+      "searchPhrases": ["Doorstep delivery deals", "Online shopping campaigns", "Order from local sellers"],
+      "tags": ["Online shopping", "Campaigns", "Doorstep"]
+    },
+    "weecoinsCard": {
+      "title": "WEECOINS & WEECOINS PREMIUM",
+      "description": "Two independent digital assets operating on the WeeGold network. Used in transfer, payment and reward scenarios.",
+      "ribbonBadge": "CRYPTO",
+      "ribbonItems": ["Peer to Peer", "Decentralized", "Digital Currency", "WeeGold Network", "Blockchain"]
+    },
+    "weenetwork": {
+      "metrics": [
+        {
+          "value": "1",
+          "label": "Digital identity"
+        },
+        {
+          "value": "QR",
+          "label": "Sharing"
+        },
+        {
+          "value": "24/7",
+          "label": "Profile"
+        }
+      ]
+    },
+    "weecoins": {
+      "metrics": [
+        {
+          "value": "WEB3",
+          "label": "Assets"
+        },
+        {
+          "value": "MULTI",
+          "label": "Network"
+        },
+        {
+          "value": "SECURE",
+          "label": "Wallet"
+        }
+      ]
+    },
+    "weekobi": {
+      "metrics": [
+        {
+          "value": "SMB",
+          "label": "Focus"
+        },
+        {
+          "value": "ERP",
+          "label": "Management"
+        },
+        {
+          "value": "CLOUD",
+          "label": "Infrastructure"
+        }
+      ]
+    },
+    "pageEyebrow": "ECOSYSTEM",
+    "pageTitle": "Independent technology products under one roof",
+    "pageTitleLines": ["Independent technology", "products under", "one roof"],
+    "pageSubtitle": "WeeComi builds, supports, and updates independent digital products for commerce, AI, finance, and business operations.",
+    "heroCta": "See products",
+    "introEyebrow": "HOW IT WORKS",
+    "introTitle": "Each product does its own job",
+    "introText": "WeeComi is not a software agency. Every product in the ecosystem follows its own roadmap—you choose the solution you need. Development, support, and updates run under one corporate standard.",
+    "introReveal": "WeeComi is not a software agency. Every product in the ecosystem follows its own roadmap—you choose the solution you need. Development, support, and updates run under one corporate standard — independent products, one discipline.",
+    "productsEyebrow": "PRODUCTS",
+    "productsTitle": "Explore the full ecosystem",
+    "productsSubtitle": "Independent products grouped by category. Open any product for details.",
+    "whyEyebrow": "WHY ECOSYSTEM",
+    "whyTitle": "One brand, clear focus",
+    "ctaEyebrow": "LET'S GROW",
+    "ctaTitle": "Let's pick the right product together",
+    "ctaSubtitle": "A short discovery is enough to match you with the independent WeeComi product you need.",
+    "ctaButton": "Get in touch",
+    "why": {
+      "independent": {
+        "title": "Independent products",
+        "text": "Products are not locked together; each one works and scales in its own domain."
+      },
+      "standard": {
+        "title": "Shared standard",
+        "text": "Development, security, and support are managed under the WeeComi umbrella."
+      },
+      "choice": {
+        "title": "Freedom to choose",
+        "text": "You do not need the full stack. Pick what you need and move forward."
+      }
+    },
+    "weemenu": {
+      "metrics": [
+        {
+          "value": "QR",
+          "label": "Menu"
+        },
+        {
+          "value": "MULTI",
+          "label": "Language"
+        },
+        {
+          "value": "LIVE",
+          "label": "Updates"
+        }
+      ]
+    },
+    "weecard": {
+      "metrics": [
+        {
+          "value": "NFC",
+          "label": "Share"
+        },
+        {
+          "value": "QR",
+          "label": "Card"
+        },
+        {
+          "value": "ANALYTICS",
+          "label": "Tracking"
+        }
+      ]
+    },
+    "weecatalog": {
+      "metrics": [
+        {
+          "value": "SHOWCASE",
+          "label": "Catalog"
+        },
+        {
+          "value": "SHARE",
+          "label": "Link"
+        },
+        {
+          "value": "SOON",
+          "label": "Status"
+        }
+      ]
+    },
+    "weesale": {
+      "metrics": [
+        {
+          "value": "STORE",
+          "label": "Online"
+        },
+        {
+          "value": "SALES",
+          "label": "Channel"
+        },
+        {
+          "value": "SCALE",
+          "label": "Growth"
+        }
+      ]
+    },
+    "alisveriskapida": {
+      "metrics": [
+        {
+          "value": "DOORSTEP",
+          "label": "Delivery"
+        },
+        {
+          "value": "LOCAL",
+          "label": "Commerce"
+        },
+        {
+          "value": "FAST",
+          "label": "Orders"
+        }
+      ]
+    },
+    "weecomibot": {
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Continuous monitoring"
+        },
+        {
+          "value": "20+",
+          "label": "Indicator support"
+        },
+        {
+          "value": "Paper",
+          "label": "Risk-free test mode"
+        },
+        {
+          "value": "AES-256",
+          "label": "Encrypted API vault"
+        }
+      ]
+    },
+    "weecoinspremium": {
+      "metrics": [
+        {
+          "value": "PREMIUM",
+          "label": "Tier"
+        },
+        {
+          "value": "WIDE",
+          "label": "Scenarios"
+        },
+        {
+          "value": "WEB3",
+          "label": "Assets"
+        }
+      ]
+    },
+    "criptoswaps": {
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Trading"
+        },
+        {
+          "value": "MOBILE",
+          "label": "App"
+        },
+        {
+          "value": "SECURE",
+          "label": "Infra"
+        }
+      ]
+    },
+    "pageTitleLines": ["Independent", "technology", "products"],
+    "guideEyebrow": "GUIDE",
+    "guideTitle": "How to choose a product",
+    "guideSubtitle": "Short answers to reach the right solution faster.",
+    "guide": {
+      "items": [
+        {
+          "q": "Do I need every product?",
+          "a": "No. Each product stands alone — pick what fits your need."
+        },
+        {
+          "q": "Are products locked together?",
+          "a": "No. They share WeeComi standards but are not bundled by force."
+        },
+        {
+          "q": "How do I get details or a demo?",
+          "a": "Open the product page to visit the site, or write to the team via contact."
+        }
+      ]
+    }
+  },
+  "Products": {
+    "weenetwork": {
+      "title": "Digital Business Identity Platform",
+      "description": "An independent business identity product for digital presence and shareable company profiles.",
+      "features": ["Digital identity", "Business profile", "Shareable links", "Independent product"]
+    },
+    "weemenu": {
+      "title": "Turn Your Menu Into a Digital Experience",
+      "description": "A QR-based, multilingual and easy-to-manage digital menu platform for restaurants and businesses.",
+      "features": ["QR menu", "Multi-language", "Theme customization", "Instant price updates", "PDF export", "Table / waiter / kitchen / courier roles", "Realtime WebSocket tracking"]
+    },
+    "weecard": {
+      "title": "Your Professional Identity, Shared Instantly",
+      "description": "QR and NFC powered digital business card that unifies contact details, social links and more.",
+      "features": ["QR & NFC sharing", "Digital business card", "Social links", "Theme options", "Click & view analytics"]
+    },
+    "weecatalog": {
+      "title": "Modern Digital Product Catalog",
+      "description": "Present products with a modern catalog experience. Currently in development.",
+      "features": ["Modern layouts", "Product showcase", "Shareable links", "Coming soon"]
+    },
+    "weekobi": {
+      "title": "Manage Your Business From One Panel",
+      "description": "A digital business platform that helps SMEs manage products, stores, orders and operations.",
+      "features": ["Store management", "Product management", "Operations tracking", "Central panel", "Reporting"]
+    },
+    "weesale": {
+      "title": "A New Sales Experience for Digital Commerce",
+      "description": "An e-commerce platform that connects sellers and buyers with easier discovery and sales flows.",
+      "features": ["Online stores", "Product discovery", "Secure shopping", "Campaign tools", "Seller solutions"]
+    },
+    "alisveriskapida": {
+      "title": "Shopping Experience Delivered to Your Door",
+      "description": "A user-friendly e-commerce platform enriched with win-win opportunities.",
+      "features": ["Online shopping", "Campaigns", "Mobile-friendly", "Fast discovery"]
+    },
+    "weecomibot": {
+      "title": "From Strategy to Execution, One Panel",
+      "description": "An algorithmic trading platform combining AI signals, strategy building, backtesting, paper trading and risk control.",
+      "features": ["AI market signals", "No-code strategy builder", "Backtesting", "Paper trading", "Risk & portfolio management", "Automated execution"]
+    },
+    "weecoins": {
+      "title": "Independent Digital Asset Solution",
+      "description": "An independent digital asset product built for transfer and payment scenarios.",
+      "features": ["Digital transfer", "Payment rails", "Wallet compatibility", "Independent product"]
+    },
+    "weecoinspremium": {
+      "title": "Premium Digital Asset Experience",
+      "description": "An independent premium layer offering extended usage scenarios for WeeCoins.",
+      "features": ["Premium access", "Advanced features", "Digital asset management"]
+    },
+    "criptoswaps": {
+      "title": "24/7 Digital Asset and Cryptocurrency Exchange",
+      "description": "A Turkey-based digital asset platform with mobile apps, fan token trading, advanced security and round-the-clock support.",
+      "features": ["24/7 trading infrastructure", "iOS and Android apps", "Two-factor authentication", "Fan token trading", "WeeGold Blockchain infrastructure", "Phone and email support"]
+    }
+  },
+  "Solutions": {
+    "eyebrow": "SOLUTIONS",
+    "title": "FIND THE RIGHT WEECOMI SOLUTION",
+    "subtitle": "Explore products by the problems they solve — not only by their names.",
+    "digitize": {
+      "title": "DIGITIZE YOUR BUSINESS",
+      "description": "Strengthen menus, cards, catalogs and operations with modern digital tools.",
+      "points": ["Digitize menus, cards, and catalogs", "Make operations more visible from one panel", "Speed up customer and team sharing", "Scale with SME-focused management tools"]
+    },
+    "growSales": {
+      "title": "GROW YOUR SALES",
+      "description": "Expand sales channels with product discovery, online stores and commerce experiences.",
+      "points": ["Open sales channels with online store and discovery", "Strengthen doorstep delivery scenarios", "Make commerce faster and measurable", "Expand into new markets carefully"]
+    },
+    "automate": {
+      "title": "BUILD AUTOMATION WITH AI",
+      "description": "Manage strategy, signals and risk more clearly in one panel.",
+      "points": [
+        "Bring strategy and signal flows into one panel",
+        "Manage risk and decisions with more control",
+        "Build an AI-supported operations rhythm",
+        "Reduce manual repetition and sharpen focus"
+      ]
+    },
+    "joinEcosystem": {
+      "title": "EXPLORE DIGITAL ASSET PRODUCTS",
+      "description": "Grow finance and payment scenarios with independent digital asset products.",
+      "points": ["Explore digital asset products independently", "Expand payment and finance scenarios", "Address multi-network and wallet needs", "Choose products with clear risk awareness"]
+    },
+    "pageEyebrow": "SOLUTIONS",
+    "pageTitle": "WeeComi solutions by need",
+    "pageSubtitle": "Discover products by the problems they solve—not only by name. Each area has its own product set.",
+    "areasEyebrow": "AREAS",
+    "areasTitle": "Four focuses, clear outcomes",
+    "areasSubtitle": "Choose digitization, sales growth, automation, or digital assets to move forward.",
+    "exploreArea": "Explore area",
+    "detailCta": "Start a project",
+    "pointsTitle": "WHAT WE SOLVE",
+    "pointsHeading": "Needs clarified in this area",
+    "productsEyebrow": "PRODUCTS",
+    "productsHeading": "WeeComi products in this area",
+    "howEyebrow": "PROCESS",
+    "howTitle": "How we start",
+    "how": {
+      "discover": {
+        "title": "Clarify the need",
+        "text": "We define your business goal and priority problem together."
+      },
+      "select": {
+        "title": "Pick the right product",
+        "text": "We select the independent product that fits this area."
+      },
+      "launch": {
+        "title": "Launch quickly",
+        "text": "Move to the product site or plan delivery with the team."
+      }
+    },
+    "pageTitleLines": ["WeeComi", "solutions", "by need"],
+    "productsCount": "{count} products"
+  },
+  "Stats": {
+    "eyebrow": "A little about us",
+    "aboutHeading": "A LITTLE ABOUT US",
+    "title": "A measurable technology company",
+    "subtitle": "We move forward with independent products, multilingual experiences and international focus.",
+    "productsHeading": "11+ INDEPENDENT DIGITAL PRODUCTS",
+    "productsDesc": "WeeComi builds independent digital products across commerce, AI, finance and business management. Each product follows its own roadmap — you pick only what you need.",
+    "countriesHeading": "5+ ACTIVE MARKET FOCUS",
+    "countriesDesc": "From our Turkey-based foundation we strengthen products locally and expand with control into Azerbaijan, Georgia, Russia and Europe.",
+    "languagesHeading": "5 LANGUAGE SUPPORT",
+    "languagesDesc": "We deliver clear local experiences in Turkish, English, Azerbaijani, Russian and Georgian — more than translation: content and communication shaped for each market.",
+    "platforms": "Independent platforms",
+    "carouselLabel": "Moments from WeeComi"
+  },
+  "Benefits": {
+    "eyebrow": "WHY WEECOMI",
+    "bracketTag": "WORLD-CLASS TEAM, INDEPENDENT PRODUCTS",
+    "title": "WE TURN ATTENTION INTO GROWTH",
+    "subtitle": "Each product does its own job. WeeComi develops and updates them all under one corporate standard.",
+    "cta": "START A PROJECT",
+    "independent": {
+      "tag": "INDEPENDENT",
+      "title": "Separate products, clear focus",
+      "cardTitle": "SEPARATE PRODUCTS, CLEAR FOCUS",
+      "description": "WeeMenu, WeeCard, WeeSale and others are not interconnected — each runs in its own domain."
+    },
+    "scale": {
+      "tag": "SCALE",
+      "title": "International growth",
+      "cardTitle": "INTERNATIONAL GROWTH",
+      "description": "We bring products to different markets with multilingual structure and regional focus."
+    },
+    "speed": {
+      "tag": "SPEED",
+      "title": "Faster delivery",
+      "cardTitle": "FASTER DELIVERY",
+      "description": "Modern infrastructure and product-focused teams keep solutions moving quickly."
+    },
+    "trust": {
+      "tag": "TRUST",
+      "title": "Corporate standard",
+      "cardTitle": "CORPORATE STANDARD",
+      "description": "Consistent quality, support and continuous improvement under one brand."
+    }
+  },
+  "ProductShowcase": {
+    "eyebrow": "Product showcase",
+    "bracketTag": "PRODUCT SHOWCASE — 04",
+    "title": "FEATURED INDEPENDENT SOLUTIONS",
+    "subtitle": "Separate products for different needs. Each delivers measurable results in its own field.",
+    "cta": "ALL PRODUCTS",
+    "learnMore": "Explore",
+    "cursorLabel": "VIEW PRODUCT →",
+    "weemenu": {
+      "metrics": [
+        {
+          "value": "QR+",
+          "label": "Digital menu"
+        },
+        {
+          "value": "5+",
+          "label": "Languages"
+        },
+        {
+          "value": "24/7",
+          "label": "Management"
+        }
+      ],
+      "title": "TURN YOUR MENU INTO A DIGITAL EXPERIENCE"
+    },
+    "weecard": {
+      "metrics": [
+        {
+          "value": "NFC",
+          "label": "Sharing"
+        },
+        {
+          "value": "QR",
+          "label": "Business card"
+        },
+        {
+          "value": "1",
+          "label": "Tap"
+        }
+      ],
+      "title": "YOUR PROFESSIONAL IDENTITY, SHARED INSTANTLY"
+    },
+    "weesale": {
+      "metrics": [
+        {
+          "value": "B2C",
+          "label": "Commerce"
+        },
+        {
+          "value": "∞",
+          "label": "Showcase"
+        },
+        {
+          "value": "24/7",
+          "label": "Sales"
+        }
+      ],
+      "title": "A NEW SALES EXPERIENCE FOR DIGITAL COMMERCE"
+    },
+    "weecomibot": {
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Continuous monitoring"
+        },
+        {
+          "value": "20+",
+          "label": "Indicator support"
+        },
+        {
+          "value": "Paper",
+          "label": "Risk-free test mode"
+        },
+        {
+          "value": "AES-256",
+          "label": "Encrypted API vault"
+        }
+      ],
+      "title": "FROM STRATEGY TO EXECUTION, ONE PANEL"
+    }
+  },
+  "Manifesto": {
+    "eyebrow": "Who we are",
+    "text": "WEECOMI BUILDS INDEPENDENT PRODUCTS, KEEPS EVERY SOLUTION STRONG IN ITS OWN FIELD, AND DELIVERS MODERN TECHNOLOGY THAT HELPS BRANDS GROW DIGITALLY — WITH CONSISTENT QUALITY AND CONTINUOUS IMPROVEMENT."
+  },
+  "Global": {
+    "eyebrow": "GLOBAL PRESENCE",
+    "title": "FROM LOCAL NEEDS TO GLOBAL SOLUTIONS",
+    "subtitle": "WeeComi builds multilingual, accessible and scalable technology products for users and businesses across countries.",
+    "turkey": "Turkey",
+    "turkeyDesc": "Core market and product development hub",
+    "azerbaijan": "Azerbaijan",
+    "azerbaijanDesc": "Regional growth and multilingual reach",
+    "georgia": "Georgia",
+    "georgiaDesc": "Caucasus market access",
+    "russia": "Russia",
+    "russiaDesc": "Russian-language product experience",
+    "europe": "Europe",
+    "europeDesc": "International scale-up region",
+    "regionCaps": {
+      "turkey": "TURKEY",
+      "azerbaijan": "AZERBAIJAN",
+      "georgia": "GEORGIA",
+      "russia": "RUSSIA",
+      "europe": "EUROPE"
+    }
+  },
+  "News": {
+    "eyebrow": "NEWS",
+    "title": "NEWS & UPDATES",
+    "subtitle": "Announcements, media coverage and product updates from WeeComi.",
+    "readMore": "READ MORE",
+    "allNews": "ALL NEWS",
+    "empty": "No published news yet.",
+    "loading": "Loading news...",
+    "featured": "FEATURED",
+    "exploreTitle": "EXPLORE LATEST NEWS",
+    "view": "VIEW",
+    "author": "Author",
+    "allCategories": "All",
+    "ctaTitleBefore": "Let’s design your next",
+    "ctaTitleAccent": "growth chapter.",
+    "ctaSubtitle": "Reach our team for products, partnerships or corporate collaboration.",
+    "ctaStat": "Independent digital products in a scalable business ecosystem.",
+    "carouselPrev": "Previous news",
+    "carouselNext": "Next news",
+    "moreNews": "MORE NEWS",
+    "seeAll": "SEE ALL",
+    "shareLabel": "Share",
+    "copyLink": "Copy link"
+  },
+  "Gallery": {
+    "eyebrow": "GALLERY",
+    "title": "WeeComi in images",
+    "subtitle": "Selected moments from events, products, office, and team life.",
+    "all": "All",
+    "empty": "No published gallery items yet.",
+    "close": "Close",
+    "categories": {
+      "events": "Events",
+      "products": "Products",
+      "office": "Office",
+      "team": "Team",
+      "other": "Other"
+    },
+    "pageTitleLines": ["WeeComi", "in images"],
+    "filterEyebrow": "CATEGORIES",
+    "filterHint": "Filter moments from events, products, office, and team."
+  },
+  "CTA": {
+    "title": "ACCELERATE DIGITAL GROWTH WITH THE RIGHT PRODUCT",
+    "subtitle": "Let's choose the right WeeComi product for your business or project.",
+    "primary": "EXPLORE PRODUCTS",
+    "secondary": "CONTACT US"
+  },
+  "Footer": {
+    "tagline": "An international company building independent technology products for business, commerce and digital life.",
+    "pages": "PAGES",
+    "products": "PRODUCTS",
+    "legal": "LEGAL",
+    "support": "Support",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use",
+    "cookies": "Cookie Policy",
+    "email": "info@weecomi.com",
+    "rights": "All rights reserved.",
+    "kvkk": "KVKK",
+    "risk": "Risk Disclosure",
+    "copyright": "© 2026 WeeComi International. All rights reserved.",
+    "ctaEyebrow": "GROW TOGETHER",
+    "ctaTitle": "READY TO GROW WITH INDEPENDENT PRODUCTS?",
+    "ctaSubtitle": "Let's plan the right independent WeeComi product for your business.",
+    "ctaButton": "CONTACT US",
+    "whyUs": "Why Us",
+    "faqLink": "FAQ",
+    "marqueeTags": ["INDEPENDENT PRODUCTS", "MULTILINGUAL", "INTERNATIONAL", "BUSINESS-FOCUSED", "ARTIFICIAL INTELLIGENCE", "DIGITAL SOLUTIONS", "SCALABLE", "ONE ROOF"]
+  },
+  "Corporate": {
+    "eyebrow": "ABOUT",
+    "title": "A technology company that builds its own digital products",
+    "subtitle": "WeeComi is not a software agency; it is an international technology company building independent products across commerce, AI, finance, and business operations.",
+    "missionTitle": "Mission",
+    "missionText": "Help businesses and users grow faster, clearer, and stronger in the digital world.",
+    "visionTitle": "Vision",
+    "visionText": "Build a reliable, modern technology ecosystem from local needs to global scale.",
+    "storyEyebrow": "STORY",
+    "storyTitle": "Independent products, one standard",
+    "storyText": "WeeComi creates digital products that start from local needs and scale internationally. Each product specializes in its domain; WeeComi develops all of them with the same corporate discipline.",
+    "storyTextSecondary": "Our goal is practical technology that helps businesses and users grow faster, clearer, and stronger.",
+    "valuesEyebrow": "APPROACH",
+    "valuesTitle": "How we work",
+    "values": {
+      "craft": {
+        "title": "Product-first building",
+        "text": "Not agency projects—durable products that stand on their own."
+      },
+      "independence": {
+        "title": "Clear boundaries",
+        "text": "Products are not locked together. You choose what you need."
+      },
+      "reach": {
+        "title": "International reach",
+        "text": "We grow with multilingual experience and careful market expansion."
+      }
+    },
+    "statsEyebrow": "IN SHORT",
+    "statsTitle": "A measurable technology company",
+    "stats": {
+      "products": {
+        "value": "11+",
+        "label": "Independent products",
+        "text": "Digital products focused on commerce, AI, finance, and operations."
+      },
+      "markets": {
+        "value": "5+",
+        "label": "Market focus",
+        "text": "Turkey-based structure with AZ, GE, RU, and Europe focus."
+      },
+      "languages": {
+        "value": "5",
+        "label": "Languages",
+        "text": "Turkish, English, Azerbaijani, Russian, and Georgian."
+      }
+    },
+    "ecosystemEyebrow": "ECOSYSTEM",
+    "ecosystemTitle": "Discover the right product",
+    "ecosystemText": "Browse all independent products by category and open detail pages on the ecosystem page.",
+    "ecosystemCta": "View ecosystem",
+    "pageTitleLines": ["A technology company", "building its own", "digital products"],
+    "meetLabel": "WeeComi",
+    "heroPrefix": "Independent",
+    "heroSuffix": "products",
+    "heroLine": "one standard",
+    "founderTitle": "A product-driven technology company",
+    "toolsSubtitle": "Not an agency — a company that builds, supports, and updates its own products.",
+    "circularText": "WEECOMI • INDEPENDENT PRODUCTS",
+    "ribbonBadge": "NEW",
+    "ribbonCta": "Ecosystem",
+    "introTags": ["Commerce", "AI", "Finance", "Business", "International", "Independent products"],
+    "timeline": ["Independent product development discipline", "Multilingual and multi-market growth", "Enterprise-grade support and updates"],
+    "heroAccent1": "Bold ideas",
+    "heroMuted": "Real impact",
+    "heroAccent2": "Independent products",
+    "helloTag": "(hello)",
+    "introLead": "WeeComi helps fast-moving businesses",
+    "introHighlight": "clarify growth with digital products",
+    "introTail": "— with clarity, speed, and no drama. Bold product storytelling, measurable outcomes, and scalable execution.",
+    "introReveal": "WeeComi helps fast-moving businesses clarify growth with digital products — with clarity, speed, and no drama. Think bold product storytelling, measurable outcomes, and agile execution. We build independent products for commerce, AI, finance, and operations. Each product stands on its own, with the same corporate discipline. From local needs to international scale — one technology company, many focused solutions.",
+    "ribbonTop": "Independent Products × Commerce × AI × Finance",
+    "ribbonBottom": "11+ Products × 5 Languages × International Focus × Enterprise Standard",
+    "timelineRows": [
+      {
+        "label": "Independent product development",
+        "date": "Now"
+      },
+      {
+        "label": "Multilingual experience",
+        "date": "5 languages"
+      },
+      {
+        "label": "International market focus",
+        "date": "5+ markets"
+      },
+      {
+        "label": "Enterprise support & updates",
+        "date": "Ongoing"
+      }
+    ],
+    "proofRows": [
+      {
+        "left": "Products",
+        "center": "11+ independent digital products",
+        "right": "Ecosystem"
+      },
+      {
+        "left": "Markets",
+        "center": "5+ active market focus",
+        "right": "Growth"
+      },
+      {
+        "left": "Languages",
+        "center": "5 language support",
+        "right": "Local"
+      },
+      {
+        "left": "Approach",
+        "center": "Product company, not an agency",
+        "right": "Standard"
+      }
+    ],
+    "spotlightEyebrow": "(Intro)",
+    "toolsEyebrow": "APPROACH",
+    "toolsLabel": "(Daily Stack)",
+    "toolsTitle": "How we build",
+    "toolsBadge": "CORE",
+    "proofEyebrow": "(Proof)",
+    "proofTitle": "What defines us",
+    "proofSubtitle": "Clear signals of how WeeComi operates as a product company — not an agency.",
+    "ctaTitle": "Project in mind?",
+    "ctaAccent": "Get in touch",
+    "ctaText": "Let’s pick the right WeeComi product together — a short brief is enough.",
+    "ctaStart": "Get started",
+    "faqEyebrow": "(FAQ)",
+    "faqTitle": "Your questions, answered",
+    "faqSubtitle": "Short answers about WeeComi’s approach and product selection.",
+    "faq": {
+      "items": [
+        {
+          "q": "Is WeeComi a software agency?",
+          "a": "No. WeeComi is a technology company that builds, supports, and updates its own digital products."
+        },
+        {
+          "q": "Do I need every product?",
+          "a": "No. Products are independent — choose what fits your need."
+        },
+        {
+          "q": "How do we start?",
+          "a": "Write via the contact form or visit the product site. A short discovery clarifies the right solution."
+        },
+        {
+          "q": "Which markets do you serve?",
+          "a": "We are Turkey-based with focused growth across Azerbaijan, Georgia, Russia, and Europe."
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "eyebrow": "CONTACT",
+    "title": "GET IN TOUCH",
+    "subtitle": "Reach us for products, partnerships or corporate inquiries.",
+    "name": "Full name",
+    "email": "Email",
+    "message": "Message",
+    "send": "SEND",
+    "success": "Your message was received. We will get back to you soon.",
+    "addressLabel": "Support",
+    "phone": "Phone",
+    "fullName": "Full name",
+    "company": "Company",
+    "productInterest": "Product of interest",
+    "productPlaceholder": "Select a product",
+    "consent": "I agree to the processing of my contact details under applicable privacy rules so WeeComi can respond.",
+    "sending": "Sending...",
+    "error": "Message could not be sent. Please try again.",
+    "errors": {
+      "fullName": "Full name is required.",
+      "email": "Enter a valid email.",
+      "phone": "Enter a valid phone number.",
+      "product": "Please select a product.",
+      "message": "Message must be at least 10 characters.",
+      "consent": "Consent is required."
+    },
+    "supportPhone": "+90 (850) 302 0731",
+    "pageTitleLines": ["Let's build", "something", "together"],
+    "formEyebrow": "MESSAGE",
+    "formTitle": "Tell us about your project or question",
+    "supportLabel": "SUPPORT LINE",
+    "faqEyebrow": "FAQ",
+    "faqTitle": "Quick answers",
+    "faqSubtitle": "Short notes on contact and process.",
+    "faq": {
+      "items": [
+        {
+          "q": "How fast will you reply?",
+          "a": "We usually respond within 1–2 business days."
+        },
+        {
+          "q": "Which product should I pick?",
+          "a": "Use the product field on the form, or choose general support if unsure."
+        },
+        {
+          "q": "Can we book a discovery call?",
+          "a": "Yes. Leave a short brief and the right product team will follow up."
+        },
+        {
+          "q": "Do you give investment advice?",
+          "a": "No. Information on financial-market products is not investment advice."
+        }
+      ]
+    }
+  },
+  "Common": {
+    "explore": "Explore",
+    "learnMore": "Learn more",
+    "back": "Back"
+  },
+  "ProductPage": {
+    "aboutTitle": "Product overview",
+    "audienceTitle": "TARGET USERS",
+    "featuresTitle": "Key features",
+    "howTitle": "How it works",
+    "screensTitle": "Screenshots",
+    "screensSubtitle": "Selected interface preview areas from the product.",
+    "faqEyebrow": "(FAQ)",
+    "faqTitle": "Frequently asked questions",
+    "faqSubtitle": "Short, clear answers about this product.",
+    "relatedTitle": "Check other products",
+    "ctaTitle": "Ready to join the WeeComi ecosystem?",
+    "ctaSubtitle": "Let's clarify the right product for your needs — a short conversation is enough.",
+    "visitProduct": "Visit product site",
+    "contactCta": "Let's talk",
+    "learnMore": "View details"
+  },
+  "Privacy": {
+    "title": "PRIVACY POLICY",
+    "description": "WeeComi principles for protecting personal data.",
+    "updated": "Last updated: 15 July 2026",
+    "sections": [
+      {
+        "heading": "Scope",
+        "body": "This notice applies to the corporate website and related digital channels operated by WeeComi International. WeeComi develops business, commerce, AI and digital asset solutions under one ecosystem."
+      },
+      {
+        "heading": "Core principles",
+        "body": "Transparency, proportionate data processing, security and respect for user rights are our core principles. Financial product pages do not provide investment advice, income guarantees or price-appreciation promises."
+      },
+      {
+        "heading": "Contact",
+        "body": "For questions, email info@weecomi.com."
+      }
+    ]
+  },
+  "Terms": {
+    "title": "TERMS OF USE",
+    "description": "Terms governing the WeeComi website and services.",
+    "updated": "Last updated: 15 July 2026",
+    "sections": [
+      {
+        "heading": "Scope",
+        "body": "This notice applies to the corporate website and related digital channels operated by WeeComi International. WeeComi develops business, commerce, AI and digital asset solutions under one ecosystem."
+      },
+      {
+        "heading": "Core principles",
+        "body": "Transparency, proportionate data processing, security and respect for user rights are our core principles. Financial product pages do not provide investment advice, income guarantees or price-appreciation promises."
+      },
+      {
+        "heading": "Contact",
+        "body": "For questions, email info@weecomi.com."
+      }
+    ]
+  },
+  "Cookies": {
+    "title": "COOKIE POLICY",
+    "description": "Information about how cookies are used.",
+    "updated": "Last updated: 15 July 2026",
+    "sections": [
+      {
+        "heading": "Scope",
+        "body": "This notice applies to the corporate website and related digital channels operated by WeeComi International. WeeComi develops business, commerce, AI and digital asset solutions under one ecosystem."
+      },
+      {
+        "heading": "Core principles",
+        "body": "Transparency, proportionate data processing, security and respect for user rights are our core principles. Financial product pages do not provide investment advice, income guarantees or price-appreciation promises."
+      },
+      {
+        "heading": "Contact",
+        "body": "For questions, email info@weecomi.com."
+      }
+    ]
+  },
+  "Kvkk": {
+    "title": "KVKK NOTICE",
+    "description": "Information notice under Turkish personal data protection law.",
+    "updated": "Last updated: 15 July 2026",
+    "sections": [
+      {
+        "heading": "Scope",
+        "body": "This notice applies to the corporate website and related digital channels operated by WeeComi International. WeeComi develops business, commerce, AI and digital asset solutions under one ecosystem."
+      },
+      {
+        "heading": "Core principles",
+        "body": "Transparency, proportionate data processing, security and respect for user rights are our core principles. Financial product pages do not provide investment advice, income guarantees or price-appreciation promises."
+      },
+      {
+        "heading": "Contact",
+        "body": "For questions, email info@weecomi.com."
+      }
+    ]
+  },
+  "Risk": {
+    "title": "RISK DISCLOSURE",
+    "description": "Risk information related to financial and digital asset products.",
+    "updated": "Last updated: 15 July 2026",
+    "sections": [
+      {
+        "heading": "Scope",
+        "body": "This notice applies to the corporate website and related digital channels operated by WeeComi International. WeeComi develops business, commerce, AI and digital asset solutions under one ecosystem."
+      },
+      {
+        "heading": "Core principles",
+        "body": "Transparency, proportionate data processing, security and respect for user rights are our core principles. Financial product pages do not provide investment advice, income guarantees or price-appreciation promises."
+      },
+      {
+        "heading": "Contact",
+        "body": "For questions, email info@weecomi.com."
+      }
+    ]
+  },
+  "Faq": {
+    "eyebrow": "ANSWERS TO YOUR QUESTIONS",
+    "title": "FREQUENTLY ASKED QUESTIONS",
+    "subtitle": "Key things to know before getting started with WeeComi.",
+    "items": [
+      {
+        "q": "WHAT KIND OF PRODUCTS DO YOU BUILD?",
+        "a": "WeeComi builds, supports and updates independent digital products across commerce, artificial intelligence, finance and business management."
+      },
+      {
+        "q": "ARE THE PRODUCTS CONNECTED TO EACH OTHER?",
+        "a": "No. Each product works independently in its own domain. The shared layer is WeeComi's technology, support and corporate quality standard."
+      },
+      {
+        "q": "WHICH MARKETS DO YOU FOCUS ON?",
+        "a": "We operate from Turkey and support multilingual experiences for Azerbaijan, Georgia, Russia and broader European growth targets."
+      },
+      {
+        "q": "HOW DO WE CHOOSE THE RIGHT PRODUCT FOR OUR BUSINESS?",
+        "a": "We review your need together and recommend the most suitable independent WeeComi product, along with a clear starting path when needed."
+      }
+    ]
+  },
+  "NavCaps": {
+    "home": "HOME",
+    "ecosystem": "ECOSYSTEM",
+    "solutions": "SOLUTIONS",
+    "about": "ABOUT",
+    "news": "NEWS",
+    "gallery": "GALLERY",
+    "contact": "CONTACT",
+    "allProducts": "ALL PRODUCTS",
+    "comingSoon": "COMING SOON",
+    "featured": "FEATURED",
+    "megaMenuEyebrow": "WEECOMI ECOSYSTEM",
+    "ctaStart": "START A PROJECT",
+    "corporate": "ABOUT"
+  },
+  "CategoriesCaps": {
+    "business": "BUSINESS SOLUTIONS",
+    "commerce": "COMMERCE",
+    "ai": "AI & AUTOMATION",
+    "assets": "DIGITAL ASSETS"
+  }
+}

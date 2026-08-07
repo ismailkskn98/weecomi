@@ -1,0 +1,572 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #3f3f41;
+  --weecomi-orange: #f09f2f;
+  --weecomi-red: #c63927;
+  --weecomi-light-blue: #6fa4c7;
+  --weecomi-blue: #346c92;
+  --weecomi-light-gray: #e9eaea;
+  --weecomi-mid-gray: #AEADAE;
+  --weecomi-dark-gray: #0D0D0D;
+  --muted: #f4f4f4;
+  --muted-foreground: #545454;
+  --border: rgba(63, 63, 65, 0.12);
+  --card: #ffffff;
+  --primary: #346c92;
+  --primary-foreground: #ffffff;
+  --accent: #e9eaea;
+  --accent-foreground: #0d0d0d;
+  --destructive: #c63927;
+  --radius: 12px;
+  --card-foreground: #3f3f41;
+  --popover: #ffffff;
+  --popover-foreground: #3f3f41;
+  --secondary: #e9eaea;
+  --secondary-foreground: #0d0d0d;
+  --input: rgba(63, 63, 65, 0.12);
+  --ring: #346c92;
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-weecomi-orange: var(--weecomi-orange);
+  --color-weecomi-red: var(--weecomi-red);
+  --color-weecomi-light-blue: var(--weecomi-light-blue);
+  --color-weecomi-blue: var(--weecomi-blue);
+  --color-weecomi-light-gray: var(--weecomi-light-gray);
+  --color-weecomi-mid-gray: var(--weecomi-mid-gray);
+  --color-weecomi-dark-gray: var(--weecomi-dark-gray);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 4px);
+  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  /* h2–h6, buttons, badges — Cal Sans (Agero); weight 400 only */
+  --font-heading: var(--font-cal-sans), var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  /* No JetBrains — mono utility falls back to body stack if ever used */
+  --font-mono: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  /* Page h1 / hero display — Anton */
+  --font-display: var(--font-anton), var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+
+  @keyframes rotate-full {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  --animate-rotate-full: rotate-full 40s linear infinite;
+}
+
+@utility animate-rotate-full {
+  animation: var(--animate-rotate-full);
+}
+
+@utility gridContainer {
+  display: grid;
+  grid-template-columns: 1fr min(92%, 90rem) 1fr;
+
+  &>* {
+    grid-column: 2;
+  }
+
+  &>.fluid {
+    grid-column: 1 / -1;
+  }
+}
+
+/* Tek taraf ~48/64px → bitişik section'larda toplam boşluk ~96/128px */
+@utility section-y {
+  padding-block: 3rem;
+
+  @media (min-width: 768px) {
+    padding-block: 4rem;
+  }
+}
+
+@utility section-y-top {
+  padding-top: 3rem;
+
+  @media (min-width: 768px) {
+    padding-top: 4rem;
+  }
+}
+
+@utility section-y-bottom {
+  padding-bottom: 3rem;
+
+  @media (min-width: 768px) {
+    padding-bottom: 4rem;
+  }
+}
+
+/*
+  Display / heading multi-line type.
+  0.9–1.05 crashes Turkish diacritics (İ Ğ Ü Ş Ç Ö); 1.3+ feels too airy.
+*/
+@utility leading-display {
+  line-height: 1.2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* auto: CSS smooth scroll fights GSAP ScrollTrigger scrub (manifesto etc.) */
+  scroll-behavior: auto;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@keyframes node-float {
+
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -8px, 0);
+  }
+}
+
+/* Agero Hero Image loopEffect: mirror drift ~9px over 3s */
+@keyframes page-hero-chip-float {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-9px, -9px, 0);
+  }
+}
+
+.page-hero-chip {
+  animation: page-hero-chip-float 3s linear infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .page-hero-chip {
+    animation: none;
+  }
+}
+
+@keyframes grid-drift {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 40px 40px;
+  }
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(52, 108, 146, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(52, 108, 146, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: grid-drift 28s linear infinite;
+}
+
+.hero-node {
+  animation: node-float 6s ease-in-out infinite;
+}
+
+/* DistortedGlass (cult-ui) — light-theme transition band */
+.glass-effect {
+  background: repeating-radial-gradient(circle at 50% 50%,
+      rgb(255 255 255 / 0),
+      rgba(52, 108, 146, 0.08) 10px,
+      rgb(255 255 255 / 0.55) 31px);
+  filter: url(#fractal-noise-glass);
+  background-size: 6px 6px;
+}
+
+@keyframes marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee-track {
+  width: max-content;
+  animation: marquee 40s linear infinite;
+  will-change: transform;
+}
+
+.marquee-track-pause-hover:hover {
+  animation-play-state: paused;
+}
+
+/* Integration ticker — logos flow toward center from both sides */
+@keyframes integration-ticker-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.integration-ticker-track {
+  width: max-content;
+  animation: integration-ticker-marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.integration-ticker-track-reverse {
+  animation-direction: reverse;
+}
+
+.integration-ticker-fade {
+  --integration-ticker-fade-size: clamp(3rem, 5vw, 8.75rem);
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 0,
+      #000 var(--integration-ticker-fade-size),
+      #000 calc(100% - var(--integration-ticker-fade-size)),
+      transparent 100%);
+  mask-image: linear-gradient(to right,
+      transparent 0,
+      #000 var(--integration-ticker-fade-size),
+      #000 calc(100% - var(--integration-ticker-fade-size)),
+      transparent 100%);
+}
+
+.marquee-fade {
+  position: relative;
+  /* Solid renk overlay yerine mask: dokulu arka planda beyaz/koyu kutu bırakmaz */
+  --marquee-fade-size: clamp(2.5rem, 8vw, 5.5rem);
+  -webkit-mask-image: linear-gradient(to right,
+      transparent 0,
+      #000 var(--marquee-fade-size),
+      #000 calc(100% - var(--marquee-fade-size)),
+      transparent 100%);
+  mask-image: linear-gradient(to right,
+      transparent 0,
+      #000 var(--marquee-fade-size),
+      #000 calc(100% - var(--marquee-fade-size)),
+      transparent 100%);
+}
+
+/* Eski solid fade variant'ları: mask kullandığı için no-op bırakıldı (geriye uyum) */
+.marquee-fade-light,
+.marquee-fade-dark {
+  /* intentionally empty — fade is mask-based now */
+}
+
+@keyframes announcement-ribbon-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.announcement-ribbon-track,
+.announcement-ribbon-track-reverse {
+  animation: announcement-ribbon-marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.announcement-ribbon-track-reverse {
+  animation-direction: reverse;
+}
+
+.curved-loop-text {
+  animation: announcement-ribbon-marquee 22s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+    will-change: auto;
+  }
+
+  .integration-ticker-track,
+  .integration-ticker-track-reverse {
+    animation: none;
+    will-change: auto;
+  }
+
+  .hero-grid,
+  .hero-node {
+    animation: none;
+  }
+
+  .announcement-ribbon-track,
+  .announcement-ribbon-track-reverse,
+  .curved-loop-text {
+    animation: none;
+    will-change: auto;
+  }
+}
+
+.footer-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.button-motion-label {
+  position: relative;
+  display: inline-grid;
+  min-height: 1em;
+  overflow: hidden;
+}
+
+.button-motion-text {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+  transition:
+    transform 0.4s cubic-bezier(0.2, 0.9, 0.2, 1),
+    opacity 0.28s ease;
+}
+
+.button-motion-text--current {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.button-motion-text--next {
+  transform: translateY(130%);
+  opacity: 0;
+}
+
+.button-motion-icon {
+  transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.2, 1);
+}
+
+.group:hover .button-motion-text--current,
+.group:focus-visible .button-motion-text--current {
+  transform: translateY(-130%);
+  opacity: 0;
+}
+
+.group:hover .button-motion-text--next,
+.group:focus-visible .button-motion-text--next {
+  transform: translateY(0%);
+  opacity: 1;
+}
+
+.group:hover .button-motion-icon,
+.group:focus-visible .button-motion-icon {
+  transform: translateX(0);
+}
+
+/* Action button: fill expands from arrow center via clip-path (smooth both ways) */
+.action-btn-blob {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  /* radius 1.125rem = half of 2.25rem arrow circle; center aligned with arrow */
+  clip-path: circle(1.125rem at calc(100% - 1.5rem) 50%);
+  transition: clip-path 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.group:hover .action-btn-blob,
+.group:focus-visible .action-btn-blob {
+  clip-path: circle(150% at calc(100% - 1.5rem) 50%);
+}
+
+.action-btn-label,
+.action-btn-arrow {
+  position: relative;
+  z-index: 1;
+  transition: color 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .button-motion-text,
+  .button-motion-icon,
+  .action-btn-blob,
+  .action-btn-label,
+  .action-btn-arrow {
+    transition: none;
+  }
+}
+
+/* ka / ru: Cal Sans has no Georgian/Cyrillic — use Inter Tight (+ Noto for Georgian glyphs) */
+.font-georgian {
+  font-family: var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
+  --font-sans: var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
+  --font-heading: var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
+  --font-display: var(--font-anton), var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
+}
+
+.font-cyrillic {
+  font-family: var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
+  --font-sans: var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
+  --font-heading: var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
+  --font-display: var(--font-anton), var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.87 0 0);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    @apply font-sans;
+  }
+
+  body {
+    @apply bg-background font-sans font-normal text-foreground antialiased;
+  }
+
+  h1 {
+    @apply font-display font-normal;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-heading font-normal;
+  }
+}
+
+/* Navbar panel: lg+ minimal scrollbar; below lg keep browser default */
+
+.nav-menu-panel {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.28) transparent;
+}
+
+.nav-menu-panel::-webkit-scrollbar {
+  width: 5px;
+}
+
+.nav-menu-panel::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 8px;
+}
+
+.nav-menu-panel::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.22);
+  border-radius: 999px;
+}
+
+.nav-menu-panel::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(240, 159, 47, 0.65);
+}

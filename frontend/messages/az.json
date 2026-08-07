@@ -1,0 +1,1027 @@
+{
+  "Meta": {
+    "siteName": "WeeComi",
+    "defaultTitle": "WeeComi | Rəqəmsal Texnologiya Ekosistemi",
+    "defaultDescription": "WeeComi ticarət, süni intellekt, maliyyə və biznes idarəetmə həlləri inkişaf etdirir."
+  },
+  "Nav": {
+    "home": "Ana Səhifə",
+    "ecosystem": "Ekosistem",
+    "solutions": "Həllər",
+    "corporate": "Haqqımızda",
+    "news": "Xəbərlər",
+    "gallery": "Qalereya",
+    "contact": "Əlaqə",
+    "login": "Daxil ol",
+    "language": "Dil",
+    "allProducts": "Bütün məhsullar",
+    "comingSoon": "Hazırlanır",
+    "featured": "Seçilmiş",
+    "about": "Haqqımızda",
+    "search": "Axtar",
+    "searchPlaceholder": "Axtar...",
+    "searchDialogTitle": "Sayt axtarışı",
+    "searchDialogDescription": "Səhifələr və məhsullar arasında axtarın",
+    "searchDialogPlaceholder": "Səhifə və ya məhsul axtar...",
+    "searchEmpty": "Nəticə tapılmadı",
+    "searchPages": "Səhifələr",
+    "searchProducts": "Məhsullar",
+    "megaMenuEyebrow": "WeeComi Ekosistemi",
+    "megaMenuIntro": "Hər məhsul öz sahəsində müstəqil işləyir. WeeComi hamısını inkişaf etdirir, dəstəkləyir və yeniləyir.",
+    "megaMenuFeaturedText": "Fərqli ehtiyaclar üçün ayrı məhsullar, bir etibarlı brend.",
+    "ctaStart": "Əlaqə saxla"
+  },
+  "Categories": {
+    "business": "Biznes Həlləri",
+    "commerce": "Ticarət",
+    "ai": "Süni İntellekt və Avtomatlaşdırma",
+    "assets": "Rəqəmsal Aktivlər"
+  },
+  "Hero": {
+    "eyebrow": "BEYNƏLXALQ TEXNOLOGİYA ŞİRKƏTİ",
+    "title": "Öz məhsullarını yaradan beynəlxalq texnologiya şirkəti",
+    "titleLines": ["ÖZ MƏHSULLARINI", "YARADAN BEYNƏLXALQ", "TEXNOLOGİYA ŞİRKƏTİ"],
+    "titleAccent": "Müstəqil məhsullar.",
+    "titleSecondary": "Bir texnologiya şirkəti.",
+    "rotatingPrefix": "Həllərimiz:",
+    "rotatingWords": ["ticarət", "süni intellekt", "maliyyə", "biznes idarəetməsi"],
+    "subtitle": "WeeComi develops, supports and updates independent products across commerce, AI, finance and business management.",
+    "ctaPrimary": "LAYİHƏYƏ BAŞLA",
+    "ctaSecondary": "MƏHSULLARA BAX",
+    "trustLine": "11 MÜSTƏQİL MƏHSUL · 5 DİL · BEYNƏLXALQ TEXNOLOGİYA ŞİRKƏTİ",
+    "playLabel": "Tanıtım videosunu oynat",
+    "visualCaption": "WeeComi tərəfindən hazırlanan müstəqil rəqəmsal həllər",
+    "marqueeLabel": "Müstəqil məhsullar"
+  },
+  "Ecosystem": {
+    "eyebrow": "Ekosistem",
+    "bracketTag": "EKOSİSTEM — 03",
+    "title": "MÜSTƏQİL TEXNOLOGİYA MƏHSULLARI",
+    "titleParts": ["Müstəqil", "texnologiya", "məhsulları"],
+    "subtitle": "Hər biri öz sahəsində işləyən; WeeComi tərəfindən hazırlanan, dəstəklənən və yenilənən həllər.",
+    "learnMore": "İncele",
+    "visit": "Məhsula keç",
+    "disclaimer": "Təqdim olunan məlumat investisiya məsləhəti deyil. Maliyyə bazarlarında əməliyyatlar risklidir.",
+    "cursorLabel": "İNCELE →",
+    "collab": {
+      "greeting": "ekosistem",
+      "eyebrow": "WeeNetwork",
+      "intro": "birləşdirir",
+      "conjunction": "&",
+      "trailing": "",
+      "liveLabel": "Canlı · 4 məhsul",
+      "cardDescription": "Rəqəmsal kartvizit, QR menü və ağıllı kataloq həlləri tək platformada birləşir.",
+      "collaborator1": "WeeNetwork",
+      "collaborator2": "WeeCoins"
+    },
+    "alisveriskapidaCard": {
+      "badge": "E-ticarət",
+      "title": "Qapınıza çatan alış-veriş",
+      "description": "Məhsul kəşfi, kampaniyalar və mobil alış-veriş axını ilə istehlakçı e-ticarət təcrübəsi.",
+      "searchPhrases": ["Qapıda çatdırılma təklifləri", "Onlayn alış-veriş kampaniyaları", "Yerli satıcılardan sifariş"],
+      "tags": ["Onlayn", "Kampaniya", "Qapıda"]
+    },
+    "weecoinsCard": {
+      "title": "WEECOINS & WEECOINS PREMIUM",
+      "description": "WeeGold şəbəkəsində işləyən iki müstəqil rəqəmsal aktiv. Transfer, ödəniş və mükafat ssenarilərdə istifadə olunur.",
+      "ribbonBadge": "CRYPTO",
+      "ribbonItems": ["Peer to Peer", "Decentralized", "Digital Currency", "WeeGold Network", "Blockchain"]
+    },
+    "weenetwork": {
+      "metrics": [
+        {
+          "value": "1",
+          "label": "Rəqəmsal kimlik"
+        },
+        {
+          "value": "QR",
+          "label": "Paylaşım"
+        },
+        {
+          "value": "7/24",
+          "label": "Profil"
+        }
+      ]
+    },
+    "weecoins": {
+      "metrics": [
+        {
+          "value": "WEB3",
+          "label": "Aktiv"
+        },
+        {
+          "value": "ÇOXLU",
+          "label": "Şəbəkə"
+        },
+        {
+          "value": "TƏHLÜKƏSİZ",
+          "label": "Cüzdan"
+        }
+      ]
+    },
+    "weekobi": {
+      "metrics": [
+        {
+          "value": "KOBİ",
+          "label": "Fokus"
+        },
+        {
+          "value": "ERP",
+          "label": "İdarəetmə"
+        },
+        {
+          "value": "BULUD",
+          "label": "İnfrastruktur"
+        }
+      ]
+    },
+    "pageEyebrow": "EKOSİSTEM",
+    "pageTitle": "Müstəqil texnologiya məhsulları bir çatı altında",
+    "pageTitleLines": ["Müstəqil texnologiya", "məhsulları bir çatı", "altında"],
+    "pageSubtitle": "WeeComi ticarət, süni intellekt, maliyyə və biznes idarəetməsi üçün müstəqil rəqəmsal məhsullar yaradır, dəstəkləyir və yeniləyir.",
+    "heroCta": "Məhsullara bax",
+    "introEyebrow": "NECƏ İŞLƏYİR",
+    "introTitle": "Hər məhsul öz işini görür",
+    "introText": "WeeComi proqram agentliyi deyil. Ekosistemdəki hər məhsul öz yol xəritəsi ilə irəliləyir — ehtiyacınıza uyğun həlli seçirsiniz.",
+    "introReveal": "WeeComi proqram agentliyi deyil. Ekosistemdəki hər məhsul öz yol xəritəsi ilə irəliləyir — ehtiyacınıza uyğun həlli seçirsiniz. İnkişaf, dəstək və yeniləmələr eyni korporativ standartda aparılır.",
+    "productsEyebrow": "MƏHSULLAR",
+    "productsTitle": "Bütün ekosistemi kəşf edin",
+    "productsSubtitle": "Kateqoriyalara görə müstəqil məhsullar. Detallar üçün məhsula klikləyin.",
+    "whyEyebrow": "NİYƏ EKOSİSTEM",
+    "whyTitle": "Bir brend, aydın fokus",
+    "ctaEyebrow": "BİRLİKDƏ BÖYÜYƏK",
+    "ctaTitle": "Düzgün məhsulu birlikdə seçək",
+    "ctaSubtitle": "Ehtiyacınıza uyğun müstəqil WeeComi məhsulunu qısa kəşflə netləşdirək.",
+    "ctaButton": "Əlaqə saxlayın",
+    "why": {
+      "independent": {
+        "title": "Independent products",
+        "text": "Products are not locked together; each one works and scales in its own domain."
+      },
+      "standard": {
+        "title": "Shared standard",
+        "text": "Development, security, and support are managed under the WeeComi umbrella."
+      },
+      "choice": {
+        "title": "Freedom to choose",
+        "text": "You do not need the full stack. Pick what you need and move forward."
+      }
+    },
+    "weemenu": {
+      "metrics": [
+        {
+          "value": "QR",
+          "label": "Menü"
+        },
+        {
+          "value": "ÇOKLU",
+          "label": "Dil"
+        },
+        {
+          "value": "ANLIK",
+          "label": "Güncelleme"
+        }
+      ]
+    },
+    "weecard": {
+      "metrics": [
+        {
+          "value": "NFC",
+          "label": "Paylaşım"
+        },
+        {
+          "value": "QR",
+          "label": "Kart"
+        },
+        {
+          "value": "ANALİZ",
+          "label": "İzleme"
+        }
+      ]
+    },
+    "weecatalog": {
+      "metrics": [
+        {
+          "value": "VİTRİN",
+          "label": "Katalog"
+        },
+        {
+          "value": "PAYLAŞ",
+          "label": "Bağlantı"
+        },
+        {
+          "value": "YAKINDA",
+          "label": "Durum"
+        }
+      ]
+    },
+    "weesale": {
+      "metrics": [
+        {
+          "value": "MAĞAZA",
+          "label": "Online"
+        },
+        {
+          "value": "SATIŞ",
+          "label": "Kanal"
+        },
+        {
+          "value": "ÖLÇEK",
+          "label": "Büyüme"
+        }
+      ]
+    },
+    "alisveriskapida": {
+      "metrics": [
+        {
+          "value": "KAPIDA",
+          "label": "Teslimat"
+        },
+        {
+          "value": "YEREL",
+          "label": "Ticaret"
+        },
+        {
+          "value": "HIZLI",
+          "label": "Sipariş"
+        }
+      ]
+    },
+    "weecomibot": {
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Fasiləsiz izləmə"
+        },
+        {
+          "value": "20+",
+          "label": "Indikator dəstəyi"
+        },
+        {
+          "value": "Paper",
+          "label": "Risksiz test rejimi"
+        },
+        {
+          "value": "AES-256",
+          "label": "Şifrələnmiş API seyfi"
+        }
+      ]
+    },
+    "weecoinspremium": {
+      "metrics": [
+        {
+          "value": "PREMIUM",
+          "label": "Katman"
+        },
+        {
+          "value": "GENİŞ",
+          "label": "Senaryo"
+        },
+        {
+          "value": "WEB3",
+          "label": "Varlık"
+        }
+      ]
+    },
+    "criptoswaps": {
+      "metrics": [
+        {
+          "value": "7/24",
+          "label": "İşlem"
+        },
+        {
+          "value": "MOBİL",
+          "label": "Uygulama"
+        },
+        {
+          "value": "GÜVENLİ",
+          "label": "Altyapı"
+        }
+      ]
+    },
+    "pageTitleLines": ["Müstəqil", "texnologiya", "məhsulları"],
+    "guideEyebrow": "BƏLƏDÇİ",
+    "guideTitle": "Məhsulu necə seçmək olar",
+    "guideSubtitle": "Düzgün həllə daha tez çatmaq üçün qısa cavablar.",
+    "guide": {
+      "items": [
+        {
+          "q": "Bütün məhsulları almağa ehtiyac varmı?",
+          "a": "Xeyr. Hər məhsul müstəqildir; ehtiyacınıza uyğun olanı seçə bilərsiniz."
+        },
+        {
+          "q": "Məhsullar bir-birinə bağlıdır?",
+          "a": "Xeyr. Ortak WeeComi standartı var, amma məhsullar bir-birinə kilidlənmir."
+        },
+        {
+          "q": "Detal və demo üçün nə etməliyəm?",
+          "a": "Məhsul səhifəsindən sayta keçin və ya əlaqə formasından yazın."
+        }
+      ]
+    }
+  },
+  "Products": {
+    "weenetwork": {
+      "title": "Rəqəmsal Biznes Kimlik Platforması",
+      "description": "Rəqəmsal biznes kimliyi ehtiyacları üçün müstəqil həll.",
+      "features": ["Digital identity", "Business profile", "Shareable links", "Independent product"]
+    },
+    "weemenu": {
+      "title": "Menyunuzu rəqəmsal təcrübəyə çevirin",
+      "description": "Restoran və bizneslər üçün QR əsaslı çoxdilli menyu platforması.",
+      "features": ["QR menyu", "Çoxdil", "Tema", "Ani yeniləmə", "PDF ixrac", "Zal / mətbəx / kurye rolları", "WebSocket izləmə"]
+    },
+    "weecard": {
+      "title": "Peşəkar kimliyiniz bir toxunuşla paylaşılır",
+      "description": "QR və NFC dəstəkli rəqəmsal vizitkart.",
+      "features": ["QR və NFC", "Rəqəmsal vizitkart", "Sosial linklər", "Temalar", "Analitika"]
+    },
+    "weecatalog": {
+      "title": "Müasir rəqəmsal katalog",
+      "description": "Hazırlanma mərhələsində olan katalog təcrübəsi.",
+      "features": ["Müasir layout", "Məhsul vitrini", "Paylaşıla bilən link", "Tezliklə"]
+    },
+    "weekobi": {
+      "title": "Biznesinizi bir paneldən idarə edin",
+      "description": "KOBİ-lər üçün rəqəmsal biznes platforması.",
+      "features": ["Mağaza idarəsi", "Məhsul idarəsi", "Əməliyyat izləmə", "Mərkəzi panel", "Hesabat"]
+    },
+    "weesale": {
+      "title": "Rəqəmsal ticarət üçün yeni satış təcrübəsi",
+      "description": "Satıcı və alıcıları bir araya gətirən e-ticarət platforması.",
+      "features": ["Online mağazalar", "Məhsul kəşfi", "Təhlükəsiz alış", "Kampaniya", "Satıcı həlləri"]
+    },
+    "alisveriskapida": {
+      "title": "Qapınıza gələn alış təcrübəsi",
+      "description": "Win-win imkanları olan istifadəçi dostu e-ticarət.",
+      "features": ["Online alış", "Kampaniyalar", "Mobil uyğunluq", "Sürətli kəşf"]
+    },
+    "weecomibot": {
+      "title": "Strategiyadan icraya — bir panel",
+      "description": "Süni intellekt siqnalları, backtest və paper trading platforması.",
+      "features": ["AI siqnallar", "No-code strategiya", "Backtest", "Paper trading", "Risk idarəsi", "Avtomatik icra"]
+    },
+    "weecoins": {
+      "title": "Müstəqil rəqəmsal aktiv həlli",
+      "description": "Köçürmə və ödəniş ssenariləri üçün qurulmuş müstəqil rəqəmsal aktiv məhsulu.",
+      "features": ["Rəqəmsal köçürmə", "Ödəniş infrastrukturu", "Cüzdan uyğunluğu", "Müstəqil məhsul"]
+    },
+    "weecoinspremium": {
+      "title": "Premium rəqəmsal təcrübə",
+      "description": "WeeCoins üçün genişləndirilmiş istifadə ssenariləri təqdim edən müstəqil premium təbəqə.",
+      "features": ["Premium giriş", "Əlavə funksiyalar", "Rəqəmsal aktiv idarəetməsi"]
+    },
+    "criptoswaps": {
+      "title": "24/7 rəqəmsal aktiv və kripto birjası",
+      "description": "Mobil tətbiqlər, fan token əməliyyatları və güclü təhlükəsizliklə Türkiyə mərkəzli rəqəmsal aktiv platforması.",
+      "features": ["24/7 ticarət infrastrukturu", "iOS və Android tətbiqləri", "İki faktorlu doğrulama", "Fan token əməliyyatları", "WeeGold Blockchain infrastrukturu", "Telefon və e-poçt dəstəyi"]
+    }
+  },
+  "Solutions": {
+    "eyebrow": "HƏLLƏR",
+    "title": "SİZƏ UYĞUN WEECOMI HƏLLİNİ TAPIN",
+    "subtitle": "Məhsulları həll etdikləri problemlərə görə kəşf edin.",
+    "digitize": {
+      "title": "BİZNESİNİZİ RƏQƏMSALLAŞDIRIN",
+      "description": "Menyu, vizitkart, katalog və əməliyyatları gücləndirin.",
+      "points": ["Digitize menus, cards, and catalogs", "Make operations more visible from one panel", "Speed up customer and team sharing", "Scale with SME-focused management tools"]
+    },
+    "growSales": {
+      "title": "SATIŞLARINIZI ARTIRIN",
+      "description": "E-ticarət və məhsul kəşfi ilə satış kanallarını genişləndirin.",
+      "points": ["Open sales channels with online store and discovery", "Strengthen doorstep delivery scenarios", "Make commerce faster and measurable", "Expand into new markets carefully"]
+    },
+    "automate": {
+      "title": "SÜNİ İNTELLEKTLƏ AVTOMATLAŞDIRIN",
+      "description": "Strategiya, siqnal və riskləri bir paneldə idarə edin.",
+      "points": [
+        "Bring strategy and signal flows into one panel",
+        "Manage risk and decisions with more control",
+        "Build an AI-supported operations rhythm",
+        "Reduce manual repetition and sharpen focus"
+      ]
+    },
+    "joinEcosystem": {
+      "title": "RƏQƏMSAL AKTİV MƏHSULLARINI KƏŞF EDİN",
+      "description": "Müstəqil rəqəmsal aktiv məhsulları ilə maliyyə və ödəniş ssenarilərini böyüdün.",
+      "points": ["Explore digital asset products independently", "Expand payment and finance scenarios", "Address multi-network and wallet needs", "Choose products with clear risk awareness"]
+    },
+    "pageEyebrow": "HƏLLƏR",
+    "pageTitle": "Ehtiyacınıza görə WeeComi həlli",
+    "pageSubtitle": "Məhsulları yalnız ada görə deyil, həll etdikləri problemə görə kəşf edin.",
+    "areasEyebrow": "SAHƏLƏR",
+    "areasTitle": "Dörd fokus, aydın nəticə",
+    "areasSubtitle": "Rəqəmsallaşma, satış, avtomatlaşdırma və rəqəmsal aktiv sahələrindən birini seçin.",
+    "exploreArea": "Sahəni araşdır",
+    "detailCta": "Layihəyə başla",
+    "pointsTitle": "NƏ HƏLL OLUNUR",
+    "pointsHeading": "Bu sahədə aydınlaşan ehtiyaclar",
+    "productsEyebrow": "MƏHSULLAR",
+    "productsHeading": "Bu sahədəki WeeComi məhsulları",
+    "howEyebrow": "PROSES",
+    "howTitle": "Necə başlayırıq",
+    "how": {
+      "discover": {
+        "title": "Clarify the need",
+        "text": "We define your business goal and priority problem together."
+      },
+      "select": {
+        "title": "Pick the right product",
+        "text": "We select the independent product that fits this area."
+      },
+      "launch": {
+        "title": "Launch quickly",
+        "text": "Move to the product site or plan delivery with the team."
+      }
+    },
+    "pageTitleLines": ["Ehtiyacınıza görə", "WeeComi", "həlli"],
+    "productsCount": "{count} məhsul"
+  },
+  "Stats": {
+    "eyebrow": "Qısaca biz",
+    "aboutHeading": "QISACA BİZ",
+    "title": "Ölçülə bilən texnologiya şirkəti",
+    "subtitle": "Müstəqil məhsullar, çoxdilli təcrübə və beynəlxalq fokusla irəliləyirik.",
+    "productsHeading": "11+ MÜSTƏQİL RƏQƏMSAL MƏHSUL",
+    "productsDesc": "WeeComi ticarət, süni intellekt, maliyyə və biznes idarəetməsi sahələrində müstəqil rəqəmsal məhsullar qurur. Hər məhsul öz yol xəritəsi ilə irəliləyir — yalnız ehtiyacınız olanı seçirsiniz.",
+    "countriesHeading": "5+ AKTİV BAZAR FOKUSU",
+    "countriesDesc": "Türkiyə mərkəzli strukturumuzla məhsulları yerli bazarda gücləndirir, Azərbaycan, Gürcüstan, Rusiya və Avropaya nəzarətli şəkildə açılırıq.",
+    "languagesHeading": "5 DİL DƏSTƏYİ",
+    "languagesDesc": "Türk, ingilis, Azərbaycan, rus və gürcü dillərində yerli və anlaşılan təcrübə təqdim edirik; tərcümədən daha çox bazara uyğun məzmun və kommunikasiya qururuq.",
+    "platforms": "Platforma",
+    "carouselLabel": "WeeComi anları"
+  },
+  "Manifesto": {
+    "eyebrow": "Biz kimik",
+    "text": "WEECOMI MÜSTƏQİL MƏHSULLAR QURUR, HƏR HƏLLİ ÖZ SAHƏSİNDƏ GÜCLÜ SAXLAYIR VƏ BRENDLƏRİN RƏQƏMSAL BÖYÜMƏSİ ÜÇÜN MÜASİR TEXNOLOGİYA TƏQDİM EDİR — SABİT KEYFİYYƏT VƏ DAVAMLI TƏKMİLLƏŞDİRMƏ İLƏ."
+  },
+  "Global": {
+    "eyebrow": "QLOBAL MÖVCUDLUQ",
+    "title": "YERLİ EHTİYACDAN QLOBAL HƏLLƏRƏ",
+    "subtitle": "WeeComi çoxdilli və miqyaslana bilən məhsullar qurur.",
+    "turkey": "Türkiyə",
+    "turkeyDesc": "Əsas bazar və inkişaf mərkəzi",
+    "azerbaijan": "Azərbaycan",
+    "azerbaijanDesc": "Regional böyümə",
+    "georgia": "Gürcüstan",
+    "georgiaDesc": "Qafqaz bazarı",
+    "russia": "Rusiya",
+    "russiaDesc": "Rusdilli təcrübə",
+    "europe": "Avropa",
+    "europeDesc": "Beynəlxalq miqyas",
+    "regionCaps": {
+      "turkey": "TÜRKİYƏ",
+      "azerbaijan": "AZƏRBAYCAN",
+      "georgia": "GÜRCÜSTAN",
+      "russia": "RUSİYA",
+      "europe": "AVROPA"
+    }
+  },
+  "News": {
+    "eyebrow": "XƏBƏRLƏR",
+    "title": "XƏBƏRLƏR VƏ YENİLİKLƏR",
+    "subtitle": "WeeComi ekosistemindən elanlar, media və məhsul yenilikləri.",
+    "readMore": "DAVAMINI OXU",
+    "allNews": "BÜTÜN XƏBƏRLƏR",
+    "empty": "Hələ dərc olunmuş xəbər yoxdur.",
+    "loading": "Xəbərlər yüklənir...",
+    "featured": "SEÇİLMİŞ",
+    "exploreTitle": "SON XƏBƏRLƏRİ KƏŞF ET",
+    "view": "BAX",
+    "author": "Müəllif",
+    "allCategories": "Hamısı",
+    "ctaTitleBefore": "Növbəti",
+    "ctaTitleAccent": "artım mərhələsini birlikdə dizayn edək.",
+    "ctaSubtitle": "Məhsul, tərəfdaşlıq və ya korporativ əməkdaşlıq üçün bizimlə əlaqə saxlayın.",
+    "ctaStat": "Bizneslər üçün miqyaslana bilən müstəqil rəqəmsal məhsul ekosistemi.",
+    "carouselPrev": "Əvvəlki xəbərlər",
+    "carouselNext": "Növbəti xəbərlər",
+    "moreNews": "DAHA ÇOX XƏBƏR",
+    "seeAll": "HAMISINA BAX",
+    "shareLabel": "Paylaş",
+    "copyLink": "Keçidi kopyala"
+  },
+  "Gallery": {
+    "eyebrow": "QALEREYA",
+    "title": "Şəkillərlə WeeComi",
+    "subtitle": "Tədbirlər, məhsullar, ofis və komanda anlarından seçilmiş kadrlar.",
+    "all": "Hamısı",
+    "empty": "Hələ qalereya elementi yoxdur.",
+    "close": "Bağla",
+    "categories": {
+      "events": "Tədbirlər",
+      "products": "Məhsullar",
+      "office": "Ofis",
+      "team": "Komanda",
+      "other": "Digər"
+    },
+    "pageTitleLines": ["Şəkillərlə", "WeeComi"],
+    "filterEyebrow": "KATEQORİYALAR",
+    "filterHint": "Tədbir, məhsul, ofis və komanda kadrlarını süzgəcdən keçirin."
+  },
+  "CTA": {
+    "title": "DOĞRU MƏHSULLA RƏQƏMSAL BÖYÜMƏNİZİ SÜRƏTLƏNDİRİN",
+    "subtitle": "Biznesiniz və ya layihəniz üçün doğru WeeComi məhsulunu birlikdə seçək.",
+    "primary": "MƏHSULLARI KƏŞF ET",
+    "secondary": "BİZİMLƏ ƏLAQƏ"
+  },
+  "Footer": {
+    "tagline": "Biznes, ticarət və rəqəmsal həyat üçün müstəqil texnologiya məhsulları quran beynəlxalq şirkət.",
+    "pages": "SƏHİFƏLƏR",
+    "products": "MƏHSULLAR",
+    "legal": "HÜQUQİ",
+    "support": "Dəstək",
+    "privacy": "Məxfilik siyasəti",
+    "terms": "İstifadə şərtləri",
+    "cookies": "Cookie siyasəti",
+    "email": "info@weecomi.com",
+    "rights": "Bütün hüquqlar qorunur.",
+    "kvkk": "KVKK",
+    "risk": "Risk Bildirimi",
+    "copyright": "© 2026 WeeComi International. Bütün hüquqlar qorunur.",
+    "ctaEyebrow": "BİRLİKDƏ BÖYÜYƏK",
+    "ctaTitle": "MÜSTƏQİL MƏHSULLARLA BÖYÜMƏYƏ HAZIRSINIZ?",
+    "ctaSubtitle": "Biznesiniz üçün doğru müstəqil WeeComi məhsulunu birlikdə planlayaq.",
+    "ctaButton": "BİZİMLƏ ƏLAQƏ",
+    "whyUs": "Niyə biz",
+    "faqLink": "FAQ",
+    "marqueeTags": ["MÜSTƏQİL MƏHSULLAR", "ÇOXDİLLİ", "BEYNƏLXALQ", "BİZNES YÖNÜMLÜ", "SÜNİ İNTELLEKT", "RƏQƏMSAL HƏLLƏR", "MİQYASLANA BİLƏN", "TƏK ÇATI"]
+  },
+  "Corporate": {
+    "eyebrow": "HAQQIMIZDA",
+    "title": "Öz rəqəmsal məhsullarını yaradan texnologiya şirkəti",
+    "subtitle": "WeeComi proqram agentliyi deyil; ticarət, süni intellekt, maliyyə və biznes sahələrində müstəqil məhsullar yaradan beynəlxalq texnologiya şirkətidir.",
+    "missionTitle": "Missiya",
+    "missionText": "Bizneslərin və istifadəçilərin rəqəmsal dünyada daha sürətli, daha aydın və daha güclü böyüməsini təmin etmək.",
+    "visionTitle": "Vizyon",
+    "visionText": "Yerli ehtiyaclardan qlobal miqyasa uzanan etibarlı və müasir texnologiya ekosistemi qurmaq.",
+    "storyEyebrow": "TARİXÇƏ",
+    "storyTitle": "Müstəqil məhsullar, bir standart",
+    "storyText": "WeeComi yerli ehtiyaclardan başlayaraq beynəlxalq miqyasda istifadə oluna bilən rəqəmsal məhsullar yaradır.",
+    "storyTextSecondary": "Məqsədimiz bizneslərin və istifadəçilərin daha sürətli və güclü böyüməsinə kömək edən praktiki texnologiya təqdim etməkdir.",
+    "valuesEyebrow": "YANAŞMA",
+    "valuesTitle": "Necə irəliləyirik",
+    "values": {
+      "craft": {
+        "title": "Product-first building",
+        "text": "Not agency projects—durable products that stand on their own."
+      },
+      "independence": {
+        "title": "Clear boundaries",
+        "text": "Products are not locked together. You choose what you need."
+      },
+      "reach": {
+        "title": "International reach",
+        "text": "We grow with multilingual experience and careful market expansion."
+      }
+    },
+    "statsEyebrow": "QISA",
+    "statsTitle": "Ölçülə bilən texnologiya şirkəti",
+    "stats": {
+      "products": {
+        "value": "11+",
+        "label": "Independent products",
+        "text": "Digital products focused on commerce, AI, finance, and operations."
+      },
+      "markets": {
+        "value": "5+",
+        "label": "Market focus",
+        "text": "Turkey-based structure with AZ, GE, RU, and Europe focus."
+      },
+      "languages": {
+        "value": "5",
+        "label": "Languages",
+        "text": "Turkish, English, Azerbaijani, Russian, and Georgian."
+      }
+    },
+    "ecosystemEyebrow": "EKOSİSTEM",
+    "ecosystemTitle": "Düzgün məhsulu kəşf edin",
+    "ecosystemText": "Ekosistem səhifəsində bütün müstəqil məhsulları kateqoriyalara görə nəzərdən keçirə bilərsiniz.",
+    "ecosystemCta": "Ekosistemə bax",
+    "pageTitleLines": ["Öz məhsullarını", "yaradan", "texnologiya şirkəti"],
+    "meetLabel": "WeeComi",
+    "heroPrefix": "Müstəqil",
+    "heroSuffix": "məhsullar",
+    "heroLine": "vahid standart",
+    "founderTitle": "Məhsul yönümlü texnologiya şirkəti",
+    "toolsSubtitle": "Agentlik deyil; öz məhsullarını yaradan, dəstəkləyən və yeniləyən struktur.",
+    "circularText": "WEECOMI • MÜSTƏQİL MƏHSULLAR",
+    "ribbonBadge": "YENİ",
+    "ribbonCta": "Ekosistem",
+    "introTags": ["Ticarət", "Süni intellekt", "Maliyyə", "Biznes", "Beynəlxalq", "Müstəqil məhsullar"],
+    "timeline": ["Müstəqil məhsul inkişafı intizamı", "Çoxdilli və çoxbazarlı artım", "Korporativ standartda dəstək və yeniləmə"],
+    "heroAccent1": "Cəsarətli ideyalar",
+    "heroMuted": "Real təsir",
+    "heroAccent2": "Müstəqil məhsullar",
+    "helloTag": "(salam)",
+    "introLead": "WeeComi sürətlə böyüyən bizneslərin",
+    "introHighlight": "rəqəmsal məhsullarla netləşməsinə",
+    "introTail": "kömək edir — aydınlıq, sürət və dramasız proses.",
+    "introReveal": "WeeComi sürətlə böyüyən bizneslərin rəqəmsal məhsullarla netləşməsinə kömək edir — aydınlıq, sürət və dramasız proses. Cəsarətli məhsul hekayəsi, ölçülə bilən nəticə və çevik icra. Ticarət, süni intellekt, maliyyə və biznes üçün müstəqil məhsullar qururuq. Hər məhsul öz sahəsində dayanır; hamısı eyni korporativ intizamla irəliləyir. Yerli ehtiyaclardan beynəlxalq miqyasa — bir texnologiya şirkəti, fokuslu həllər.",
+    "ribbonTop": "Müstəqil Məhsullar × Ticarət × AI × Maliyyə",
+    "ribbonBottom": "11+ Məhsul × 5 Dil × Beynəlxalq Fokus × Korporativ Standart",
+    "timelineRows": [
+      {
+        "label": "Müstəqil məhsul inkişafı",
+        "date": "İndi"
+      },
+      {
+        "label": "Çoxdilli təcrübə",
+        "date": "5 dil"
+      },
+      {
+        "label": "Beynəlxalq bazar odağı",
+        "date": "5+ bazar"
+      },
+      {
+        "label": "Korporativ dəstək və yeniləmə",
+        "date": "Davamlı"
+      }
+    ],
+    "proofRows": [
+      {
+        "left": "Məhsul",
+        "center": "11+ müstəqil rəqəmsal məhsul",
+        "right": "Ekosistem"
+      },
+      {
+        "left": "Bazar",
+        "center": "5+ aktiv bazar odağı",
+        "right": "Artım"
+      },
+      {
+        "left": "Dil",
+        "center": "5 dil dəstəyi",
+        "right": "Yerli"
+      },
+      {
+        "left": "Yanaşma",
+        "center": "Agentlik yox, məhsul şirkəti",
+        "right": "Standart"
+      }
+    ],
+    "spotlightEyebrow": "(Intro)",
+    "toolsEyebrow": "YANAŞMA",
+    "toolsLabel": "(Gündəlik yığın)",
+    "toolsTitle": "Necə qururuq",
+    "toolsBadge": "ƏSAS",
+    "proofEyebrow": "(Sübut)",
+    "proofTitle": "Bizi müəyyən edənlər",
+    "proofSubtitle": "WeeComi-nin agentlik deyil, məhsul şirkəti kimi necə işlədiyinin aydın siqnalları.",
+    "ctaTitle": "Layihəniz varmı?",
+    "ctaAccent": "Gəlin danışaq",
+    "ctaText": "Doğru WeeComi məhsulunu birlikdə seçək — qısa xülasə kifayətdir.",
+    "ctaStart": "Başlayaq",
+    "faqEyebrow": "(SSS)",
+    "faqTitle": "Suallarınıza cavab",
+    "faqSubtitle": "WeeComi yanaşması və məhsul seçimi haqqında qısa cavablar.",
+    "faq": {
+      "items": [
+        {
+          "q": "WeeComi agentlikdir?",
+          "a": "Xeyr. WeeComi öz rəqəmsal məhsullarını yaradan texnologiya şirkətidir."
+        },
+        {
+          "q": "Bütün məhsulları almalıyam?",
+          "a": "Xeyr. Məhsullar müstəqildir — ehtiyacınıza uyğun olanı seçin."
+        },
+        {
+          "q": "Necə başlaya bilərik?",
+          "a": "Əlaqə formasından yazın və ya məhsul saytına keçin."
+        },
+        {
+          "q": "Hansı bazarlarda işləyirsiniz?",
+          "a": "Türkiyə mərkəzliyik; Azərbaycan, Gürcüstan, Rusiya və Avropa odağımız var."
+        }
+      ]
+    }
+  },
+  "Contact": {
+    "eyebrow": "ƏLAQƏ",
+    "title": "BİZİMLƏ ƏLAQƏ SAXLAYIN",
+    "subtitle": "Məhsul, tərəfdaşlıq və korporativ suallar üçün.",
+    "name": "Ad Soyad",
+    "email": "E-poçt",
+    "message": "Mesaj",
+    "send": "GÖNDƏR",
+    "success": "Mesajınız alındı. Tezliklə cavab verəcəyik.",
+    "addressLabel": "Dəstək",
+    "phone": "Telefon",
+    "fullName": "Ad Soyad",
+    "company": "Şirkət",
+    "productInterest": "Maraqlandığınız məhsul",
+    "productPlaceholder": "Məhsul seçin",
+    "consent": "Əlaqə məlumatlarımın işlənməsini və cavab verilməsini qəbul edirəm.",
+    "sending": "Göndərilir...",
+    "error": "Mesaj göndərilə bilmədi. Yenidən cəhd edin.",
+    "errors": {
+      "fullName": "Ad soyad tələb olunur.",
+      "email": "Düzgün e-poçt daxil edin.",
+      "phone": "Düzgün telefon daxil edin.",
+      "product": "Məhsul seçimi tələb olunur.",
+      "message": "Mesaj ən az 10 simvol olmalıdır.",
+      "consent": "Razılıq tələb olunur."
+    },
+    "supportPhone": "+90 (850) 302 0731",
+    "pageTitleLines": ["Birlikdə", "nəsə", "quraq"],
+    "formEyebrow": "MESAJ",
+    "formTitle": "Layihənizi və ya sualınızı yazın",
+    "supportLabel": "DƏSTƏK XƏTTİ",
+    "faqEyebrow": "SSS",
+    "faqTitle": "Tez-tez soruşulanlar",
+    "faqSubtitle": "Əlaqə və proses haqqında qısa cavablar.",
+    "faq": {
+      "items": [
+        {
+          "q": "Nə qədər vaxtda cavab alaram?",
+          "a": "Adətən 1–2 iş günü ərzində cavab veririk."
+        },
+        {
+          "q": "Hansı məhsulu seçməliyəm?",
+          "a": "Formadakı məhsul sahəsindən seçin; əminsinizsə ümumi dəstəyi istifadə edin."
+        },
+        {
+          "q": "Demo görüşü mümkündür?",
+          "a": "Bəli. Qısa xülasə buraxın; uyğun komanda sizinlə əlaqə saxlasın."
+        },
+        {
+          "q": "İnvestisiya məsləhəti verirsiniz?",
+          "a": "Xeyr. Maliyyə bazarları məhsullarındakı məlumat investisiya məsləhəti deyil."
+        }
+      ]
+    }
+  },
+  "Common": {
+    "explore": "Kəşf et",
+    "learnMore": "Daha çox",
+    "back": "Geri"
+  },
+  "ProductPage": {
+    "aboutTitle": "Məhsul təsviri",
+    "audienceTitle": "HƏDƏF İSTİFADƏÇİLƏR",
+    "featuresTitle": "Əsas xüsusiyyətlər",
+    "howTitle": "Necə işləyir",
+    "screensTitle": "Ekran görüntüləri",
+    "screensSubtitle": "Məhsul interfeysindən seçilmiş önizləmə sahələri.",
+    "faqEyebrow": "(SSS)",
+    "faqTitle": "Tez-tez verilən suallar",
+    "faqSubtitle": "Bu məhsul haqqında qısa və aydın cavablar.",
+    "relatedTitle": "Digər məhsulları yoxlayın",
+    "ctaTitle": "WeeComi ekosisteminə qoşulmağa hazırsınız?",
+    "ctaSubtitle": "Ehtiyacınıza uyğun məhsulu birlikdə müəyyənləşdirək — qısa bir söhbət kifayətdir.",
+    "visitProduct": "Məhsul saytına get",
+    "contactCta": "Gəlin danışaq",
+    "learnMore": "Ətraflı bax"
+  },
+  "Privacy": {
+    "title": "MƏXFİLİK SİYASƏTİ",
+    "description": "WeeComi şəxsi məlumatların qorunması prinsipləri.",
+    "updated": "Son yeniləmə: 15 İyul 2026",
+    "sections": [
+      {
+        "heading": "Əhatə",
+        "body": "Bu mətn WeeComi International tərəfindən idarə olunan korporativ veb sayt və əlaqəli kanallar üçün keçərlidir."
+      },
+      {
+        "heading": "Əsas prinsiplər",
+        "body": "Şəffaflıq, mütənasib məlumat emalı, təhlükəsizlik və istifadəçi hüquqlarına hörmət əsas prinsiplərimizdir."
+      },
+      {
+        "heading": "Əlaqə",
+        "body": "Suallarınız üçün info@weecomi.com ünvanına yazın."
+      }
+    ]
+  },
+  "Terms": {
+    "title": "İSTİFADƏ ŞƏRTLƏRİ",
+    "description": "WeeComi veb saytı və xidmətlərinin istifadə şərtləri.",
+    "updated": "Son yeniləmə: 15 İyul 2026",
+    "sections": [
+      {
+        "heading": "Əhatə",
+        "body": "Bu mətn WeeComi International tərəfindən idarə olunan korporativ veb sayt və əlaqəli kanallar üçün keçərlidir."
+      },
+      {
+        "heading": "Əsas prinsiplər",
+        "body": "Şəffaflıq, mütənasib məlumat emalı, təhlükəsizlik və istifadəçi hüquqlarına hörmət əsas prinsiplərimizdir."
+      },
+      {
+        "heading": "Əlaqə",
+        "body": "Suallarınız üçün info@weecomi.com ünvanına yazın."
+      }
+    ]
+  },
+  "Cookies": {
+    "title": "COOKİE SİYASƏTİ",
+    "description": "Cookie-lərin necə istifadə olunduğu haqqında məlumat.",
+    "updated": "Son yeniləmə: 15 İyul 2026",
+    "sections": [
+      {
+        "heading": "Əhatə",
+        "body": "Bu mətn WeeComi International tərəfindən idarə olunan korporativ veb sayt və əlaqəli kanallar üçün keçərlidir."
+      },
+      {
+        "heading": "Əsas prinsiplər",
+        "body": "Şəffaflıq, mütənasib məlumat emalı, təhlükəsizlik və istifadəçi hüquqlarına hörmət əsas prinsiplərimizdir."
+      },
+      {
+        "heading": "Əlaqə",
+        "body": "Suallarınız üçün info@weecomi.com ünvanına yazın."
+      }
+    ]
+  },
+  "Kvkk": {
+    "title": "KVKK AYDINLATMA MƏTNİ",
+    "description": "Şəxsi məlumatların qorunması qanunu çərçivəsində aydınlatma.",
+    "updated": "Son yeniləmə: 15 İyul 2026",
+    "sections": [
+      {
+        "heading": "Əhatə",
+        "body": "Bu mətn WeeComi International tərəfindən idarə olunan korporativ veb sayt və əlaqəli kanallar üçün keçərlidir."
+      },
+      {
+        "heading": "Əsas prinsiplər",
+        "body": "Şəffaflıq, mütənasib məlumat emalı, təhlükəsizlik və istifadəçi hüquqlarına hörmət əsas prinsiplərimizdir."
+      },
+      {
+        "heading": "Əlaqə",
+        "body": "Suallarınız üçün info@weecomi.com ünvanına yazın."
+      }
+    ]
+  },
+  "Risk": {
+    "title": "RİSK BİLDİRİMİ",
+    "description": "Maliyyə və rəqəmsal aktiv məhsullarına dair risk məlumatı.",
+    "updated": "Son yeniləmə: 15 İyul 2026",
+    "sections": [
+      {
+        "heading": "Əhatə",
+        "body": "Bu mətn WeeComi International tərəfindən idarə olunan korporativ veb sayt və əlaqəli kanallar üçün keçərlidir."
+      },
+      {
+        "heading": "Əsas prinsiplər",
+        "body": "Şəffaflıq, mütənasib məlumat emalı, təhlükəsizlik və istifadəçi hüquqlarına hörmət əsas prinsiplərimizdir."
+      },
+      {
+        "heading": "Əlaqə",
+        "body": "Suallarınız üçün info@weecomi.com ünvanına yazın."
+      }
+    ]
+  },
+  "Benefits": {
+    "eyebrow": "NİYƏ WEECOMI",
+    "bracketTag": "QLOBAL KOMANDA, MÜSTƏQİL MƏHSULLAR",
+    "title": "DİQQƏTDƏN BÖYÜMƏYƏ",
+    "subtitle": "Hər məhsul öz işini görür. WeeComi isə hamısını eyni korporativ standartda inkişaf etdirir və yeniləyir.",
+    "cta": "LAYİHƏYƏ BAŞLA",
+    "independent": {
+      "tag": "MÜSTƏQİL",
+      "title": "Ayrı məhsullar, aydın fokus",
+      "cardTitle": "AYRI MƏHSULLAR, AYDIN FOKUS",
+      "description": "WeeMenu, WeeCard, WeeSale və digərləri bir-birinə bağlı deyil — hər biri öz sahəsində işləyir."
+    },
+    "scale": {
+      "tag": "MİQYAS",
+      "title": "Beynəlxalq böyümə",
+      "cardTitle": "BEYNƏLXALQ BÖYÜMƏ",
+      "description": "Çoxdilli struktur və regional fokusla məhsulları müxtəlif bazarlara aparırıq."
+    },
+    "speed": {
+      "tag": "SÜRƏT",
+      "title": "Daha sürətli çatdırılma",
+      "cardTitle": "DAHA SÜRƏTLİ ÇATDIRILMA",
+      "description": "Müasir infrastruktur və məhsul yönümlü komandalarla həlləri tez yeniləyirik."
+    },
+    "trust": {
+      "tag": "ETİBAR",
+      "title": "Korporativ standart",
+      "cardTitle": "KORPORATİV STANDART",
+      "description": "Bir brend altında ardıcıl keyfiyyət, dəstək və davamlı təkmilləşdirmə."
+    }
+  },
+  "ProductShowcase": {
+    "eyebrow": "Məhsul vitrini",
+    "bracketTag": "MƏHSUL VİTRİNİ — 04",
+    "title": "SEÇİLMİŞ MÜSTƏQİL HƏLLƏR",
+    "subtitle": "Fərqli ehtiyaclar üçün ayrı məhsullar. Hər biri öz sahəsində ölçülə bilən nəticə verir.",
+    "cta": "BÜTÜN MƏHSULLAR",
+    "learnMore": "Bax",
+    "cursorLabel": "MƏHSULA BAX →",
+    "weemenu": {
+      "metrics": [
+        {
+          "value": "QR+",
+          "label": "Digital menu"
+        },
+        {
+          "value": "5+",
+          "label": "Languages"
+        },
+        {
+          "value": "24/7",
+          "label": "Management"
+        }
+      ],
+      "title": "MENYUNUZU RƏQƏMSAL TƏCRÜBƏYƏ ÇEVİRİN"
+    },
+    "weecard": {
+      "metrics": [
+        {
+          "value": "NFC",
+          "label": "Sharing"
+        },
+        {
+          "value": "QR",
+          "label": "Business card"
+        },
+        {
+          "value": "1",
+          "label": "Tap"
+        }
+      ],
+      "title": "PEŞƏKAR KİMLİYİNİZ BİR TOXUNUŞLA PAYLAŞILIR"
+    },
+    "weesale": {
+      "metrics": [
+        {
+          "value": "B2C",
+          "label": "Commerce"
+        },
+        {
+          "value": "∞",
+          "label": "Showcase"
+        },
+        {
+          "value": "24/7",
+          "label": "Sales"
+        }
+      ],
+      "title": "RƏQƏMSAL TİCARƏT ÜÇÜN YENİ SATIŞ TƏCRÜBƏSİ"
+    },
+    "weecomibot": {
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Fasiləsiz izləmə"
+        },
+        {
+          "value": "20+",
+          "label": "Indikator dəstəyi"
+        },
+        {
+          "value": "Paper",
+          "label": "Risksiz test rejimi"
+        },
+        {
+          "value": "AES-256",
+          "label": "Şifrələnmiş API seyfi"
+        }
+      ],
+      "title": "STRATEGİYADAN İCRAYA — BİR PANEL"
+    }
+  },
+  "Faq": {
+    "eyebrow": "SUALLARINIZIN CAVABLARI",
+    "title": "TEZ-TEZ VERİLƏN SUALLAR",
+    "subtitle": "WeeComi ilə başlamazdan əvvəl bilinməsi lazım gələn əsas məqamlar.",
+    "items": [
+      {
+        "q": "HANSI NÖV MƏHSULLAR HAZIRLAYIRSINIZ?",
+        "a": "WeeComi ticarət, süni intellekt, maliyyə və biznes idarəetməsi sahələrində müstəqil rəqəmsal məhsullar hazırlayır, dəstəkləyir və yeniləyir."
+      },
+      {
+        "q": "MƏHSULLAR BİR-BİRİNƏ BAĞLIDIR?",
+        "a": "Xeyr. Hər məhsul öz sahəsində müstəqil işləyir. Ortak tərəf WeeComi-nin texnologiya, dəstək və korporativ keyfiyyət standartlarıdır."
+      },
+      {
+        "q": "HANSI BAZARLARA YÖNƏLMİSİNİZ?",
+        "a": "Türkiyə mərkəzli işləyirik və Azərbaycan, Gürcüstan, Rusiya ilə Avropa üçün çoxdilli təcrübələr təqdim edirik."
+      },
+      {
+        "q": "BİZİM ÜÇÜN DOĞRU MƏHSULU NECƏ SEÇİRİK?",
+        "a": "Tələbinizi birlikdə qiymətləndirib sizə ən uyğun müstəqil WeeComi məhsulunu təklif edirik."
+      }
+    ]
+  },
+  "NavCaps": {
+    "home": "ANA SƏHİFƏ",
+    "ecosystem": "EKOSİSTEM",
+    "solutions": "HƏLLƏR",
+    "about": "HAQQIMIZDA",
+    "news": "XƏBƏRLƏR",
+    "gallery": "QALEREYA",
+    "contact": "ƏLAQƏ",
+    "allProducts": "BÜTÜN MƏHSULLAR",
+    "comingSoon": "HAZIRLANIR",
+    "featured": "SEÇİLMİŞ",
+    "megaMenuEyebrow": "WEECOMI EKOSİSTEMİ",
+    "ctaStart": "ƏLAQƏ SAXLA",
+    "corporate": "HAQQIMIZDA"
+  },
+  "CategoriesCaps": {
+    "business": "BİZNES HƏLLƏRİ",
+    "commerce": "TİCARƏT",
+    "ai": "SÜNİ İNTELLEKT VƏ AVTOMATLAŞDIRMA",
+    "assets": "RƏQƏMSAL AKTİVLƏR"
+  }
+}
