@@ -21,7 +21,7 @@ export default async function Manifesto() {
             blurStrength={0}
             baseRotation={0}
             className="mt-8"
-            textClassName="font-heading text-[clamp(1.75rem,4.5vw,3.25rem)] font-normal leading-display text-weecomi-dark-gray"
+            textClassName="font-heading text-[clamp(1.75rem,4.5vw,3.25rem)] font-semibold leading-display text-weecomi-dark-gray"
           >
             {t("text")}
           </TextScrollReveal>

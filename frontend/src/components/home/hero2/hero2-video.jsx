@@ -1,7 +1,7 @@
 import { YouTubePlayer } from "@/components/ui/youtube-video-player";
 import { INTRO_VIDEO_ID, INTRO_VIDEO_THUMBNAIL } from "@/data/videos";
 
-/** Corporate hero video — sharper frame, sits inside the Figma-inspired asymmetric layout. */
+/** Corporate intro video frame for the standalone video band. */
 export default function Hero2Video({ playLabel }) {
   return (
     <YouTubePlayer

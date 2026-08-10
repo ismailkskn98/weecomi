@@ -136,7 +136,7 @@ export default function Header() {
 
   return (
     <header className={cn("fixed inset-x-0 top-0 z-50 px-4 pt-4 transition-transform duration-300 md:px-6 md:pt-5", hidden ? "-translate-y-[calc(100%+1.25rem)]" : "translate-y-0")}>
-      <div className="mx-auto max-w-325">
+      <div className="mx-auto gridContainer">
         <div ref={barRef} className="flex items-center justify-between gap-3 rounded-xl bg-[#2c2c2c] px-3 py-2 shadow-[0_20px_50px_-28px_rgba(0,0,0,0.45)] md:px-5 md:py-3">
           <Link href="/" className="shrink-0 py-1" onClick={closeAll}>
             <Image src="/logo/OrjinalYatay.png" alt="WeeComi" width={148} height={36} className="h-7 w-auto brightness-0 invert md:h-8" priority />

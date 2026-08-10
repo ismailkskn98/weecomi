@@ -61,7 +61,9 @@
     "ctaPrimary": "ᲞᲠᲝᲔᲥᲢᲘᲡ ᲓᲐᲬᲧᲔᲑᲐ",
     "ctaSecondary": "ᲞᲠᲝᲓᲣᲥᲢᲔᲑᲘᲡ ᲜᲐᲮᲕᲐ",
     "clientsLabel": "ჩვენი დამოუკიდებელი პროდუქტების ეკოსისტემა",
-    "playLabel": "ვიდეოს დაკვრა"
+    "playLabel": "ვიდეოს დაკვრა",
+    "videoEyebrow": "ვიდეო",
+    "videoTitle": "გაიცანით WeeComi"
   },
   "Ecosystem": {
     "eyebrow": "ეკოსისტემა",

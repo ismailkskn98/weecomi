@@ -61,7 +61,9 @@
     "ctaPrimary": "НАЧАТЬ ПРОЕКТ",
     "ctaSecondary": "СМОТРЕТЬ ПРОДУКТЫ",
     "clientsLabel": "Наша экосистема независимых продуктов",
-    "playLabel": "Воспроизвести видео"
+    "playLabel": "Воспроизвести видео",
+    "videoEyebrow": "Видео",
+    "videoTitle": "Познакомьтесь с WeeComi"
   },
   "Ecosystem": {
     "eyebrow": "Экосистема",

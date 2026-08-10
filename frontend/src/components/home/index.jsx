@@ -7,11 +7,13 @@ import Testimonials from "@/components/home/testimonials";
 import Faq from "@/components/home/faq";
 import News from "@/components/home/news";
 import Hero2 from "./hero2";
+import IntroVideoBand from "./hero2/intro-video-band";
 
 export default function HomeContent() {
   return (
     <>
       <Hero2 />
+      <IntroVideoBand />
       <Stats />
       <Manifesto />
       <Ecosystem />

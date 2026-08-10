@@ -61,7 +61,9 @@
     "ctaPrimary": "START A PROJECT",
     "ctaSecondary": "SEE PRODUCTS",
     "clientsLabel": "Our independent product ecosystem",
-    "playLabel": "Play intro video"
+    "playLabel": "Play intro video",
+    "videoEyebrow": "Intro",
+    "videoTitle": "Get to know WeeComi"
   },
   "Ecosystem": {
     "eyebrow": "Ecosystem",

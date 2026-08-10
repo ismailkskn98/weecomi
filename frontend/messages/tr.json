@@ -61,7 +61,9 @@
     "ctaPrimary": "PROJE BAŞLAT",
     "ctaSecondary": "ÜRÜNLERİ GÖR",
     "clientsLabel": "Bağımsız ürün ekosistemimiz",
-    "playLabel": "Tanıtım videosunu oynat"
+    "playLabel": "Tanıtım videosunu oynat",
+    "videoEyebrow": "Tanıtım",
+    "videoTitle": "WeeComi’yi yakından tanıyın"
   },
   "Ecosystem": {
     "eyebrow": "Ekosistem",
