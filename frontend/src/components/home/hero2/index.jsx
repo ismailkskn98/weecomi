@@ -48,20 +48,21 @@ export default async function Hero2() {
       />
 
       <div className="relative z-10 gridContainer w-full flex-1">
-        <div className="w-full flex flex-col justify-between gap-10 md:gap-12 lg:gap-[clamp(1.75rem,3.5vh,3.25rem)]">
-          <div className="flex flex-col gap-8 md:gap-10 lg:gap-[clamp(1.5rem,3vh,2.75rem)]">
-            <div className="w-full max-w-[min(100%,68rem)] 2xl:max-w-[72rem]">
+        <div className="flex w-full flex-col justify-between gap-10 md:gap-12 lg:gap-[clamp(1.5rem,3vh,2.75rem)]">
+          <div className="flex flex-col gap-8 md:gap-10 lg:gap-[clamp(1.75rem,3.5vh,3rem)]">
+            <div className="w-full max-w-[min(100%,74rem)]">
               <HeroRevealItem delay={0.06} y={40} fade={false} duration={0.75}>
                 <h1
                   className={cn(
-                    "font-heading font-normal tracking-[-0.03em] text-weecomi-dark-gray",
+                    "font-heading font-normal tracking-[-0.035em] text-weecomi-dark-gray",
+                    /* Figma ~120px @1440 → dominant H1, button stays secondary */
                     isDenseLocale
-                      ? "text-[clamp(1.75rem,1rem+2.6vw,3.75rem)] leading-[1.08] lg:text-[clamp(2.35rem,1.1rem+2.35vw,3.85rem)]"
-                      : "text-[clamp(1.9rem,1.05rem+2.9vw,4.35rem)] leading-[1.08] lg:text-[clamp(2.6rem,1.15rem+2.55vw,4.5rem)]",
+                      ? "text-[clamp(2.35rem,1.15rem+4.6vw,5.75rem)] leading-[1.05]"
+                      : "text-[clamp(2.6rem,1.2rem+5.2vw,6.5rem)] leading-[1.05]",
                   )}
                 >
                   {lines.map((line) => (
-                    <span key={line} className="block text-balance">
+                    <span key={line} className="block">
                       {line}
                     </span>
                   ))}
@@ -69,24 +70,31 @@ export default async function Hero2() {
               </HeroRevealItem>
 
               <HeroRevealItem delay={0.2} y={28}>
-                <p className="mt-4 max-w-3xl text-[clamp(0.95rem,0.88rem+0.28vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/75 md:mt-5 lg:mt-[clamp(1rem,1.4vw,1.5rem)] md:leading-7">
+                <p className="mt-5 max-w-3xl text-[clamp(0.95rem,0.86rem+0.35vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/75 md:mt-6 md:leading-7">
                   {t("subtitle")}
                 </p>
               </HeroRevealItem>
             </div>
 
-            <div className="flex w-full flex-col gap-4 md:ml-auto md:max-w-md md:items-end md:gap-5 md:text-right lg:max-w-[min(100%,26rem)] xl:max-w-[28rem]">
+            <div className="flex w-full flex-col gap-5 md:ml-auto md:max-w-lg md:items-end md:gap-6 md:text-right lg:max-w-[min(100%,34rem)]">
               <HeroRevealItem delay={0.32} y={28}>
-                <p className="text-[clamp(0.95rem,0.88rem+0.28vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/80 md:leading-7">{t("subtitleSecondary")}</p>
+                <p className="text-[clamp(0.95rem,0.86rem+0.35vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/80 md:leading-7">
+                  {t("subtitleSecondary")}
+                </p>
               </HeroRevealItem>
 
-              <HeroRevealItem delay={0.4} y={24} className="flex flex-wrap items-center gap-3.5 md:justify-end md:gap-4 xl:gap-5">
-                <ActionButton href="/ecosystem" variant="primary" showArrow className="text-[13px] lg:text-[clamp(0.8125rem,0.7rem+0.2vw,0.9375rem)]">
+              <HeroRevealItem delay={0.4} y={24} className="flex flex-wrap items-center gap-4 md:justify-end md:gap-5">
+                <ActionButton
+                  href="/ecosystem"
+                  variant="primary"
+                  showArrow
+                  className="px-3.5 py-2.5 text-[12px] md:px-4 md:py-3 md:text-[13px] lg:px-[1.05rem] lg:py-3 lg:text-sm"
+                >
                   {t("ctaPrimary")}
                 </ActionButton>
                 <Link
                   href="/about"
-                  className="font-heading text-[clamp(0.8125rem,0.72rem+0.22vw,1rem)] font-normal text-weecomi-dark-gray underline decoration-weecomi-dark-gray/35 underline-offset-4 transition hover:decoration-weecomi-orange hover:text-weecomi-orange"
+                  className="font-heading text-[clamp(0.8125rem,0.74rem+0.22vw,1rem)] font-normal text-weecomi-dark-gray underline decoration-weecomi-dark-gray/35 underline-offset-4 transition hover:decoration-weecomi-orange hover:text-weecomi-orange"
                 >
                   {t("ctaSecondary")}
                 </Link>
@@ -95,7 +103,9 @@ export default async function Hero2() {
           </div>
 
           <HeroRevealItem delay={0.5} opacityOnly className="shrink-0 pt-2 lg:pt-0">
-            <p className="mx-auto max-w-3xl text-center font-heading text-[clamp(0.95rem,0.82rem+0.45vw,1.25rem)] leading-snug text-weecomi-dark-gray">{t("clientsLabel")}</p>
+            <p className="mx-auto max-w-3xl text-center font-heading text-[clamp(0.95rem,0.82rem+0.45vw,1.25rem)] leading-snug text-weecomi-dark-gray">
+              {t("clientsLabel")}
+            </p>
             <LogoLoop
               logos={marqueeLogos}
               pauseOnHover

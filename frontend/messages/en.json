@@ -54,10 +54,10 @@
     "marqueeLabel": "Independent products"
   },
   "Hero2": {
-    "title": "An international technology company building its own products",
-    "titleLines": ["An international technology company", "building its own products"],
+    "title": "International technology company",
+    "titleLines": ["International", "technology company"],
     "subtitle": "WeeComi develops, supports and updates independent products across commerce, AI, finance and business management.",
-    "subtitleSecondary": "Under one corporate umbrella, we build, support, and continuously update independent products.",
+    "subtitleSecondary": "Under our corporate umbrella we build, support, and continuously update independent products. Each solution runs in its own field — WeeComi grows them all under one corporate standard.",
     "ctaPrimary": "EXPLORE PRODUCTS",
     "ctaSecondary": "ABOUT US",
     "clientsLabel": "Independent products built under the WeeComi umbrella",
