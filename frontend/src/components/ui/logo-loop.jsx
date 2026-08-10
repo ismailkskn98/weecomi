@@ -4,6 +4,9 @@ import { cn } from "@/lib/utils";
 /**
  * Infinite logo strip — CSS marquee (globals.css).
  * No client hooks; safe as a Server Component when imported from server parents.
+ *
+ * Two equal LogoGroups + translateX(-50%). Images load eager so iOS Safari
+ * does not leave the off-screen half empty until the loop resets.
  */
 function LogoItem({ item, itemClassName, imageClassName, grayscale }) {
   if (item.type === "image" && item.src) {
@@ -14,6 +17,10 @@ function LogoItem({ item, itemClassName, imageClassName, grayscale }) {
           alt={item.alt || ""}
           width={160}
           height={56}
+          sizes="140px"
+          loading="eager"
+          fetchPriority="low"
+          decoding="async"
           className={cn(
             "h-8 w-auto max-w-[120px] object-contain transition duration-300 md:h-9 md:max-w-[140px]",
             grayscale && "grayscale group-hover:grayscale-0",
@@ -32,11 +39,9 @@ function LogoItem({ item, itemClassName, imageClassName, grayscale }) {
 }
 
 function LogoGroup({ logos, ariaHidden = false, itemClassName, imageClassName, grayscale }) {
-  const items = [...logos, ...logos];
-
   return (
     <div className="flex shrink-0 items-center" aria-hidden={ariaHidden || undefined}>
-      {items.map((item, index) => (
+      {logos.map((item, index) => (
         <LogoItem
           key={`${item.alt || item.label}-${index}`}
           item={item}
