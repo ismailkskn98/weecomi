@@ -7,7 +7,11 @@ export default async function IntroVideoBand() {
   const t = await getTranslations("Hero2");
 
   return (
-    <ScrollReveal itemSelector="[data-intro-video]" className="relative overflow-hidden bg-[#f6f7f8] section-y" aria-label={t("videoTitle")}>
+    <ScrollReveal
+      itemSelector="[data-intro-video]"
+      className="relative overflow-hidden bg-[#f6f7f8] py-12 md:py-14 lg:pb-16 lg:pt-14 xl:pb-20 xl:pt-16 2xl:py-[var(--sp-6)]"
+      aria-label={t("videoTitle")}
+    >
       <div
         className="pointer-events-none absolute inset-0 z-0"
         aria-hidden
@@ -36,19 +40,18 @@ export default async function IntroVideoBand() {
       />
 
       <div className="relative z-10 gridContainer">
-        <div className="grid items-end gap-8 md:gap-10 lg:grid-cols-12 lg:gap-[clamp(2rem,3vw,4rem)]">
+        <div className="grid items-center gap-8 md:gap-10 lg:grid-cols-12 lg:gap-[clamp(2rem,3vw,4rem)]">
           <div data-intro-video className="order-2 relative lg:order-1 lg:col-span-7">
             <Hero2Video playLabel={t("playLabel")} />
           </div>
 
-          <div data-intro-video className="order-1 flex flex-col gap-4 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:items-start lg:gap-[clamp(1rem,1.5vw,1.25rem)] lg:pb-1 lg:text-left">
+          <div
+            data-intro-video
+            className="order-1 flex flex-col gap-4 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:items-start lg:gap-[clamp(1rem,1.5vw,1.25rem)] lg:text-left"
+          >
             <BracketTag className="text-weecomi-orange">{t("videoEyebrow")}</BracketTag>
-            <h2 className="font-heading text-[clamp(1.65rem,calc(0.9rem+2.2vw),2.65rem)] leading-display tracking-[-0.02em] text-weecomi-dark-gray">
-              {t("videoTitle")}
-            </h2>
-            <p className="text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/70 md:leading-7">
-              {t("videoSubtitle")}
-            </p>
+            <h2 className="font-heading text-[1.75rem] leading-display tracking-normal text-weecomi-dark-gray md:text-[2.25rem] xl:text-[2.65rem]">{t("videoTitle")}</h2>
+            <p className="text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/70 md:leading-7">{t("videoSubtitle")}</p>
           </div>
         </div>
       </div>

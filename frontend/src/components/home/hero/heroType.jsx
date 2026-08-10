@@ -63,7 +63,7 @@ export default async function HeroType() {
             <HeroRevealItem delay={0.16} y={52} fade={false} duration={0.75}>
               <h1
                 className={cn(
-                  "relative z-30 mt-8 max-w-[980px] font-display text-[clamp(2.6rem,6.4vw,6rem)] tracking-[-0.03em] text-weecomi-dark-gray",
+                  "relative z-30 mt-8 max-w-[980px] font-display font-bold text-[clamp(2.6rem,6.4vw,6rem)] tracking-[-0.03em] text-weecomi-dark-gray",
                   locale === "ru" || locale === "ka" ? "leading-[0.9]" : "leading-display",
                 )}
               >

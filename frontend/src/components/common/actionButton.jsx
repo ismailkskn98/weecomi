@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Figma-like rectangular CTA: light radius + visible border, no pill/blob.
+ * size: sm (hero/header) · md (default) · lg (section CTAs)
  *
  * Note: do not fight variants with bg-/text- className overrides —
  * cn() does not merge Tailwind conflicts. Use the right variant instead.
@@ -44,6 +45,21 @@ const variants = {
   },
 };
 
+const sizes = {
+  sm: {
+    root: "gap-1.5 px-3 py-2 text-[12px]",
+    icon: "h-3.5 w-3.5",
+  },
+  md: {
+    root: "gap-2 px-4 py-2.5 text-sm",
+    icon: "h-4 w-4",
+  },
+  lg: {
+    root: "gap-2 px-5 py-3 text-sm md:px-6 md:py-3.5",
+    icon: "h-4 w-4",
+  },
+};
+
 function getLabelClass(style, showArrow) {
   if (showArrow) return style.label;
   return style.label
@@ -52,12 +68,12 @@ function getLabelClass(style, showArrow) {
     .join(" ");
 }
 
-function ButtonContent({ style, showArrow, children }) {
+function ButtonContent({ style, showArrow, iconClassName, children }) {
   return (
     <ButtonMotionContent
       className="relative z-1"
-      labelClassName={cn("font-heading text-sm tracking-[-0.01em]", getLabelClass(style, showArrow))}
-      icon={showArrow ? <ArrowRight className={cn("h-4 w-4", style.arrow)} strokeWidth={2.25} aria-hidden /> : null}
+      labelClassName={cn("font-heading tracking-[-0.01em]", getLabelClass(style, showArrow))}
+      icon={showArrow ? <ArrowRight className={cn(iconClassName, style.arrow)} strokeWidth={2.25} aria-hidden /> : null}
       iconClassName={showArrow ? "shrink-0" : ""}
     >
       {children}
@@ -65,18 +81,14 @@ function ButtonContent({ style, showArrow, children }) {
   );
 }
 
-export default function ActionButton({ href, onClick, variant = "primary", showArrow = false, external = false, className = "", children, type = "button", ...props }) {
+export default function ActionButton({ href, onClick, variant = "primary", size = "md", showArrow = false, external = false, className = "", children, type = "button", ...props }) {
   const style = variants[variant] || variants.primary;
+  const sizeStyle = sizes[size] || sizes.md;
 
-  const classes = cn(
-    "group relative inline-flex items-center justify-center overflow-hidden rounded-md border px-4 py-3 text-sm font-semibold transition-colors duration-300 md:px-[18px] md:py-3.5 lg:px-[clamp(1rem,1.15vw,1.25rem)] lg:py-[clamp(0.7rem,0.95vw,1rem)]",
-    showArrow ? "gap-2" : "",
-    style.root,
-    className,
-  );
+  const classes = cn("group relative inline-flex items-center justify-center overflow-hidden rounded-md border font-semibold transition-colors duration-300", sizeStyle.root, style.root, className);
 
   const content = (
-    <ButtonContent style={style} showArrow={showArrow}>
+    <ButtonContent style={style} showArrow={showArrow} iconClassName={sizeStyle.icon}>
       {children}
     </ButtonContent>
   );

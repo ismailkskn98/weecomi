@@ -26,7 +26,7 @@ export default async function Benefits() {
           <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-black/50 md:text-lg">{t("subtitle")}</p>
         </div>
 
-        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-[50px] lg:grid-cols-4">
+        <div className="mt-[var(--sp-5)] grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map((item) => (
             <article key={item.key} data-benefit className="flex flex-col items-center gap-6 rounded-xl bg-[#f5f5f5] px-4 py-6">
               <span className="inline-flex items-center justify-center rounded-xl bg-black px-3 py-[5px]">
@@ -48,8 +48,8 @@ export default async function Benefits() {
           ))}
         </div>
 
-        <div className="mt-8 flex justify-center lg:mt-[50px]">
-          <ActionButton href="/ecosystem" variant="inverse" showArrow>
+        <div className="mt-[var(--sp-5)] flex justify-center">
+          <ActionButton href="/ecosystem" variant="inverse" size="lg" showArrow>
             {t("cta")}
           </ActionButton>
         </div>

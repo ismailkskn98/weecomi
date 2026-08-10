@@ -8,10 +8,12 @@ import Faq from "@/components/home/faq";
 import News from "@/components/home/news";
 import Hero2 from "./hero2";
 import IntroVideoBand from "./hero2/intro-video-band";
+import HeroType from "./hero/heroType";
 
 export default function HomeContent() {
   return (
     <>
+      {/* <HeroType /> */}
       <Hero2 />
       <IntroVideoBand />
       <Stats />
