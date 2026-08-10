@@ -24,20 +24,20 @@ function MenuToggleButton({ open, onClick }) {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <button type="button" className="relative flex size-8 items-center justify-center md:size-9" onClick={onClick} aria-label="Menu" aria-expanded={open}>
-      <div className="relative h-4 w-5">
+    <button type="button" className="relative flex size-9 items-center justify-center md:size-10" onClick={onClick} aria-label="Menu" aria-expanded={open}>
+      <div className="relative h-5 w-5">
         <motion.span
-          className="absolute left-0 top-0 block h-0.5 w-5 rounded-full bg-white"
+          className="absolute left-0 top-0.5 block h-0.5 w-5 rounded-full bg-white"
           animate={open ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.25 }}
         />
         <motion.span
-          className="absolute left-0 top-[7px] block h-0.5 w-5 rounded-full bg-white"
+          className="absolute left-0 top-[9px] block h-0.5 w-5 rounded-full bg-white"
           animate={open ? { opacity: 0 } : { opacity: 1 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
         />
         <motion.span
-          className="absolute left-0 top-3.5 block h-0.5 w-5 rounded-full bg-white"
+          className="absolute left-0 top-4 block h-0.5 w-5 rounded-full bg-white"
           animate={open ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.25 }}
         />
@@ -137,18 +137,18 @@ export default function Header() {
   return (
     <header className={cn("fixed inset-x-0 top-0 z-50 pt-4 transition-transform duration-300 md:pt-5", hidden ? "-translate-y-[calc(100%+1.25rem)]" : "translate-y-0")}>
       <div className="mx-auto gridContainer">
-        <div ref={barRef} className="flex items-center justify-between gap-2 rounded-xl bg-[#2c2c2c] px-2.5 py-1.5 shadow-[0_20px_50px_-28px_rgba(0,0,0,0.45)] md:gap-3 md:px-3 md:py-2">
+        <div ref={barRef} className="flex items-center justify-between gap-3 rounded-md bg-[#2c2c2c] px-3 py-2.5 shadow-[0_20px_50px_-28px_rgba(0,0,0,0.45)] md:px-5 md:py-3">
           <Link href="/" className="flex shrink-0 items-center leading-none" onClick={closeAll}>
-            <Image src="/logo/OrjinalYatay.png" alt="WeeComi" width={148} height={36} className="h-6 w-auto brightness-0 invert md:h-7" priority />
+            <Image src="/logo/OrjinalYatay.png" alt="WeeComi" width={148} height={36} className="h-7 w-auto brightness-0 invert md:h-8" priority />
           </Link>
 
-          <div className="flex items-center gap-2 md:gap-2.5">
-            <Link
-              href="/contact"
-              className="group inline-flex h-8 items-center rounded-lg bg-weecomi-orange pl-3 pr-2 font-heading text-[13px] font-medium text-white transition hover:bg-weecomi-orange/90 md:h-9 md:pl-3.5 md:pr-2.5"
+          <div className="flex items-center gap-2.5 md:gap-3">
+            <a
+              href="https://backoffice.weecoins.org/"
+              className="group inline-flex h-9 items-center rounded-md border border-white/20 bg-weecomi-orange px-3.5 font-heading text-[13px] font-medium text-white transition hover:bg-weecomi-orange/90 md:h-10 md:px-4 md:text-sm"
             >
               <ButtonMotionContent icon={<ArrowRight className="h-4 w-4" strokeWidth={2} aria-hidden />}>{t("ctaStart")}</ButtonMotionContent>
-            </Link>
+            </a>
             <MenuToggleButton open={menuOpen} onClick={toggleMenu} />
           </div>
         </div>
@@ -161,10 +161,10 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={panelTransition}
-              className="nav-menu-panel mt-3 max-h-[min(70vh,36rem)] overflow-y-auto overscroll-contain rounded-xl bg-[#2c2c2c] px-4 py-5 shadow-[0_24px_70px_-30px_rgba(0,0,0,0.55)] md:max-h-[min(75vh,40rem)] md:px-5 md:py-6"
+              className="nav-menu-panel mt-2.5 max-h-[min(70vh,36rem)] overflow-y-auto overscroll-contain rounded-md bg-[#2c2c2c] px-4 py-4 shadow-[0_24px_70px_-30px_rgba(0,0,0,0.55)] md:mt-3 md:max-h-[min(75vh,40rem)] md:px-5 md:py-5"
             >
               <nav aria-label="Primary">
-                <ul className="space-y-1">
+                <ul className="space-y-0.5">
                   {navItems.map((item) => {
                     if (item.mega) {
                       const isActive = pathname.startsWith(item.href);
@@ -175,14 +175,14 @@ export default function Header() {
                             type="button"
                             onClick={() => setEcoOpen((value) => !value)}
                             className={cn(
-                              "flex w-full items-center justify-between py-2.5 text-left font-heading text-xl leading-none text-white transition hover:text-weecomi-orange md:text-2xl",
+                              "flex w-full items-center justify-between py-2 text-left font-heading text-base leading-none text-white transition hover:text-weecomi-orange md:py-2.5 md:text-lg",
                               isActive && "text-weecomi-orange",
                             )}
                             aria-expanded={ecoOpen}
                           >
                             <span>{t(item.key)}</span>
                             <ChevronDown
-                              className={cn("h-5 w-5 shrink-0 text-white/50 transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]", ecoOpen && "rotate-180 text-weecomi-orange")}
+                              className={cn("h-4 w-4 shrink-0 text-white/50 transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)] md:h-5 md:w-5", ecoOpen && "rotate-180 text-weecomi-orange")}
                               aria-hidden
                             />
                           </button>
@@ -223,7 +223,7 @@ export default function Header() {
                                                 <Link
                                                   href={getProductPath(product)}
                                                   onClick={closeAll}
-                                                  className="group/product flex w-fit items-center justify-between gap-3 border-b border-white/6 py-1.5 text-[15px] text-white/70 last:border-b-0 transition hover:text-white"
+                                                  className="group/product flex w-fit items-center justify-between gap-3 border-b border-white/6 py-1.5 text-sm text-white/70 last:border-b-0 transition hover:text-white"
                                                 >
                                                   <span>{product.name}</span>
                                                   <span className="flex shrink-0 items-center gap-2">
@@ -252,7 +252,7 @@ export default function Header() {
                           href={item.href}
                           onClick={closeAll}
                           className={cn(
-                            "block py-2.5 font-heading text-xl leading-none text-white transition hover:text-weecomi-orange md:text-2xl",
+                            "block py-2 font-heading text-base leading-none text-white transition hover:text-weecomi-orange md:py-2.5 md:text-lg",
                             pathname.startsWith(item.href) && "text-weecomi-orange",
                           )}
                         >

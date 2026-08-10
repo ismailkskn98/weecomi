@@ -1,53 +1,46 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import ButtonMotionContent from "@/components/common/button-motion-content";
 import { cn } from "@/lib/utils";
 
 /**
- * Arrow background is an absolute circle under the icon.
- * On hover it expands via CSS clip-path (.action-btn-blob).
+ * Figma-like rectangular CTA: light radius + visible border, no pill/blob.
  *
  * Note: do not fight variants with bg-/text- className overrides —
  * cn() does not merge Tailwind conflicts. Use the right variant instead.
  */
 const variants = {
   primary: {
-    root: "bg-weecomi-blue border-transparent hover:bg-weecomi-blue/90",
-    blob: "bg-white",
-    label: "text-white group-hover:text-weecomi-blue",
-    arrow: "text-weecomi-blue",
+    root: "bg-weecomi-blue border-white/30 hover:bg-weecomi-blue/90",
+    label: "text-white",
+    arrow: "text-white",
   },
   secondary: {
-    root: "bg-white border-weecomi-dark-gray/15",
-    blob: "bg-weecomi-blue",
+    root: "bg-white border-weecomi-dark-gray/20 hover:bg-weecomi-dark-gray hover:border-weecomi-dark-gray",
     label: "text-weecomi-dark-gray group-hover:text-white",
-    arrow: "text-white",
+    arrow: "text-weecomi-dark-gray group-hover:text-white",
   },
   /** Transparent / outline on dark backgrounds (CTA, footer) */
   outline: {
-    root: "bg-transparent border-white/35 hover:bg-white hover:border-white",
-    blob: "bg-white",
+    root: "bg-transparent border-white/40 hover:bg-white hover:border-white",
     label: "text-white group-hover:text-weecomi-dark-gray",
-    arrow: "text-weecomi-dark-gray",
+    arrow: "text-white group-hover:text-weecomi-dark-gray",
   },
   /** Transparent / outline on light backgrounds */
   ghost: {
-    root: "bg-transparent border-weecomi-dark-gray/20 hover:bg-weecomi-dark-gray hover:border-weecomi-dark-gray",
-    blob: "bg-weecomi-dark-gray",
+    root: "bg-transparent border-weecomi-dark-gray/25 hover:bg-weecomi-dark-gray hover:border-weecomi-dark-gray",
     label: "text-weecomi-dark-gray group-hover:text-white",
-    arrow: "text-white",
+    arrow: "text-weecomi-dark-gray group-hover:text-white",
   },
   inverse: {
-    root: "bg-weecomi-orange border-transparent",
-    blob: "bg-weecomi-dark-gray",
-    label: "text-weecomi-dark-gray group-hover:text-white",
+    root: "bg-weecomi-orange border-weecomi-dark-gray/20 hover:bg-weecomi-orange/90",
+    label: "text-white",
     arrow: "text-white",
   },
   red: {
-    root: "bg-weecomi-red border-transparent hover:bg-weecomi-red/90",
-    blob: "bg-white",
-    label: "text-white group-hover:text-weecomi-red",
-    arrow: "text-weecomi-red",
+    root: "bg-weecomi-red border-white/30 hover:bg-weecomi-red/90",
+    label: "text-white",
+    arrow: "text-white",
   },
 };
 
@@ -61,18 +54,14 @@ function getLabelClass(style, showArrow) {
 
 function ButtonContent({ style, showArrow, children }) {
   return (
-    <>
-      {showArrow ? <span className={cn("action-btn-blob", style.blob)} aria-hidden /> : null}
-
-      <ButtonMotionContent
-        className="relative z-1"
-        labelClassName={cn("action-btn-label", getLabelClass(style, showArrow))}
-        icon={showArrow ? <ArrowUpRight className={cn("h-4 w-4", style.arrow)} strokeWidth={2.25} aria-hidden /> : null}
-        iconClassName={showArrow ? "action-btn-arrow h-9 w-9 rounded-full" : ""}
-      >
-        {children}
-      </ButtonMotionContent>
-    </>
+    <ButtonMotionContent
+      className="relative z-1"
+      labelClassName={cn("font-heading text-sm tracking-[-0.01em]", getLabelClass(style, showArrow))}
+      icon={showArrow ? <ArrowRight className={cn("h-4 w-4", style.arrow)} strokeWidth={2.25} aria-hidden /> : null}
+      iconClassName={showArrow ? "shrink-0" : ""}
+    >
+      {children}
+    </ButtonMotionContent>
   );
 }
 
@@ -80,10 +69,9 @@ export default function ActionButton({ href, onClick, variant = "primary", showA
   const style = variants[variant] || variants.primary;
 
   const classes = cn(
-    "group relative inline-flex items-center overflow-hidden rounded-full border text-sm font-semibold transition-colors duration-300",
-    showArrow ? "gap-2 py-1.5 pl-5 pr-1.5" : "px-5 py-2.5",
+    "group relative inline-flex items-center justify-center overflow-hidden rounded-md border px-4 py-3 text-sm font-semibold transition-colors duration-300 md:px-[18px] md:py-3.5 lg:px-[clamp(1rem,1.15vw,1.25rem)] lg:py-[clamp(0.7rem,0.95vw,1rem)]",
+    showArrow ? "gap-2" : "",
     style.root,
-    // className only for layout (shrink-0, mt-*, etc.) — avoid bg/text overrides
     className,
   );
 

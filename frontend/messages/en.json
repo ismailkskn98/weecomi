@@ -57,10 +57,10 @@
     "title": "An international technology company building its own products",
     "titleLines": ["An international technology company", "building its own products"],
     "subtitle": "WeeComi develops, supports and updates independent products across commerce, AI, finance and business management.",
-    "subtitleSecondary": "Transform your business with expert engineering, seamless migrations, and innovative digital solutions, no matter where you are.",
-    "ctaPrimary": "START A PROJECT",
-    "ctaSecondary": "SEE PRODUCTS",
-    "clientsLabel": "Our independent product ecosystem",
+    "subtitleSecondary": "Under one corporate umbrella, we build, support, and continuously update independent products.",
+    "ctaPrimary": "EXPLORE PRODUCTS",
+    "ctaSecondary": "ABOUT US",
+    "clientsLabel": "Independent products built under the WeeComi umbrella",
     "playLabel": "Play intro video",
     "videoEyebrow": "Intro",
     "videoTitle": "Get to know WeeComi",
@@ -469,7 +469,7 @@
     "bracketTag": "WORLD-CLASS TEAM, INDEPENDENT PRODUCTS",
     "title": "WE TURN ATTENTION INTO GROWTH",
     "subtitle": "Each product does its own job. WeeComi develops and updates them all under one corporate standard.",
-    "cta": "START A PROJECT",
+    "cta": "EXPLORE PRODUCTS",
     "independent": {
       "tag": "INDEPENDENT",
       "title": "Separate products, clear focus",
@@ -1035,7 +1035,7 @@
     "comingSoon": "COMING SOON",
     "featured": "FEATURED",
     "megaMenuEyebrow": "WEECOMI ECOSYSTEM",
-    "ctaStart": "START A PROJECT",
+    "ctaStart": "BACK OFFICE",
     "corporate": "ABOUT"
   },
   "CategoriesCaps": {

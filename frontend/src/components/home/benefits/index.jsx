@@ -49,7 +49,7 @@ export default async function Benefits() {
         </div>
 
         <div className="mt-8 flex justify-center lg:mt-[50px]">
-          <ActionButton href="/contact" variant="inverse" showArrow>
+          <ActionButton href="/ecosystem" variant="inverse" showArrow>
             {t("cta")}
           </ActionButton>
         </div>

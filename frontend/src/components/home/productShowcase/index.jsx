@@ -86,7 +86,7 @@ export default async function ProductShowcase() {
         </div>
 
         <div data-showcase-item className="mt-6 text-center">
-          <Link href="/ecosystem" className="inline-flex h-11 items-center rounded-xl bg-weecomi-dark-gray px-6 font-heading text-sm font-medium text-white transition hover:bg-weecomi-dark-gray/90">
+          <Link href="/ecosystem" className="inline-flex h-11 items-center rounded-md border border-white/20 bg-weecomi-dark-gray px-6 font-heading text-sm font-medium text-white transition hover:bg-weecomi-dark-gray/90">
             {t("cta")}
           </Link>
         </div>

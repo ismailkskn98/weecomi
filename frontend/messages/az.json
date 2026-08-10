@@ -57,10 +57,10 @@
     "title": "Öz məhsullarını yaradan beynəlxalq texnologiya şirkəti",
     "titleLines": ["Öz məhsullarını yaradan", "beynəlxalq texnologiya şirkəti"],
     "subtitle": "WeeComi ticarət, süni intellekt, maliyyə və biznes idarəetməsi sahələrində müstəqil məhsullar hazırlayır, dəstəkləyir və yeniləyir.",
-    "subtitleSecondary": "Ekspert mühəndislik, problemsiz keçidlər və innovativ rəqəmsal həllərlə biznesinizi dönüşdürün — harada olursunuz olun.",
-    "ctaPrimary": "LAYİHƏYƏ BAŞLA",
-    "ctaSecondary": "MƏHSULLARA BAX",
-    "clientsLabel": "Müstəqil məhsul ekosistemimiz",
+    "subtitleSecondary": "Korporativ çətirimiz altında müstəqil məhsullar yaradır, dəstəkləyir və daim yeniləyirik.",
+    "ctaPrimary": "MƏHSULLARI KƏŞF ET",
+    "ctaSecondary": "HAQQIMIZDA",
+    "clientsLabel": "WeeComi çətiri altında inkişaf etdirdiyimiz müstəqil məhsul ailəsi",
     "playLabel": "Tanıtım videosunu oynat",
     "videoEyebrow": "Tanıtım",
     "videoTitle": "WeeComi-ni yaxından tanıyın",
@@ -886,7 +886,7 @@
     "bracketTag": "QLOBAL KOMANDA, MÜSTƏQİL MƏHSULLAR",
     "title": "DİQQƏTDƏN BÖYÜMƏYƏ",
     "subtitle": "Hər məhsul öz işini görür. WeeComi isə hamısını eyni korporativ standartda inkişaf etdirir və yeniləyir.",
-    "cta": "LAYİHƏYƏ BAŞLA",
+    "cta": "MƏHSULLARI KƏŞF ET",
     "independent": {
       "tag": "MÜSTƏQİL",
       "title": "Ayrı məhsullar, aydın fokus",
@@ -1035,7 +1035,7 @@
     "comingSoon": "HAZIRLANIR",
     "featured": "SEÇİLMİŞ",
     "megaMenuEyebrow": "WEECOMI EKOSİSTEMİ",
-    "ctaStart": "ƏLAQƏ SAXLA",
+    "ctaStart": "BACKOFFICE",
     "corporate": "HAQQIMIZDA"
   },
   "CategoriesCaps": {

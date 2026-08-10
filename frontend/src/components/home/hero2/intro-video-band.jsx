@@ -36,16 +36,19 @@ export default async function IntroVideoBand() {
       />
 
       <div className="relative z-10 gridContainer">
-        {/* Hero-like: video + copy bottom-right; stacks on mobile with copy first */}
-        <div className="grid items-end gap-8 md:gap-10 lg:grid-cols-12 lg:gap-12 xl:gap-16">
+        <div className="grid items-end gap-8 md:gap-10 lg:grid-cols-12 lg:gap-[clamp(2rem,3vw,4rem)]">
           <div data-intro-video className="order-2 relative lg:order-1 lg:col-span-7">
             <Hero2Video playLabel={t("playLabel")} />
           </div>
 
-          <div data-intro-video className="order-1 flex flex-col gap-4 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:items-start lg:gap-5 lg:pb-1 lg:text-left">
+          <div data-intro-video className="order-1 flex flex-col gap-4 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:items-start lg:gap-[clamp(1rem,1.5vw,1.25rem)] lg:pb-1 lg:text-left">
             <BracketTag className="text-weecomi-orange">{t("videoEyebrow")}</BracketTag>
-            <h2 className="font-heading text-[clamp(1.75rem,3.2vw,2.65rem)] leading-display tracking-[-0.02em] text-weecomi-dark-gray">{t("videoTitle")}</h2>
-            <p className="text-base leading-relaxed text-weecomi-dark-gray/70 md:text-lg md:leading-7">{t("videoSubtitle")}</p>
+            <h2 className="font-heading text-[clamp(1.65rem,calc(0.9rem+2.2vw),2.65rem)] leading-display tracking-[-0.02em] text-weecomi-dark-gray">
+              {t("videoTitle")}
+            </h2>
+            <p className="text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/70 md:leading-7">
+              {t("videoSubtitle")}
+            </p>
           </div>
         </div>
       </div>

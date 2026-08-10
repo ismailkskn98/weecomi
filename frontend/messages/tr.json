@@ -57,10 +57,10 @@
     "title": "Kendi ürünlerini geliştiren uluslararası teknoloji şirketi",
     "titleLines": ["Kendi ürünlerini geliştiren", "uluslararası teknoloji şirketi"],
     "subtitle": "WeeComi; ticaret, yapay zekâ, finans ve iş yönetimi alanlarında kendi başına çalışan ürünler geliştirir, destekler ve günceller.",
-    "subtitleSecondary": "Uzman mühendislik, sorunsuz geçişler ve yenilikçi dijital çözümlerle işinizi dönüştürün — nerede olursanız olun.",
-    "ctaPrimary": "PROJE BAŞLAT",
-    "ctaSecondary": "ÜRÜNLERİ GÖR",
-    "clientsLabel": "Bağımsız ürün ekosistemimiz",
+    "subtitleSecondary": "Çatı markamız altında bağımsız ürünler geliştiriyor, destekliyor ve sürekli güncelliyoruz.",
+    "ctaPrimary": "ÜRÜNLERİ KEŞFET",
+    "ctaSecondary": "HAKKIMIZDA",
+    "clientsLabel": "WeeComi çatısı altında geliştirdiğimiz bağımsız ürün ailesi",
     "playLabel": "Tanıtım videosunu oynat",
     "videoEyebrow": "Tanıtım",
     "videoTitle": "WeeComi’yi yakından tanıyın",
@@ -484,7 +484,7 @@
     "bracketTag": "KÜRESEL EKİP, BAĞIMSIZ ÜRÜNLER",
     "title": "DİKKAT ÇEKMEKTEN BÜYÜMEYE",
     "subtitle": "Her ürün kendi işini yapar. WeeComi ise hepsini aynı kurumsal standartta geliştirir ve günceller.",
-    "cta": "PROJE BAŞLAT",
+    "cta": "ÜRÜNLERİ KEŞFET",
     "independent": {
       "tag": "BAĞIMSIZ",
       "title": "Ayrı ürünler, net odak",
@@ -1050,7 +1050,7 @@
     "comingSoon": "YAPIM AŞAMASINDA",
     "featured": "ÖNE ÇIKAN",
     "megaMenuEyebrow": "WEECOMI EKOSİSTEMİ",
-    "ctaStart": "PROJE BAŞLAT",
+    "ctaStart": "BACKOFFICE",
     "corporate": "HAKKIMIZDA"
   },
   "CategoriesCaps": {
