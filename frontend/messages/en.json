@@ -53,6 +53,16 @@
     "visualCaption": "Independent digital solutions developed by WeeComi",
     "marqueeLabel": "Independent products"
   },
+  "Hero2": {
+    "title": "An international technology company building its own products",
+    "titleLines": ["An international technology company", "building its own products"],
+    "subtitle": "WeeComi develops, supports and updates independent products across commerce, AI, finance and business management.",
+    "subtitleSecondary": "Transform your business with expert engineering, seamless migrations, and innovative digital solutions, no matter where you are.",
+    "ctaPrimary": "START A PROJECT",
+    "ctaSecondary": "SEE PRODUCTS",
+    "clientsLabel": "Our independent product ecosystem",
+    "playLabel": "Play intro video"
+  },
   "Ecosystem": {
     "eyebrow": "Ecosystem",
     "bracketTag": "ECOSYSTEM — 03",

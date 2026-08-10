@@ -1,42 +1,19 @@
-import { Anton, Cal_Sans, Inter_Tight, Noto_Sans, Noto_Sans_Georgian } from "next/font/google";
+import { Geist, Inter_Tight } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
 
+const geist = Geist({
+  subsets: ["latin", "latin-ext"],
+  variable: "--font-geist",
+  display: "swap",
+});
+
 const interTight = Inter_Tight({
   subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
   variable: "--font-inter-tight",
-  display: "swap",
-  weight: ["400", "500", "600"],
-});
-
-const anton = Anton({
-  subsets: ["latin", "latin-ext"],
-  weight: "400",
-  variable: "--font-anton",
-  display: "swap",
-});
-
-/** Agero subheads / buttons / badges. Latin only — ru/ka use Inter Tight via locale CSS. */
-const calSans = Cal_Sans({
-  subsets: ["latin", "latin-ext"],
-  weight: "400",
-  variable: "--font-cal-sans",
-  display: "swap",
-});
-
-const notoSans = Noto_Sans({
-  subsets: ["latin", "latin-ext", "cyrillic", "cyrillic-ext"],
-  variable: "--font-noto-sans",
-  display: "swap",
-  weight: ["400", "500", "600"],
-});
-
-const notoGeorgian = Noto_Sans_Georgian({
-  subsets: ["georgian"],
-  variable: "--font-noto-georgian",
   display: "swap",
   weight: ["400", "500", "600"],
 });
@@ -84,15 +61,10 @@ export default async function LocaleLayout({ children, params }) {
 
   setRequestLocale(locale);
   const messages = await getMessages();
-  const isGeorgian = locale === "ka";
-  const isCyrillic = locale === "ru";
 
   return (
-    <html
-      lang={locale}
-      className={`${interTight.variable} ${anton.variable} ${calSans.variable} ${notoSans.variable} ${notoGeorgian.variable}`}
-    >
-      <body className={`${interTight.className} ${isGeorgian ? "font-georgian" : ""} ${isCyrillic ? "font-cyrillic" : ""} antialiased`}>
+    <html lang={locale} className={`${geist.variable} ${interTight.variable}`}>
+      <body className={`${interTight.className} antialiased`}>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>

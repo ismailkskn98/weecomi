@@ -53,6 +53,16 @@
     "visualCaption": "WeeComi tarafından geliştirilen bağımsız dijital çözümler",
     "marqueeLabel": "Bağımsız ürünler"
   },
+  "Hero2": {
+    "title": "Kendi ürünlerini geliştiren uluslararası teknoloji şirketi",
+    "titleLines": ["Kendi ürünlerini geliştiren", "uluslararası teknoloji şirketi"],
+    "subtitle": "WeeComi; ticaret, yapay zekâ, finans ve iş yönetimi alanlarında kendi başına çalışan ürünler geliştirir, destekler ve günceller.",
+    "subtitleSecondary": "Uzman mühendislik, sorunsuz geçişler ve yenilikçi dijital çözümlerle işinizi dönüştürün — nerede olursanız olun.",
+    "ctaPrimary": "PROJE BAŞLAT",
+    "ctaSecondary": "ÜRÜNLERİ GÖR",
+    "clientsLabel": "Bağımsız ürün ekosistemimiz",
+    "playLabel": "Tanıtım videosunu oynat"
+  },
   "Ecosystem": {
     "eyebrow": "Ekosistem",
     "bracketTag": "EKOSİSTEM — 03",

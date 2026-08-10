@@ -53,6 +53,16 @@
     "visualCaption": "WeeComi tərəfindən hazırlanan müstəqil rəqəmsal həllər",
     "marqueeLabel": "Müstəqil məhsullar"
   },
+  "Hero2": {
+    "title": "Öz məhsullarını yaradan beynəlxalq texnologiya şirkəti",
+    "titleLines": ["Öz məhsullarını yaradan", "beynəlxalq texnologiya şirkəti"],
+    "subtitle": "WeeComi ticarət, süni intellekt, maliyyə və biznes idarəetməsi sahələrində müstəqil məhsullar hazırlayır, dəstəkləyir və yeniləyir.",
+    "subtitleSecondary": "Ekspert mühəndislik, problemsiz keçidlər və innovativ rəqəmsal həllərlə biznesinizi dönüşdürün — harada olursunuz olun.",
+    "ctaPrimary": "LAYİHƏYƏ BAŞLA",
+    "ctaSecondary": "MƏHSULLARA BAX",
+    "clientsLabel": "Müstəqil məhsul ekosistemimiz",
+    "playLabel": "Tanıtım videosunu oynat"
+  },
   "Ecosystem": {
     "eyebrow": "Ekosistem",
     "bracketTag": "EKOSİSTEM — 03",

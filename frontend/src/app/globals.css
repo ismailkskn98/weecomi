@@ -69,12 +69,10 @@
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 4px);
   --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
-  /* h2–h6, buttons, badges — Cal Sans (Agero); weight 400 only */
-  --font-heading: var(--font-cal-sans), var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
-  /* No JetBrains — mono utility falls back to body stack if ever used */
+  /* Headings / display — Geist; Inter Tight covers Cyrillic / missing glyphs */
+  --font-heading: var(--font-geist), var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
-  /* Page h1 / hero display — Anton */
-  --font-display: var(--font-anton), var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-geist), var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -469,21 +467,6 @@ button {
   .action-btn-arrow {
     transition: none;
   }
-}
-
-/* ka / ru: Cal Sans has no Georgian/Cyrillic — use Inter Tight (+ Noto for Georgian glyphs) */
-.font-georgian {
-  font-family: var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
-  --font-sans: var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
-  --font-heading: var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
-  --font-display: var(--font-anton), var(--font-inter-tight), var(--font-noto-georgian), ui-sans-serif, sans-serif;
-}
-
-.font-cyrillic {
-  font-family: var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
-  --font-sans: var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
-  --font-heading: var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
-  --font-display: var(--font-anton), var(--font-inter-tight), var(--font-noto-sans), ui-sans-serif, sans-serif;
 }
 
 .dark {
