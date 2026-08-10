@@ -17,6 +17,7 @@ export default function ScrollReveal({
   stagger = 0.1,
   duration = 0.55,
   ease = "power2.out",
+  ...props
 }) {
   const scopeRef = useGsap(
     (gsap, ScrollTrigger, root) => {
@@ -44,7 +45,7 @@ export default function ScrollReveal({
   );
 
   return (
-    <Comp ref={scopeRef} id={id} className={className}>
+    <Comp ref={scopeRef} id={id} className={className} {...props}>
       {children}
     </Comp>
   );

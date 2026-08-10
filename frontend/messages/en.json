@@ -563,6 +563,16 @@
       "title": "FROM STRATEGY TO EXECUTION, ONE PANEL"
     }
   },
+  "Testimonials": {
+    "bracketTag": "USER STORIES - 05",
+    "title": "Let real user experiences do the talking",
+    "subtitle": "Short notes selected from approved feedback shared by people inside the WeeComi ecosystem.",
+    "approvedCount": "Approved stories",
+    "privacyNote": "Contact details hidden",
+    "verified": "Approved",
+    "memberLabel": "WeeComi user",
+    "sectionLabel": "WeeComi user testimonials"
+  },
   "Manifesto": {
     "eyebrow": "Who we are",
     "text": "WEECOMI BUILDS INDEPENDENT PRODUCTS, KEEPS EVERY SOLUTION STRONG IN ITS OWN FIELD, AND DELIVERS MODERN TECHNOLOGY THAT HELPS BRANDS GROW DIGITALLY — WITH CONSISTENT QUALITY AND CONTINUOUS IMPROVEMENT."

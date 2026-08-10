@@ -3,7 +3,7 @@ import { getLocale, getTranslations } from "next-intl/server";
 import ActionButton from "@/components/common/actionButton";
 import { marqueeLogos } from "@/data/marqueeLogos";
 import { cn } from "@/lib/utils";
-import HeroReveal from "./hero-reveal";
+import HeroReveal, { HeroRevealItem } from "./hero-reveal";
 import HeroVideo from "./hero-video";
 import IntegrationTicker from "@/components/common/integration-ticker";
 
@@ -34,64 +34,76 @@ export default async function HeroType() {
 
       <div className="relative z-10 mx-auto max-w-[1300px] px-4 md:px-6">
         <div className="relative mx-auto max-w-[1180px]">
-          {FLOATING_LOGOS.map((item) => (
-            <div key={item.alt} data-float-logo className={cn("absolute z-20 hidden size-12 items-center justify-center md:flex lg:size-16", item.className)}>
+          {FLOATING_LOGOS.map((item, index) => (
+            <HeroRevealItem
+              key={item.alt}
+              delay={0.32 + index * 0.09}
+              y={0}
+              scale
+              duration={0.55}
+              className={cn("absolute z-20 hidden size-12 items-center justify-center md:flex lg:size-16", item.className)}
+            >
               <Image src={item.src} alt={item.alt} width={128} height={128} quality={100} className="h-auto w-full object-contain" />
-            </div>
+            </HeroRevealItem>
           ))}
 
           <div className="flex flex-col items-center text-center">
-            <div data-hero-badge className="inline-flex items-center gap-2.5 rounded-full bg-[#2c2c2c] px-3 py-1.5">
-              <span className="text-weecomi-orange" aria-hidden>
-                ★
-              </span>
-              <span className="font-heading text-[13px] font-normal text-white md:text-sm">{t("eyebrow")}</span>
-              <span className="text-weecomi-orange" aria-hidden>
-                ★
-              </span>
-            </div>
-
-            <h1
-              data-hero-title
-              className={cn(
-                "relative z-30 mt-8 max-w-[980px] font-display text-[clamp(2.6rem,6.4vw,6rem)] tracking-[-0.03em] text-weecomi-dark-gray",
-                locale === "ru" || locale === "ka" ? "leading-[0.9]" : "leading-display",
-              )}
-            >
-              {lines.map((line) => (
-                <span key={line} className="block">
-                  {line}
+            <HeroRevealItem delay={0.05} y={32}>
+              <div className="inline-flex items-center gap-2.5 rounded-full bg-[#2c2c2c] px-3 py-1.5">
+                <span className="text-weecomi-orange" aria-hidden>
+                  ★
                 </span>
-              ))}
-            </h1>
+                <span className="font-heading text-[13px] font-normal text-white md:text-sm">{t("eyebrow")}</span>
+                <span className="text-weecomi-orange" aria-hidden>
+                  ★
+                </span>
+              </div>
+            </HeroRevealItem>
 
-            <p data-hero-subtitle className="mx-auto mt-6 max-w-[760px] text-base leading-relaxed text-muted-foreground md:text-xl">
-              {t("subtitle")}
-            </p>
+            <HeroRevealItem delay={0.16} y={52} fade={false} duration={0.75}>
+              <h1
+                className={cn(
+                  "relative z-30 mt-8 max-w-[980px] font-display text-[clamp(2.6rem,6.4vw,6rem)] tracking-[-0.03em] text-weecomi-dark-gray",
+                  locale === "ru" || locale === "ka" ? "leading-[0.9]" : "leading-display",
+                )}
+              >
+                {lines.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </h1>
+            </HeroRevealItem>
 
-            <div data-hero-cta className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
-              <ActionButton href="/contact" variant="inverse" showArrow>
-                {t("ctaPrimary")}
-              </ActionButton>
-              <ActionButton href="/ecosystem" variant="secondary" showArrow>
-                {t("ctaSecondary")}
-              </ActionButton>
-            </div>
+            <HeroRevealItem delay={0.3} y={44}>
+              <p className="mx-auto mt-6 max-w-[760px] text-base leading-relaxed text-muted-foreground md:text-xl">{t("subtitle")}</p>
+            </HeroRevealItem>
 
-            <p data-hero-trust className="mt-5 font-heading text-xs text-muted-foreground">
-              {t("trustLine")}
-            </p>
+            <HeroRevealItem delay={0.42} y={44}>
+              <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
+                <ActionButton href="/contact" variant="inverse" showArrow>
+                  {t("ctaPrimary")}
+                </ActionButton>
+                <ActionButton href="/ecosystem" variant="secondary" showArrow>
+                  {t("ctaSecondary")}
+                </ActionButton>
+              </div>
+            </HeroRevealItem>
+
+            <HeroRevealItem delay={0.52} y={28}>
+              <p className="mt-5 font-heading text-xs text-muted-foreground">{t("trustLine")}</p>
+            </HeroRevealItem>
           </div>
         </div>
 
         <div className="mx-auto mt-6 max-w-[1180px]">
-          <div data-hero-marquee>
+          <HeroRevealItem delay={0.58} opacityOnly>
             <IntegrationTicker logos={marqueeLogos} />
-          </div>
+          </HeroRevealItem>
 
-          <div data-hero-media>
+          <HeroRevealItem delay={0.7} y={64}>
             <HeroVideo playLabel={t("playLabel")} />
-          </div>
+          </HeroRevealItem>
         </div>
       </div>
     </HeroReveal>

@@ -578,6 +578,16 @@
       "title": "STRATEJİDEN İŞLEME, TÜM SÜREÇ TEK PANELDE"
     }
   },
+  "Testimonials": {
+    "bracketTag": "KULLANICI YORUMLARI - 05",
+    "title": "Sözü kullanıcıların gerçek deneyimlerine bırakalım",
+    "subtitle": "WeeComi ekosistemine katılan kullanıcıların paylaştığı onaylı yorumlardan seçilmiş kısa notlar.",
+    "approvedCount": "Onaylı yorum",
+    "privacyNote": "İletişim bilgileri gizli",
+    "verified": "Onaylı",
+    "memberLabel": "WeeComi kullanıcısı",
+    "sectionLabel": "WeeComi kullanıcı yorumları"
+  },
   "Manifesto": {
     "eyebrow": "Kim olduğumuz",
     "text": "WEECOMI; BAĞIMSIZ ÜRÜNLER GELİŞTİRİR, HER ÇÖZÜMÜ KENDİ ALANINDA GÜÇLÜ TUTAR VE MARKALARI DİJİTAL DÜNYADA BÜYÜTMEK İÇİN MODERN TEKNOLOJİ SUNAR — TUTARLI KALİTE VE SÜREKLİ İYİLEŞTİRME İLE."
