@@ -20,7 +20,7 @@ export default function WeezardMedia() {
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_70%_55%_at_55%_35%,rgba(242,140,40,0.18),transparent_70%)]" aria-hidden />
 
       <div className="absolute left-1/2 top-[2%] w-[min(92%,22rem)] -translate-x-1/2 sm:top-0 sm:w-[min(88%,24rem)] md:left-[54%] md:top-[-2%] md:w-[min(96%,26rem)] md:-translate-x-1/2 lg:w-[28rem]">
-        <Image src="/images/products/weezard-phone.png" alt="WeeZard Game app" width={519} height={1024} className="h-auto w-full" sizes="(max-width: 768px) 80vw, 28rem" priority={false} />
+        <Image src="/images/products/weezard-phone.webp" alt="WeeZard Game app" width={519} height={1024} className="h-auto w-full" sizes="(max-width: 768px) 80vw, 28rem" priority={false} />
       </div>
     </div>
   );
