@@ -1,20 +1,52 @@
 import { getTranslations } from "next-intl/server";
-import { ScrollReveal } from "@/components/home/_shared";
+import { BracketTag, ScrollReveal } from "@/components/home/_shared";
+import { TextureOverlay } from "@/components/ui/texture-overlay";
 import Hero2Video from "./hero2-video";
 
 export default async function IntroVideoBand() {
   const t = await getTranslations("Hero2");
 
   return (
-    <ScrollReveal itemSelector="[data-intro-video]" className="relative overflow-hidden bg-white section-y" aria-label={t("videoTitle")}>
-      <div className="gridContainer">
-        <div data-intro-video className="mx-auto max-w-3xl text-center">
-          <p className="font-heading text-sm text-weecomi-orange">{t("videoEyebrow")}</p>
-          <h2 className="mt-3 font-heading text-[clamp(1.75rem,3.5vw,2.75rem)] leading-display text-weecomi-dark-gray">{t("videoTitle")}</h2>
-        </div>
+    <ScrollReveal itemSelector="[data-intro-video]" className="relative overflow-hidden bg-[#f6f7f8] section-y" aria-label={t("videoTitle")}>
+      <div
+        className="pointer-events-none absolute inset-0 z-0"
+        aria-hidden
+        style={{
+          backgroundImage: [
+            "radial-gradient(ellipse 48% 42% at 12% 28%, rgba(111,164,199,0.28), transparent 70%)",
+            "radial-gradient(ellipse 34% 30% at 70% 78%, rgba(198,57,39,0.08), transparent 72%)",
+          ].join(","),
+        }}
+      />
+      <div
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.05]"
+        aria-hidden
+        style={{
+          backgroundImage: "linear-gradient(rgba(13,13,13,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(13,13,13,0.35) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
+        }}
+      />
+      <TextureOverlay texture="noise" tone="dark" opacity={0.04} className="z-0" />
+      <div
+        className="pointer-events-none absolute bottom-[8%] right-[6%] z-0 hidden h-36 w-44 opacity-[0.1] md:block lg:h-44 lg:w-52"
+        aria-hidden
+        style={{
+          backgroundImage: "repeating-linear-gradient(-45deg, rgba(13,13,13,0.55) 0 1px, transparent 1px 10px)",
+        }}
+      />
 
-        <div data-intro-video className="mx-auto mt-8 w-full max-w-5xl md:mt-10">
-          <Hero2Video playLabel={t("playLabel")} />
+      <div className="relative z-10 gridContainer">
+        {/* Hero-like: video + copy bottom-right; stacks on mobile with copy first */}
+        <div className="grid items-end gap-8 md:gap-10 lg:grid-cols-12 lg:gap-12 xl:gap-16">
+          <div data-intro-video className="order-2 relative lg:order-1 lg:col-span-7">
+            <Hero2Video playLabel={t("playLabel")} />
+          </div>
+
+          <div data-intro-video className="order-1 flex flex-col gap-4 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:items-start lg:gap-5 lg:pb-1 lg:text-left">
+            <BracketTag className="text-weecomi-orange">{t("videoEyebrow")}</BracketTag>
+            <h2 className="font-heading text-[clamp(1.75rem,3.2vw,2.65rem)] leading-display tracking-[-0.02em] text-weecomi-dark-gray">{t("videoTitle")}</h2>
+            <p className="text-base leading-relaxed text-weecomi-dark-gray/70 md:text-lg md:leading-7">{t("videoSubtitle")}</p>
+          </div>
         </div>
       </div>
     </ScrollReveal>

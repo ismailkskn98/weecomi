@@ -24,21 +24,21 @@ function MenuToggleButton({ open, onClick }) {
   const prefersReducedMotion = useReducedMotion();
 
   return (
-    <button type="button" className="relative flex h-8 w-8 items-center justify-center md:h-10 md:w-10" onClick={onClick} aria-label="Menu" aria-expanded={open}>
-      <div className="relative h-6 w-6">
+    <button type="button" className="relative flex size-8 items-center justify-center md:size-9" onClick={onClick} aria-label="Menu" aria-expanded={open}>
+      <div className="relative h-4 w-5">
         <motion.span
-          className="absolute left-0 top-1 block h-0.5 w-6 rounded-full bg-white"
-          animate={open ? { rotate: 45, y: 8 } : { rotate: 0, y: 0 }}
+          className="absolute left-0 top-0 block h-0.5 w-5 rounded-full bg-white"
+          animate={open ? { rotate: 45, y: 7 } : { rotate: 0, y: 0 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.25 }}
         />
         <motion.span
-          className="absolute left-0 top-3 block h-0.5 w-6 rounded-full bg-white"
+          className="absolute left-0 top-[7px] block h-0.5 w-5 rounded-full bg-white"
           animate={open ? { opacity: 0 } : { opacity: 1 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.2 }}
         />
         <motion.span
-          className="absolute left-0 top-5 block h-0.5 w-6 rounded-full bg-white"
-          animate={open ? { rotate: -45, y: -8 } : { rotate: 0, y: 0 }}
+          className="absolute left-0 top-3.5 block h-0.5 w-5 rounded-full bg-white"
+          animate={open ? { rotate: -45, y: -7 } : { rotate: 0, y: 0 }}
           transition={{ duration: prefersReducedMotion ? 0 : 0.25 }}
         />
       </div>
@@ -135,17 +135,17 @@ export default function Header() {
   }, [prefersReducedMotion]);
 
   return (
-    <header className={cn("fixed inset-x-0 top-0 z-50 px-4 pt-4 transition-transform duration-300 md:px-6 md:pt-5", hidden ? "-translate-y-[calc(100%+1.25rem)]" : "translate-y-0")}>
+    <header className={cn("fixed inset-x-0 top-0 z-50 pt-4 transition-transform duration-300 md:pt-5", hidden ? "-translate-y-[calc(100%+1.25rem)]" : "translate-y-0")}>
       <div className="mx-auto gridContainer">
-        <div ref={barRef} className="flex items-center justify-between gap-3 rounded-xl bg-[#2c2c2c] px-3 py-2 shadow-[0_20px_50px_-28px_rgba(0,0,0,0.45)] md:px-5 md:py-3">
-          <Link href="/" className="shrink-0 py-1" onClick={closeAll}>
-            <Image src="/logo/OrjinalYatay.png" alt="WeeComi" width={148} height={36} className="h-7 w-auto brightness-0 invert md:h-8" priority />
+        <div ref={barRef} className="flex items-center justify-between gap-2 rounded-xl bg-[#2c2c2c] px-2.5 py-1.5 shadow-[0_20px_50px_-28px_rgba(0,0,0,0.45)] md:gap-3 md:px-3 md:py-2">
+          <Link href="/" className="flex shrink-0 items-center leading-none" onClick={closeAll}>
+            <Image src="/logo/OrjinalYatay.png" alt="WeeComi" width={148} height={36} className="h-6 w-auto brightness-0 invert md:h-7" priority />
           </Link>
 
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-2 md:gap-2.5">
             <Link
               href="/contact"
-              className="group inline-flex h-8.5 items-center rounded-lg bg-weecomi-orange pl-3 pr-2 font-heading text-[13px] font-medium text-white transition hover:bg-weecomi-orange/90 md:h-10 md:pl-4 md:pr-3"
+              className="group inline-flex h-8 items-center rounded-lg bg-weecomi-orange pl-3 pr-2 font-heading text-[13px] font-medium text-white transition hover:bg-weecomi-orange/90 md:h-9 md:pl-3.5 md:pr-2.5"
             >
               <ButtonMotionContent icon={<ArrowRight className="h-4 w-4" strokeWidth={2} aria-hidden />}>{t("ctaStart")}</ButtonMotionContent>
             </Link>

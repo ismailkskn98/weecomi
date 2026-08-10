@@ -63,7 +63,8 @@
     "clientsLabel": "Our independent product ecosystem",
     "playLabel": "Play intro video",
     "videoEyebrow": "Intro",
-    "videoTitle": "Get to know WeeComi"
+    "videoTitle": "Get to know WeeComi",
+    "videoSubtitle": "A short look at our products, team, and the way WeeComi builds."
   },
   "Ecosystem": {
     "eyebrow": "Ecosystem",
