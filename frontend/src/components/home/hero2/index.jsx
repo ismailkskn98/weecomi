@@ -19,7 +19,7 @@ export default async function Hero2() {
   const isDenseLocale = locale === "ru" || locale === "ka";
 
   return (
-    <HeroReveal className="relative flex flex-col overflow-x-hidden bg-[#f6f7f8] pb-[var(--sp-4)] pt-28 md:pt-32 lg:min-h-[100svh] lg:pb-8 lg:pt-[7.25rem] xl:pb-9 xl:pt-[7.75rem] 2xl:pb-[var(--sp-5)] 2xl:pt-[var(--sp-8)]">
+    <HeroReveal className="relative flex flex-col overflow-x-hidden bg-[#f6f7f8] pb-6 pt-28 md:pb-7 md:pt-32 lg:min-h-[100svh] lg:pb-6 lg:pt-[7.25rem] xl:pb-7 xl:pt-[7.75rem] 2xl:pb-8 2xl:pt-[var(--sp-8)]">
       <div
         className="pointer-events-none absolute inset-0 z-0"
         aria-hidden

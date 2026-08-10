@@ -9,7 +9,7 @@ export default async function IntroVideoBand() {
   return (
     <ScrollReveal
       itemSelector="[data-intro-video]"
-      className="relative overflow-hidden bg-[#f6f7f8] py-12 md:py-14 lg:pb-16 lg:pt-14 xl:pb-20 xl:pt-16 2xl:py-[var(--sp-6)]"
+      className="relative overflow-hidden bg-[#f6f7f8] pb-12 pt-8 md:pb-14 md:pt-10 lg:pb-16 lg:pt-10 xl:pb-20 xl:pt-12 2xl:pb-[var(--sp-6)] 2xl:pt-14"
       aria-label={t("videoTitle")}
     >
       <div
