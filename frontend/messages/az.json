@@ -901,7 +901,7 @@
   },
   "ProductShowcase": {
     "eyebrow": "Məhsul vitrini",
-    "bracketTag": "MƏHSUL VİTRİNİ — 04",
+    "bracketTag": "MƏHSUL VİTRİNİ",
     "title": "SEÇİLMİŞ MÜSTƏQİL HƏLLƏR",
     "subtitle": "Fərqli ehtiyaclar üçün ayrı məhsullar. Hər biri öz sahəsində ölçülə bilən nəticə verir.",
     "cta": "BÜTÜN MƏHSULLAR",
@@ -981,12 +981,9 @@
     }
   },
   "Testimonials": {
-    "bracketTag": "İSTİFADƏÇİ RƏYLƏRİ - 05",
+    "bracketTag": "İSTİFADƏÇİ RƏYLƏRİ",
     "title": "Sözü istifadəçilərin real təcrübəsinə verək",
-    "subtitle": "WeeComi ekosisteminə qoşulan istifadəçilərin paylaşdığı təsdiqlənmiş rəylərdən seçilmiş qısa qeydlər.",
-    "approvedCount": "Təsdiqlənmiş rəy",
-    "privacyNote": "Əlaqə məlumatları gizlidir",
-    "verified": "Təsdiqlənib",
+    "subtitle": "WeeComi ekosisteminə qoşulan istifadəçilərin paylaşdığı rəylərdən seçilmiş qısa qeydlər.",
     "memberLabel": "WeeComi istifadəçisi",
     "sectionLabel": "WeeComi istifadəçi rəyləri"
   },

@@ -499,7 +499,7 @@
   },
   "ProductShowcase": {
     "eyebrow": "Ürün vitrini",
-    "bracketTag": "ÜRÜN VİTRİNİ — 04",
+    "bracketTag": "ÜRÜN VİTRİNİ",
     "title": "ÖNE ÇIKAN BAĞIMSIZ ÇÖZÜMLER",
     "subtitle": "Farklı ihtiyaçlar için ayrı ürünler. Her biri kendi alanında ölçülebilir sonuç üretir.",
     "cta": "TÜM ÜRÜNLER",
@@ -579,12 +579,9 @@
     }
   },
   "Testimonials": {
-    "bracketTag": "KULLANICI YORUMLARI - 05",
+    "bracketTag": "KULLANICI YORUMLARI",
     "title": "Sözü kullanıcıların gerçek deneyimlerine bırakalım",
-    "subtitle": "WeeComi ekosistemine katılan kullanıcıların paylaştığı onaylı yorumlardan seçilmiş kısa notlar.",
-    "approvedCount": "Onaylı yorum",
-    "privacyNote": "İletişim bilgileri gizli",
-    "verified": "Onaylı",
+    "subtitle": "WeeComi ekosistemine katılan kullanıcıların paylaştığı yorumlardan seçilmiş kısa notlar.",
     "memberLabel": "WeeComi kullanıcısı",
     "sectionLabel": "WeeComi kullanıcı yorumları"
   },

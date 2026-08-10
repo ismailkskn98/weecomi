@@ -17,6 +17,9 @@ const navItems = [
   { href: "/contact", key: "contact" },
 ];
 
+const HIDE_AFTER_Y = 200;
+const SHOW_AFTER_UP_PX = 300;
+
 function MenuToggleButton({ open, onClick }) {
   const prefersReducedMotion = useReducedMotion();
 
@@ -52,6 +55,7 @@ export default function Header() {
   const [ecoOpen, setEcoOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const lastScrollY = useRef(0);
+  const upDistance = useRef(0);
 
   const panelTransition = prefersReducedMotion ? { duration: 0 } : { duration: 0.28, ease: [0.22, 1, 0.36, 1] };
 
@@ -75,11 +79,27 @@ export default function Header() {
   useEffect(() => {
     const onScroll = () => {
       const currentY = window.scrollY;
-      const isGoingDown = currentY > lastScrollY.current;
-      const shouldHide = currentY > 120 && isGoingDown && !menuOpen;
-
-      setHidden(shouldHide);
+      const delta = currentY - lastScrollY.current;
       lastScrollY.current = currentY;
+
+      if (menuOpen || currentY <= HIDE_AFTER_Y) {
+        upDistance.current = 0;
+        setHidden(false);
+        return;
+      }
+
+      if (delta > 0) {
+        upDistance.current = 0;
+        setHidden(true);
+        return;
+      }
+
+      if (delta < 0) {
+        upDistance.current += -delta;
+        if (upDistance.current >= SHOW_AFTER_UP_PX) {
+          setHidden(false);
+        }
+      }
     };
 
     window.addEventListener("scroll", onScroll, { passive: true });
@@ -104,15 +124,12 @@ export default function Header() {
     const el = barRef.current;
     if (!el || prefersReducedMotion) return undefined;
 
-    const animation = el.animate(
-      [{ transform: "translateY(20px)" }, { transform: "translateY(0)" }],
-      {
-        duration: 500,
-        delay: 40,
-        easing: "cubic-bezier(0.22, 1, 0.36, 1)",
-        fill: "both",
-      },
-    );
+    const animation = el.animate([{ transform: "translateY(20px)" }, { transform: "translateY(0)" }], {
+      duration: 500,
+      delay: 40,
+      easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+      fill: "both",
+    });
 
     return () => animation.cancel();
   }, [prefersReducedMotion]);

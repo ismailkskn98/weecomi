@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CheckCircle2, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import { getLocale, getTranslations } from "next-intl/server";
 import { BracketTag, ScrollReveal } from "@/components/home/_shared";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -77,7 +77,7 @@ function TestimonialAvatar({ testimonial }) {
   );
 }
 
-function TestimonialCard({ testimonial, index, verifiedLabel, memberLabel, className }) {
+function TestimonialCard({ testimonial, index, memberLabel, className }) {
   return (
     <Card
       data-testimonial-card
@@ -87,13 +87,7 @@ function TestimonialCard({ testimonial, index, verifiedLabel, memberLabel, class
       )}
     >
       <CardHeader className="gap-0">
-        <div className="flex items-center justify-between gap-4">
-          <span className="font-heading text-[11px] text-weecomi-orange">{String(index + 1).padStart(2, "0")}</span>
-          <span className="inline-flex items-center gap-1.5 rounded-full border border-weecomi-blue/15 bg-weecomi-blue/[0.06] px-2.5 py-1 font-heading text-[10px] text-weecomi-blue">
-            <CheckCircle2 className="size-3" aria-hidden />
-            {verifiedLabel}
-          </span>
-        </div>
+        <span className="font-heading text-[11px] text-weecomi-orange">{String(index + 1).padStart(2, "0")}</span>
       </CardHeader>
 
       <CardContent className="flex flex-1 flex-col justify-between gap-8">
@@ -134,25 +128,12 @@ export default async function Testimonials() {
       <div className="pointer-events-none absolute inset-0 z-0 bg-[radial-gradient(ellipse_at_16%_8%,rgba(240,159,47,0.18),transparent_38%),radial-gradient(ellipse_at_82%_18%,rgba(111,164,199,0.18),transparent_34%),linear-gradient(180deg,rgba(255,255,255,0.92),rgba(255,255,255,0.55))]" />
 
       <div className="relative z-10 gridContainer">
-        <div data-testimonial-item className="grid gap-8 lg:grid-cols-[minmax(0,0.95fr)_minmax(18rem,0.55fr)] lg:items-end">
-          <div className="max-w-3xl">
-            <BracketTag className="text-weecomi-orange">{t("bracketTag")}</BracketTag>
-            <h2 className="mt-5 max-w-4xl font-heading text-3xl leading-display text-weecomi-dark-gray md:text-5xl lg:text-[3.5rem]">
-              {t("title")}
-            </h2>
-            <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{t("subtitle")}</p>
-          </div>
-
-          <div className="grid grid-cols-2 overflow-hidden rounded-[18px] border border-black/[0.06] bg-white/75 shadow-sm backdrop-blur">
-            <div className="border-r border-black/[0.06] p-5">
-              <p className="font-heading text-3xl leading-none text-weecomi-dark-gray md:text-4xl">{testimonials.length}</p>
-              <p className="mt-2 text-sm leading-snug text-muted-foreground">{t("approvedCount")}</p>
-            </div>
-            <div className="p-5">
-              <p className="font-heading text-3xl leading-none text-weecomi-orange">100%</p>
-              <p className="mt-2 text-sm leading-snug text-muted-foreground">{t("privacyNote")}</p>
-            </div>
-          </div>
+        <div data-testimonial-item className="max-w-3xl">
+          <BracketTag className="text-weecomi-orange">{t("bracketTag")}</BracketTag>
+          <h2 className="mt-5 max-w-4xl font-heading text-3xl leading-display text-weecomi-dark-gray md:text-5xl lg:text-[3.5rem]">
+            {t("title")}
+          </h2>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{t("subtitle")}</p>
         </div>
       </div>
 
@@ -174,7 +155,6 @@ export default async function Testimonials() {
                   key={testimonial.id}
                   testimonial={testimonial}
                   index={rowIndex === 0 ? index : splitIndex + index}
-                  verifiedLabel={t("verified")}
                   memberLabel={t("memberLabel")}
                   className={rowIndex === 1 ? "bg-white/80" : undefined}
                 />

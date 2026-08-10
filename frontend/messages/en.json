@@ -484,7 +484,7 @@
   },
   "ProductShowcase": {
     "eyebrow": "Product showcase",
-    "bracketTag": "PRODUCT SHOWCASE — 04",
+    "bracketTag": "PRODUCT SHOWCASE",
     "title": "FEATURED INDEPENDENT SOLUTIONS",
     "subtitle": "Separate products for different needs. Each delivers measurable results in its own field.",
     "cta": "ALL PRODUCTS",
@@ -564,12 +564,9 @@
     }
   },
   "Testimonials": {
-    "bracketTag": "USER STORIES - 05",
+    "bracketTag": "USER STORIES",
     "title": "Let real user experiences do the talking",
-    "subtitle": "Short notes selected from approved feedback shared by people inside the WeeComi ecosystem.",
-    "approvedCount": "Approved stories",
-    "privacyNote": "Contact details hidden",
-    "verified": "Approved",
+    "subtitle": "Short notes selected from feedback shared by people inside the WeeComi ecosystem.",
     "memberLabel": "WeeComi user",
     "sectionLabel": "WeeComi user testimonials"
   },
