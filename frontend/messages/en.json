@@ -312,6 +312,22 @@
         }
       ]
     },
+    "weezard": {
+      "metrics": [
+        {
+          "value": "9+",
+          "label": "Games"
+        },
+        {
+          "value": "WCP",
+          "label": "Ecosystem"
+        },
+        {
+          "value": "PLAY",
+          "label": "Mobile hub"
+        }
+      ]
+    },
     "pageTitleLines": ["Independent", "technology", "products"],
     "guideEyebrow": "GUIDE",
     "guideTitle": "How to choose a product",
@@ -388,6 +404,11 @@
       "title": "24/7 Digital Asset and Cryptocurrency Exchange",
       "description": "A Turkey-based digital asset platform with mobile apps, fan token trading, advanced security and round-the-clock support.",
       "features": ["24/7 trading infrastructure", "iOS and Android apps", "Two-factor authentication", "Fan token trading", "WeeGold Blockchain infrastructure", "Phone and email support"]
+    },
+    "weezard": {
+      "title": "Play and Earn — WeeCoins Game Hub",
+      "description": "The game layer of the WeeCoins ecosystem — Scratch, Jackpot, Miner and WeeCandy connect fun with WCP accumulation.",
+      "features": ["Scratch and Jackpot", "Miner and Cryptonaut", "WeeCandy", "Referral system", "WeeCoins ecosystem", "Mobile game hub"]
     }
   },
   "Solutions": {
@@ -595,6 +616,27 @@
         }
       ],
       "title": "24/7 CRYPTO EXCHANGE, SPOT TRADING IN ONE VIEW"
+    },
+    "weezard": {
+      "metrics": [
+        {
+          "value": "9+",
+          "label": "Game experiences"
+        },
+        {
+          "value": "WCP",
+          "label": "Ecosystem reward"
+        },
+        {
+          "value": "REF",
+          "label": "Referral system"
+        },
+        {
+          "value": "APP",
+          "label": "Mobile hub"
+        }
+      ],
+      "title": "READY FOR FUN — PLAY, EARN, SHARE"
     }
   },
   "Testimonials": {

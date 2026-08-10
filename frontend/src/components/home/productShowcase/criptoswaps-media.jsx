@@ -15,7 +15,7 @@ export function CriptoSwapsBrand() {
   );
 }
 
-/** Right media column — light trading + order book */
+/** Right media column — stacked chart + order book (fills height, no hollow gaps) */
 export default function CriptoSwapsMedia() {
   return (
     <div className="relative h-full w-full overflow-hidden text-weecomi-dark-gray">
@@ -27,9 +27,9 @@ export default function CriptoSwapsMedia() {
           </span>
         </div>
 
-        <div className="grid min-h-0 flex-1 gap-2 sm:gap-2.5 md:grid-cols-[1.35fr_0.85fr] md:gap-3">
+        <div className="grid min-h-0 flex-1 gap-2 sm:gap-2.5 md:gap-3">
           <CriptoSwapsChartLive />
-          <div className="hidden min-h-0 md:block">
+          <div className="hidden md:block">
             <CriptoSwapsOrderbookLive />
           </div>
         </div>

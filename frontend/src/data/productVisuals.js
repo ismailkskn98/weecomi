@@ -10,4 +10,5 @@ export const productVisuals = {
   weecoins: { logo: "/logos/weecoins.png", accent: "#F09F2F", tint: "#fef6eb" },
   weecoinspremium: { logo: "/logos/weecoins-premium.png", accent: "#0D0D0D", tint: "#f0f0f0" },
   criptoswaps: { logo: "/logos/criptoswaps.png", accent: "#FCD535", tint: "#fff9e6" },
+  weezard: { logo: "/logos/weezard.webp", accent: "#F28C28", tint: "#fff4eb" },
 };

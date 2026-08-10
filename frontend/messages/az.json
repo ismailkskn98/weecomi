@@ -312,6 +312,22 @@
         }
       ]
     },
+    "weezard": {
+      "metrics": [
+        {
+          "value": "9+",
+          "label": "Oyun"
+        },
+        {
+          "value": "WCP",
+          "label": "Ekosistem"
+        },
+        {
+          "value": "PLAY",
+          "label": "Mobil hub"
+        }
+      ]
+    },
     "pageTitleLines": ["Müstəqil", "texnologiya", "məhsulları"],
     "guideEyebrow": "BƏLƏDÇİ",
     "guideTitle": "Məhsulu necə seçmək olar",
@@ -388,6 +404,11 @@
       "title": "24/7 rəqəmsal aktiv və kripto birjası",
       "description": "Mobil tətbiqlər, fan token əməliyyatları və güclü təhlükəsizliklə Türkiyə mərkəzli rəqəmsal aktiv platforması.",
       "features": ["24/7 ticarət infrastrukturu", "iOS və Android tətbiqləri", "İki faktorlu doğrulama", "Fan token əməliyyatları", "WeeGold Blockchain infrastrukturu", "Telefon və e-poçt dəstəyi"]
+    },
+    "weezard": {
+      "title": "Əylənərək qazan — WeeCoins oyun hub-ı",
+      "description": "WeeCoins ekosisteminin oyun təbəqəsi; Scratch, Jackpot, Miner və WeeCandy əyləncəni WCP yığımına bağlayır.",
+      "features": ["Scratch və Jackpot", "Miner və Cryptonaut", "WeeCandy", "Referans sistemi", "WeeCoins ekosistemi", "Mobil oyun hub-ı"]
     }
   },
   "Solutions": {
@@ -1012,6 +1033,27 @@
         }
       ],
       "title": "24/7 KRİPTO BİRJASI, SPOT TİCARƏT BİR EKRANDA"
+    },
+    "weezard": {
+      "metrics": [
+        {
+          "value": "9+",
+          "label": "Oyun təcrübəsi"
+        },
+        {
+          "value": "WCP",
+          "label": "Ekosistem mükafatı"
+        },
+        {
+          "value": "REF",
+          "label": "Referans sistemi"
+        },
+        {
+          "value": "APP",
+          "label": "Mobil hub"
+        }
+      ],
+      "title": "ƏYLƏNCƏYƏ HAZIRSAN — OYNA, YIĞ, PAYLAŞ"
     }
   },
   "Testimonials": {

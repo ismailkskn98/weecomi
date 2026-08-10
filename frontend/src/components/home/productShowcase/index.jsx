@@ -8,6 +8,7 @@ import BlurText from "@/components/ui/blur-text";
 import { HIKARI_HERO_MD } from "@/data/hikariImages";
 import WeecomiBotCard from "./weecomibot";
 import CriptoSwapsCard from "./criptoswaps";
+import WeezardCard from "./weezard";
 import WeemenuCard from "./weemenu";
 import WeecardCard from "./weecard";
 import WeesaleCard from "./weesale";
@@ -19,6 +20,7 @@ export default async function ProductShowcase() {
 
   const weecomibot = products.find((p) => p.id === "weecomibot");
   const criptoswaps = products.find((p) => p.id === "criptoswaps");
+  const weezard = products.find((p) => p.id === "weezard");
   const weemenu = products.find((p) => p.id === "weemenu");
   const weecard = products.find((p) => p.id === "weecard");
   const weesale = products.find((p) => p.id === "weesale");
@@ -60,9 +62,20 @@ export default async function ProductShowcase() {
               />
             ) : null}
 
+            {weezard ? (
+              <WeezardCard
+                index={3}
+                title={t("weezard.title")}
+                description={tProducts("weezard.description")}
+                href={getProductPath(weezard)}
+                disclaimer={tEco("disclaimer")}
+                cursorLabel={cursorLabel}
+              />
+            ) : null}
+
             {weemenu ? (
               <WeemenuCard
-                index={3}
+                index={4}
                 title={t("weemenu.title")}
                 description={tProducts("weemenu.description")}
                 metrics={getProductMetrics(tEco, "weemenu")}
@@ -74,7 +87,7 @@ export default async function ProductShowcase() {
 
             {weecard ? (
               <WeecardCard
-                index={4}
+                index={5}
                 title={t("weecard.title")}
                 description={tProducts("weecard.description")}
                 metrics={getProductMetrics(tEco, "weecard")}
@@ -86,7 +99,7 @@ export default async function ProductShowcase() {
 
             {weesale ? (
               <WeesaleCard
-                index={5}
+                index={6}
                 title={t("weesale.title")}
                 description={tProducts("weesale.description")}
                 metrics={getProductMetrics(tEco, "weesale")}

@@ -38,7 +38,7 @@ export default function StackCampaignCard({
       )}
     >
       {backgroundDiv ? backgroundDiv : null}
-      <div className={cn("relative z-10 flex min-w-0 flex-col justify-between p-7 lg:p-12", contentClassName)}>
+      <div className={cn("relative z-10 flex min-w-0 flex-col justify-between gap-24 lg:gap-36 p-7 lg:p-12", contentClassName)}>
         <div>
           {brand}
           {showIndex ? <p className={cn("font-heading text-[2rem] text-weecomi-orange lg:text-[2.5rem]", brand && "mt-5 lg:mt-6")}>{String(index).padStart(2, "0")}.</p> : null}

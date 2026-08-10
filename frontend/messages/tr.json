@@ -312,6 +312,22 @@
         }
       ]
     },
+    "weezard": {
+      "metrics": [
+        {
+          "value": "9+",
+          "label": "Oyun"
+        },
+        {
+          "value": "WCP",
+          "label": "Ekosistem"
+        },
+        {
+          "value": "PLAY",
+          "label": "Mobil hub"
+        }
+      ]
+    },
     "pageTitleLines": ["Bağımsız", "teknoloji", "ürünleri"],
     "guideEyebrow": "REHBER",
     "guideTitle": "Nasıl ürün seçersiniz",
@@ -388,6 +404,11 @@
       "title": "7/24 Dijital Varlık ve Kripto Para Borsası",
       "description": "Türkiye merkezli; mobil uygulama, fan token işlemleri, gelişmiş güvenlik ve 7/24 destek sunan dijital varlık platformu.",
       "features": ["7/24 işlem altyapısı", "iOS ve Android uygulamaları", "İki faktörlü doğrulama", "Fan token işlemleri", "WeeGold Blockchain altyapısı", "Telefon ve e-posta desteği"]
+    },
+    "weezard": {
+      "title": "Eğlenirken Kazan — WeeCoins Oyun Hub’ı",
+      "description": "WeeCoins ekosisteminin oyun katmanı; Kazı Kazan, Jackpot, Miner ve WeeCandy ile eğlenceyi WCP birikimine bağlar.",
+      "features": ["Kazı Kazan ve Jackpot", "Miner ve Cryptonaut", "WeeCandy", "Referans sistemi", "WeeCoins ekosistemi", "Mobil oyun hub’ı"]
     }
   },
   "Solutions": {
@@ -610,6 +631,27 @@
         }
       ],
       "title": "7/24 KRİPTO BORSA, SPOT İŞLEM TEK EKRANDA"
+    },
+    "weezard": {
+      "metrics": [
+        {
+          "value": "9+",
+          "label": "Oyun deneyimi"
+        },
+        {
+          "value": "WCP",
+          "label": "Ekosistem ödülü"
+        },
+        {
+          "value": "REF",
+          "label": "Referans sistemi"
+        },
+        {
+          "value": "APP",
+          "label": "Mobil hub"
+        }
+      ],
+      "title": "EĞLENCEYE HAZIR MISIN — OYNA, BİRİKTİR, PAYLAŞ"
     }
   },
   "Testimonials": {

@@ -294,6 +294,40 @@ const details = {
       ],
     },
   },
+  weezard: {
+    tr: {
+      longDescription:
+        "WeeZard, WeeCoins ekosistemine dahil eğlence ve kazanç odaklı bir oyun platformudur. Kazı Kazan, Mayın Tarlası, Jackpot, Miner, Çarkıfelek ve WeeCandy gibi oyunlarla kullanıcılar eğlenirken WCP biriktirebilir; referans sistemiyle topluluk büyümesine katkı sağlar.",
+      audience: ["Oyun ve eğlence odaklı kullanıcılar", "WeeCoins ekosistemine katılmak isteyenler", "Pasif birikim senaryoları arayan kullanıcılar", "Referans ile büyüyen topluluklar"],
+      howItWorks: [
+        { title: "Uygulamayı açın", text: "WeeZard hub üzerinden hesabınıza giriş yapın." },
+        { title: "Oyunu seçin", text: "Kazı Kazan, Jackpot, Miner veya WeeCandy gibi oyunlardan birini başlatın." },
+        { title: "Ekosistemde kullanın", text: "Kazandığınız WCP’yi WeeCoins ekosistemindeki diğer ürünlerde değerlendirin." },
+      ],
+      faqs: [
+        { q: "WeeZard nedir?", a: "WeeZard, WeeCoins ekosisteminin bir parçası olan oyun ve eğlence platformudur." },
+        { q: "Hangi oyunlar var?", a: "Kazı Kazan, Mayın Tarlası, Jackpot, Miner, Çarkıfelek, Cryptonaut, WeeCandy, doğum haritası ve burç yorumu gibi deneyimler sunulur." },
+        { q: "Kazanç garantisi var mı?", a: "Hayır. WeeZard yatırım tavsiyesi vermez ve kazanç garantisi sunmaz." },
+        { q: "Mobil uygulaması var mı?", a: "Evet. WeeZard Google Play üzerinden indirilebilir." },
+      ],
+    },
+    en: {
+      longDescription:
+        "WeeZard is a play-and-earn game platform inside the WeeCoins ecosystem. Scratch, Mines, Jackpot, Miner, Wheel and WeeCandy let users play while collecting WCP, with referrals helping the community grow.",
+      audience: ["Play-and-earn users", "People joining the WeeCoins ecosystem", "Users exploring passive accumulation scenarios", "Communities growing via referrals"],
+      howItWorks: [
+        { title: "Open the app", text: "Sign in through the WeeZard hub." },
+        { title: "Pick a game", text: "Start Scratch, Jackpot, Miner, WeeCandy or another hub experience." },
+        { title: "Use in the ecosystem", text: "Put earned WCP to work across other WeeCoins products." },
+      ],
+      faqs: [
+        { q: "What is WeeZard?", a: "WeeZard is a game and entertainment platform that is part of the WeeCoins ecosystem." },
+        { q: "Which games are available?", a: "Scratch, Mines, Jackpot, Miner, Wheel, Cryptonaut, WeeCandy, birth chart and horoscope experiences are offered." },
+        { q: "Is income guaranteed?", a: "No. WeeZard does not provide investment advice or profit guarantees." },
+        { q: "Is there a mobile app?", a: "Yes. WeeZard is available on Google Play." },
+      ],
+    },
+  },
   criptoswaps: {
     tr: {
       longDescription:

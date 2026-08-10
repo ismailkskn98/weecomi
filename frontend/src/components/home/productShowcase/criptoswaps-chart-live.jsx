@@ -22,7 +22,7 @@ function CandleSvg({ candles }) {
   const y = (price) => PAD_Y + ((max - price) / range) * (VIEW_H - PAD_Y * 2);
 
   return (
-    <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className="h-full w-full" aria-hidden>
+    <svg viewBox={`0 0 ${VIEW_W} ${VIEW_H}`} className="h-full w-full" preserveAspectRatio="none" aria-hidden>
       {[0.25, 0.5, 0.75].map((ratio) => (
         <line
           key={ratio}
@@ -56,14 +56,14 @@ function CandleSvg({ candles }) {
   );
 }
 
-/** Light spot chart — hand-drawn OHLC candles + slow price rotate */
+/** Light spot chart — fills available height */
 export default function CriptoSwapsChartLive() {
   const { ref, tick, reduceMotion } = useInViewCycle(4600);
   const preset = PRICE_PRESETS[reduceMotion ? 0 : tick % PRICE_PRESETS.length];
 
   return (
-    <div ref={ref} className="min-w-0 rounded-[14px] border border-black/6 bg-white p-2.5 sm:p-3 md:p-3.5">
-      <div className="flex items-start justify-between gap-2 sm:gap-3">
+    <div ref={ref} className="flex min-h-0 min-w-0 flex-col rounded-[14px] border border-black/6 bg-white p-2.5 sm:p-3 md:p-3.5">
+      <div className="flex shrink-0 items-start justify-between gap-2 sm:gap-3">
         <div className="min-w-0">
           <AnimatePresence mode="wait" initial={false}>
             <motion.p
@@ -90,8 +90,8 @@ export default function CriptoSwapsChartLive() {
         </span>
       </div>
 
-      <div className="mt-2.5 min-w-0 rounded-[10px] border border-black/6 bg-[#fbfcfd] p-1.5 sm:mt-3 sm:p-2 md:p-2.5">
-        <div className="mb-1.5 flex items-center justify-between gap-2 text-[9px] text-zinc-500 sm:mb-2 sm:text-[10px]">
+      <div className="mt-2.5 flex min-h-0 flex-1 flex-col rounded-[10px] border border-black/6 bg-[#fbfcfd] p-1.5 sm:mt-3 sm:p-2 md:p-2.5">
+        <div className="mb-1.5 flex shrink-0 items-center justify-between gap-2 text-[9px] text-zinc-500 sm:mb-2 sm:text-[10px]">
           <div className="flex min-w-0 items-center gap-1.5 overflow-hidden sm:gap-2">
             <span className="truncate rounded-full bg-white px-2 py-0.5 text-zinc-500 shadow-[0_1px_2px_rgba(0,0,0,0.04)] sm:px-2.5 sm:py-1">BTCUSDT</span>
             <span className="shrink-0 rounded-full bg-[#FCD535]/35 px-2 py-0.5 text-weecomi-dark-gray sm:px-2.5 sm:py-1">15m</span>
@@ -102,7 +102,7 @@ export default function CriptoSwapsChartLive() {
           </div>
         </div>
 
-        <div className="h-[128px] overflow-hidden rounded-[8px] border border-black/6 bg-white p-1 sm:h-[148px] sm:p-1.5 md:h-[160px]">
+        <div className="min-h-[128px] flex-1 overflow-hidden rounded-[8px] border border-black/6 bg-white p-1 sm:min-h-[148px] sm:p-1.5 md:min-h-[160px]">
           <CandleSvg candles={CANDLE_DATA} />
         </div>
       </div>

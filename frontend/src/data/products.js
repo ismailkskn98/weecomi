@@ -127,6 +127,17 @@ export const products = [
     showDisclaimer: true,
     relatedIds: ["weecoins", "weecoinspremium", "weecomibot"],
   },
+  {
+    id: "weezard",
+    slug: "weezard",
+    category: "assets",
+    name: "WeeZard",
+    nameCaps: "WEEZARD",
+    url: "http://weezard.org/",
+    comingSoon: false,
+    showDisclaimer: true,
+    relatedIds: ["weecoins", "weecoinspremium", "criptoswaps"],
+  },
 ];
 
 export const solutionAreas = [
@@ -144,7 +155,7 @@ export const solutionAreas = [
   },
   {
     id: "joinEcosystem",
-    productIds: ["weecoins", "weecoinspremium", "criptoswaps"],
+    productIds: ["weecoins", "weecoinspremium", "criptoswaps", "weezard"],
   },
 ];
 
