@@ -7,6 +7,7 @@ import { getProductMetrics } from "@/lib/productMetrics";
 import BlurText from "@/components/ui/blur-text";
 import { HIKARI_HERO_MD } from "@/data/hikariImages";
 import WeecomiBotCard from "./weecomibot";
+import CriptoSwapsCard from "./criptoswaps";
 import WeemenuCard from "./weemenu";
 import WeecardCard from "./weecard";
 import WeesaleCard from "./weesale";
@@ -17,6 +18,7 @@ export default async function ProductShowcase() {
   const tEco = await getTranslations("Ecosystem");
 
   const weecomibot = products.find((p) => p.id === "weecomibot");
+  const criptoswaps = products.find((p) => p.id === "criptoswaps");
   const weemenu = products.find((p) => p.id === "weemenu");
   const weecard = products.find((p) => p.id === "weecard");
   const weesale = products.find((p) => p.id === "weesale");
@@ -47,9 +49,20 @@ export default async function ProductShowcase() {
               />
             ) : null}
 
+            {criptoswaps ? (
+              <CriptoSwapsCard
+                index={2}
+                title={t("criptoswaps.title")}
+                description={tProducts("criptoswaps.description")}
+                href={getProductPath(criptoswaps)}
+                disclaimer={tEco("disclaimer")}
+                cursorLabel={cursorLabel}
+              />
+            ) : null}
+
             {weemenu ? (
               <WeemenuCard
-                index={2}
+                index={3}
                 title={t("weemenu.title")}
                 description={tProducts("weemenu.description")}
                 metrics={getProductMetrics(tEco, "weemenu")}
@@ -61,7 +74,7 @@ export default async function ProductShowcase() {
 
             {weecard ? (
               <WeecardCard
-                index={3}
+                index={4}
                 title={t("weecard.title")}
                 description={tProducts("weecard.description")}
                 metrics={getProductMetrics(tEco, "weecard")}
@@ -73,7 +86,7 @@ export default async function ProductShowcase() {
 
             {weesale ? (
               <WeesaleCard
-                index={4}
+                index={5}
                 title={t("weesale.title")}
                 description={tProducts("weesale.description")}
                 metrics={getProductMetrics(tEco, "weesale")}

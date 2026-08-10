@@ -991,6 +991,27 @@
         }
       ],
       "title": "STRATEGİYADAN İCRAYA — BİR PANEL"
+    },
+    "criptoswaps": {
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Ticarət infrastrukturu"
+        },
+        {
+          "value": "MOBİL",
+          "label": "iOS & Android"
+        },
+        {
+          "value": "2FA",
+          "label": "Təhlükəsizlik"
+        },
+        {
+          "value": "FAN",
+          "label": "Token əməliyyatları"
+        }
+      ],
+      "title": "24/7 KRİPTO BİRJASI, SPOT TİCARƏT BİR EKRANDA"
     }
   },
   "Testimonials": {

@@ -574,6 +574,27 @@
         }
       ],
       "title": "FROM STRATEGY TO EXECUTION, ONE PANEL"
+    },
+    "criptoswaps": {
+      "metrics": [
+        {
+          "value": "24/7",
+          "label": "Trading rails"
+        },
+        {
+          "value": "MOBILE",
+          "label": "iOS & Android"
+        },
+        {
+          "value": "2FA",
+          "label": "Security"
+        },
+        {
+          "value": "FAN",
+          "label": "Token markets"
+        }
+      ],
+      "title": "24/7 CRYPTO EXCHANGE, SPOT TRADING IN ONE VIEW"
     }
   },
   "Testimonials": {

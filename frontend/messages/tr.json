@@ -589,6 +589,27 @@
         }
       ],
       "title": "STRATEJİDEN İŞLEME, TÜM SÜREÇ TEK PANELDE"
+    },
+    "criptoswaps": {
+      "metrics": [
+        {
+          "value": "7/24",
+          "label": "İşlem altyapısı"
+        },
+        {
+          "value": "MOBİL",
+          "label": "iOS & Android"
+        },
+        {
+          "value": "2FA",
+          "label": "Güvenlik"
+        },
+        {
+          "value": "FAN",
+          "label": "Token işlemleri"
+        }
+      ],
+      "title": "7/24 KRİPTO BORSA, SPOT İŞLEM TEK EKRANDA"
     }
   },
   "Testimonials": {
