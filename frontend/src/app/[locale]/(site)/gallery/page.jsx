@@ -1,6 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import PageHero from "@/components/common/page-hero";
-import { buildAgeroTitleRows } from "@/components/common/page-hero-utils";
 import GalleryGrid from "@/components/gallery/galleryGrid";
 
 export async function generateMetadata({ params }) {
@@ -18,12 +17,17 @@ export default async function GalleryPage({ params }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Gallery");
-  const titleLines = t.raw("pageTitleLines");
-  const lines = Array.isArray(titleLines) ? titleLines : [t("title")];
+  const tNav = await getTranslations("Nav");
 
   return (
     <div>
-      <PageHero titleRows={buildAgeroTitleRows(lines)} subtitle={t("subtitle")} />
+      <PageHero
+        title={tNav("gallery")}
+        lead={t("title")}
+        description={t("subtitle")}
+        ctaPrimary={{ href: "/contact", label: tNav("ctaStart") }}
+        ctaSecondary={{ href: "/about", label: tNav("about") }}
+      />
       <section className="bg-white section-y">
         <div className="gridContainer">
           <GalleryGrid />

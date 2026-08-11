@@ -2,7 +2,6 @@ import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import ActionButton from "@/components/common/actionButton";
 import PageHero from "@/components/common/page-hero";
-import { buildAgeroTitleRows } from "@/components/common/page-hero-utils";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import EcosystemProductCard from "@/components/ecosystem/ecosystem-product-card";
 import { getProductMetrics } from "@/lib/productMetrics";
@@ -23,9 +22,8 @@ function getProductFeatures(tProducts, productId) {
 export default async function EcosystemOverview() {
   const t = await getTranslations("Ecosystem");
   const tProducts = await getTranslations("Products");
+  const tNav = await getTranslations("Nav");
 
-  const titleLines = t.raw("pageTitleLines");
-  const lines = Array.isArray(titleLines) ? titleLines : [t("pageTitle")];
   const firstProductByCategory = products.reduce((acc, product) => {
     if (!acc[product.category]) acc[product.category] = product.id;
     return acc;
@@ -33,22 +31,19 @@ export default async function EcosystemOverview() {
 
   return (
     <div className="bg-[#f0f0f0]">
-      <PageHero titleRows={buildAgeroTitleRows(lines)} subtitle={t("pageSubtitle")} />
+      <PageHero
+        title={tNav("ecosystem")}
+        lead={t("pageTitle")}
+        description={t("pageSubtitle")}
+        ctaPrimary={{ href: "/contact", label: tNav("ctaStart") }}
+        ctaSecondary={{ href: "/solutions", label: tNav("solutions") }}
+      />
 
-      <ScrollReveal
-        id="products"
-        itemSelector="[data-eco-product]"
-        className="border-t border-black/8 bg-[#f0f0f0] px-5 pb-20 pt-2 md:px-8 md:pb-28"
-      >
+      <ScrollReveal id="products" itemSelector="[data-eco-product]" className="bg-[#f0f0f0] px-5 pb-20 pt-2 md:px-8 md:pb-28">
         <div className="mx-auto max-w-[1144px]">
           <div className="border-b border-black/10">
             {products.map((product, index) => (
-              <div
-                key={product.id}
-                data-eco-product
-                id={firstProductByCategory[product.category] === product.id ? product.category : undefined}
-                className="scroll-mt-28"
-              >
+              <div key={product.id} data-eco-product id={firstProductByCategory[product.category] === product.id ? product.category : undefined} className="scroll-mt-28">
                 <EcosystemProductCard
                   href={getProductPath(product)}
                   productId={product.id}
@@ -71,9 +66,7 @@ export default async function EcosystemOverview() {
         <div className="mx-auto flex max-w-[1144px] flex-col items-start justify-between gap-8 md:flex-row md:items-end">
           <div className="max-w-xl">
             <p className="font-heading text-sm text-[#5c5c5c]">({t("ctaEyebrow")})</p>
-            <h2 className="mt-3 font-heading text-[clamp(1.6rem,3.2vw,2.4rem)] leading-tight text-[#131313]">
-              {t("ctaTitle")}
-            </h2>
+            <h2 className="mt-3 font-heading text-[clamp(1.6rem,3.2vw,2.4rem)] leading-tight text-[#131313]">{t("ctaTitle")}</h2>
             <p className="mt-3 text-base leading-relaxed text-[#5c5c5c]">{t("ctaSubtitle")}</p>
           </div>
           <ActionButton href="/contact" variant="primary" showArrow className="shrink-0">

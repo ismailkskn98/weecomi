@@ -1,6 +1,5 @@
 import { getTranslations } from "next-intl/server";
 import PageHero from "@/components/common/page-hero";
-import { buildAgeroTitleRows } from "@/components/common/page-hero-utils";
 import { BracketTag } from "@/components/home/_shared";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import { SolutionAreaCard } from "@/components/ecosystem/ecosystem-product-card";
@@ -16,12 +15,17 @@ const AREA_IMAGES = {
 
 export default async function SolutionsOverview() {
   const t = await getTranslations("Solutions");
-  const titleLines = t.raw("pageTitleLines");
-  const lines = Array.isArray(titleLines) ? titleLines : [t("pageTitle")];
+  const tNav = await getTranslations("Nav");
 
   return (
     <div>
-      <PageHero titleRows={buildAgeroTitleRows(lines)} subtitle={t("pageSubtitle")} />
+      <PageHero
+        title={tNav("solutions")}
+        lead={t("pageTitle")}
+        description={t("pageSubtitle")}
+        ctaPrimary={{ href: "/contact", label: tNav("ctaStart") }}
+        ctaSecondary={{ href: "/ecosystem", label: tNav("ecosystem") }}
+      />
 
       <ScrollReveal itemSelector="[data-sol-card]" className="section-y bg-white" y={36} start="top 75%" stagger={0.12} duration={0.6}>
         <div className="gridContainer">

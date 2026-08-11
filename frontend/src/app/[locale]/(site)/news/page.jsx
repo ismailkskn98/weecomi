@@ -1,6 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import PageHero from "@/components/common/page-hero";
-import { buildAgeroTitleRows } from "@/components/common/page-hero-utils";
 import NewsGrid from "@/components/news/newsGrid";
 
 export async function generateMetadata({ params }) {
@@ -13,11 +12,17 @@ export default async function NewsPage({ params }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("News");
-  const lines = t("title").split(/\s+/).filter(Boolean);
+  const tNav = await getTranslations("Nav");
 
   return (
     <div>
-      <PageHero titleRows={buildAgeroTitleRows(lines)} subtitle={t("subtitle")} />
+      <PageHero
+        title={tNav("news")}
+        lead={t("title")}
+        description={t("subtitle")}
+        ctaPrimary={{ href: "/contact", label: tNav("ctaStart") }}
+        ctaSecondary={{ href: "/about", label: tNav("about") }}
+      />
       <section className="section-y-bottom bg-white pt-10 md:pt-12">
         <div className="gridContainer">
           <NewsGrid />

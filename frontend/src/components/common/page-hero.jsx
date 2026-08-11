@@ -1,147 +1,100 @@
-"use client";
-
-import Image from "next/image";
+import { Link } from "@/i18n/navigation";
+import ActionButton from "@/components/common/actionButton";
+import HeroReveal, { HeroRevealItem } from "@/components/home/hero/hero-reveal";
+import { TextureOverlay } from "@/components/ui/texture-overlay";
 import { cn } from "@/lib/utils";
 
 /**
- * Agero Work-Single / Blog-Single style page hero (buttonless).
- * Title helpers live in page-hero-utils.js (shared, server-safe).
+ * Inner-page hero — Hero2 + Figma corporate page rhythm:
+ * large title top-left, lead under title, body + CTAs on the right.
  */
-export default function PageHero({
-  titleRows = [],
-  subtitle,
-  mediaSrc,
-  mediaAlt = "",
-  children,
-  className,
-}) {
-  const rows = normalizeRows(titleRows);
+export default function PageHero({ title, titleLines, lead, subtitle, description, ctaPrimary, ctaSecondary, className, children }) {
+  const lines = normalizeLines(titleLines, title);
+  const body = description || subtitle;
+  const underTitle = lead || (description ? subtitle : null);
+  const showAside = Boolean(body || ctaPrimary || ctaSecondary);
 
   return (
-    <section
-      className={cn(
-        "relative overflow-hidden rounded-b-[32px] bg-[#f0f0f0] px-4 pb-16 pt-36 md:px-6 md:pb-22 md:pt-44",
-        className,
-      )}
-    >
+    <HeroReveal className={cn("relative overflow-x-hidden bg-[#f6f7f8] pb-14 pt-28 md:pb-16 md:pt-32 lg:pb-20 lg:pt-[7.25rem] xl:pb-24 xl:pt-[7.75rem]", className)}>
       <div
-        className={cn(
-          "mx-auto flex w-full max-w-300 flex-col items-center",
-          mediaSrc ? "gap-10 md:gap-13" : "gap-6 md:gap-7",
-        )}
-      >
-        <div className="flex w-full flex-col items-center gap-6 md:gap-7">
-          <h1 className="flex w-full flex-col items-center gap-1 font-display text-[clamp(1.9rem,4.8vw,4.5rem)] leading-[1.08] tracking-[-0.03em] text-[#131313] md:gap-0">
-            {rows.map((row, rowIdx) => (
-              <span
-                key={rowIdx}
-                className="flex flex-wrap items-center justify-center gap-x-2.5 gap-y-2 sm:flex-nowrap sm:gap-x-3.5 md:gap-x-4"
-              >
-                {row.map((seg, segIdx) => {
-                  if (seg.image) {
-                    return (
-                      <InlineHeroImage
-                        key={`img-${rowIdx}-${segIdx}`}
-                        src={seg.image}
-                        alt={seg.alt || ""}
-                        shape={seg.shape || "pill"}
-                        fit={seg.fit || "cover"}
-                        delay={rowIdx * 0.35 + segIdx * 0.15}
-                      />
-                    );
-                  }
-
-                  return (
-                    <span
-                      key={`txt-${rowIdx}-${segIdx}`}
-                      className={cn(
-                        "whitespace-nowrap",
-                        seg.tone === "accent" && "text-weecomi-orange",
-                        seg.tone === "muted" && "text-[#5c5c5c]",
-                      )}
-                    >
-                      {seg.text}
-                    </span>
-                  );
-                })}
-              </span>
-            ))}
-          </h1>
-
-          {subtitle ? (
-            <p className="mx-auto max-w-[36rem] text-center text-[15px] leading-6 text-[#5c5c5c] md:text-base md:leading-7">
-              {subtitle}
-            </p>
-          ) : null}
-        </div>
-
-        {mediaSrc ? (
-          <div className="relative aspect-video w-full max-w-275 overflow-hidden rounded-[24px] bg-[#e8e8e8]">
-            <Image
-              src={mediaSrc}
-              alt={mediaAlt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 1100px) 100vw, 1100px"
-              priority
-            />
-          </div>
-        ) : null}
-
-        {children}
-      </div>
-    </section>
-  );
-}
-
-function InlineHeroImage({ src, alt, shape = "pill", fit = "cover", delay = 0 }) {
-  const isCircle = shape === "circle";
-
-  return (
-    <span
-      className={cn(
-        "page-hero-chip relative inline-block shrink-0 overflow-hidden align-middle will-change-transform",
-        "shadow-[0_1px_2px_rgba(0,0,0,0.08),0_2px_6px_rgba(0,0,0,0.04)]",
-        fit === "contain" && "bg-white",
-        isCircle
-          ? "h-[52px] w-[52px] rounded-full md:h-16 md:w-16"
-          : "h-[52px] w-[66px] rounded-full md:h-16 md:w-[81px]",
-      )}
-      style={{ animationDelay: `${delay}s` }}
-      aria-hidden={alt ? undefined : true}
-    >
-      <Image
-        src={src}
-        alt={alt}
-        fill
-        className={cn(fit === "contain" ? "object-contain p-1.5" : "object-cover")}
-        sizes="96px"
-        priority
+        className="pointer-events-none absolute inset-0 z-0"
+        aria-hidden
+        style={{
+          backgroundImage: [
+            "radial-gradient(ellipse 42% 38% at 38% 42%, rgba(111,164,199,0.45), transparent 70%)",
+            "radial-gradient(ellipse 36% 34% at 52% 48%, rgba(240,159,47,0.28), transparent 68%)",
+            "radial-gradient(ellipse 30% 28% at 64% 40%, rgba(198,57,39,0.14), transparent 70%)",
+            "radial-gradient(ellipse 50% 40% at 48% 55%, rgba(52,108,146,0.12), transparent 72%)",
+          ].join(","),
+        }}
       />
-    </span>
+      <div
+        className="pointer-events-none absolute inset-0 z-0 opacity-[0.07]"
+        aria-hidden
+        style={{
+          backgroundImage: "linear-gradient(rgba(13,13,13,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(13,13,13,0.35) 1px, transparent 1px)",
+          backgroundSize: "80px 80px",
+        }}
+      />
+      <TextureOverlay texture="noise" tone="dark" opacity={0.05} className="z-0" />
+
+      <div className="relative z-10 gridContainer w-full">
+        <div className="flex w-full flex-col gap-10 md:gap-12 lg:gap-14 xl:gap-16">
+          <div className="w-full max-w-[min(100%,74rem)]">
+            <HeroRevealItem delay={0.06} y={36} fade={false} duration={0.7}>
+              <h1 className="font-heading text-[2.35rem] font-normal leading-[1.14] tracking-normal text-weecomi-dark-gray md:text-[3.75rem] lg:text-[4.25rem] xl:text-[5rem] xl:leading-[1.12] 2xl:text-[5.75rem] 2xl:leading-[1.1]">
+                {lines.map((line) => (
+                  <span key={line} className="block">
+                    {line}
+                  </span>
+                ))}
+              </h1>
+            </HeroRevealItem>
+
+            {underTitle ? (
+              <HeroRevealItem delay={0.18} y={24}>
+                <p className="mt-5 max-w-3xl text-sm leading-relaxed text-weecomi-dark-gray/65 md:mt-6 md:text-base md:leading-7 lg:max-w-2xl">{underTitle}</p>
+              </HeroRevealItem>
+            ) : null}
+          </div>
+
+          {showAside ? (
+            <div className="flex w-full flex-col gap-5 md:ml-auto md:max-w-lg md:items-end md:text-right lg:max-w-xl xl:max-w-[34rem]">
+              {body ? (
+                <HeroRevealItem delay={0.28} y={24}>
+                  <p className="text-base leading-relaxed text-weecomi-dark-gray/80 md:text-lg md:leading-7">{body}</p>
+                </HeroRevealItem>
+              ) : null}
+
+              {ctaPrimary || ctaSecondary ? (
+                <HeroRevealItem delay={0.36} y={20} className="flex flex-wrap items-center gap-4 md:justify-end md:gap-5">
+                  {ctaPrimary?.href && ctaPrimary?.label ? (
+                    <ActionButton href={ctaPrimary.href} variant="primary" size="md" showArrow className="min-h-11 px-4 py-2.5 text-[13px] md:px-5 md:py-3 md:text-sm">
+                      {ctaPrimary.label}
+                    </ActionButton>
+                  ) : null}
+                  {ctaSecondary?.href && ctaSecondary?.label ? (
+                    <Link
+                      href={ctaSecondary.href}
+                      className="font-heading text-sm font-normal text-weecomi-dark-gray underline decoration-weecomi-dark-gray/35 underline-offset-4 transition hover:decoration-weecomi-orange hover:text-weecomi-orange md:text-base"
+                    >
+                      {ctaSecondary.label}
+                    </Link>
+                  ) : null}
+                </HeroRevealItem>
+              ) : null}
+            </div>
+          ) : null}
+
+          {children}
+        </div>
+      </div>
+    </HeroReveal>
   );
 }
 
-function normalizeRows(titleRows) {
-  return titleRows.map((row) => {
-    if (typeof row === "string") {
-      return [{ text: row, tone: "default" }];
-    }
-    if (!Array.isArray(row)) {
-      if (row?.image) return [row];
-      if (row?.text) return [{ text: row.text, tone: row.tone || "default" }];
-      return [];
-    }
-    return row
-      .map((seg) => {
-        if (typeof seg === "string") return { text: seg, tone: "default" };
-        if (seg?.type === "thumbnail") {
-          return { image: seg.src, alt: seg.alt, shape: seg.shape || "circle", fit: seg.fit };
-        }
-        if (seg?.type === "accent") return { text: seg.text, tone: "accent" };
-        if (seg?.type === "muted") return { text: seg.text, tone: "muted" };
-        return seg;
-      })
-      .filter(Boolean);
-  });
+function normalizeLines(titleLines, title) {
+  if (Array.isArray(titleLines) && titleLines.length) return titleLines.map(String).filter(Boolean);
+  if (typeof title === "string" && title.trim()) return [title.trim()];
+  return [""];
 }

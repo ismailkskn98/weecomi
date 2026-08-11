@@ -1,6 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import PageHero from "@/components/common/page-hero";
-import { buildAgeroTitleRows } from "@/components/common/page-hero-utils";
 
 const PAGE_KEYS = {
   privacy: "Privacy",
@@ -11,7 +10,7 @@ const PAGE_KEYS = {
 };
 
 /**
- * Legal pages — same Agero hero shell (2 rows + 2 example images).
+ * Legal pages — shared Hero2 / corporate page-hero shell.
  */
 export function makeLegalPage(pageKey) {
   const namespace = PAGE_KEYS[pageKey];
@@ -31,12 +30,18 @@ export function makeLegalPage(pageKey) {
     const { locale } = await params;
     setRequestLocale(locale);
     const t = await getTranslations(namespace);
+    const tNav = await getTranslations("Nav");
     const sections = t.raw("sections") || [];
-    const words = t("title").split(/\s+/).filter(Boolean);
 
     return (
       <div>
-        <PageHero titleRows={buildAgeroTitleRows(words)} subtitle={t("updated")} />
+        <PageHero
+          title={t("title")}
+          lead={t("updated")}
+          description={t("description")}
+          ctaPrimary={{ href: "/contact", label: tNav("contact") }}
+          ctaSecondary={{ href: "/about", label: tNav("about") }}
+        />
 
         <section className="bg-white px-4 pb-16 pt-16 md:px-6 md:pb-28 md:pt-24">
           <div className="mx-auto w-full max-w-[850px]">

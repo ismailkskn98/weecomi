@@ -4,7 +4,6 @@ import { Link } from "@/i18n/navigation";
 import ActionButton from "@/components/common/actionButton";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import PageHero from "@/components/common/page-hero";
-import { PAGE_HERO_IMAGES } from "@/components/common/page-hero-utils";
 import BlurText from "@/components/ui/blur-text";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
 import AboutFaq from "@/components/about/about-faq";
@@ -17,25 +16,19 @@ const STAT_KEYS = ["products", "markets", "languages"];
 
 export default async function AboutContent() {
   const t = await getTranslations("Corporate");
+  const tNav = await getTranslations("Nav");
   const proofRows = t.raw("proofRows");
   const faqItems = t.raw("faq.items");
 
-  // Keep accent/muted tones; still always 2 images like Agero
-  const titleRows = [
-    [
-      { text: t("heroAccent1"), tone: "accent" },
-      { image: PAGE_HERO_IMAGES.a, shape: "pill" },
-      { text: t("heroMuted"), tone: "muted" },
-    ],
-    [
-      { image: PAGE_HERO_IMAGES.b, shape: "circle" },
-      { text: t("heroAccent2"), tone: "accent" },
-    ],
-  ];
-
   return (
     <div>
-      <PageHero titleRows={titleRows} subtitle={t("subtitle")} />
+      <PageHero
+        title={tNav("about")}
+        lead={t("title")}
+        description={t("subtitle")}
+        ctaPrimary={{ href: "/contact", label: tNav("ctaStart") }}
+        ctaSecondary={{ href: "/ecosystem", label: tNav("ecosystem") }}
+      />
 
       {/* Stats — Flexio strip */}
       <ScrollReveal itemSelector="[data-about-stat]" className="py-14 md:py-20">

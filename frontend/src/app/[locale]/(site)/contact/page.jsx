@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import PageHero from "@/components/common/page-hero";
-import { buildAgeroTitleRows } from "@/components/common/page-hero-utils";
 import ContactForm from "@/components/contact/contactForm";
 import BlurText from "@/components/ui/blur-text";
 import { HIKARI_HERO_MD } from "@/data/hikariImages";
@@ -21,12 +20,19 @@ export default async function ContactPage({ params }) {
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("Contact");
+  const tNav = await getTranslations("Nav");
   const titleLines = t.raw("pageTitleLines");
-  const lines = Array.isArray(titleLines) ? titleLines : [t("title")];
+  const lead = Array.isArray(titleLines) ? titleLines.join(" ") : t("title");
 
   return (
     <div>
-      <PageHero titleRows={buildAgeroTitleRows(lines)} subtitle={t("subtitle")} />
+      <PageHero
+        title={tNav("contact")}
+        lead={lead}
+        description={t("subtitle")}
+        ctaPrimary={{ href: "/ecosystem", label: tNav("ecosystem") }}
+        ctaSecondary={{ href: "/about", label: tNav("about") }}
+      />
 
       <section className="bg-white pb-16 pt-10 md:pb-24 md:pt-12">
         <div className="mx-auto grid w-full max-w-[1300px] gap-10 px-4 md:px-6 lg:grid-cols-2 lg:items-start lg:gap-12 xl:gap-16">
