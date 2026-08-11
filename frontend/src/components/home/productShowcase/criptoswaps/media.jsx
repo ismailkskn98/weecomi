@@ -1,6 +1,8 @@
 import Image from "next/image";
 import CriptoSwapsChartLive from "./chart-live";
 import CriptoSwapsOrderbookLive from "./orderbook-live";
+import ShowcaseMediaHeading from "../media-heading";
+import { showcaseMediaPadClassName, showcaseMediaStackClassName } from "../shared";
 
 /** Brand row for left content — exchange identity */
 export function CriptoSwapsBrand() {
@@ -15,19 +17,14 @@ export function CriptoSwapsBrand() {
   );
 }
 
-/** Right media column — stacked chart + order book (fills height, no hollow gaps) */
-export default function CriptoSwapsMedia() {
+/** Right media column — stacked chart + order book */
+export default function CriptoSwapsMedia({ title }) {
   return (
     <div className="relative h-full w-full overflow-hidden text-weecomi-dark-gray">
-      <div className="relative z-20 flex h-full flex-col gap-2 p-3 sm:gap-2.5 sm:p-4 md:p-4 lg:gap-3 lg:p-5">
-        <div className="hidden items-center justify-between gap-3 sm:flex">
-          <p className="font-heading text-base text-weecomi-dark-gray md:text-lg">Trading desk</p>
-          <span className="mr-1 flex size-2 items-center justify-center">
-            <span className="size-2 rounded-full bg-[#FCD535] motion-safe:animate-pulse" />
-          </span>
-        </div>
+      <div className={`relative z-20 flex h-full flex-col ${showcaseMediaStackClassName} ${showcaseMediaPadClassName}`}>
+        {title ? <ShowcaseMediaHeading className="hidden shrink-0 sm:block">{title}</ShowcaseMediaHeading> : null}
 
-        <div className="grid min-h-0 flex-1 gap-2 sm:gap-2.5 md:gap-3">
+        <div className={`grid min-h-0 flex-1 ${showcaseMediaStackClassName}`}>
           <CriptoSwapsChartLive />
           <div className="hidden md:block">
             <CriptoSwapsOrderbookLive />

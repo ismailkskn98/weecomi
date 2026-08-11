@@ -573,7 +573,13 @@
           "label": "Seller tools"
         }
       ],
-      "title": "SECURE COMMERCE, WCP-POWERED SALES AND A GLOBAL SHOWCASE"
+      "title": "SECURE COMMERCE, WCP-POWERED SALES AND A GLOBAL SHOWCASE",
+      "mediaTitle": "Marketplace",
+      "paragraphs": [
+        "A multilingual marketplace for new and second-hand products that combines seller visibility, WCP-enabled sales flows and safer digital commerce.",
+        "Sellers list products quickly while buyers shop through clearer storefronts and secure checkout; referrals help the marketplace grow.",
+        "With multilingual UX and ecosystem-ready payments, WeeSale turns local selling into global visibility."
+      ]
     },
     "weecomibot": {
       "metrics": [
@@ -594,7 +600,8 @@
           "label": "Encrypted API vault"
         }
       ],
-      "title": "FROM STRATEGY TO EXECUTION, ONE PANEL"
+      "title": "FROM STRATEGY TO EXECUTION, ONE PANEL",
+      "mediaTitle": "Trading panel"
     },
     "criptoswaps": {
       "metrics": [
@@ -615,7 +622,8 @@
           "label": "Token markets"
         }
       ],
-      "title": "24/7 CRYPTO EXCHANGE, SPOT TRADING IN ONE VIEW"
+      "title": "24/7 CRYPTO EXCHANGE, SPOT TRADING IN ONE VIEW",
+      "mediaTitle": "Trading desk"
     },
     "weezard": {
       "metrics": [
@@ -636,7 +644,13 @@
           "label": "Mobile hub"
         }
       ],
-      "title": "READY FOR FUN — PLAY, EARN, SHARE"
+      "title": "READY FOR FUN — PLAY, EARN, SHARE",
+      "mediaTitle": "Play",
+      "paragraphs": [
+        "The game layer of the WeeCoins ecosystem — Scratch, Jackpot, Miner and WeeCandy connect fun with WCP accumulation.",
+        "Explore games from one hub, track progress and grow with the referral system.",
+        "Mobile-first play, clear reward loops and ecosystem links turn WeeZard into a lasting entertainment layer."
+      ]
     }
   },
   "Testimonials": {

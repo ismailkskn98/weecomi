@@ -1,5 +1,7 @@
 import Image from "next/image";
 import WeezardPhoneMockup from "./phone-mockup";
+import ShowcaseMediaHeading from "../media-heading";
+import { showcaseMediaPadClassName, showcaseMediaStackClassName } from "../shared";
 
 /** Brand row for left content — WeeZard identity */
 export function WeezardBrand() {
@@ -15,7 +17,7 @@ export function WeezardBrand() {
 }
 
 /** Right media — light phone rises from bottom (centered, clipped mid-frame) */
-export default function WeezardMedia() {
+export default function WeezardMedia({ title }) {
   return (
     <div className="relative h-full min-h-72 w-full overflow-hidden md:min-h-full">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_68%_54%_at_50%_42%,rgba(242,140,40,0.22),transparent_72%)]" aria-hidden />
@@ -28,13 +30,14 @@ export default function WeezardMedia() {
         }}
       />
 
-      <div className="absolute left-4 top-4 z-20 rounded-full border border-black/8 bg-white/75 px-3 py-1 font-heading text-[10px] tracking-[0.14em] text-weecomi-dark-gray/72 backdrop-blur-sm sm:left-5 sm:top-5 md:left-6 md:top-6 lg:left-8 lg:top-8 xl:left-9 xl:top-9 2xl:left-10 2xl:top-10">
-        PLAY
-      </div>
+      <div className={`relative z-20 flex h-full flex-col ${showcaseMediaStackClassName} ${showcaseMediaPadClassName}`}>
+        {title ? <ShowcaseMediaHeading className="relative z-20 hidden shrink-0 sm:block">{title}</ShowcaseMediaHeading> : null}
 
-      {/* Top inset matches left content padding (p-4 → 2xl:p-10); overflows bottom only */}
-      <div className="absolute left-1/2 top-4 z-10 w-[min(88%,22rem)] -translate-x-1/2 sm:top-5 sm:w-[24rem] md:top-6 md:w-[26rem] lg:top-8 lg:w-[28rem] xl:top-9 xl:w-[29rem] 2xl:top-10 2xl:w-[30rem]">
-        <WeezardPhoneMockup />
+        <div className="relative min-h-0 flex-1">
+          <div className="absolute left-1/2 top-0 z-10 w-[min(88%,20rem)] -translate-x-1/2 sm:w-[22rem] md:w-[24rem] lg:w-[26rem] xl:w-[27rem] 2xl:w-[28rem]">
+            <WeezardPhoneMockup />
+          </div>
+        </div>
       </div>
     </div>
   );

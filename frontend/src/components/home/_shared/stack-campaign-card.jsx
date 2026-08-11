@@ -50,12 +50,12 @@ export default function StackCampaignCard({
         {footer ? (
           <div className={cn("mt-6 border-t border-black/[0.06] pt-5 lg:mt-8 lg:pt-6", footerClassName)}>{footer}</div>
         ) : metrics.length > 0 ? (
-          <div className="mt-7 border-t border-black/[0.08] pt-7 lg:mt-13 lg:pt-13">
+          <div className={cn("mt-4 border-t border-black/6 pt-4 md:mt-5 md:pt-5 lg:mt-auto lg:pt-5", footerClassName)}>
             <div className={cn("grid gap-x-4 gap-y-5", metrics.length > 3 ? "grid-cols-2" : "grid-cols-3")}>
               {metrics.map((metric) => (
                 <div key={`${metric.value}-${metric.label}`} className="min-w-0">
-                  <p className="font-heading text-[1.5rem] leading-none text-weecomi-dark-gray lg:text-[2rem]">{metric.value}</p>
-                  <p className="mt-1.5 text-xs leading-snug text-muted-foreground lg:text-sm">{metric.label}</p>
+                  <p className="font-heading text-xl leading-none text-weecomi-dark-gray md:text-2xl lg:text-[1.75rem]">{metric.value}</p>
+                  <p className="mt-1.5 text-xs leading-snug text-muted-foreground md:text-sm">{metric.label}</p>
                 </div>
               ))}
             </div>

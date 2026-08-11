@@ -588,7 +588,13 @@
           "label": "Satıcı araçları"
         }
       ],
-      "title": "GÜVENLİ TİCARET, WCP ODAKLI SATIŞ VE GLOBAL VİTRİN"
+      "title": "GÜVENLİ TİCARET, WCP ODAKLI SATIŞ VE GLOBAL VİTRİN",
+      "mediaTitle": "Marketplace",
+      "paragraphs": [
+        "Sıfır ve ikinci el ürünleri listelemeyi, WCP ile satış akışlarını ve satıcı görünürlüğünü aynı platformda birleştiren çok dilli pazar yeri deneyimi.",
+        "Satıcılar ürünlerini kolayca yayınlar, alıcılar güvenli ödeme ve net vitrin düzeniyle alışveriş eder; referans modeli büyümeyi destekler.",
+        "Çok dilli arayüz ve ekosistem odaklı ödeme katmanı sayesinde WeeSale, yerel satışı global görünürlüğe taşır."
+      ]
     },
     "weecomibot": {
       "metrics": [
@@ -609,7 +615,8 @@
           "label": "Şifreli API kasası"
         }
       ],
-      "title": "STRATEJİDEN İŞLEME, TÜM SÜREÇ TEK PANELDE"
+      "title": "STRATEJİDEN İŞLEME, TÜM SÜREÇ TEK PANELDE",
+      "mediaTitle": "Trading panel"
     },
     "criptoswaps": {
       "metrics": [
@@ -630,7 +637,8 @@
           "label": "Token işlemleri"
         }
       ],
-      "title": "7/24 KRİPTO BORSA, SPOT İŞLEM TEK EKRANDA"
+      "title": "7/24 KRİPTO BORSA, SPOT İŞLEM TEK EKRANDA",
+      "mediaTitle": "Trading desk"
     },
     "weezard": {
       "metrics": [
@@ -651,7 +659,13 @@
           "label": "Mobil hub"
         }
       ],
-      "title": "EĞLENCEYE HAZIR MISIN — OYNA, BİRİKTİR, PAYLAŞ"
+      "title": "EĞLENCEYE HAZIR MISIN — OYNA, BİRİKTİR, PAYLAŞ",
+      "mediaTitle": "Play",
+      "paragraphs": [
+        "WeeCoins ekosisteminin oyun katmanı; Kazı Kazan, Jackpot, Miner ve WeeCandy ile eğlenceyi WCP birikimine bağlar.",
+        "Tek hub üzerinden oyunları keşfedin, skorları takip edin ve referans sistemiyle topluluk büyümesine katkı sağlayın.",
+        "Mobil odaklı deneyim, net ödül döngüsü ve ekosistem bağlantısıyla WeeZard eğlenceyi sürdürülebilir bir oyun katmanına dönüştürür."
+      ]
     }
   },
   "Testimonials": {

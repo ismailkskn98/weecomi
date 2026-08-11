@@ -1,6 +1,8 @@
 import Image from "next/image";
 import WeebotChartLive from "./chart-live";
 import WeebotSummaryLive from "./summary-live";
+import ShowcaseMediaHeading from "../media-heading";
+import { showcaseMediaPadClassName, showcaseMediaStackClassName } from "../shared";
 
 /** Brand row for left content — product identity */
 export function WeebotBrand() {
@@ -16,20 +18,14 @@ export function WeebotBrand() {
 }
 
 /** Right media column — compact trading + summary islands */
-export default function WeebotMedia() {
+export default function WeebotMedia({ title }) {
   return (
     <div className="relative h-full w-full overflow-hidden text-weecomi-dark-gray">
-      <div className="relative z-20 flex h-full flex-col gap-2 p-3 sm:gap-2.5 sm:p-4 md:p-4 lg:gap-3 lg:p-5">
-        <div className="hidden items-center justify-between gap-3 sm:flex">
-          <p className="font-heading text-base text-weecomi-dark-gray md:text-lg">Trading panel</p>
-          <span className="mr-1 flex size-2 items-center justify-center">
-            <span className="size-2 rounded-full bg-[#118a58] motion-safe:animate-pulse" />
-          </span>
-        </div>
+      <div className={`relative z-20 flex h-full flex-col ${showcaseMediaStackClassName} ${showcaseMediaPadClassName}`}>
+        {title ? <ShowcaseMediaHeading className="hidden shrink-0 sm:block">{title}</ShowcaseMediaHeading> : null}
 
-        <div className="grid flex-1 gap-2 sm:gap-2.5 md:gap-3">
+        <div className={`grid min-h-0 flex-1 ${showcaseMediaStackClassName}`}>
           <WeebotChartLive />
-          {/* Summary only when side-by-side — stacked mobile is too tall */}
           <div className="hidden md:block">
             <WeebotSummaryLive />
           </div>

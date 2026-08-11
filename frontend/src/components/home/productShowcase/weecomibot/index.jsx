@@ -2,9 +2,10 @@ import { StackCampaignCard } from "@/components/home/_shared";
 import WeebotMedia, { WeebotBrand } from "./media";
 import WeebotTerminalLive from "./terminal-live";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
+import { showcaseCardClasses } from "../shared";
 
 /** Product showcase card — WeeComi Bot */
-export default function WeecomiBotCard({ index, title, description, href, disclaimer, cursorLabel }) {
+export default function WeecomiBotCard({ index, title, description, href, disclaimer, cursorLabel, mediaTitle }) {
   return (
     <StackCampaignCard
       index={index}
@@ -13,18 +14,18 @@ export default function WeecomiBotCard({ index, title, description, href, discla
       brand={<WeebotBrand />}
       footer={<WeebotTerminalLive />}
       imageAlt="WeeComi Bot"
-      media={<WeebotMedia />}
+      media={<WeebotMedia title={mediaTitle} />}
       href={href}
       disclaimer={disclaimer}
       cursorLabel={cursorLabel}
       cursorLabelClassName="bg-weecomi-dark-gray text-white"
-      gridClassName="md:grid-cols-[0.95fr_1.05fr]"
-      contentClassName="p-4 sm:p-5 md:p-6 lg:p-8"
-      titleClassName="mt-3 text-lg leading-display sm:mt-4 sm:text-xl md:text-2xl lg:mt-5 lg:text-3xl"
-      descriptionClassName="mt-2.5 line-clamp-2 text-sm leading-relaxed sm:mt-3 sm:line-clamp-3 md:line-clamp-3 lg:mt-4 lg:line-clamp-none lg:text-base"
-      disclaimerClassName="mt-3 hidden lg:mt-3.5 lg:block"
-      footerClassName="mt-4 hidden border-t border-black/6 pt-4 md:mt-5 md:block md:pt-5 lg:mt-5 lg:pt-5"
-      mediaClassName="min-h-0"
+      gridClassName={showcaseCardClasses.gridClassName}
+      contentClassName={showcaseCardClasses.contentClassName}
+      titleClassName={showcaseCardClasses.titleClassName}
+      descriptionClassName={showcaseCardClasses.descriptionClassName}
+      disclaimerClassName={showcaseCardClasses.disclaimerClassName}
+      footerClassName={`${showcaseCardClasses.footerClassName} hidden md:block`}
+      mediaClassName={showcaseCardClasses.mediaClassName}
       backgroundDiv={
         <div className="pointer-events-none absolute inset-0 z-0">
           <div className="absolute inset-0 z-0 bg-[linear-gradient(290deg,#5bfcb1_0%,transparent_55%)]" />

@@ -13,8 +13,8 @@ import WeesaleCard from "./weesale";
 const showcaseConfig = [
   { id: "weecomibot", Card: WeecomiBotCard, useMetrics: false, useDisclaimer: true },
   { id: "criptoswaps", Card: CriptoSwapsCard, useMetrics: false, useDisclaimer: true },
-  { id: "weezard", Card: WeezardCard, useMetrics: false, useDisclaimer: true },
-  { id: "weesale", Card: WeesaleCard, useMetrics: true, useDisclaimer: false },
+  { id: "weezard", Card: WeezardCard, useMetrics: false, useDisclaimer: true, useParagraphs: true },
+  { id: "weesale", Card: WeesaleCard, useMetrics: true, useDisclaimer: false, useParagraphs: true },
 ];
 
 export default async function ProductShowcase() {
@@ -26,7 +26,7 @@ export default async function ProductShowcase() {
   const productMap = new Map(products.map((product) => [product.id, product]));
 
   return (
-    <ScrollReveal itemSelector="[data-showcase-item]" className="section-y-top pb-8 md:pb-10">
+    <ScrollReveal itemSelector="[data-showcase-item]" className="section-y-top pb-10 md:pb-12 lg:pb-14">
       <div className="gridContainer">
         <div data-showcase-item className="max-w-3xl">
           <BracketTag>{t("bracketTag")}</BracketTag>
@@ -36,9 +36,9 @@ export default async function ProductShowcase() {
           <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{t("subtitle")}</p>
         </div>
 
-        <div className="mt-10">
-          <StackedSections stackOffset={46} paneGap={false} className="gap-5 -mb-[4.5rem] md:-mb-[6rem] lg:-mb-[7rem]">
-            {showcaseConfig.map(({ id, Card, useMetrics, useDisclaimer }, index) => {
+        <div className="mt-10 md:mt-12 lg:mt-14">
+          <StackedSections stackOffset={52} paneGap={false} className="gap-6 md:gap-7 lg:gap-8 -mb-[4.5rem] md:-mb-[6rem] lg:-mb-[7rem]">
+            {showcaseConfig.map(({ id, Card, useMetrics, useDisclaimer, useParagraphs }, index) => {
               const product = productMap.get(id);
               if (!product) return null;
 
@@ -47,18 +47,20 @@ export default async function ProductShowcase() {
                   key={id}
                   index={index + 1}
                   title={t(`${id}.title`)}
-                  description={tProducts(`${id}.description`)}
+                  description={useParagraphs ? undefined : tProducts(`${id}.description`)}
+                  paragraphs={useParagraphs ? t.raw(`${id}.paragraphs`) : undefined}
                   metrics={useMetrics ? getProductMetrics(tEco, id) : undefined}
                   href={getProductPath(product)}
                   disclaimer={useDisclaimer ? tEco("disclaimer") : undefined}
                   cursorLabel={cursorLabel}
+                  mediaTitle={t(`${id}.mediaTitle`)}
                 />
               );
             })}
           </StackedSections>
         </div>
 
-        <div data-showcase-item className="mt-3 md:mt-4 text-center">
+        <div data-showcase-item className="mt-5 md:mt-6 lg:mt-7 text-center">
           <Link
             href="/ecosystem"
             className="inline-flex h-11 items-center rounded-md border border-white/20 bg-weecomi-dark-gray px-6 font-heading text-sm font-medium text-white transition hover:bg-weecomi-dark-gray/90"

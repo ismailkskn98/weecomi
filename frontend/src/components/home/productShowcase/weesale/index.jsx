@@ -1,9 +1,10 @@
 import { StackCampaignCard } from "@/components/home/_shared";
 import WeesaleMedia, { WeesaleBrand } from "./media";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
+import { showcaseTallCardClasses } from "../shared";
 
 /** Product showcase card — WeeSale */
-export default function WeesaleCard({ index, title, description, metrics, href, cursorLabel }) {
+export default function WeesaleCard({ index, title, paragraphs, metrics, href, cursorLabel, mediaTitle }) {
   return (
     <StackCampaignCard
       index={index}
@@ -12,14 +13,16 @@ export default function WeesaleCard({ index, title, description, metrics, href, 
       brand={<WeesaleBrand />}
       metrics={metrics}
       imageAlt="WeeSale"
-      media={<WeesaleMedia />}
+      media={<WeesaleMedia title={mediaTitle} />}
       href={href}
       cursorLabel={cursorLabel}
       cursorLabelClassName="bg-weecomi-dark-gray text-white"
-      gridClassName="md:grid-cols-[0.94fr_1.06fr]"
-      contentClassName="p-4 sm:p-5 md:p-6 lg:p-8"
-      titleClassName="mt-3 text-lg leading-display sm:mt-4 sm:text-xl md:text-2xl lg:mt-5 lg:text-3xl"
-      descriptionClassName="mt-2.5 line-clamp-3 text-sm leading-relaxed sm:mt-3 md:line-clamp-none lg:mt-4 lg:text-base"
+      gridClassName={showcaseTallCardClasses.gridClassName}
+      contentClassName={showcaseTallCardClasses.contentClassName}
+      titleClassName={showcaseTallCardClasses.titleClassName}
+      descriptionClassName={showcaseTallCardClasses.descriptionClassName}
+      footerClassName={showcaseTallCardClasses.footerClassName}
+      mediaClassName={showcaseTallCardClasses.mediaClassName}
       backgroundDiv={
         <div className="pointer-events-none absolute inset-0 z-0">
           <div className="absolute inset-0 bg-[linear-gradient(290deg,rgba(240,159,47,0.22)_0%,transparent_58%)]" />
@@ -32,7 +35,9 @@ export default function WeesaleCard({ index, title, description, metrics, href, 
         </div>
       }
     >
-      {description}
+      {(paragraphs ?? []).map((paragraph) => (
+        <p key={paragraph}>{paragraph}</p>
+      ))}
     </StackCampaignCard>
   );
 }

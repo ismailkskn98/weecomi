@@ -40,11 +40,20 @@
   "Hero": {
     "eyebrow": "МЕЖДУНАРОДНАЯ ТЕХНОЛОГИЧЕСКАЯ КОМПАНИЯ",
     "title": "Международная технологическая компания, создающая собственные продукты",
-    "titleLines": ["МЕЖДУНАРОДНАЯ", "ТЕХНОЛОГИЧЕСКАЯ КОМПАНИЯ", "СОЗДАЮЩАЯ СВОИ ПРОДУКТЫ"],
+    "titleLines": [
+      "МЕЖДУНАРОДНАЯ",
+      "ТЕХНОЛОГИЧЕСКАЯ КОМПАНИЯ",
+      "СОЗДАЮЩАЯ СВОИ ПРОДУКТЫ"
+    ],
     "titleAccent": "Независимые продукты.",
     "titleSecondary": "Одна технологическая компания.",
     "rotatingPrefix": "Решения для:",
-    "rotatingWords": ["торговли", "ИИ", "финансов", "управления бизнесом"],
+    "rotatingWords": [
+      "торговли",
+      "ИИ",
+      "финансов",
+      "управления бизнесом"
+    ],
     "subtitle": "WeeComi develops, supports and updates independent products across commerce, AI, finance and business management.",
     "ctaPrimary": "НАЧАТЬ ПРОЕКТ",
     "ctaSecondary": "СМОТРЕТЬ ПРОДУКТЫ",
@@ -55,7 +64,10 @@
   },
   "Hero2": {
     "title": "Международная технологическая компания",
-    "titleLines": ["Международная", "технологическая компания"],
+    "titleLines": [
+      "Международная",
+      "технологическая компания"
+    ],
     "subtitle": "WeeComi разрабатывает, поддерживает и обновляет независимые продукты в сферах торговли, ИИ, финансов и управления бизнесом.",
     "subtitleSecondary": "Под корпоративным зонтиком мы создаём, поддерживаем и постоянно обновляем независимые продукты. Каждое решение работает в своей области — WeeComi развивает их по единому корпоративному стандарту.",
     "ctaPrimary": "СМОТРЕТЬ ПРОДУКТЫ",
@@ -70,7 +82,11 @@
     "eyebrow": "Экосистема",
     "bracketTag": "ЭКОСИСТЕМА — 03",
     "title": "НЕЗАВИСИМЫЕ ТЕХНОЛОГИЧЕСКИЕ ПРОДУКТЫ",
-    "titleParts": ["Независимые", "технологические", "продукты"],
+    "titleParts": [
+      "Независимые",
+      "технологические",
+      "продукты"
+    ],
     "subtitle": "Каждое решение работает в своей области — разрабатывается, поддерживается и обновляется WeeComi.",
     "learnMore": "Подробнее",
     "visit": "Перейти к продукту",
@@ -91,14 +107,28 @@
       "badge": "E-commerce",
       "title": "Покупки с доставкой к двери",
       "description": "Потребительский e-commerce опыт с каталогом, акциями и мобильным оформлением заказа.",
-      "searchPhrases": ["Доставка до двери", "Онлайн-акции", "Заказ у местных продавцов"],
-      "tags": ["Онлайн", "Акции", "Доставка"]
+      "searchPhrases": [
+        "Доставка до двери",
+        "Онлайн-акции",
+        "Заказ у местных продавцов"
+      ],
+      "tags": [
+        "Онлайн",
+        "Акции",
+        "Доставка"
+      ]
     },
     "weecoinsCard": {
       "title": "WEECOINS & WEECOINS PREMIUM",
       "description": "Два независимых цифровых актива, работающих в сети WeeGold. Используются в сценариях переводов, платежей и вознаграждений.",
       "ribbonBadge": "CRYPTO",
-      "ribbonItems": ["Peer to Peer", "Decentralized", "Digital Currency", "WeeGold Network", "Blockchain"]
+      "ribbonItems": [
+        "Peer to Peer",
+        "Decentralized",
+        "Digital Currency",
+        "WeeGold Network",
+        "Blockchain"
+      ]
     },
     "weenetwork": {
       "metrics": [
@@ -150,7 +180,11 @@
     },
     "pageEyebrow": "ЭКОСИСТЕМА",
     "pageTitle": "Независимые технологические продукты под одной крышей",
-    "pageTitleLines": ["Независимые", "технологические продукты", "под одной крышей"],
+    "pageTitleLines": [
+      "Независимые",
+      "технологические",
+      "продукты"
+    ],
     "pageSubtitle": "WeeComi создаёт, поддерживает и обновляет независимые цифровые продукты для торговли, ИИ, финансов и управления бизнесом.",
     "heroCta": "Смотреть продукты",
     "introEyebrow": "КАК ЭТО РАБОТАЕТ",
@@ -328,7 +362,6 @@
         }
       ]
     },
-    "pageTitleLines": ["Независимые", "технологические", "продукты"],
     "guideEyebrow": "ГАЙД",
     "guideTitle": "Как выбрать продукт",
     "guideSubtitle": "Короткие ответы, чтобы быстрее найти нужное решение.",
@@ -353,62 +386,133 @@
     "weenetwork": {
       "title": "Платформа цифровой деловой идентичности",
       "description": "Независимый продукт цифровой бизнес-идентичности для присутствия компании в сети.",
-      "features": ["Digital identity", "Business profile", "Shareable links", "Independent product"]
+      "features": [
+        "Digital identity",
+        "Business profile",
+        "Shareable links",
+        "Independent product"
+      ]
     },
     "weemenu": {
       "title": "Превратите меню в цифровой опыт",
       "description": "QR-платформа многоязычного цифрового меню для ресторанов и бизнеса.",
-      "features": ["QR-меню", "Мультиязычность", "Темы", "Мгновенные обновления", "Экспорт PDF", "Роли зала / кухни / курьера", "Realtime WebSocket"]
+      "features": [
+        "QR-меню",
+        "Мультиязычность",
+        "Темы",
+        "Мгновенные обновления",
+        "Экспорт PDF",
+        "Роли зала / кухни / курьера",
+        "Realtime WebSocket"
+      ]
     },
     "weecard": {
       "title": "Ваша профессиональная идентичность в одно касание",
       "description": "Цифровая визитка с QR и NFC.",
-      "features": ["QR и NFC", "Цифровая визитка", "Соцсети", "Темы", "Аналитика"]
+      "features": [
+        "QR и NFC",
+        "Цифровая визитка",
+        "Соцсети",
+        "Темы",
+        "Аналитика"
+      ]
     },
     "weecatalog": {
       "title": "Современный цифровой каталог",
       "description": "Каталог продуктов в разработке.",
-      "features": ["Современный layout", "Витрина", "Ссылки", "Скоро"]
+      "features": [
+        "Современный layout",
+        "Витрина",
+        "Ссылки",
+        "Скоро"
+      ]
     },
     "weekobi": {
       "title": "Управляйте бизнесом из одной панели",
       "description": "Цифровая платформа для малого и среднего бизнеса.",
-      "features": ["Магазины", "Товары", "Операции", "Центральная панель", "Отчеты"]
+      "features": [
+        "Магазины",
+        "Товары",
+        "Операции",
+        "Центральная панель",
+        "Отчеты"
+      ]
     },
     "weesale": {
       "title": "Новый опыт цифровых продаж",
       "description": "E-commerce платформа для продавцов и покупателей.",
-      "features": ["Онлайн-магазины", "Поиск товаров", "Безопасные покупки", "Кампании", "Инструменты продавца"]
+      "features": [
+        "Онлайн-магазины",
+        "Поиск товаров",
+        "Безопасные покупки",
+        "Кампании",
+        "Инструменты продавца"
+      ]
     },
     "alisveriskapida": {
       "title": "Покупки к вашей двери",
       "description": "Удобная e-commerce платформа с win-win возможностями.",
-      "features": ["Онлайн-шопинг", "Кампании", "Мобильный опыт", "Быстрый поиск"]
+      "features": [
+        "Онлайн-шопинг",
+        "Кампании",
+        "Мобильный опыт",
+        "Быстрый поиск"
+      ]
     },
     "weecomibot": {
       "title": "От стратегии до исполнения — одна панель",
       "description": "Алгоритмическая торговая платформа с ИИ-сигналами, backtest и paper trading.",
-      "features": ["ИИ-сигналы", "No-code стратегии", "Backtest", "Paper trading", "Риск-менеджмент", "Автоисполнение"]
+      "features": [
+        "ИИ-сигналы",
+        "No-code стратегии",
+        "Backtest",
+        "Paper trading",
+        "Риск-менеджмент",
+        "Автоисполнение"
+      ]
     },
     "weecoins": {
       "title": "Независимое решение для цифровых активов",
       "description": "Независимый продукт цифровых активов для сценариев переводов и платежей.",
-      "features": ["Цифровой перевод", "Платёжная инфраструктура", "Совместимость с кошельками", "Независимый продукт"]
+      "features": [
+        "Цифровой перевод",
+        "Платёжная инфраструктура",
+        "Совместимость с кошельками",
+        "Независимый продукт"
+      ]
     },
     "weecoinspremium": {
       "title": "Premium цифровой опыт",
       "description": "Независимый premium-слой с расширенными сценариями использования WeeCoins.",
-      "features": ["Premium-доступ", "Расширенные функции", "Управление цифровыми активами"]
+      "features": [
+        "Premium-доступ",
+        "Расширенные функции",
+        "Управление цифровыми активами"
+      ]
     },
     "criptoswaps": {
       "title": "Криптобиржа цифровых активов 24/7",
       "description": "Турецкая платформа цифровых активов с мобильными приложениями, fan token торговлей и продвинутой защитой.",
-      "features": ["Торговля 24/7", "iOS и Android приложения", "Двухфакторная аутентификация", "Fan token торговля", "WeeGold Blockchain", "Поддержка по телефону и email"]
+      "features": [
+        "Торговля 24/7",
+        "iOS и Android приложения",
+        "Двухфакторная аутентификация",
+        "Fan token торговля",
+        "WeeGold Blockchain",
+        "Поддержка по телефону и email"
+      ]
     },
     "weezard": {
       "title": "Играй и зарабатывай — игровой хаб WeeCoins",
       "description": "Игровой слой экосистемы WeeCoins — Scratch, Jackpot, Miner и WeeCandy связывают развлечение с накоплением WCP.",
-      "features": ["Scratch и Jackpot", "Miner и Cryptonaut", "WeeCandy", "Реферальная система", "Экосистема WeeCoins", "Мобильный игровой хаб"]
+      "features": [
+        "Scratch и Jackpot",
+        "Miner и Cryptonaut",
+        "WeeCandy",
+        "Реферальная система",
+        "Экосистема WeeCoins",
+        "Мобильный игровой хаб"
+      ]
     }
   },
   "Solutions": {
@@ -418,12 +522,22 @@
     "digitize": {
       "title": "ОЦИФРУЙТЕ БИЗНЕС",
       "description": "Усильте меню, визитки, каталоги и операции.",
-      "points": ["Digitize menus, cards, and catalogs", "Make operations more visible from one panel", "Speed up customer and team sharing", "Scale with SME-focused management tools"]
+      "points": [
+        "Digitize menus, cards, and catalogs",
+        "Make operations more visible from one panel",
+        "Speed up customer and team sharing",
+        "Scale with SME-focused management tools"
+      ]
     },
     "growSales": {
       "title": "УВЕЛИЧЬТЕ ПРОДАЖИ",
       "description": "Расширяйте каналы продаж через e-commerce.",
-      "points": ["Open sales channels with online store and discovery", "Strengthen doorstep delivery scenarios", "Make commerce faster and measurable", "Expand into new markets carefully"]
+      "points": [
+        "Open sales channels with online store and discovery",
+        "Strengthen doorstep delivery scenarios",
+        "Make commerce faster and measurable",
+        "Expand into new markets carefully"
+      ]
     },
     "automate": {
       "title": "АВТОМАТИЗАЦИЯ С ИИ",
@@ -438,7 +552,12 @@
     "joinEcosystem": {
       "title": "ИЗУЧИТЕ ПРОДУКТЫ ЦИФРОВЫХ АКТИВОВ",
       "description": "Развивайте финансовые и платёжные сценарии с независимыми продуктами цифровых активов.",
-      "points": ["Explore digital asset products independently", "Expand payment and finance scenarios", "Address multi-network and wallet needs", "Choose products with clear risk awareness"]
+      "points": [
+        "Explore digital asset products independently",
+        "Expand payment and finance scenarios",
+        "Address multi-network and wallet needs",
+        "Choose products with clear risk awareness"
+      ]
     },
     "pageEyebrow": "РЕШЕНИЯ",
     "pageTitle": "Решения WeeComi под вашу задачу",
@@ -468,7 +587,11 @@
         "text": "Move to the product site or plan delivery with the team."
       }
     },
-    "pageTitleLines": ["Решения WeeComi", "под вашу", "задачу"],
+    "pageTitleLines": [
+      "Решения WeeComi",
+      "под вашу",
+      "задачу"
+    ],
     "productsCount": "{count} продуктов"
   },
   "Stats": {
@@ -549,7 +672,10 @@
       "team": "Команда",
       "other": "Другое"
     },
-    "pageTitleLines": ["WeeComi", "в кадрах"],
+    "pageTitleLines": [
+      "WeeComi",
+      "в кадрах"
+    ],
     "filterEyebrow": "КАТЕГОРИИ",
     "filterHint": "Фильтруйте события, продукты, офис и команду."
   },
@@ -579,7 +705,16 @@
     "ctaButton": "СВЯЗАТЬСЯ С НАМИ",
     "whyUs": "Почему мы",
     "faqLink": "FAQ",
-    "marqueeTags": ["НЕЗАВИСИМЫЕ ПРОДУКТЫ", "МНОГОЯЗЫЧНОСТЬ", "МЕЖДУНАРОДНЫЙ", "ДЛЯ БИЗНЕСА", "ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ", "ЦИФРОВЫЕ РЕШЕНИЯ", "МАСШТАБИРУЕМОСТЬ", "ОДНА ПЛАТФОРМА"]
+    "marqueeTags": [
+      "НЕЗАВИСИМЫЕ ПРОДУКТЫ",
+      "МНОГОЯЗЫЧНОСТЬ",
+      "МЕЖДУНАРОДНЫЙ",
+      "ДЛЯ БИЗНЕСА",
+      "ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ",
+      "ЦИФРОВЫЕ РЕШЕНИЯ",
+      "МАСШТАБИРУЕМОСТЬ",
+      "ОДНА ПЛАТФОРМА"
+    ]
   },
   "Corporate": {
     "eyebrow": "О НАС",
@@ -632,7 +767,11 @@
     "ecosystemTitle": "Найдите подходящий продукт",
     "ecosystemText": "На странице экосистемы можно изучить все независимые продукты по категориям.",
     "ecosystemCta": "Смотреть экосистему",
-    "pageTitleLines": ["Технологическая", "компания,", "создающая свои продукты"],
+    "pageTitleLines": [
+      "Технологическая",
+      "компания,",
+      "создающая свои продукты"
+    ],
     "meetLabel": "WeeComi",
     "heroPrefix": "Независимые",
     "heroSuffix": "продукты",
@@ -642,8 +781,19 @@
     "circularText": "WEECOMI • НЕЗАВИСИМЫЕ ПРОДУКТЫ • ",
     "ribbonBadge": "NEW",
     "ribbonCta": "Экосистема",
-    "introTags": ["Торговля", "ИИ", "Финансы", "Бизнес", "Международный", "Независимые продукты"],
-    "timeline": ["Дисциплина независимой разработки продуктов", "Многоязычный и многорыночный рост", "Поддержка и обновления корпоративного уровня"],
+    "introTags": [
+      "Торговля",
+      "ИИ",
+      "Финансы",
+      "Бизнес",
+      "Международный",
+      "Независимые продукты"
+    ],
+    "timeline": [
+      "Дисциплина независимой разработки продуктов",
+      "Многоязычный и многорыночный рост",
+      "Поддержка и обновления корпоративного уровня"
+    ],
     "heroAccent1": "Смелые идеи",
     "heroMuted": "Реальный эффект",
     "heroAccent2": "Независимые продукты",
@@ -757,7 +907,11 @@
       "consent": "Необходимо согласие."
     },
     "supportPhone": "+90 (850) 302 0731",
-    "pageTitleLines": ["Давайте", "создадим", "что-то вместе"],
+    "pageTitleLines": [
+      "Давайте",
+      "создадим",
+      "что-то вместе"
+    ],
     "formEyebrow": "СООБЩЕНИЕ",
     "formTitle": "Расскажите о проекте или вопросе",
     "supportLabel": "ЛИНИЯ ПОДДЕРЖКИ",
@@ -990,7 +1144,13 @@
           "label": "Sales"
         }
       ],
-      "title": "НОВЫЙ ОПЫТ ЦИФРОВЫХ ПРОДАЖ"
+      "title": "НОВЫЙ ОПЫТ ЦИФРОВЫХ ПРОДАЖ",
+      "mediaTitle": "Marketplace",
+      "paragraphs": [
+        "Многоязычный маркетплейс для новых и б/у товаров: листинг, продажи через WCP и видимость продавца в одной платформе.",
+        "Продавцы быстро публикуют товары, покупатели совершают покупки через понятную витрину и безопасную оплату; рефералы помогают росту.",
+        "Многоязычный интерфейс и экосистемные платежи помогают WeeSale выводить локальные продажи на глобальную видимость."
+      ]
     },
     "weecomibot": {
       "metrics": [
@@ -1011,7 +1171,8 @@
           "label": "Шифрованный API-сейф"
         }
       ],
-      "title": "ОТ СТРАТЕГИИ ДО ИСПОЛНЕНИЯ — ОДНА ПАНЕЛЬ"
+      "title": "ОТ СТРАТЕГИИ ДО ИСПОЛНЕНИЯ — ОДНА ПАНЕЛЬ",
+      "mediaTitle": "Trading panel"
     },
     "criptoswaps": {
       "metrics": [
@@ -1032,7 +1193,8 @@
           "label": "Токен-рынки"
         }
       ],
-      "title": "КРИПТОБИРЖА 24/7 — СПОТ НА ОДНОМ ЭКРАНЕ"
+      "title": "КРИПТОБИРЖА 24/7 — СПОТ НА ОДНОМ ЭКРАНЕ",
+      "mediaTitle": "Trading desk"
     },
     "weezard": {
       "metrics": [
@@ -1053,7 +1215,13 @@
           "label": "Мобильный хаб"
         }
       ],
-      "title": "ГОТОВ К ВЕСЕЛЬЮ — ИГРАЙ, КОПИ, ДЕЛИСЬ"
+      "title": "ГОТОВ К ВЕСЕЛЬЮ — ИГРАЙ, КОПИ, ДЕЛИСЬ",
+      "mediaTitle": "Play",
+      "paragraphs": [
+        "Игровой слой экосистемы WeeCoins — Scratch, Jackpot, Miner и WeeCandy связывают развлечение с накоплением WCP.",
+        "Открывайте игры в одном хабе, следите за прогрессом и растите вместе с реферальной системой.",
+        "Мобильный опыт, понятные награды и связь с экосистемой делают WeeZard устойчивым развлекательным слоем."
+      ]
     }
   },
   "Testimonials": {
