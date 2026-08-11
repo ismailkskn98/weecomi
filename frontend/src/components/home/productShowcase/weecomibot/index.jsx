@@ -1,6 +1,6 @@
 import { StackCampaignCard } from "@/components/home/_shared";
-import WeebotMedia, { WeebotBrand } from "./weebot-media";
-import WeebotTerminalLive from "./weebot-terminal-live";
+import WeebotMedia, { WeebotBrand } from "./media";
+import WeebotTerminalLive from "./terminal-live";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
 
 /** Product showcase card — WeeComi Bot */

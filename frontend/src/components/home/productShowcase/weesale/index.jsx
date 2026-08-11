@@ -1,5 +1,5 @@
 import { StackCampaignCard } from "@/components/home/_shared";
-import WeesaleMedia, { WeesaleBrand } from "./weesale-media";
+import WeesaleMedia, { WeesaleBrand } from "./media";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
 
 /** Product showcase card — WeeSale */

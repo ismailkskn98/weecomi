@@ -1,6 +1,6 @@
 import Image from "next/image";
-import WeebotChartLive from "./weebot-chart-live";
-import WeebotSummaryLive from "./weebot-summary-live";
+import WeebotChartLive from "./chart-live";
+import WeebotSummaryLive from "./summary-live";
 
 /** Brand row for left content — product identity */
 export function WeebotBrand() {

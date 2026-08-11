@@ -1,6 +1,6 @@
 import { StackCampaignCard } from "@/components/home/_shared";
-import CriptoSwapsMedia, { CriptoSwapsBrand } from "./criptoswaps-media";
-import CriptoSwapsTradesLive from "./criptoswaps-trades-live";
+import CriptoSwapsMedia, { CriptoSwapsBrand } from "./media";
+import CriptoSwapsTradesLive from "./trades-live";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
 
 /** Product showcase card — CriptoSwaps */

@@ -3,8 +3,8 @@
 import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from "recharts";
 import { AnimatePresence, motion } from "motion/react";
 import { ChartContainer } from "@/components/ui/chart";
-import { PRICE_PRESETS, CHART_DATA } from "./weebot-showcase-data";
-import { useInViewCycle } from "./use-in-view-cycle";
+import { PRICE_PRESETS, CHART_DATA } from "./showcase-data";
+import { useInViewCycle } from "../use-in-view-cycle";
 
 const chartConfig = {
   price: {

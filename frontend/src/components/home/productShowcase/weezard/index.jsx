@@ -1,5 +1,5 @@
 import { StackCampaignCard } from "@/components/home/_shared";
-import WeezardMedia, { WeezardBrand } from "./weezard-media";
+import WeezardMedia, { WeezardBrand } from "./media";
 import LogoLoop from "@/components/ui/logo-loop";
 import { weezardMarqueeLogos } from "@/data/weezardMarqueeLogos";
 import { TextureOverlay } from "@/components/ui/texture-overlay";

@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { SUMMARY_PRESETS, STRATEGY_SNAPSHOTS } from "./weebot-showcase-data";
-import { useInViewCycle } from "./use-in-view-cycle";
+import { SUMMARY_PRESETS, STRATEGY_SNAPSHOTS } from "./showcase-data";
+import { useInViewCycle } from "../use-in-view-cycle";
 import { cn } from "@/lib/utils";
 
 /** Summary panel — slow win-rate / strategy PnL rotation while in view */

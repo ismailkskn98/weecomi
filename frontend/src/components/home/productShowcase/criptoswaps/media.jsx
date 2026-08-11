@@ -1,6 +1,6 @@
 import Image from "next/image";
-import CriptoSwapsChartLive from "./criptoswaps-chart-live";
-import CriptoSwapsOrderbookLive from "./criptoswaps-orderbook-live";
+import CriptoSwapsChartLive from "./chart-live";
+import CriptoSwapsOrderbookLive from "./orderbook-live";
 
 /** Brand row for left content — exchange identity */
 export function CriptoSwapsBrand() {

@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { TERMINAL_SNAPSHOTS, DAILY_PNL } from "./weebot-showcase-data";
-import { useInViewCycle } from "./use-in-view-cycle";
+import { TERMINAL_SNAPSHOTS, DAILY_PNL } from "./showcase-data";
+import { useInViewCycle } from "../use-in-view-cycle";
 import { cn } from "@/lib/utils";
 
 /** Paper terminal — slow row PnL/status rotation while in view */

@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { CANDLE_DATA, PRICE_PRESETS } from "./criptoswaps-showcase-data";
-import { useInViewCycle } from "./use-in-view-cycle";
+import { CANDLE_DATA, PRICE_PRESETS } from "./showcase-data";
+import { useInViewCycle } from "../use-in-view-cycle";
 import { cn } from "@/lib/utils";
 
 const VIEW_W = 320;

@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { TRADE_SNAPSHOTS, TICKER_PRESETS } from "./criptoswaps-showcase-data";
-import { useInViewCycle } from "./use-in-view-cycle";
+import { TRADE_SNAPSHOTS, TICKER_PRESETS } from "./showcase-data";
+import { useInViewCycle } from "../use-in-view-cycle";
 import { cn } from "@/lib/utils";
 
 /** Recent trades + ticker strip — light footer (bot terminal style) */

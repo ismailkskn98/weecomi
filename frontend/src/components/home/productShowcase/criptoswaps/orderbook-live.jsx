@@ -1,8 +1,8 @@
 "use client";
 
 import { AnimatePresence, motion } from "motion/react";
-import { ORDERBOOK_SNAPSHOTS } from "./criptoswaps-showcase-data";
-import { useInViewCycle } from "./use-in-view-cycle";
+import { ORDERBOOK_SNAPSHOTS } from "./showcase-data";
+import { useInViewCycle } from "../use-in-view-cycle";
 import { cn } from "@/lib/utils";
 
 function DepthRow({ row, side }) {
