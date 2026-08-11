@@ -644,7 +644,10 @@
     "title": "Let real user experiences do the talking",
     "subtitle": "Short notes selected from feedback shared by people inside the WeeComi ecosystem.",
     "memberLabel": "WeeComi user",
-    "sectionLabel": "WeeComi user testimonials"
+    "sectionLabel": "WeeComi user testimonials",
+    "prev": "Previous testimonial",
+    "next": "Next testimonial",
+    "avatarsLabel": "Jump to a testimonial"
   },
   "Manifesto": {
     "eyebrow": "Who we are",

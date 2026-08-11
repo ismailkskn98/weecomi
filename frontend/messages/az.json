@@ -1061,7 +1061,10 @@
     "title": "Sözü istifadəçilərin real təcrübəsinə verək",
     "subtitle": "WeeComi ekosisteminə qoşulan istifadəçilərin paylaşdığı rəylərdən seçilmiş qısa qeydlər.",
     "memberLabel": "WeeComi istifadəçisi",
-    "sectionLabel": "WeeComi istifadəçi rəyləri"
+    "sectionLabel": "WeeComi istifadəçi rəyləri",
+    "prev": "Əvvəlki rəy",
+    "next": "Növbəti rəy",
+    "avatarsLabel": "Bir rəyə keç"
   },
   "Faq": {
     "eyebrow": "SUALLARINIZIN CAVABLARI",

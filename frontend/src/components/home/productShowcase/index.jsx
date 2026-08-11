@@ -28,7 +28,7 @@ export default async function ProductShowcase() {
   const cursorLabel = t("cursorLabel");
 
   return (
-    <ScrollReveal itemSelector="[data-showcase-item]" className="section-y-top bg-[#f7f8f9] pb-8 md:pb-10">
+    <ScrollReveal itemSelector="[data-showcase-item]" className="section-y-top pb-8 md:pb-10">
       <div className="gridContainer">
         <div data-showcase-item className="max-w-3xl">
           <BracketTag>{t("bracketTag")}</BracketTag>
@@ -112,7 +112,10 @@ export default async function ProductShowcase() {
         </div>
 
         <div data-showcase-item className="mt-6 text-center">
-          <Link href="/ecosystem" className="inline-flex h-11 items-center rounded-md border border-white/20 bg-weecomi-dark-gray px-6 font-heading text-sm font-medium text-white transition hover:bg-weecomi-dark-gray/90">
+          <Link
+            href="/ecosystem"
+            className="inline-flex h-11 items-center rounded-md border border-white/20 bg-weecomi-dark-gray px-6 font-heading text-sm font-medium text-white transition hover:bg-weecomi-dark-gray/90"
+          >
             {t("cta")}
           </Link>
         </div>

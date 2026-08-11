@@ -659,7 +659,10 @@
     "title": "Sözü kullanıcıların gerçek deneyimlerine bırakalım",
     "subtitle": "WeeComi ekosistemine katılan kullanıcıların paylaştığı yorumlardan seçilmiş kısa notlar.",
     "memberLabel": "WeeComi kullanıcısı",
-    "sectionLabel": "WeeComi kullanıcı yorumları"
+    "sectionLabel": "WeeComi kullanıcı yorumları",
+    "prev": "Önceki yorum",
+    "next": "Sonraki yorum",
+    "avatarsLabel": "Bir yoruma git"
   },
   "Manifesto": {
     "eyebrow": "Kim olduğumuz",
