@@ -1,205 +1,146 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from "embla-carousel-autoplay";
-import { ArrowLeft, ArrowRight } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { cn } from "@/lib/utils";
+import { Dialog, DialogContent, DialogDescription, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import TestimonialAvatar from "./testimonial-avatar";
-import TestimonialCard from "./testimonial-card";
 
-const AUTOPLAY_MS = 5200;
+const COLUMN_COUNT = 3;
+const ROTATION_DELAYS = [4800, 5600, 6400];
 
-export default function TestimonialsCarousel({ testimonials, memberLabel, labels }) {
+function distributeTestimonials(items, columns) {
+  const lanes = Array.from({ length: columns }, () => []);
+  items.forEach((item, index) => {
+    lanes[index % columns].push(item);
+  });
+  return lanes.filter((lane) => lane.length > 0);
+}
+
+function RotatingColumn({ items, memberLabel, labels, delay, hiddenOnMobile = false }) {
   const reduceMotion = useReducedMotion();
-  const avatarStripRef = useRef(null);
-  const [selectedIndex, setSelectedIndex] = useState(0);
-
-  const autoplay = useMemo(
-    () =>
-      Autoplay({
-        delay: AUTOPLAY_MS,
-        stopOnInteraction: false,
-        stopOnMouseEnter: true,
-        stopOnFocusIn: true,
-      }),
-    [],
-  );
-
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    {
-      loop: true,
-      align: "center",
-      dragFree: false,
-      containScroll: false,
-      skipSnaps: false,
-      duration: reduceMotion ? 10 : 28,
-    },
-    reduceMotion ? [] : [autoplay],
-  );
-
-  const syncState = useCallback(() => {
-    if (!emblaApi) return;
-    setSelectedIndex(emblaApi.selectedScrollSnap());
-  }, [emblaApi]);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [hasOverflow, setHasOverflow] = useState(false);
+  const textRef = useRef(null);
 
   useEffect(() => {
-    if (!emblaApi) return undefined;
-    syncState();
-    emblaApi.on("select", syncState);
-    emblaApi.on("reInit", syncState);
-    return () => {
-      emblaApi.off("select", syncState);
-      emblaApi.off("reInit", syncState);
-    };
-  }, [emblaApi, syncState]);
+    if (reduceMotion || items.length < 2) return undefined;
+    const timer = window.setInterval(() => {
+      setActiveIndex((current) => (current + 1) % items.length);
+    }, delay);
+
+    return () => window.clearInterval(timer);
+  }, [delay, items.length, reduceMotion]);
 
   useEffect(() => {
-    if (!emblaApi || reduceMotion) return undefined;
+    setIsExpanded(false);
+  }, [activeIndex]);
 
-    const media = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const syncMotionPreference = () => {
-      if (media.matches) emblaApi.plugins()?.autoplay?.stop();
-      else emblaApi.plugins()?.autoplay?.play();
-    };
+  const active = items[activeIndex];
 
-    syncMotionPreference();
-    media.addEventListener("change", syncMotionPreference);
-    return () => media.removeEventListener("change", syncMotionPreference);
-  }, [emblaApi, reduceMotion]);
+  const activeBody = active?.body;
+  const activeExcerpt = active?.excerpt;
 
   useEffect(() => {
-    const strip = avatarStripRef.current;
-    if (!strip) return;
-    const activeButton = strip.querySelector(`[data-avatar-index="${selectedIndex}"]`);
-    if (!activeButton) return;
-    activeButton.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", inline: "center", block: "nearest" });
-  }, [selectedIndex, reduceMotion]);
+    const node = textRef.current;
+    if (!node || !active) return;
+    setHasOverflow(node.scrollHeight - node.clientHeight > 8 || active.excerpt !== active.body);
+  }, [active, activeBody, activeExcerpt]);
 
-  const scrollPrev = useCallback(() => emblaApi?.scrollPrev(), [emblaApi]);
-  const scrollNext = useCallback(() => emblaApi?.scrollNext(), [emblaApi]);
-  const scrollTo = useCallback((index) => emblaApi?.scrollTo(index), [emblaApi]);
+  if (!active) return null;
 
-  const onPointerEnter = useCallback(() => {
-    emblaApi?.plugins()?.autoplay?.stop();
-  }, [emblaApi]);
-
-  const onPointerLeave = useCallback(() => {
-    if (reduceMotion) return;
-    emblaApi?.plugins()?.autoplay?.play();
-  }, [emblaApi, reduceMotion]);
-
-  if (!testimonials?.length) return null;
-
-  const progress = ((selectedIndex + 1) / testimonials.length) * 100;
-  const active = testimonials[selectedIndex];
+  const meta = active.contactLabel && active.contactValue ? `${active.contactLabel}: ${active.contactValue}` : memberLabel;
 
   return (
-    <div className="relative" onPointerEnter={onPointerEnter} onPointerLeave={onPointerLeave} aria-roledescription="carousel" aria-label={labels.carousel}>
-      <div className="relative">
-
-        <div className="overflow-hidden" ref={emblaRef}>
-          <div className="-ml-3 flex touch-pan-y md:-ml-4 lg:-ml-5">
-            {testimonials.map((testimonial, index) => {
-              const isActive = index === selectedIndex;
-              const featured = index % 4 === 1;
-
-              return (
-                <div key={testimonial.id} className="min-w-0 shrink-0 grow-0 basis-[78%] pl-3 sm:basis-[48%] md:basis-[35%] md:pl-4 lg:basis-[28%] lg:pl-5 xl:basis-[24%]">
-                  <div className={cn("h-full transition-[transform,opacity] duration-500 ease-out", isActive ? "scale-100 opacity-100" : "scale-[0.965] opacity-60 md:opacity-68")}>
-                    <TestimonialCard testimonial={testimonial} index={index} memberLabel={memberLabel} featured={featured} />
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <div className="gridContainer mt-6 md:mt-8">
-        <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between md:gap-8">
-          <div className="min-w-0 flex-1">
-            <AnimatePresence mode="wait" initial={false}>
-              <motion.div
-                key={active?.id}
-                initial={reduceMotion ? false : { opacity: 0, y: 8 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={reduceMotion ? undefined : { opacity: 0, y: -6 }}
-                transition={{ duration: 0.28, ease: [0.22, 1, 0.36, 1] }}
-                className="flex items-center gap-3"
-              >
-                <TestimonialAvatar name={active.name} image={active.image} size="sm" />
-                <div className="min-w-0">
-                  <p className="truncate font-heading text-sm text-weecomi-dark-gray md:text-base">{active.name}</p>
-                  <div className="mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-muted-foreground md:text-sm">
-                    <span>
-                      {selectedIndex + 1} / {testimonials.length}
-                    </span>
-                    {active.joinedAt ? <span>{active.joinedAt}</span> : null}
-                    {active.contactLabel && active.contactValue ? (
-                      <span className="truncate">
-                        {active.contactLabel}: {active.contactValue}
-                      </span>
-                    ) : null}
-                  </div>
-                </div>
-              </motion.div>
-            </AnimatePresence>
-          </div>
-
-          <div className="flex items-center gap-3 md:gap-4">
-            <div className="hidden h-px w-24 overflow-hidden rounded-full bg-black/10 sm:block md:w-32" aria-hidden>
-              <div className="h-full rounded-full bg-weecomi-orange transition-[width] duration-500 ease-out" style={{ width: `${progress}%` }} />
-            </div>
-
-            <div className="flex items-center gap-2">
-              <button
-                type="button"
-                onClick={scrollPrev}
-                aria-label={labels.prev}
-                className="inline-flex size-10 items-center justify-center rounded-xl border border-black/10 bg-white text-weecomi-dark-gray transition hover:border-weecomi-dark-gray/25 hover:bg-weecomi-dark-gray hover:text-white md:size-11"
-              >
-                <ArrowLeft className="size-4" aria-hidden />
-              </button>
-              <button
-                type="button"
-                onClick={scrollNext}
-                aria-label={labels.next}
-                className="inline-flex size-10 items-center justify-center rounded-xl border border-black/10 bg-white text-weecomi-dark-gray transition hover:border-weecomi-dark-gray/25 hover:bg-weecomi-dark-gray hover:text-white md:size-11"
-              >
-                <ArrowRight className="size-4" aria-hidden />
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          ref={avatarStripRef}
-          className="mt-5 flex gap-2 overflow-x-auto pb-1 [scrollbar-width:none] md:mt-6 md:justify-center md:gap-2.5 [&::-webkit-scrollbar]:hidden"
-          role="tablist"
-          aria-label={labels.avatars}
+    <article
+      className={[
+        "relative min-h-[19rem] overflow-hidden px-4 py-7 text-center md:h-[29rem] md:px-5 md:py-8",
+        hiddenOnMobile ? "hidden md:block" : "block",
+      ].join(" ")}
+    >
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.div
+          key={active.id}
+          initial={reduceMotion ? false : { opacity: 0, y: 10 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={reduceMotion ? undefined : { opacity: 0, y: -10 }}
+          transition={{ duration: 0.42, ease: [0.22, 1, 0.36, 1] }}
+          className="flex h-full flex-col items-center md:items-start md:text-left"
         >
-          {testimonials.map((testimonial, index) => {
-            const isActive = index === selectedIndex;
-            return (
-              <button
-                key={testimonial.id}
-                type="button"
-                role="tab"
-                aria-selected={isActive}
-                aria-label={testimonial.name}
-                data-avatar-index={index}
-                onClick={() => scrollTo(index)}
-                className={cn(
-                  "shrink-0 rounded-full transition-[transform,opacity,filter] duration-300 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-weecomi-orange/50",
-                  isActive ? "scale-110 opacity-100" : "opacity-45 grayscale hover:opacity-75 hover:grayscale-0",
-                )}
-              >
-                <TestimonialAvatar name={testimonial.name} image={testimonial.image} size="sm" muted={!isActive} />
-              </button>
-            );
-          })}
+          <div className="mb-5 flex min-h-8 items-center justify-center md:justify-start">
+            <span className="font-heading text-[10px] tracking-[0.16em] text-weecomi-orange/78">{active.joinedAt || memberLabel}</span>
+          </div>
+
+          <blockquote className="relative mx-auto flex min-h-0 w-full max-w-[15.25rem] flex-1 flex-col pt-5 md:mx-0 md:max-w-[16.75rem] md:pt-6">
+            <span
+              aria-hidden
+              className="pointer-events-none absolute left-0 top-0 font-heading text-[2.3rem] leading-none text-weecomi-orange/18 md:text-[2.8rem] md:text-weecomi-orange/20"
+            >
+              “
+            </span>
+            <div
+              ref={textRef}
+              className="mt-2 flex-1 overflow-hidden md:mt-3"
+              style={{
+                maskImage: "linear-gradient(to bottom, black 0%, black 82%, transparent 100%)",
+                WebkitMaskImage: "linear-gradient(to bottom, black 0%, black 82%, transparent 100%)",
+              }}
+            >
+              <p className="text-pretty text-[0.95rem] leading-[1.78] text-weecomi-dark-gray/76 md:text-[1rem] md:leading-[1.82]">{active.excerpt}</p>
+            </div>
+          </blockquote>
+
+          {hasOverflow ? (
+            <Dialog open={isExpanded} onOpenChange={setIsExpanded}>
+              <DialogTrigger className="mt-4 self-center font-heading text-[10px] uppercase tracking-[0.14em] text-weecomi-orange transition hover:text-weecomi-dark-gray md:self-start">
+                {labels.readMore}
+              </DialogTrigger>
+              <DialogContent className="max-w-[min(42rem,calc(100%-2rem))] rounded-[1.5rem] p-6 sm:p-7">
+                <DialogTitle className="pr-8 text-lg text-weecomi-dark-gray">{active.name}</DialogTitle>
+                <DialogDescription className="mt-1 text-sm text-muted-foreground">{meta}</DialogDescription>
+                <div className="mt-5 border-t border-black/6 pt-5">
+                  <p className="text-[0.98rem] leading-8 text-weecomi-dark-gray/82">{active.body}</p>
+                </div>
+              </DialogContent>
+            </Dialog>
+          ) : (
+            <div className="mt-4 h-[15px]" aria-hidden />
+          )}
+
+          <footer className="mt-auto flex w-full items-center gap-2.5 border-t border-black/6 pt-4 md:max-w-[16.75rem]">
+            <TestimonialAvatar name={active.name} image={active.image} size="sm" />
+            <div className="min-w-0">
+              <p className="truncate font-heading text-sm text-weecomi-dark-gray">{active.name}</p>
+              <p className="truncate text-xs text-muted-foreground">{meta}</p>
+            </div>
+          </footer>
+        </motion.div>
+      </AnimatePresence>
+    </article>
+  );
+}
+
+export default function TestimonialsCarousel({ testimonials, memberLabel, labels }) {
+  const columns = distributeTestimonials(testimonials, COLUMN_COUNT);
+
+  if (!columns.length) return null;
+
+  return (
+    <div className="relative" aria-roledescription="carousel" aria-label={labels.carousel}>
+      <div className="gridContainer">
+        <div className="w-full border-y border-black/7">
+          <div className="grid md:grid-cols-3 md:divide-x md:divide-black/7">
+            {columns.map((items, index) => (
+              <RotatingColumn
+                key={`lane-${index}`}
+                items={items}
+                memberLabel={memberLabel}
+                labels={labels}
+                delay={ROTATION_DELAYS[index] || ROTATION_DELAYS[ROTATION_DELAYS.length - 1]}
+                hiddenOnMobile={index > 0}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

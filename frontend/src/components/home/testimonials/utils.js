@@ -19,6 +19,18 @@ export function getInitials(name) {
   return `${parts[0][0] || ""}${parts[1][0] || ""}`.toUpperCase();
 }
 
+export function createExcerpt(value, maxLength = 340) {
+  const normalized = normalizeText(value);
+  if (normalized.length <= maxLength) return normalized;
+
+  const sliced = normalized.slice(0, maxLength);
+  const lastSentence = Math.max(sliced.lastIndexOf("."), sliced.lastIndexOf("!"), sliced.lastIndexOf("?"));
+  const lastSpace = sliced.lastIndexOf(" ");
+  const cutIndex = lastSentence > maxLength * 0.65 ? lastSentence + 1 : lastSpace;
+
+  return `${sliced.slice(0, Math.max(cutIndex, maxLength * 0.7)).trim()}...`;
+}
+
 function getContactTypeLabel(type) {
   if (type === "instagram") return "Instagram";
   if (type === "phone") return "Phone";
@@ -53,6 +65,7 @@ export function getApprovedTestimonials(source, locale) {
       name: getDisplayName(item),
       image: item.image || null,
       body: normalizeText(item.body),
+      excerpt: createExcerpt(item.body),
       language: item.language || "",
       joinedAt: formatJoinedDate(item.created_at),
       contactLabel: getContactTypeLabel(item.contact_type),

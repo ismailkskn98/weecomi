@@ -13,7 +13,7 @@ export default async function Testimonials() {
   if (!testimonials.length) return null;
 
   return (
-    <ScrollReveal id="testimonials" itemSelector="[data-testimonial-item]" className="relative overflow-hidden section-y" aria-label={t("sectionLabel")}>
+    <ScrollReveal id="testimonials" itemSelector="[data-testimonial-item]" className="relative overflow-hidden section-y-top" aria-label={t("sectionLabel")}>
       <div
         className="pointer-events-none absolute inset-0 z-0 opacity-[0.055]"
         aria-hidden
@@ -28,14 +28,14 @@ export default async function Testimonials() {
       <TextureOverlay texture="noise" tone="dark" opacity={0.05} className="z-0" />
 
       <div className="relative z-10 gridContainer">
-        <div data-testimonial-item className="max-w-3xl">
+        <div data-testimonial-item className="max-w-[42rem]">
           <BracketTag className="text-weecomi-orange">{t("bracketTag")}</BracketTag>
-          <h2 className="mt-5 max-w-4xl font-heading text-3xl leading-display text-weecomi-dark-gray md:text-5xl lg:text-[3.5rem]">{t("title")}</h2>
-          <p className="mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{t("subtitle")}</p>
+          <h2 className="mt-4 max-w-4xl font-heading text-3xl leading-display text-weecomi-dark-gray md:text-[3.4rem] lg:text-[3.85rem]">{t("title")}</h2>
+          <p className="mt-4 max-w-[34rem] text-base leading-relaxed text-muted-foreground md:text-[1.02rem]">{t("subtitle")}</p>
         </div>
       </div>
 
-      <div data-testimonial-item className="relative z-10 mt-12 md:mt-14">
+      <div data-testimonial-item className="relative z-10 mt-10 md:mt-12">
         <TestimonialsCarousel
           testimonials={testimonials}
           memberLabel={t("memberLabel")}
@@ -44,6 +44,7 @@ export default async function Testimonials() {
             prev: t("prev"),
             next: t("next"),
             avatars: t("avatarsLabel"),
+            readMore: t("readMore"),
           }}
         />
       </div>

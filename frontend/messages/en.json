@@ -376,9 +376,9 @@
       "features": ["Store management", "Product management", "Operations tracking", "Central panel", "Reporting"]
     },
     "weesale": {
-      "title": "A New Sales Experience for Digital Commerce",
-      "description": "An e-commerce platform that connects sellers and buyers with easier discovery and sales flows.",
-      "features": ["Online stores", "Product discovery", "Secure shopping", "Campaign tools", "Seller solutions"]
+      "title": "A Secure Commerce Layer for the WeeCoins Ecosystem",
+      "description": "A multilingual marketplace for new and second-hand products that combines seller visibility, WCP-enabled sales flows and safer digital commerce.",
+      "features": ["New and second-hand products", "WCP sales flow", "Secure shopping", "Referral income model", "Multilingual marketplace"]
     },
     "alisveriskapida": {
       "title": "Shopping Experience Delivered to Your Door",
@@ -561,19 +561,19 @@
     "weesale": {
       "metrics": [
         {
-          "value": "B2C",
-          "label": "Commerce"
+          "value": "WCP",
+          "label": "Ecosystem payments"
         },
         {
-          "value": "∞",
-          "label": "Showcase"
+          "value": "GLOBAL",
+          "label": "Multilingual market"
         },
         {
-          "value": "24/7",
-          "label": "Sales"
+          "value": "SELLER",
+          "label": "Seller tools"
         }
       ],
-      "title": "A NEW SALES EXPERIENCE FOR DIGITAL COMMERCE"
+      "title": "SECURE COMMERCE, WCP-POWERED SALES AND A GLOBAL SHOWCASE"
     },
     "weecomibot": {
       "metrics": [
@@ -647,7 +647,8 @@
     "sectionLabel": "WeeComi user testimonials",
     "prev": "Previous testimonial",
     "next": "Next testimonial",
-    "avatarsLabel": "Jump to a testimonial"
+    "avatarsLabel": "Jump to a testimonial",
+    "readMore": "Read more"
   },
   "Manifesto": {
     "eyebrow": "Who we are",

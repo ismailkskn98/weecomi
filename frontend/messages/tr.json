@@ -376,9 +376,9 @@
       "features": ["Mağaza yönetimi", "Ürün yönetimi", "Operasyon takibi", "Merkezi panel", "Raporlama altyapısı"]
     },
     "weesale": {
-      "title": "Dijital Ticaret İçin Yeni Bir Satış Deneyimi",
-      "description": "Satıcılarla müşterileri bir araya getiren, ürün keşfi ve dijital satış süreçlerini kolaylaştıran e-ticaret platformu.",
-      "features": ["Online mağazalar", "Ürün keşfi", "Güvenli alışveriş", "Kampanya altyapısı", "Satıcı çözümleri"]
+      "title": "WeeCoins Ekosistemi İçin Güvenli E-Ticaret Katmanı",
+      "description": "Sıfır ve ikinci el ürünleri listelemeyi, WCP ile satış akışlarını ve satıcı görünürlüğünü aynı platformda birleştiren çok dilli pazar yeri deneyimi.",
+      "features": ["Sıfır ve ikinci el ürünler", "WCP ile satış akışı", "Güvenli alışveriş", "Referans gelir modeli", "Çok dilli pazar yeri"]
     },
     "alisveriskapida": {
       "title": "Kapınıza Gelen Alışveriş Deneyimi",
@@ -576,19 +576,19 @@
     "weesale": {
       "metrics": [
         {
-          "value": "B2C",
-          "label": "Ticaret"
+          "value": "WCP",
+          "label": "Ekosistem ödemesi"
         },
         {
-          "value": "∞",
-          "label": "Vitrin"
+          "value": "GLOBAL",
+          "label": "Çok dilli pazar"
         },
         {
-          "value": "24/7",
-          "label": "Satış"
+          "value": "SELLER",
+          "label": "Satıcı araçları"
         }
       ],
-      "title": "DİJİTAL TİCARET İÇİN YENİ BİR SATIŞ DENEYİMİ"
+      "title": "GÜVENLİ TİCARET, WCP ODAKLI SATIŞ VE GLOBAL VİTRİN"
     },
     "weecomibot": {
       "metrics": [
@@ -662,7 +662,8 @@
     "sectionLabel": "WeeComi kullanıcı yorumları",
     "prev": "Önceki yorum",
     "next": "Sonraki yorum",
-    "avatarsLabel": "Bir yoruma git"
+    "avatarsLabel": "Bir yoruma git",
+    "readMore": "Devamını oku"
   },
   "Manifesto": {
     "eyebrow": "Kim olduğumuz",
