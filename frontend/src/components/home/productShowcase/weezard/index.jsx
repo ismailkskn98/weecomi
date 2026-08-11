@@ -30,7 +30,7 @@ export default function WeezardCard({ index, title, description, href, disclaime
       cursorLabel={cursorLabel}
       cursorLabelClassName="bg-weecomi-dark-gray text-[#F28C28]"
       gridClassName="md:grid-cols-[0.95fr_1.05fr]"
-      contentClassName="p-4 sm:p-5 md:p-6 lg:p-8"
+      contentClassName="p-4 sm:p-5 md:p-6 lg:p-8 xl:p-9 2xl:p-10"
       titleClassName="mt-3 text-lg leading-display sm:mt-4 sm:text-xl md:text-2xl lg:mt-5 lg:text-3xl"
       descriptionClassName="mt-2.5 line-clamp-2 text-sm leading-relaxed sm:mt-3 sm:line-clamp-3 md:line-clamp-3 lg:mt-4 lg:line-clamp-none lg:text-base"
       disclaimerClassName="mt-3 hidden lg:mt-3.5 lg:block"

@@ -28,12 +28,12 @@ export default function WeezardMedia() {
         }}
       />
 
-      <div className="absolute left-4 top-4 z-20 rounded-full border border-black/8 bg-white/75 px-3 py-1 font-heading text-[10px] tracking-[0.14em] text-weecomi-dark-gray/72 backdrop-blur-sm sm:left-5 sm:top-5">
+      <div className="absolute left-4 top-4 z-20 rounded-full border border-black/8 bg-white/75 px-3 py-1 font-heading text-[10px] tracking-[0.14em] text-weecomi-dark-gray/72 backdrop-blur-sm sm:left-5 sm:top-5 md:left-6 md:top-6 lg:left-8 lg:top-8 xl:left-9 xl:top-9 2xl:left-10 2xl:top-10">
         PLAY
       </div>
 
-      {/* Large phone — top half visible, overflows bottom only */}
-      <div className="absolute left-1/2 top-[10%] z-10 w-[22rem] -translate-x-1/2 sm:top-[8%] sm:w-[24rem] md:top-[6%] md:w-[26rem] lg:top-[4%] lg:w-[28rem] xl:w-[30rem]">
+      {/* Top inset matches left content padding (p-4 → 2xl:p-10); overflows bottom only */}
+      <div className="absolute left-1/2 top-4 z-10 w-[min(88%,22rem)] -translate-x-1/2 sm:top-5 sm:w-[24rem] md:top-6 md:w-[26rem] lg:top-8 lg:w-[28rem] xl:top-9 xl:w-[29rem] 2xl:top-10 2xl:w-[30rem]">
         <WeezardPhoneMockup />
       </div>
     </div>
