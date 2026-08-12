@@ -34,7 +34,7 @@ export default function WeezardMedia({ title }) {
         {title ? <ShowcaseMediaHeading className="relative z-20 hidden shrink-0 sm:block">{title}</ShowcaseMediaHeading> : null}
 
         <div className="relative min-h-0 flex-1">
-          <div className="absolute left-1/2 top-0 z-10 w-[min(88%,20rem)] -translate-x-1/2 sm:w-[22rem] md:w-[24rem] lg:w-[26rem] xl:w-[27rem] 2xl:w-[28rem]">
+          <div className="absolute left-1/2 top-0 z-10 w-[min(78%,17rem)] -translate-x-1/2 sm:w-[19rem] md:w-[21rem] lg:w-[23rem] xl:w-[24rem] 2xl:w-[25rem]">
             <WeezardPhoneMockup />
           </div>
         </div>

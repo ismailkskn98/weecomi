@@ -11,14 +11,14 @@ export const showcaseCardClasses = {
   mediaClassName: "min-h-72 sm:min-h-80 md:min-h-0",
 };
 
-/** WeeZard / WeeSale — more copy + taller media + wider content↔footer gap */
+/** WeeZard / WeeSale — longer copy, but compact on mobile */
 export const showcaseTallCardClasses = {
   ...showcaseCardClasses,
-  contentClassName: "gap-28 p-4 sm:p-5 md:gap-32 md:p-6 lg:gap-40 lg:p-8 xl:gap-44 xl:p-9 2xl:gap-48 2xl:p-10",
+  contentClassName: "gap-7 p-4 sm:gap-8 sm:p-5 md:gap-10 md:p-6 lg:gap-20 lg:p-8 xl:gap-24 xl:p-9 2xl:gap-28 2xl:p-10",
   descriptionClassName:
-    "mt-2.5 space-y-2.5 text-sm leading-relaxed text-muted-foreground sm:mt-3 sm:space-y-3 lg:mt-4 lg:space-y-3.5 lg:text-base",
-  footerClassName: "mt-8 border-t border-black/6 pt-5 md:mt-10 md:pt-6 lg:mt-auto lg:pt-6 xl:pt-7",
-  mediaClassName: "min-h-80 sm:min-h-96 md:min-h-[30rem] lg:min-h-[34rem] xl:min-h-[36rem] 2xl:min-h-[38rem]",
+    "mt-2.5 space-y-2 text-sm leading-relaxed text-muted-foreground sm:mt-3 sm:space-y-2.5 md:space-y-3 lg:mt-4 lg:text-base",
+  footerClassName: "mt-5 border-t border-black/6 pt-4 sm:mt-6 md:mt-7 md:pt-5 lg:mt-auto lg:pt-6 xl:pt-7",
+  mediaClassName: "min-h-[22rem] sm:min-h-[24rem] md:min-h-[28rem] lg:min-h-[30rem] xl:min-h-[32rem] 2xl:min-h-[34rem]",
 };
 
 /** Same inset as left content column */

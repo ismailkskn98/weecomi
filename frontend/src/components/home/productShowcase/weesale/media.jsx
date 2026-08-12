@@ -27,7 +27,7 @@ export default function WeesaleMedia({ title }) {
         {title ? <ShowcaseMediaHeading className="relative z-20 hidden shrink-0 sm:block">{title}</ShowcaseMediaHeading> : null}
 
         <div className="relative min-h-0 flex-1">
-          <div className="absolute left-0 top-1 z-10 w-[23rem] sm:top-1.5 sm:w-[29rem] md:w-[38rem] lg:w-[46rem] xl:w-[50rem] 2xl:w-[54rem]">
+          <div className="absolute left-1/2 top-1 z-10 w-[calc(100%-1rem)] -translate-x-1/2 sm:top-1.5 sm:w-[26rem] md:left-0 md:w-[34rem] md:translate-x-0 lg:w-[40rem] xl:w-[44rem] 2xl:w-[48rem]">
             <div className="overflow-hidden rounded-[1.2rem] border border-black/10 bg-white shadow-[0_28px_80px_rgba(13,13,13,0.16)]">
               <Image
                 src="/images/weesale.jpg"

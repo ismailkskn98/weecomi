@@ -49,8 +49,10 @@ export default function WeezardCard({ index, title, paragraphs, href, disclaimer
         </div>
       }
     >
-      {(paragraphs ?? []).map((paragraph) => (
-        <p key={paragraph}>{paragraph}</p>
+      {(paragraphs ?? []).map((paragraph, paragraphIndex, allParagraphs) => (
+        <p key={paragraph} className={paragraphIndex === allParagraphs.length - 1 ? "hidden md:block" : undefined}>
+          {paragraph}
+        </p>
       ))}
     </StackCampaignCard>
   );
