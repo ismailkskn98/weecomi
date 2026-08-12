@@ -7,11 +7,11 @@ import { cn } from "@/lib/utils";
 
 function FaqItem({ item, open, onToggle, reduceMotion }) {
   return (
-    <div className="border-b border-black/15">
-      <button type="button" onClick={onToggle} aria-expanded={open} className="flex w-full cursor-pointer items-start justify-between gap-4 py-6 text-left md:gap-8 md:py-7">
-        <span className="min-w-0 flex-1 font-heading text-[clamp(1.35rem,3.2vw,2.25rem)] leading-display text-weecomi-dark-gray">{item.q}</span>
-        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center text-weecomi-dark-gray">
-          <Plus className={cn("h-7 w-7", !reduceMotion && "transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]", open && "rotate-45")} strokeWidth={1.75} aria-hidden />
+    <div className="border-b border-black/10">
+      <button type="button" onClick={onToggle} aria-expanded={open} className="flex w-full cursor-pointer items-start justify-between gap-4 py-5 text-left sm:py-6 md:gap-6">
+        <span className="min-w-0 flex-1 font-heading text-lg leading-snug text-weecomi-dark-gray sm:text-xl md:text-2xl lg:text-[1.65rem]">{item.q}</span>
+        <span className="mt-0.5 flex size-7 shrink-0 items-center justify-center text-weecomi-dark-gray md:size-8">
+          <Plus className={cn("size-5 md:size-6", !reduceMotion && "transition-transform duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]", open && "rotate-45")} strokeWidth={1.75} aria-hidden />
         </span>
       </button>
 
@@ -19,7 +19,7 @@ function FaqItem({ item, open, onToggle, reduceMotion }) {
         <div className="overflow-hidden">
           <p
             className={cn(
-              "max-w-5xl pb-6 text-base leading-relaxed text-muted-foreground md:pb-7 md:text-lg",
+              "max-w-3xl pb-5 text-sm leading-relaxed text-muted-foreground sm:text-base md:pb-6 md:text-[17px]",
               !reduceMotion && "transition-opacity duration-300 ease-[cubic-bezier(0.22,1,0.36,1)]",
               open ? "opacity-100" : "opacity-0",
             )}
@@ -39,7 +39,7 @@ export default function FaqAccordion({ items }) {
   const faqItems = Array.isArray(items) ? items : [];
 
   return (
-    <div className="mx-auto mt-14 w-full max-w-5xl">
+    <div className="mx-auto w-full max-w-4xl border-t border-black/10">
       {faqItems.map((item, index) => (
         <FaqItem key={item.q} item={item} open={openIndex === index} onToggle={() => setOpenIndex((current) => (current === index ? null : index))} reduceMotion={reduceMotion} />
       ))}

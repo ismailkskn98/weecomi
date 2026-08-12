@@ -85,7 +85,7 @@ export default function CriptoSwapsChartLive() {
           </div>
         </div>
         <span className="flex shrink-0 items-center gap-1.5 rounded-full border border-black/8 bg-[#f5f7fa] px-2 py-0.5 text-[9px] uppercase tracking-[0.1em] text-zinc-500 sm:px-2.5 sm:py-1 sm:text-[10px]">
-          <span className="size-1.5 rounded-full bg-[#FCD535] motion-safe:animate-pulse" />
+          <span className="size-1.5 rounded-full bg-[#FCD535] md:motion-safe:animate-pulse" />
           Live
         </span>
       </div>

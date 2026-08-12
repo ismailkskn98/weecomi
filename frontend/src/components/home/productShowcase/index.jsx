@@ -37,7 +37,7 @@ export default async function ProductShowcase() {
         </div>
 
         <div className="mt-10 md:mt-12 lg:mt-14">
-          <StackedSections stackOffset={52} paneGap={false} className="gap-6 md:gap-7 lg:gap-8 -mb-[4.5rem] md:-mb-[6rem] lg:-mb-[7rem]">
+          <StackedSections stackOffset={52} paneGap={false} minDramaWidth={768} className="gap-6 md:gap-7 lg:gap-8 -mb-[4.5rem] md:-mb-[6rem] lg:-mb-[7rem]">
             {showcaseConfig.map(({ id, Card, useMetrics, useDisclaimer, useParagraphs }, index) => {
               const product = productMap.get(id);
               if (!product) return null;

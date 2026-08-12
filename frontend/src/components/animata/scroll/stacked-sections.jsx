@@ -18,15 +18,22 @@ function getScrollParent(node) {
   return null;
 }
 
-export default function StackedSections({ children, withDramaEffect = true, stackOffset = 48, paneGap = "gap-2", scrollRunway = "0px", className }) {
+export default function StackedSections({
+  children,
+  withDramaEffect = true,
+  stackOffset = 48,
+  paneGap = "gap-2",
+  scrollRunway = "0px",
+  minDramaWidth = 768,
+  className,
+}) {
   const deckRef = React.useRef(null);
   const cardRefs = React.useRef([]);
   const contentRefs = React.useRef([]);
+  const cardHeightsRef = React.useRef([]);
 
   const items = React.Children.toArray(children);
   const total = items.length;
-  cardRefs.current.length = total;
-  contentRefs.current.length = total;
 
   const scaleAtDepth = React.useCallback(
     (cardIndex) => {
@@ -38,62 +45,90 @@ export default function StackedSections({ children, withDramaEffect = true, stac
 
   React.useEffect(() => {
     if (!withDramaEffect || total === 0) return undefined;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return undefined;
 
     const deck = deckRef.current;
     if (!deck) return undefined;
 
     const scroller = getScrollParent(deck);
+    const reduceMotionQuery = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const widthQuery = window.matchMedia(`(min-width: ${minDramaWidth}px)`);
     let frame = 0;
 
-    const isNextCardPinned = (cardIndex, containerTop) => {
-      const nextCard = cardRefs.current[cardIndex + 1];
-      if (!nextCard) return false;
-      return nextCard.getBoundingClientRect().top - containerTop <= (cardIndex + 1) * stackOffset + 1;
+    const canAnimate = () => !reduceMotionQuery.matches && widthQuery.matches;
+
+    const clearContentStyles = () => {
+      for (let i = 0; i < total; i++) {
+        const content = contentRefs.current[i];
+        if (!content) continue;
+        delete content.dataset.stackedCovered;
+        content.style.transform = "";
+        content.style.opacity = "";
+      }
+    };
+
+    const measureCards = () => {
+      cardHeightsRef.current = Array.from({ length: total }, (_, index) => {
+        const card = cardRefs.current[index];
+        return card && card.offsetHeight > 0 ? card.offsetHeight : 1;
+      });
+    };
+
+    const readLayout = () => {
+      const containerTop = scroller ? scroller.getBoundingClientRect().top : 0;
+      const cardTops = Array.from({ length: total }, (_, index) => {
+        const card = cardRefs.current[index];
+        return card ? card.getBoundingClientRect().top : 0;
+      });
+      return { containerTop, cardTops };
     };
 
     const update = () => {
       frame = 0;
-      const containerTop = scroller ? scroller.getBoundingClientRect().top : 0;
+      if (!canAnimate()) {
+        clearContentStyles();
+        return;
+      }
+
+      const { containerTop, cardTops } = readLayout();
+      const nextWrites = [];
 
       for (let i = 0; i < total; i++) {
-        const card = cardRefs.current[i];
         const content = contentRefs.current[i];
-        if (!card || !content) continue;
+        if (!content) continue;
 
         const endScale = scaleAtDepth(i + 1);
-        const covered = isNextCardPinned(i, containerTop);
+        const nextCard = cardRefs.current[i + 1];
+        const nextTop = cardTops[i + 1];
+        const covered = nextCard && nextTop - containerTop <= (i + 1) * stackOffset + 1;
 
         if (covered) {
-          content.dataset.stackedCovered = "";
-          content.style.transform = `scale(${endScale})`;
+          nextWrites.push({ content, covered: true, transform: `scale(${endScale})` });
           continue;
         }
 
-        delete content.dataset.stackedCovered;
-
-        const nextCard = cardRefs.current[i + 1];
         if (!nextCard) {
-          content.style.transform = "";
+          nextWrites.push({ content, covered: false, transform: "" });
           continue;
         }
 
         const pinnedTop = (i + 1) * stackOffset;
-        const offset = nextCard.getBoundingClientRect().top - containerTop - pinnedTop;
-        const rowH = card.offsetHeight > 0 ? card.offsetHeight : 1;
+        const offset = nextTop - containerTop - pinnedTop;
+        const rowH = cardHeightsRef.current[i] ?? 1;
         const distance = Math.max(rowH - pinnedTop, 1);
         const progress = clamp(1 - offset / distance, 0, 1);
-
         const scale = 1 + (endScale - 1) * progress;
 
-        const rotate = -8 * progress;
-        const translatey = -50 * progress;
-        const fade = clamp((progress - 0.4) / 0.4, 0, 1);
-        const opacity = 1 - fade;
+        nextWrites.push({ content, covered: false, transform: progress <= 0.001 ? "" : `scale(${scale})` });
+      }
 
-        content.style.transform = progress <= 0.001 ? "" : `scale(${scale}) rotate(${rotate}deg) translatey(${translatey}px)`;
-
-        content.style.opacity = opacity;
+      for (const { content, covered, transform } of nextWrites) {
+        if (covered) {
+          content.dataset.stackedCovered = "";
+        } else {
+          delete content.dataset.stackedCovered;
+        }
+        content.style.transform = transform;
+        content.style.opacity = "";
       }
     };
 
@@ -101,23 +136,28 @@ export default function StackedSections({ children, withDramaEffect = true, stac
       if (!frame) frame = requestAnimationFrame(update);
     };
 
-    update();
+    const onResize = () => {
+      measureCards();
+      onScroll();
+    };
+
+    measureCards();
+    onScroll();
     const target = scroller ?? window;
     target.addEventListener("scroll", onScroll, { passive: true });
-    window.addEventListener("resize", onScroll);
+    window.addEventListener("resize", onResize);
+    reduceMotionQuery.addEventListener("change", onResize);
+    widthQuery.addEventListener("change", onResize);
 
     return () => {
       target.removeEventListener("scroll", onScroll);
-      window.removeEventListener("resize", onScroll);
+      window.removeEventListener("resize", onResize);
+      reduceMotionQuery.removeEventListener("change", onResize);
+      widthQuery.removeEventListener("change", onResize);
       if (frame) cancelAnimationFrame(frame);
-      for (const content of contentRefs.current) {
-        if (content) {
-          delete content.dataset.stackedCovered;
-          content.style.transform = "";
-        }
-      }
+      clearContentStyles();
     };
-  }, [total, stackOffset, withDramaEffect, scaleAtDepth]);
+  }, [total, stackOffset, withDramaEffect, minDramaWidth, scaleAtDepth]);
 
   if (total === 0) return null;
 

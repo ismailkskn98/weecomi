@@ -41,7 +41,7 @@ export default function WeebotChartLive() {
           <p className="mt-1 truncate text-[11px] text-zinc-500 sm:text-xs">{preset.pair}</p>
         </div>
         <span className="flex shrink-0 items-center gap-1.5 rounded-full border border-black/8 bg-[#f5f7fa] px-2 py-0.5 text-[9px] uppercase tracking-[0.1em] text-zinc-500 sm:px-2.5 sm:py-1 sm:text-[10px]">
-          <span className="size-1.5 rounded-full bg-[#118a58] motion-safe:animate-pulse" />
+          <span className="size-1.5 rounded-full bg-[#118a58] md:motion-safe:animate-pulse" />
           Live
         </span>
       </div>
@@ -85,8 +85,7 @@ export default function WeebotChartLive() {
                 strokeWidth={1.25}
                 strokeDasharray="6 6"
                 fill="transparent"
-                isAnimationActive={!reduceMotion}
-                animationDuration={900}
+                isAnimationActive={false}
                 dot={false}
                 activeDot={false}
               />
@@ -96,8 +95,7 @@ export default function WeebotChartLive() {
                 stroke="var(--color-price)"
                 strokeWidth={2.2}
                 fill="url(#weebotPriceFill)"
-                isAnimationActive={!reduceMotion}
-                animationDuration={1100}
+                isAnimationActive={false}
                 dot={false}
                 activeDot={false}
               />

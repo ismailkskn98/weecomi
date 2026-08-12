@@ -24,7 +24,7 @@ export default function WeebotTerminalLive() {
           <span className="truncate text-[9px] font-medium text-zinc-500">paper-terminal</span>
         </div>
         <span className="flex shrink-0 items-center gap-1.5 text-[9px] font-medium uppercase text-[#118a58]">
-          <span className="size-1.5 rounded-full bg-[#118a58] motion-safe:animate-pulse" />
+          <span className="size-1.5 rounded-full bg-[#118a58] md:motion-safe:animate-pulse" />
           LIVE
         </span>
       </div>

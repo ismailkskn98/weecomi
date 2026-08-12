@@ -28,10 +28,10 @@ export default async function Hero2() {
         aria-hidden
         style={{
           backgroundImage: [
-            "radial-gradient(ellipse 42% 38% at 38% 42%, rgba(111,164,199,0.55), transparent 70%)",
-            "radial-gradient(ellipse 36% 34% at 52% 48%, rgba(240,159,47,0.38), transparent 68%)",
-            "radial-gradient(ellipse 30% 28% at 64% 40%, rgba(198,57,39,0.24), transparent 70%)",
-            "radial-gradient(ellipse 50% 40% at 48% 55%, rgba(52,108,146,0.22), transparent 72%)",
+            "radial-gradient(ellipse 42% 38% at 38% 42%, rgba(111,164,199,0.50), transparent 70%)",
+            "radial-gradient(ellipse 36% 34% at 52% 48%, rgba(240,159,47,0.30), transparent 68%)",
+            "radial-gradient(ellipse 30% 28% at 64% 40%, rgba(198,57,39,0.20), transparent 70%)",
+            "radial-gradient(ellipse 50% 40% at 48% 55%, rgba(52,108,146,0.15), transparent 72%)",
           ].join(","),
         }}
       />

@@ -16,7 +16,7 @@ export default function CriptoSwapsTradesLive() {
     <div ref={ref} className="overflow-hidden rounded-[16px] border border-black/6 bg-[#f5f7fa]">
       <div className="flex items-center justify-between border-b border-black/6 px-3 py-2 md:px-3.5 md:py-2.5">
         <div className="flex min-w-0 items-center gap-2">
-          <span className="size-1.5 shrink-0 rounded-full bg-[#FCD535] motion-safe:animate-pulse" />
+          <span className="size-1.5 shrink-0 rounded-full bg-[#FCD535] md:motion-safe:animate-pulse" />
           <span className="truncate text-[9px] font-medium tracking-[0.08em] text-zinc-500">BTC/USDT · spot</span>
         </div>
         <span className="flex shrink-0 items-center gap-1.5 text-[9px] font-medium uppercase text-[#B8860B]">
