@@ -944,6 +944,15 @@
     "learnMore": "Daha çox",
     "back": "Geri"
   },
+  "Loading": {
+    "ariaLabel": "Məzmun yüklənir"
+  },
+  "NotFound": {
+    "metaTitle": "Səhifə tapılmadı",
+    "description": "Üzr istəyirik, bu səhifəni tapa bilmədik",
+    "homeLead": "Başlamaq üçün",
+    "homeLink": "ana səhifə"
+  },
   "ProductPage": {
     "aboutTitle": "Məhsul təsviri",
     "audienceTitle": "HƏDƏF İSTİFADƏÇİLƏR",

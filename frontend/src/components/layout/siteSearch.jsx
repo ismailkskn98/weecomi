@@ -78,7 +78,7 @@ export default function SiteSearch({ className }) {
         onClick={() => setOpen(true)}
         className={cn(
           "inline-flex h-10 items-center gap-2 rounded-full border border-border bg-white/80 text-sm text-muted-foreground transition hover:border-weecomi-blue/30 hover:bg-white hover:text-weecomi-dark-gray",
-          "w-10 justify-center px-0 md:w-auto md:min-w-[200px] md:max-w-[240px] md:justify-start md:px-3",
+          "w-10 justify-center px-0 md:w-auto md:min-w-50 md:max-w-60 md:justify-start md:px-3",
           className,
         )}
         aria-label={t("search")}

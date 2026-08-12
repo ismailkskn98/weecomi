@@ -944,6 +944,15 @@
     "learnMore": "Подробнее",
     "back": "Назад"
   },
+  "Loading": {
+    "ariaLabel": "Загрузка контента"
+  },
+  "NotFound": {
+    "metaTitle": "Страница не найдена",
+    "description": "К сожалению, мы не смогли найти эту страницу",
+    "homeLead": "Начните с",
+    "homeLink": "главной страницы"
+  },
   "ProductPage": {
     "aboutTitle": "Описание продукта",
     "audienceTitle": "ЦЕЛЕВЫЕ ПОЛЬЗОВАТЕЛИ",

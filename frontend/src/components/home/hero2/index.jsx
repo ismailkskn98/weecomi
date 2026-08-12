@@ -19,16 +19,19 @@ export default async function Hero2() {
   const isDenseLocale = locale === "ru" || locale === "ka";
 
   return (
-    <HeroReveal className="relative flex flex-col overflow-x-hidden bg-[#f6f7f8] pb-6 pt-28 md:pb-7 md:pt-32 lg:min-h-[100svh] lg:pb-6 lg:pt-[7.25rem] xl:pb-7 xl:pt-[7.75rem] 2xl:pb-8 2xl:pt-[var(--sp-8)]">
+    <HeroReveal
+      mask={false}
+      className="relative flex flex-col overflow-x-hidden bg-[#f6f7f8] pb-6 pt-28 md:pb-7 md:pt-32 lg:min-h-[100svh] lg:pb-6 lg:pt-[7.25rem] xl:pb-7 xl:pt-[7.75rem] 2xl:pb-8 2xl:pt-[var(--sp-8)]"
+    >
       <div
         className="pointer-events-none absolute inset-0 z-0"
         aria-hidden
         style={{
           backgroundImage: [
-            "radial-gradient(ellipse 42% 38% at 38% 42%, rgba(111,164,199,0.45), transparent 70%)",
-            "radial-gradient(ellipse 36% 34% at 52% 48%, rgba(240,159,47,0.28), transparent 68%)",
-            "radial-gradient(ellipse 30% 28% at 64% 40%, rgba(198,57,39,0.14), transparent 70%)",
-            "radial-gradient(ellipse 50% 40% at 48% 55%, rgba(52,108,146,0.12), transparent 72%)",
+            "radial-gradient(ellipse 42% 38% at 38% 42%, rgba(111,164,199,0.55), transparent 70%)",
+            "radial-gradient(ellipse 36% 34% at 52% 48%, rgba(240,159,47,0.38), transparent 68%)",
+            "radial-gradient(ellipse 30% 28% at 64% 40%, rgba(198,57,39,0.24), transparent 70%)",
+            "radial-gradient(ellipse 50% 40% at 48% 55%, rgba(52,108,146,0.22), transparent 72%)",
           ].join(","),
         }}
       />
@@ -51,7 +54,7 @@ export default async function Hero2() {
         }}
       />
 
-      <div className="relative z-10 gridContainer w-full flex-1">
+      <div className="relative z-20 gridContainer w-full flex-1">
         <div className="flex h-full min-h-0 w-full flex-col justify-between gap-8 md:gap-10 lg:gap-[clamp(1.25rem,2.5vh,2.5rem)] 2xl:gap-[var(--sp-5)]">
           <div className="flex flex-col gap-8 md:gap-10 lg:gap-[clamp(1.25rem,2.6vh,2.75rem)] 2xl:gap-[var(--sp-5)]">
             <div className="w-full max-w-[min(100%,74rem)]">

@@ -984,6 +984,15 @@
     "learnMore": "Daha fazla",
     "back": "Geri"
   },
+  "Loading": {
+    "ariaLabel": "İçerik yükleniyor"
+  },
+  "NotFound": {
+    "metaTitle": "Sayfa bulunamadı",
+    "description": "Üzgünüz, bu sayfayı bulamadık",
+    "homeLead": "Başlangıç için",
+    "homeLink": "ana sayfa"
+  },
   "ProductPage": {
     "aboutTitle": "Ürün açıklaması",
     "audienceTitle": "HEDEF KULLANICILAR",

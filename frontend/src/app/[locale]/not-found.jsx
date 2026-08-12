@@ -1,25 +1,38 @@
+import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import NotFoundSearch from "@/components/not-found/search";
+import NotFoundScene from "@/components/not-found/scene";
 
-export default function NotFound() {
+export async function generateMetadata() {
+  const t = await getTranslations("NotFound");
+
+  return {
+    title: t("metaTitle"),
+    description: t("description"),
+  };
+}
+
+export default async function NotFound() {
+  const t = await getTranslations("NotFound");
+
   return (
-    <main className="grid min-h-[70vh] place-items-center px-4 py-20">
-      <div className="max-w-lg text-center">
-        <p className="text-xs font-bold uppercase text-weecomi-blue">404</p>
-        <h1 className="mt-3 text-4xl font-bold text-weecomi-dark-gray">Sayfa bulunamadı</h1>
-        <p className="mt-4 text-muted-foreground">
-          Aradığınız sayfa taşınmış veya kaldırılmış olabilir. WeeComi ekosistemine ana sayfadan devam edebilirsiniz.
-        </p>
-        <div className="mt-8 flex flex-wrap justify-center gap-3">
-          <Link href="/" className="rounded-md bg-weecomi-blue px-5 py-2.5 text-sm font-semibold text-white">
-            Ana sayfaya dön
-          </Link>
-          <Link
-            href="/contact"
-            className="rounded-md border border-border px-5 py-2.5 text-sm font-semibold text-weecomi-dark-gray"
-          >
-            İletişim
-          </Link>
+    <main className="fixed inset-0 z-80 overflow-hidden bg-[#f6f7f8] text-weecomi-dark-gray">
+      <NotFoundScene />
+
+      <div className="relative z-10 flex min-h-dvh flex-col items-center justify-center px-6 py-16 text-center">
+        <h1 className="font-display text-[clamp(4.75rem,18vw,10rem)] font-bold leading-none tracking-tight text-weecomi-dark-gray">404</h1>
+        <p className="mt-5 max-w-md text-base text-weecomi-dark-gray/70 md:text-lg">{t("description")}</p>
+
+        <div className="mt-8 w-full max-w-md">
+          <NotFoundSearch />
         </div>
+
+        <p className="mt-8 text-sm text-weecomi-dark-gray/65">
+          {t("homeLead")}{" "}
+          <Link href="/" className="underline decoration-weecomi-dark-gray/35 underline-offset-4 transition hover:text-weecomi-orange hover:decoration-weecomi-orange capitalize">
+            {t("homeLink")}
+          </Link>
+        </p>
       </div>
     </main>
   );

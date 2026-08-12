@@ -46,30 +46,45 @@
   --sidebar-ring: oklch(0.708 0 0);
 
   /* Spacing scale (8px base) — use across sections/pages */
-  --sp-1: 0.5rem; /* 8 */
-  --sp-2: 1rem; /* 16 */
-  --sp-3: 1.5rem; /* 24 */
-  --sp-4: 2rem; /* 32 */
-  --sp-5: 3rem; /* 48 */
-  --sp-6: 4rem; /* 64 */
-  --sp-7: 6rem; /* 96 */
-  --sp-8: 8rem; /* 128 */
+  --sp-1: 0.5rem;
+  /* 8 */
+  --sp-2: 1rem;
+  /* 16 */
+  --sp-3: 1.5rem;
+  /* 24 */
+  --sp-4: 2rem;
+  /* 32 */
+  --sp-5: 3rem;
+  /* 48 */
+  --sp-6: 4rem;
+  /* 64 */
+  --sp-7: 6rem;
+  /* 96 */
+  --sp-8: 8rem;
+  /* 128 */
 }
 
 @media (min-width: 768px) {
   :root {
-    --sp-5: 3.5rem; /* 56 */
-    --sp-6: 5rem; /* 80 */
-    --sp-7: 7rem; /* 112 */
-    --sp-8: 9rem; /* 144 */
+    --sp-5: 3.5rem;
+    /* 56 */
+    --sp-6: 5rem;
+    /* 80 */
+    --sp-7: 7rem;
+    /* 112 */
+    --sp-8: 9rem;
+    /* 144 */
   }
 }
 
 @media (min-width: 1024px) {
   :root {
-    --sp-6: 5.5rem; /* 88 */
-    --sp-7: 8rem; /* 128 */
-    --sp-8: 10rem; /* 160 */
+    --sp-6: 5.5rem;
+    /* 88 */
+    --sp-7: 8rem;
+    /* 128 */
+    --sp-8: 10rem;
+    /* 160 */
   }
 }
 
@@ -140,6 +155,29 @@
 
 @utility animate-rotate-full {
   animation: var(--animate-rotate-full);
+}
+
+@keyframes weecomi-infinity-spin {
+  12.5% {
+    stroke-dasharray: 34px 243px;
+    stroke-dashoffset: -27px;
+  }
+
+  43.75% {
+    stroke-dasharray: 85px 243px;
+    stroke-dashoffset: -85px;
+  }
+
+  100% {
+    stroke-dasharray: 2px 243px;
+    stroke-dashoffset: -240px;
+  }
+}
+
+.loading-infinity [data-testid="infinity-spin-path-1"] {
+  stroke-dasharray: 2px 243px;
+  stroke-dashoffset: 0;
+  animation: weecomi-infinity-spin 1.6s linear infinite;
 }
 
 @utility gridContainer {
@@ -247,6 +285,12 @@ button {
 
 @media (prefers-reduced-motion: reduce) {
   .page-hero-chip {
+    animation: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loading-infinity [data-testid="infinity-spin-path-1"] {
     animation: none;
   }
 }
@@ -579,4 +623,13 @@ button {
 
 .nav-menu-panel::-webkit-scrollbar-thumb:hover {
   background-color: rgba(240, 159, 47, 0.65);
+}
+
+.noise-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
 }

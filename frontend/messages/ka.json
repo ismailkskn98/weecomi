@@ -944,6 +944,15 @@
     "learnMore": "მეტი",
     "back": "უკან"
   },
+  "Loading": {
+    "ariaLabel": "კონტენტი იტვირთება"
+  },
+  "NotFound": {
+    "metaTitle": "გვერდი ვერ მოიძებნა",
+    "description": "უკაცრავად, ეს გვერდი ვერ მოვძებნეთ",
+    "homeLead": "დაიწყეთ",
+    "homeLink": "მთავარი გვერდიდან"
+  },
   "ProductPage": {
     "aboutTitle": "პროდუქტის აღწერა",
     "audienceTitle": "ᲡᲐᲛᲘᲖᲜᲔ ᲛᲝᲛᲮᲛᲐᲠᲔᲑᲚᲔᲑᲘ",

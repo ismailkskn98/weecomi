@@ -969,6 +969,15 @@
     "learnMore": "Learn more",
     "back": "Back"
   },
+  "Loading": {
+    "ariaLabel": "Loading content"
+  },
+  "NotFound": {
+    "metaTitle": "Page not found",
+    "description": "Sorry, we were unable to find that page",
+    "homeLead": "Start from",
+    "homeLink": "home page"
+  },
   "ProductPage": {
     "aboutTitle": "Product overview",
     "audienceTitle": "TARGET USERS",

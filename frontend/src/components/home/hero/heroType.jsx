@@ -96,7 +96,7 @@ export default async function HeroType() {
           </div>
         </div>
 
-        <div className="mx-auto mt-6 max-w-[1180px]">
+        <div className="mx-auto mt-6 max-w-[1180px] relative z-30">
           <HeroRevealItem delay={0.58} opacityOnly>
             <IntegrationTicker logos={marqueeLogos} />
           </HeroRevealItem>

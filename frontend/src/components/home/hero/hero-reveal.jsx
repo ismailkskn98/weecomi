@@ -8,18 +8,21 @@ const EASE = [0.23, 1, 0.32, 1];
 /**
  * Section shell — no entrance animation (keeps Server Component children interleaved).
  */
-export default function HeroReveal({ children, className }) {
-  return (
-    <section
-      className={className}
-      style={{
-        maskImage: "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)",
-        WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)",
-      }}
-    >
-      {children}
-    </section>
-  );
+export default function HeroReveal({ children, className, mask = true }) {
+  if (mask) {
+    return (
+      <section
+        className={className}
+        style={{
+          maskImage: "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, transparent 0%, black 20%, black 80%, transparent 100%)",
+        }}
+      >
+        {children}
+      </section>
+    );
+  }
+  return <section className={className}>{children}</section>;
 }
 
 /**
