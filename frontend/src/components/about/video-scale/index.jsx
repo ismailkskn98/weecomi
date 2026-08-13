@@ -28,7 +28,10 @@ export default function VideoScale({ captions = [], className }) {
     const fromScale = mobile ? 1.25 : 1.5;
 
     gsap.set(frame, { scale: fromScale });
-    if (captionEls.length) gsap.set(captionEls, { opacity: 0, y: 28 });
+    if (captionEls.length) {
+      gsap.set(captionEls, { opacity: 0, y: 28 });
+      gsap.set(captionEls[0], { opacity: 1, y: 0 });
+    }
 
     const tl = gsap.timeline({
       scrollTrigger: {
@@ -50,10 +53,12 @@ export default function VideoScale({ captions = [], className }) {
       const hold = enter + slot * 0.45;
       const leave = enter + slot * 0.75;
 
-      tl.to(el, { opacity: 1, y: 0, duration: 0.12, ease: "none" }, enter);
+      if (index > 0) {
+        tl.to(el, { opacity: 1, y: 0, duration: 0.12, ease: "none" }, enter);
+      }
       if (index < captionEls.length - 1) {
         tl.to(el, { opacity: 0, y: -20, duration: 0.1, ease: "none" }, leave);
-      } else {
+      } else if (index > 0) {
         tl.to(el, { opacity: 1, duration: 0.01 }, hold);
       }
     });
@@ -80,31 +85,14 @@ export default function VideoScale({ captions = [], className }) {
   }, []);
 
   return (
-    <section
-      ref={scopeRef}
-      className={cn("relative h-[260vh] w-full md:h-[300vh]", className)}
-      aria-label="About video"
-    >
+    <section ref={scopeRef} className={cn("relative h-[260vh] w-full md:h-[300vh]", className)} aria-label="About video">
       <div data-video-pin className="relative z-0 h-screen w-full overflow-hidden bg-weecomi-dark-gray">
         <div data-video-scale className="absolute inset-0 origin-center">
           <div className="absolute inset-0 overflow-hidden">
-            <video
-              ref={videoRef}
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="auto"
-              poster={ABOUT_VIDEO_POSTER}
-              className="absolute inset-0 h-full w-full object-cover"
-            >
+            <video ref={videoRef} autoPlay muted loop playsInline preload="auto" poster={ABOUT_VIDEO_POSTER} className="absolute inset-0 h-full w-full object-cover">
               <source src={ABOUT_VIDEO_SRC} type="video/mp4" />
             </video>
-            <div
-              className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center"
-              style={{ backgroundImage: `url(${ABOUT_VIDEO_POSTER})` }}
-              aria-hidden
-            />
+            <div className="pointer-events-none absolute inset-0 -z-10 bg-cover bg-center" style={{ backgroundImage: `url(${ABOUT_VIDEO_POSTER})` }} aria-hidden />
           </div>
         </div>
 
@@ -112,18 +100,19 @@ export default function VideoScale({ captions = [], className }) {
         <div className="pointer-events-none absolute inset-0 z-10 bg-linear-to-t from-weecomi-dark-gray/55 via-transparent to-weecomi-dark-gray/25" />
 
         {captions.length > 0 ? (
-          <div className="pointer-events-none absolute inset-0 z-20 flex items-center justify-center px-6">
-            <div className="relative mx-auto w-full max-w-3xl text-center">
-              {captions.map((caption) => (
-                <p
-                  key={caption}
-                  data-video-caption
-                  className="absolute inset-x-0 top-1/2 -translate-y-1/2 font-heading text-[clamp(1.5rem,4.5vw,3rem)] leading-display text-white drop-shadow-[0_8px_32px_rgba(0,0,0,0.45)]"
-                >
-                  {caption}
-                </p>
-              ))}
-            </div>
+          <div className="pointer-events-none absolute inset-0 z-20 px-6">
+            {captions.map((caption, index) => (
+              <p
+                key={caption}
+                data-video-caption
+                className={cn(
+                  "absolute inset-0 flex items-center justify-center font-heading text-[clamp(1.5rem,4.5vw,3rem)] leading-display text-white drop-shadow-[0_8px_32px_rgba(0,0,0,0.45)]",
+                  index > 0 && "opacity-0",
+                )}
+              >
+                <span className="mx-auto max-w-3xl text-center">{caption}</span>
+              </p>
+            ))}
           </div>
         ) : null}
       </div>

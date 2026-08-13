@@ -10,7 +10,7 @@ export default async function Mission() {
   return (
     <ScrollReveal
       itemSelector="[data-about-mv]"
-      className="relative z-30 -mt-[70vh] rounded-t-[32px] bg-white pt-16 md:-mt-[90vh] md:rounded-t-[44px] md:pt-24"
+      className="relative z-30 rounded-t-[32px] bg-white pt-16 md:rounded-t-[44px] md:pt-24"
     >
       <div className="gridContainer">
         <div data-about-mv className="mx-auto max-w-3xl text-center">
