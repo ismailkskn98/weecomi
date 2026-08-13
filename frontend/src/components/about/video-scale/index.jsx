@@ -36,7 +36,7 @@ export default function VideoScale({ captions = [], className }) {
         start: "top top",
         end: "bottom bottom",
         pin,
-        scrub: 1,
+        scrub: true,
         anticipatePin: 1,
         invalidateOnRefresh: true,
       },
@@ -86,7 +86,7 @@ export default function VideoScale({ captions = [], className }) {
       aria-label="About video"
     >
       <div data-video-pin className="relative z-0 h-screen w-full overflow-hidden bg-weecomi-dark-gray">
-        <div data-video-scale className="absolute inset-0 origin-center will-change-transform">
+        <div data-video-scale className="absolute inset-0 origin-center">
           <div className="absolute inset-0 overflow-hidden">
             <video
               ref={videoRef}
