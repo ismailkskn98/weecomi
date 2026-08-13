@@ -29,10 +29,10 @@ export default async function AboutContent() {
         <h2 className="mt-4 font-heading text-[clamp(1.75rem,4vw,3rem)] leading-display text-white">
           {t("storyTitle")}
         </h2>
-        <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white/80 md:text-base md:leading-[1.85]">
+        <p className="mx-auto mt-6 max-w-2xl text-sm leading-relaxed text-white md:text-base md:leading-[1.85]">
           {t("storyText")}
         </p>
-        <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/80 md:text-base md:leading-[1.85]">
+        <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-white/90 md:text-base md:leading-[1.85]">
           {t("storyTextSecondary")}
         </p>
       </AboutScrollExpand>

@@ -718,16 +718,16 @@
   },
   "Corporate": {
     "eyebrow": "HAQQIMIZDA",
-    "title": "Öz rəqəmsal məhsullarını yaradan texnologiya şirkəti",
-    "subtitle": "WeeComi proqram agentliyi deyil; ticarət, süni intellekt, maliyyə və biznes sahələrində müstəqil məhsullar yaradan beynəlxalq texnologiya şirkətidir.",
+    "title": "2013-cü ildən qlobal texnologiya şirkəti",
+    "subtitle": "WeeComi International; süni intellekt, fintech və kripto məhsulları ilə böyüyən, öz rəqəmsal həllərini yaradan beynəlxalq proqram və texnologiya şirkətidir.",
     "missionTitle": "Məhsulları böyütmək üçün varıq",
-    "missionText": "WeeComi öz rəqəmsal məhsullarını yaradır, dəstəkləyir və yeniləyir. Hər məhsul öz sahəsində dayanır; hamısı eyni korporativ intizamla irəliləyir.",
+    "missionText": "Öz rəqəmsal məhsullarımızı yaradır, dəstəkləyir və yeniləyirik. Hər məhsul öz sahəsində dayanır; hamısı eyni korporativ intizamla irəliləyir.",
     "visionTitle": "Vizyon",
     "visionText": "Yerli ehtiyaclardan qlobal miqyasa uzanan etibarlı və müasir texnologiya ekosistemi qurmaq.",
     "storyEyebrow": "TARİXÇƏ",
-    "storyTitle": "Müstəqil məhsullar, bir standart",
-    "storyText": "WeeComi yerli ehtiyaclardan başlayaraq beynəlxalq miqyasda istifadə oluna bilən rəqəmsal məhsullar yaradır.",
-    "storyTextSecondary": "Məqsədimiz bizneslərin və istifadəçilərin daha sürətli və güclü böyüməsinə kömək edən praktiki texnologiya təqdim etməkdir.",
+    "storyTitle": "WeeComi International",
+    "storyText": "2013-cü ildə qurulan WeeComi International, süni intellekt əsaslı kripto birjalarında ticarət olunan layihələrə sahib qlobal proqram və texnologiya şirkətidir. Maliyyə texnologiyaları sahəsində öz həlləri ilə böyüyür.",
+    "storyTextSecondary": "Dünya üzrə 10-dan çox ölkədə investor şəbəkəsinə malikdir. Təxminən 40 biznes tərəfdaşı ilə rəqəmsal transformasiyaya töhfə verir; etibar və dayanıqlı böyümə ilə irəliləyir.",
     "valuesEyebrow": "YANAŞMA",
     "valuesTitle": "Necə irəliləyirik",
     "valueTags": {
@@ -749,7 +749,6 @@
         "text": "Çoxdilli təcrübə və nəzarətli bazar açılımı ilə böyüyürük."
       }
     },
-    "proofProductMark": "məhsul",
     "statsEyebrow": "QISA",
     "statsTitle": "Ölçülə bilən texnologiya şirkəti",
     "stats": {
@@ -758,8 +757,8 @@
         "text": "Ticarət, süni intellekt, maliyyə və biznes idarəetməsi sahələrində müstəqil rəqəmsal məhsullar qururuq. Hər məhsul öz fokusunda irəliləsə də, eyni keyfiyyət standartına bağlı qalır."
       },
       "markets": {
-        "label": "Bazar fokusu",
-        "text": "Türkiyə mərkəzli strukturla böyüyürük. Qafqaz və Orta Asiyadan Şərqi Avropaya; Almaniya, Kanada və Afrikaya uzanan nəzarətli bazar şəbəkəmiz var."
+        "label": "Ölkə şəbəkəsi",
+        "text": "Dünya üzrə 10-dan çox ölkədə investor şəbəkəmiz var. Türkiyə mərkəzli strukturla Qafqaz, Orta Asiya, Avropa və daha uzağa nəzarətli böyüyürük."
       },
       "languages": {
         "label": "Dil dəstəyi",
@@ -806,45 +805,45 @@
     "introTail": "kömək edir — aydınlıq, sürət və dramasız proses.",
     "introReveal": "WeeComi sürətlə böyüyən bizneslərin rəqəmsal məhsullarla netləşməsinə kömək edir — aydınlıq, sürət və dramasız proses. Cəsarətli məhsul hekayəsi, ölçülə bilən nəticə və çevik icra. Ticarət, süni intellekt, maliyyə və biznes üçün müstəqil məhsullar qururuq. Hər məhsul öz sahəsində dayanır; hamısı eyni korporativ intizamla irəliləyir. Yerli ehtiyaclardan beynəlxalq miqyasa — bir texnologiya şirkəti, fokuslu həllər.",
     "ribbonTop": "Müstəqil Məhsullar × Ticarət × AI × Maliyyə",
-    "ribbonBottom": "11+ Məhsul × 5 Dil × Beynəlxalq Fokus × Korporativ Standart",
+    "ribbonBottom": "2013 × 10+ Ölkə × 40+ Tərəfdaş × Korporativ Standart",
     "timelineRows": [
       {
-        "label": "Müstəqil məhsul inkişafı",
-        "date": "İndi"
+        "label": "Proqram və texnologiya",
+        "date": "2013"
       },
       {
-        "label": "Çoxdilli təcrübə",
-        "date": "5 dil"
+        "label": "Blokçeyn investisiyası",
+        "date": "2019"
       },
       {
-        "label": "Beynəlxalq bazar odağı",
-        "date": "5+ bazar"
+        "label": "Beynəlxalq investor şəbəkəsi",
+        "date": "10+ ölkə"
       },
       {
-        "label": "Korporativ dəstək və yeniləmə",
-        "date": "Davamlı"
+        "label": "Tərəfdaşlıq şəbəkəsi",
+        "date": "40+"
       }
     ],
     "proofRows": [
       {
-        "left": "Məhsul",
-        "center": "11+ müstəqil rəqəmsal məhsul",
-        "right": "Ekosistem"
+        "left": "Quruluş",
+        "center": "2013",
+        "right": "WeeComi International"
       },
       {
-        "left": "Bazar",
-        "center": "10+ aktiv bazar odağı",
-        "right": "Artım"
+        "left": "Tərəfdaş",
+        "center": "40+ tərəfdaş",
+        "right": "Rəqəmsal transformasiya"
       },
       {
-        "left": "Dil",
-        "center": "5 dil dəstəyi",
-        "right": "Yerli"
+        "left": "Fokus",
+        "center": "AI və fintech",
+        "right": "Kripto məhsullar"
       },
       {
-        "left": "Yanaşma",
-        "center": "Agentlik yox, məhsul şirkəti",
-        "right": "Standart"
+        "left": "Blokçeyn",
+        "center": "2019",
+        "right": "Öz şəbəkə investisiyası"
       }
     ],
     "spotlightEyebrow": "(Intro)",
@@ -853,31 +852,54 @@
     "toolsTitle": "Necə qururuq",
     "toolsBadge": "ƏSAS",
     "proofEyebrow": "SÜBUT",
-    "proofTitle": "Bizi müəyyən edənlər",
-    "proofSubtitle": "WeeComi-nin agentlik deyil, məhsul şirkəti kimi necə işlədiyinin aydın siqnalları.",
+    "proofTitle": "WeeComi International",
+    "proofSubtitle": "Quruluşdan qlobal şəbəkəyə: fintech, süni intellekt və dayanıqlı böyümə ilə irəliləyən texnologiya şirkəti.",
     "faqEyebrow": "(SSS)",
     "faqTitle": "Suallarınıza cavab",
-    "faqSubtitle": "WeeComi yanaşması və məhsul seçimi haqqında qısa cavablar.",
+    "faqSubtitle": "WeeComi International yanaşması və məhsul seçimi haqqında qısa cavablar.",
     "faq": {
       "items": [
         {
-          "q": "WeeComi agentlikdir?",
-          "a": "Xeyr. WeeComi öz rəqəmsal məhsullarını yaradan texnologiya şirkətidir."
+          "q": "WeeComi proqram agentliyidirmi?",
+          "a": "Xeyr. WeeComi International öz rəqəmsal məhsullarını yaradan, dəstəkləyən və yeniləyən texnologiya şirkətidir."
         },
         {
-          "q": "Bütün məhsulları almalıyam?",
-          "a": "Xeyr. Məhsullar müstəqildir — ehtiyacınıza uyğun olanı seçin."
+          "q": "Nə vaxtdan fəaliyyət göstərirsiniz?",
+          "a": "2013-cü ildə qurulan WeeComi International qlobal miqyasda məhsullar inkişaf etdirir."
         },
         {
-          "q": "Necə başlaya bilərik?",
-          "a": "Əlaqə formasından yazın və ya məhsul saytına keçin."
+          "q": "Bütün məhsulları almaq məcburiyyətimi?",
+          "a": "Xeyr. Məhsullar müstəqildir; ehtiyacınıza uyğun olanı seçə bilərsiniz."
         },
         {
           "q": "Hansı bazarlarda işləyirsiniz?",
-          "a": "Türkiyə mərkəzliyik; Azərbaycan, Gürcüstan, Rusiya və Avropa odağımız var."
+          "a": "10-dan çox ölkədə investor şəbəkəmiz var. Türkiyə mərkəzliyik; Qafqaz, Orta Asiya, Avropa və daha uzaqda nəzarətli böyüyürük."
         }
       ]
-    }
+    },
+    "proofMetrics": [
+      {
+        "label": "Quruluş",
+        "value": "2013",
+        "hint": "WeeComi International"
+      },
+      {
+        "label": "Tərəfdaş",
+        "value": "40+",
+        "hint": "Rəqəmsal transformasiya"
+      },
+      {
+        "label": "Fokus",
+        "value": "AI",
+        "hint": "Fintech və kripto",
+        "compact": true
+      },
+      {
+        "label": "Blokçeyn",
+        "value": "2019",
+        "hint": "Öz şəbəkə investisiyası"
+      }
+    ]
   },
   "Contact": {
     "eyebrow": "ƏLAQƏ",

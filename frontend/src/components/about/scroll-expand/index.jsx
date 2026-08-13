@@ -29,7 +29,7 @@ export default function AboutScrollExpand({ title = "", scrollHint = "", childre
         scrollDistance={1.2}
         holdDistance={0.35}
         smoothing={0.1}
-        overlayScrim={0.45}
+        overlayScrim={0.92}
       >
         {children}
       </ScrollExpand>

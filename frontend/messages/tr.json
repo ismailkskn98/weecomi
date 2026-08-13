@@ -777,16 +777,16 @@
   },
   "Corporate": {
     "eyebrow": "HAKKIMIZDA",
-    "title": "Kendi dijital ürünlerini geliştiren teknoloji şirketi",
-    "subtitle": "WeeComi bir yazılım ajansı değil; ticaret, yapay zekâ, finans ve işletme alanlarında birbirinden bağımsız ürünler geliştiren uluslararası bir teknoloji şirketidir.",
+    "title": "2013’ten beri global bir teknoloji şirketi",
+    "subtitle": "WeeComi International; yapay zekâ, fintech ve kripto ürünleriyle büyüyen, kendi dijital çözümlerini geliştiren uluslararası bir yazılım ve teknoloji şirketidir.",
     "missionTitle": "Ürünleri büyütmek için varız",
-    "missionText": "WeeComi kendi dijital ürünlerini geliştirir, destekler ve günceller. Her ürün kendi alanında durur; hepsi aynı kurumsal disiplinle ilerler.",
+    "missionText": "Kendi dijital ürünlerimizi geliştirir, destekler ve güncelleriz. Her ürün kendi alanında durur; hepsi aynı kurumsal disiplinle ilerler.",
     "visionTitle": "Vizyon",
     "visionText": "Yerel ihtiyaçlardan global ölçeğe uzanan, güvenilir ve modern bir teknoloji ekosistemi kurmak.",
     "storyEyebrow": "HİKAYE",
-    "storyTitle": "Bağımsız ürünler, tek standart",
-    "storyText": "WeeComi; yerel ihtiyaçlardan yola çıkarak uluslararası ölçekte kullanılabilir dijital ürünler üretir. Her ürün kendi alanında uzmanlaşır, WeeComi ise hepsini aynı kurumsal disiplinle geliştirir.",
-    "storyTextSecondary": "Amacımız işletmelerin ve kullanıcıların daha hızlı, daha net ve daha güçlü büyümesini sağlayan pratik teknoloji sunmaktır.",
+    "storyTitle": "WeeComi International",
+    "storyText": "2013 yılında kurulan WeeComi International, yapay zekâ tabanlı kripto para borsalarında işlem gören projelere sahip global bir yazılım ve teknoloji şirketidir. Finansal teknolojiler alanında geliştirdiği çözümlerle büyür.",
+    "storyTextSecondary": "Dünya genelinde 10’dan fazla ülkede yatırımcı ağına sahiptir. 40’a yakın iş ortağıyla dijital dönüşüm süreçlerine katkı sağlar; güvenilirlik ve sürdürülebilir büyüme ile ilerler.",
     "valuesEyebrow": "YAKLAŞIM",
     "valuesTitle": "Nasıl ilerliyoruz",
     "valueTags": {
@@ -808,7 +808,6 @@
         "text": "Çok dilli deneyim ve kontrollü pazar açılımıyla büyürüz."
       }
     },
-    "proofProductMark": "ürün",
     "statsEyebrow": "KISACA",
     "statsTitle": "Ölçülebilir bir teknoloji şirketi",
     "stats": {
@@ -817,8 +816,8 @@
         "text": "Ticaret, yapay zekâ, finans ve işletme yönetimi alanlarında bağımsız dijital ürünler geliştiriyoruz. Her ürün kendi odağında ilerlerken ortak standartlarla aynı kalite çizgisinde kalır."
       },
       "markets": {
-        "label": "Pazar odağı",
-        "text": "Türkiye merkezli bir yapıyla büyüyoruz. Kafkasya ve Orta Asya’dan Doğu Avrupa’ya; Almanya, Kanada ve Afrika’ya uzanan kontrollü bir pazar ağımız var."
+        "label": "Ülke ağı",
+        "text": "Dünya genelinde 10’dan fazla ülkede yatırımcı ağımız var. Türkiye merkezli yapımızla Kafkasya, Orta Asya, Avrupa ve ötesine kontrollü büyüyoruz."
       },
       "languages": {
         "label": "Dil desteği",
@@ -847,48 +846,71 @@
     "helloTag": "(merhaba)",
     "introLead": "WeeComi; hızlı büyüyen işletmelerin",
     "introHighlight": "dijital ürünlerle netleşmesini",
-    "introTail": "sağlar — netlik, hız ve drama yok. Cesur ürün hikâyesi, ölçülebilir sonuç ve ölçeklenebilir yürütme.",
-    "introReveal": "WeeComi; hızlı büyüyen işletmelerin dijital ürünlerle netleşmesini sağlar — netlik, hız ve drama yok. Cesur ürün hikâyesi, ölçülebilir sonuç ve çevik yürütme. Ticaret, yapay zekâ, finans ve işletme için bağımsız ürünler geliştiririz. Her ürün kendi alanında durur; hepsi aynı kurumsal disiplinle ilerler. Yerel ihtiyaçlardan uluslararası ölçeğe — tek teknoloji şirketi, odaklı çözümler.",
+    "introTail": "sağlar. Netlik, hız ve drama yok. Cesur ürün hikâyesi, ölçülebilir sonuç ve ölçeklenebilir yürütme.",
+    "introReveal": "WeeComi; hızlı büyüyen işletmelerin dijital ürünlerle netleşmesini sağlar. Netlik, hız ve drama yok. Cesur ürün hikâyesi, ölçülebilir sonuç ve çevik yürütme. Ticaret, yapay zekâ, finans ve işletme için bağımsız ürünler geliştiririz. Her ürün kendi alanında durur; hepsi aynı kurumsal disiplinle ilerler. Yerel ihtiyaçlardan uluslararası ölçeğe: tek teknoloji şirketi, odaklı çözümler.",
     "ribbonTop": "Bağımsız Ürünler × Ticaret × Yapay Zekâ × Finans",
-    "ribbonBottom": "11+ Ürün × 5 Dil × Uluslararası Odak × Kurumsal Standart",
+    "ribbonBottom": "2013 × 10+ Ülke × 40+ Ortak × Kurumsal Standart",
     "timelineRows": [
       {
-        "label": "Bağımsız ürün geliştirme",
-        "date": "Bugün"
+        "label": "Yazılım ve teknoloji",
+        "date": "2013"
       },
       {
-        "label": "Çok dilli deneyim",
-        "date": "5 dil"
+        "label": "Blokzincir yatırımı",
+        "date": "2019"
       },
       {
-        "label": "Uluslararası pazar odağı",
-        "date": "5+ pazar"
+        "label": "Uluslararası yatırımcı ağı",
+        "date": "10+ ülke"
       },
       {
-        "label": "Kurumsal destek & güncelleme",
-        "date": "Sürekli"
+        "label": "İş ortaklığı ağı",
+        "date": "40+"
       }
     ],
     "proofRows": [
       {
-        "left": "Ürün",
-        "center": "11+ bağımsız dijital ürün",
-        "right": "Ekosistem"
+        "left": "Kuruluş",
+        "center": "2013",
+        "right": "WeeComi International"
       },
       {
-        "left": "Pazar",
-        "center": "10+ aktif pazar odağı",
-        "right": "Büyüme"
+        "left": "İş ortağı",
+        "center": "40+ iş ortağı",
+        "right": "Dijital dönüşüm"
       },
       {
-        "left": "Dil",
-        "center": "5 dil desteği",
-        "right": "Yerel"
+        "left": "Odak",
+        "center": "AI ve fintech",
+        "right": "Kripto ürünler"
       },
       {
-        "left": "Yaklaşım",
-        "center": "Ajans değil, ürün şirketi",
-        "right": "Standart"
+        "left": "Blokzincir",
+        "center": "2019",
+        "right": "Kendi ağ yatırımı"
+      }
+    ],
+    "proofMetrics": [
+      {
+        "label": "Kuruluş",
+        "value": "2013",
+        "hint": "WeeComi International"
+      },
+      {
+        "label": "İş ortağı",
+        "value": "40+",
+        "hint": "Dijital dönüşüm"
+      },
+      {
+        "label": "Odak",
+        "value": "AI",
+        "hint": "Fintech ve kripto",
+        "compact": true
+      },
+      {
+        "label": "Blokzincir",
+        "value": "2019",
+        "hint": "Kendi ağ yatırımı"
       }
     ],
     "spotlightEyebrow": "(Tanıtım)",
@@ -897,28 +919,28 @@
     "toolsTitle": "Nasıl inşa ediyoruz",
     "toolsBadge": "ÖZ",
     "proofEyebrow": "KANIT",
-    "proofTitle": "Bizi tanımlayanlar",
-    "proofSubtitle": "WeeComi’nin ajans değil, ürün şirketi olarak nasıl çalıştığının net işaretleri.",
+    "proofTitle": "WeeComi International",
+    "proofSubtitle": "Kuruluştan küresel ağa: fintech, yapay zekâ ve sürdürülebilir büyüme ile ilerleyen bir teknoloji şirketi.",
     "faqEyebrow": "(SSS)",
     "faqTitle": "Merak edilenler",
-    "faqSubtitle": "WeeComi yaklaşımı ve ürün seçimi hakkında kısa yanıtlar.",
+    "faqSubtitle": "WeeComi International yaklaşımı ve ürün seçimi hakkında kısa yanıtlar.",
     "faq": {
       "items": [
         {
           "q": "WeeComi bir yazılım ajansı mı?",
-          "a": "Hayır. WeeComi kendi dijital ürünlerini geliştiren, destekleyen ve güncelleyen bir teknoloji şirketidir."
+          "a": "Hayır. WeeComi International kendi dijital ürünlerini geliştiren, destekleyen ve güncelleyen bir teknoloji şirketidir."
+        },
+        {
+          "q": "Ne zamandan beri faaliyet gösteriyorsunuz?",
+          "a": "2013 yılında kurulan WeeComi International, yazılım ve teknoloji alanında global ölçekte ürünler geliştirir."
         },
         {
           "q": "Tüm ürünleri almak zorunda mıyım?",
           "a": "Hayır. Ürünler bağımsızdır; ihtiyacınıza uygun olanı seçebilirsiniz."
         },
         {
-          "q": "Nasıl başlarız?",
-          "a": "İletişim formundan yazın veya ilgili ürün sitesini ziyaret edin. Kısa bir keşifle doğru çözümü netleştiririz."
-        },
-        {
           "q": "Hangi pazarlarda çalışıyorsunuz?",
-          "a": "Türkiye merkezliyiz; Azerbaycan, Gürcistan, Rusya ve Avrupa odaklı kontrollü büyüme yürütüyoruz."
+          "a": "10’dan fazla ülkede yatırımcı ağımız var. Türkiye merkezliyiz; Kafkasya, Orta Asya, Avrupa ve ötesinde kontrollü büyüyoruz."
         }
       ]
     }

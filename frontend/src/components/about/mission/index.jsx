@@ -21,13 +21,13 @@ export default async function Mission() {
           </h2>
         </div>
 
-        <div data-about-mv className="mt-8 max-w-4xl text-left md:mt-10">
+        <div data-about-mv className="mt-5 max-w-2xl text-left md:mt-6">
           <TextScrollReveal
             scrub={1}
-            baseOpacity={0.12}
+            baseOpacity={0.18}
             blurStrength={0}
             baseRotation={0}
-            textClassName="font-heading text-[clamp(1.25rem,2.8vw,2rem)] font-semibold leading-display text-weecomi-dark-gray"
+            textClassName="text-base font-normal leading-relaxed text-muted-foreground md:text-lg"
           >
             {t("missionText")}
           </TextScrollReveal>
