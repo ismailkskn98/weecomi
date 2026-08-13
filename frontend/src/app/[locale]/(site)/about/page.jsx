@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import AboutContent from "@/components/about/about-content";
+import AboutContent from "@/components/about";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;

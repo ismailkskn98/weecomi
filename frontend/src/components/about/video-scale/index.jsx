@@ -15,7 +15,7 @@ const ABOUT_VIDEO_POSTER = HIKARI_HERO_MD;
  * - Next sheet scrolls over the pinned video (large overlap)
  * @see https://flexio.framer.website/about-us
  */
-export default function AboutVideoScale({ captions = [], className }) {
+export default function VideoScale({ captions = [], className }) {
   const videoRef = useRef(null);
 
   const scopeRef = useGsap((gsap, ScrollTrigger, root) => {
@@ -108,7 +108,6 @@ export default function AboutVideoScale({ captions = [], className }) {
           </div>
         </div>
 
-        {/* Soft veil so overlay text stays readable */}
         <div className="pointer-events-none absolute inset-0 z-10 bg-black/35" />
         <div className="pointer-events-none absolute inset-0 z-10 bg-linear-to-t from-weecomi-dark-gray/55 via-transparent to-weecomi-dark-gray/25" />
 

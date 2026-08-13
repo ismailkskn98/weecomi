@@ -748,19 +748,16 @@
     "statsTitle": "Ölçülə bilən texnologiya şirkəti",
     "stats": {
       "products": {
-        "value": "11+",
-        "label": "Independent products",
-        "text": "Digital products focused on commerce, AI, finance, and operations."
+        "label": "Müstəqil məhsul",
+        "text": "Ticarət, süni intellekt, maliyyə və biznes idarəetməsi sahələrində müstəqil rəqəmsal məhsullar qururuq. Hər məhsul öz fokusunda irəliləsə də, eyni keyfiyyət standartına bağlı qalır."
       },
       "markets": {
-        "value": "5+",
-        "label": "Market focus",
-        "text": "Turkey-based structure with AZ, GE, RU, and Europe focus."
+        "label": "Bazar fokusu",
+        "text": "Türkiyə mərkəzli strukturla böyüyürük. Qafqaz və Orta Asiyadan Şərqi Avropaya; Almaniya, Kanada və Afrikaya uzanan nəzarətli bazar şəbəkəmiz var."
       },
       "languages": {
-        "value": "5",
-        "label": "Languages",
-        "text": "Turkish, English, Azerbaijani, Russian, and Georgian."
+        "label": "Dil dəstəyi",
+        "text": "Türk, ingilis, azərbaycan, rus və gürcü dillərində çoxdilli təcrübə təqdim edirik. Yerli ehtiyaclara yaxın qalaraq beynəlxalq miqyasda aydın ünsiyyət qururuq."
       }
     },
     "ecosystemEyebrow": "EKOSİSTEM",
@@ -830,7 +827,7 @@
       },
       {
         "left": "Bazar",
-        "center": "5+ aktiv bazar odağı",
+        "center": "10+ aktiv bazar odağı",
         "right": "Artım"
       },
       {

@@ -161,7 +161,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -6 }}
               transition={panelTransition}
-              className="nav-menu-panel mt-2.5 max-h-[min(70vh,36rem)] overflow-y-auto overscroll-contain rounded-md bg-[#2c2c2c] px-4 py-4 shadow-[0_24px_70px_-30px_rgba(0,0,0,0.55)] md:mt-3 md:max-h-[min(75vh,40rem)] md:px-5 md:py-5"
+              className="nav-menu-panel mt-2.5 max-h-[min(70vh,36rem)] overflow-y-auto overscroll-contain rounded-md bg-weecomi-dark-gray px-4 py-4 shadow-[0_24px_70px_-30px_rgba(0,0,0,0.55)] md:mt-3 md:max-h-[min(75vh,40rem)] md:px-5 md:py-5"
             >
               <nav aria-label="Primary">
                 <ul className="space-y-0.5">

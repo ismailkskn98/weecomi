@@ -807,19 +807,16 @@
     "statsTitle": "Ölçülebilir bir teknoloji şirketi",
     "stats": {
       "products": {
-        "value": "11+",
         "label": "Bağımsız ürün",
-        "text": "Ticaret, yapay zekâ, finans ve işletme yönetimi odaklı dijital ürünler."
+        "text": "Ticaret, yapay zekâ, finans ve işletme yönetimi alanlarında bağımsız dijital ürünler geliştiriyoruz. Her ürün kendi odağında ilerlerken ortak standartlarla aynı kalite çizgisinde kalır."
       },
       "markets": {
-        "value": "5+",
         "label": "Pazar odağı",
-        "text": "Türkiye merkezli yapı; Azerbaycan, Gürcistan, Rusya ve Avrupa odağı."
+        "text": "Türkiye merkezli bir yapıyla büyüyoruz. Kafkasya ve Orta Asya’dan Doğu Avrupa’ya; Almanya, Kanada ve Afrika’ya uzanan kontrollü bir pazar ağımız var."
       },
       "languages": {
-        "value": "5",
         "label": "Dil desteği",
-        "text": "Türkçe, İngilizce, Azerbaycan Türkçesi, Rusça ve Gürcüce."
+        "text": "Türkçe, İngilizce, Azerbaycan Türkçesi, Rusça ve Gürcüce ile çok dilli deneyim sunuyoruz. Yerel ihtiyaçlara yakın kalarak uluslararası ölçekte net bir iletişim kuruyoruz."
       }
     },
     "ecosystemEyebrow": "EKOSİSTEM",
@@ -874,7 +871,7 @@
       },
       {
         "left": "Pazar",
-        "center": "5+ aktif pazar odağı",
+        "center": "10+ aktif pazar odağı",
         "right": "Büyüme"
       },
       {

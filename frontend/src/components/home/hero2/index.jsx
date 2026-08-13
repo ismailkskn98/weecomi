@@ -61,7 +61,7 @@ export default async function Hero2() {
               <HeroRevealItem delay={0.06} y={40} fade={false} duration={0.75}>
                 <h1
                   className={cn(
-                    "font-heading font-normal tracking-normal text-weecomi-dark-gray",
+                    "font-heading font-normal tracking-normal text-weecomi-dark-gray capitalize",
                     isDenseLocale
                       ? "text-[2.25rem] leading-[1.16] md:text-[3.75rem] lg:text-[4rem] xl:text-[5rem] 2xl:text-[6.75rem] 2xl:leading-[1.2]"
                       : "text-[2.5rem] leading-[1.14] md:text-[4rem] lg:text-[4.5rem] xl:text-[5.875rem] xl:leading-[1.16] 2xl:text-[7.5rem] 2xl:leading-[1.2]",

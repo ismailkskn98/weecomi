@@ -792,19 +792,16 @@
     "statsTitle": "A measurable technology company",
     "stats": {
       "products": {
-        "value": "11+",
         "label": "Independent products",
-        "text": "Digital products focused on commerce, AI, finance, and operations."
+        "text": "We build independent digital products across commerce, AI, finance, and business operations. Each product moves with its own focus while staying aligned to one shared quality standard."
       },
       "markets": {
-        "value": "5+",
         "label": "Market focus",
-        "text": "Turkey-based structure with AZ, GE, RU, and Europe focus."
+        "text": "We grow from a Turkey-based structure. Our controlled market network stretches from the Caucasus and Central Asia to Eastern Europe, and onward to Germany, Canada, and Africa."
       },
       "languages": {
-        "value": "5",
         "label": "Languages",
-        "text": "Turkish, English, Azerbaijani, Russian, and Georgian."
+        "text": "We deliver multilingual experiences in Turkish, English, Azerbaijani, Russian, and Georgian. This keeps us close to local needs while staying clear at an international scale."
       }
     },
     "ecosystemEyebrow": "ECOSYSTEM",
@@ -859,7 +856,7 @@
       },
       {
         "left": "Markets",
-        "center": "5+ active market focus",
+        "center": "10+ active market focus",
         "right": "Growth"
       },
       {

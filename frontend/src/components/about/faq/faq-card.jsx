@@ -1,11 +1,9 @@
 "use client";
 
-import { useState } from "react";
 import { Plus } from "lucide-react";
-import { useReducedMotion } from "motion/react";
 import { cn } from "@/lib/utils";
 
-function FaqCard({ item, open, onToggle, reduceMotion }) {
+export default function FaqCard({ item, open, onToggle, reduceMotion }) {
   return (
     <div
       className={cn(
@@ -44,26 +42,6 @@ function FaqCard({ item, open, onToggle, reduceMotion }) {
           <p className="px-5 pb-5 text-sm leading-relaxed text-muted-foreground md:px-6 md:pb-6 md:text-base">{item.a}</p>
         </div>
       </div>
-    </div>
-  );
-}
-
-export default function AboutFaq({ items = [] }) {
-  const reduceMotion = useReducedMotion();
-  const [openIndex, setOpenIndex] = useState(0);
-  const faqItems = Array.isArray(items) ? items : [];
-
-  return (
-    <div className="mt-10 grid items-start gap-3 md:mt-12 md:grid-cols-2 md:gap-4">
-      {faqItems.map((item, index) => (
-        <FaqCard
-          key={item.q}
-          item={item}
-          open={openIndex === index}
-          onToggle={() => setOpenIndex((current) => (current === index ? null : index))}
-          reduceMotion={reduceMotion}
-        />
-      ))}
     </div>
   );
 }

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import ActionButton from "@/components/common/actionButton";
-import AboutFaq from "@/components/about/about-faq";
+import FaqList from "@/components/about/faq/faq-list";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import { getProductDetails } from "@/data/productDetails";
 import { getRelatedProducts, getProductPath } from "@/data/products";
@@ -196,7 +196,7 @@ export default async function EcosystemDetail({ product, locale }) {
               <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">{tPage("faqSubtitle")}</p>
             </div>
             <div className="mt-10">
-              <AboutFaq items={faqs} />
+              <FaqList items={faqs} />
             </div>
           </div>
         </section>
