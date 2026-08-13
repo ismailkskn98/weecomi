@@ -779,8 +779,8 @@
     "eyebrow": "HAKKIMIZDA",
     "title": "Kendi dijital ürünlerini geliştiren teknoloji şirketi",
     "subtitle": "WeeComi bir yazılım ajansı değil; ticaret, yapay zekâ, finans ve işletme alanlarında birbirinden bağımsız ürünler geliştiren uluslararası bir teknoloji şirketidir.",
-    "missionTitle": "Misyon",
-    "missionText": "İşletmelerin ve kullanıcıların dijital dünyada daha hızlı, daha net ve daha güçlü büyümesini sağlamak.",
+    "missionTitle": "Ürünleri büyütmek için varız",
+    "missionText": "WeeComi kendi dijital ürünlerini geliştirir, destekler ve günceller. Her ürün kendi alanında durur; hepsi aynı kurumsal disiplinle ilerler.",
     "visionTitle": "Vizyon",
     "visionText": "Yerel ihtiyaçlardan global ölçeğe uzanan, güvenilir ve modern bir teknoloji ekosistemi kurmak.",
     "storyEyebrow": "HİKAYE",
@@ -789,10 +789,15 @@
     "storyTextSecondary": "Amacımız işletmelerin ve kullanıcıların daha hızlı, daha net ve daha güçlü büyümesini sağlayan pratik teknoloji sunmaktır.",
     "valuesEyebrow": "YAKLAŞIM",
     "valuesTitle": "Nasıl ilerliyoruz",
+    "valueTags": {
+      "product": "BAĞIMSIZ",
+      "clear": "NET",
+      "global": "KÜRESEL"
+    },
     "values": {
       "craft": {
         "title": "Ürün odaklı üretim",
-        "text": "Ajans projesi değil; uzun ömürlü, kendi ayakları üzerinde duran ürünler geliştiririz."
+        "text": "Ajans işi değil. Uzun ömürlü, kendi ayakları üzerinde duran ürünler geliştiririz."
       },
       "independence": {
         "title": "Net sınırlar",
@@ -803,6 +808,7 @@
         "text": "Çok dilli deneyim ve kontrollü pazar açılımıyla büyürüz."
       }
     },
+    "proofProductMark": "ürün",
     "statsEyebrow": "KISACA",
     "statsTitle": "Ölçülebilir bir teknoloji şirketi",
     "stats": {
@@ -890,13 +896,9 @@
     "toolsLabel": "(Günlük yığın)",
     "toolsTitle": "Nasıl inşa ediyoruz",
     "toolsBadge": "ÖZ",
-    "proofEyebrow": "(Kanıt)",
+    "proofEyebrow": "KANIT",
     "proofTitle": "Bizi tanımlayanlar",
     "proofSubtitle": "WeeComi’nin ajans değil, ürün şirketi olarak nasıl çalıştığının net işaretleri.",
-    "ctaTitle": "Bir proje mi var?",
-    "ctaAccent": "Hadi konuşalım",
-    "ctaText": "Doğru WeeComi ürününü birlikte seçelim — kısa bir özet yeterli.",
-    "ctaStart": "Başlayalım",
     "faqEyebrow": "(SSS)",
     "faqTitle": "Merak edilenler",
     "faqSubtitle": "WeeComi yaklaşımı ve ürün seçimi hakkında kısa yanıtlar.",

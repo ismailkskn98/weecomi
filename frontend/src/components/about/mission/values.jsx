@@ -1,25 +1,57 @@
+import Image from "next/image";
 import { getTranslations } from "next-intl/server";
-import { cn } from "@/lib/utils";
 
-const VALUE_KEYS = ["craft", "independence", "reach"];
+const VALUE_ITEMS = [
+  { key: "craft", tag: "product", image: "/images/hikari/benefits/impact.svg" },
+  { key: "independence", tag: "clear", image: "/images/hikari/benefits/authority.svg" },
+  { key: "reach", tag: "global", image: "/images/hikari/benefits/reach.svg" },
+];
 
 export default async function MissionValues() {
   const t = await getTranslations("Corporate");
 
   return (
-    <div className="mt-12 grid gap-6 md:mt-14 md:grid-cols-3 md:gap-8">
-      {VALUE_KEYS.map((key, index) => (
+    <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:mt-16 lg:grid-cols-3">
+      {VALUE_ITEMS.map((item) => (
         <article
-          key={key}
+          key={item.key}
           data-about-mv
-          className={cn(
-            "border-t border-black/10 pt-6 md:border-t-0 md:border-l md:pt-0 md:pl-8",
-            index === 0 && "md:border-l-0 md:pl-0",
-          )}
+          className="flex flex-col items-center gap-5 rounded-xl bg-[#f5f5f5] px-4 py-7 text-center transition-colors duration-200 hover:bg-[#efefef] md:px-5 md:py-8"
         >
-          <p className="font-heading text-[11px] text-weecomi-orange">{String(index + 1).padStart(2, "0")}</p>
-          <h3 className="mt-3 font-heading text-xl text-weecomi-dark-gray md:text-2xl">{t(`values.${key}.title`)}</h3>
-          <p className="mt-3 text-sm leading-relaxed text-muted-foreground md:text-base">{t(`values.${key}.text`)}</p>
+          <span className="inline-flex items-center justify-center rounded-xl bg-weecomi-dark-gray px-3 py-[5px]">
+            <span className="font-heading text-sm font-medium text-white">{t(`valueTags.${item.tag}`)}</span>
+          </span>
+
+          <div className="relative aspect-[263/175] w-full max-w-[220px]">
+            <Image
+              src="/images/hikari/benefits/grid.svg"
+              alt=""
+              fill
+              unoptimized
+              className="pointer-events-none object-fill opacity-60"
+              aria-hidden
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <Image
+                src={item.image}
+                alt=""
+                width={140}
+                height={140}
+                unoptimized
+                className="relative z-[1] h-[min(100%,140px)] w-auto max-w-[56%] object-contain"
+                aria-hidden
+              />
+            </div>
+          </div>
+
+          <div className="flex w-full flex-col items-center gap-2.5">
+            <h3 className="font-heading text-[1.35rem] leading-snug text-weecomi-dark-gray md:text-[1.45rem]">
+              {t(`values.${item.key}.title`)}
+            </h3>
+            <p className="max-w-[28ch] text-sm leading-relaxed text-black/50 md:text-base">
+              {t(`values.${item.key}.text`)}
+            </p>
+          </div>
         </article>
       ))}
     </div>

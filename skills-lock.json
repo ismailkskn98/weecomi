@@ -7,11 +7,23 @@
       "skillPath": "agent-skills/web-design/animation-systems/SKILL.md",
       "computedHash": "3b1538b9b7d54531ed0d83745d7748347b0285be6146b50af74b92224301eb3f"
     },
-    "nested-container-clean-agency": {
-      "source": "MengTo/Skills",
+    "design-taste-frontend": {
+      "source": "Leonxlnx/taste-skill",
       "sourceType": "github",
-      "skillPath": "agent-skills/web-design/nested-container-clean-agency/SKILL.md",
-      "computedHash": "ec665494387710cf4531d704515843c9c6a8aaf2fa5696b1d4034ec7988a9eab"
+      "skillPath": "skills/taste-skill/SKILL.md",
+      "computedHash": "899b84384f74f540ea5284d9b2e9234e050998b42eacc805410b518d4226c0b3"
+    },
+    "imagegen-frontend-web": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/imagegen-frontend-web/SKILL.md",
+      "computedHash": "27255c7c50181e58add156b2aa2bd5325285b85f04027e4c8b73742d98d7be0a"
+    },
+    "redesign-existing-projects": {
+      "source": "Leonxlnx/taste-skill",
+      "sourceType": "github",
+      "skillPath": "skills/redesign-skill/SKILL.md",
+      "computedHash": "47eced3e960a2c961d3cbee11fa1216264f589344b586a5cbd03967cd6b9c54b"
     }
   }
 }

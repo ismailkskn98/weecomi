@@ -720,8 +720,8 @@
     "eyebrow": "HAQQIMIZDA",
     "title": "Öz rəqəmsal məhsullarını yaradan texnologiya şirkəti",
     "subtitle": "WeeComi proqram agentliyi deyil; ticarət, süni intellekt, maliyyə və biznes sahələrində müstəqil məhsullar yaradan beynəlxalq texnologiya şirkətidir.",
-    "missionTitle": "Missiya",
-    "missionText": "Bizneslərin və istifadəçilərin rəqəmsal dünyada daha sürətli, daha aydın və daha güclü böyüməsini təmin etmək.",
+    "missionTitle": "Məhsulları böyütmək üçün varıq",
+    "missionText": "WeeComi öz rəqəmsal məhsullarını yaradır, dəstəkləyir və yeniləyir. Hər məhsul öz sahəsində dayanır; hamısı eyni korporativ intizamla irəliləyir.",
     "visionTitle": "Vizyon",
     "visionText": "Yerli ehtiyaclardan qlobal miqyasa uzanan etibarlı və müasir texnologiya ekosistemi qurmaq.",
     "storyEyebrow": "TARİXÇƏ",
@@ -730,20 +730,26 @@
     "storyTextSecondary": "Məqsədimiz bizneslərin və istifadəçilərin daha sürətli və güclü böyüməsinə kömək edən praktiki texnologiya təqdim etməkdir.",
     "valuesEyebrow": "YANAŞMA",
     "valuesTitle": "Necə irəliləyirik",
+    "valueTags": {
+      "product": "MÜSTƏQİL",
+      "clear": "AYDIN",
+      "global": "QLLOBAL"
+    },
     "values": {
       "craft": {
-        "title": "Product-first building",
-        "text": "Not agency projects—durable products that stand on their own."
+        "title": "Məhsul odaklı istehsal",
+        "text": "Agentlik işi deyil. Uzunömürlü, öz ayaqları üzərində dayanan məhsullar qururuq."
       },
       "independence": {
-        "title": "Clear boundaries",
-        "text": "Products are not locked together. You choose what you need."
+        "title": "Aydın sərhədlər",
+        "text": "Məhsullar bir-birinə bağlanmır. Lazım olan həlli seçirsiniz."
       },
       "reach": {
-        "title": "International reach",
-        "text": "We grow with multilingual experience and careful market expansion."
+        "title": "Beynəlxalq əlçatanlıq",
+        "text": "Çoxdilli təcrübə və nəzarətli bazar açılımı ilə böyüyürük."
       }
     },
+    "proofProductMark": "məhsul",
     "statsEyebrow": "QISA",
     "statsTitle": "Ölçülə bilən texnologiya şirkəti",
     "stats": {
@@ -846,13 +852,9 @@
     "toolsLabel": "(Gündəlik yığın)",
     "toolsTitle": "Necə qururuq",
     "toolsBadge": "ƏSAS",
-    "proofEyebrow": "(Sübut)",
+    "proofEyebrow": "SÜBUT",
     "proofTitle": "Bizi müəyyən edənlər",
     "proofSubtitle": "WeeComi-nin agentlik deyil, məhsul şirkəti kimi necə işlədiyinin aydın siqnalları.",
-    "ctaTitle": "Layihəniz varmı?",
-    "ctaAccent": "Gəlin danışaq",
-    "ctaText": "Doğru WeeComi məhsulunu birlikdə seçək — qısa xülasə kifayətdir.",
-    "ctaStart": "Başlayaq",
     "faqEyebrow": "(SSS)",
     "faqTitle": "Suallarınıza cavab",
     "faqSubtitle": "WeeComi yanaşması və məhsul seçimi haqqında qısa cavablar.",

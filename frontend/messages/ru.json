@@ -720,8 +720,8 @@
     "eyebrow": "О НАС",
     "title": "Технологическая компания, создающая собственные цифровые продукты",
     "subtitle": "WeeComi — не агентство, а международная технологическая компания с независимыми продуктами в торговле, ИИ, финансах и управлении бизнесом.",
-    "missionTitle": "Миссия",
-    "missionText": "Помогать бизнесу и пользователям расти быстрее, яснее и сильнее в цифровом мире.",
+    "missionTitle": "Мы здесь, чтобы растить продукты",
+    "missionText": "WeeComi создаёт, поддерживает и обновляет собственные цифровые продукты. Каждый продукт стоит в своей области; все движутся с одной корпоративной дисциплиной.",
     "visionTitle": "Видение",
     "visionText": "Построить надёжную современную технологическую экосистему от локальных нужд до глобального масштаба.",
     "storyEyebrow": "ИСТОРИЯ",
@@ -730,20 +730,26 @@
     "storyTextSecondary": "Наша цель — практичные технологии для более быстрого и уверенного роста бизнеса и пользователей.",
     "valuesEyebrow": "ПОДХОД",
     "valuesTitle": "Как мы работаем",
+    "valueTags": {
+      "product": "НЕЗАВИСИМО",
+      "clear": "ЧЁТКО",
+      "global": "ГЛОБАЛЬНО"
+    },
     "values": {
       "craft": {
-        "title": "Product-first building",
-        "text": "Not agency projects—durable products that stand on their own."
+        "title": "Продуктовый фокус",
+        "text": "Не агентская работа. Мы создаём долговечные продукты, которые стоят сами."
       },
       "independence": {
-        "title": "Clear boundaries",
-        "text": "Products are not locked together. You choose what you need."
+        "title": "Чёткие границы",
+        "text": "Продукты не сцеплены друг с другом. Вы выбираете то, что нужно."
       },
       "reach": {
-        "title": "International reach",
-        "text": "We grow with multilingual experience and careful market expansion."
+        "title": "Международный охват",
+        "text": "Растём через многоязычный опыт и осторожное расширение рынков."
       }
     },
+    "proofProductMark": "продукт",
     "statsEyebrow": "ВКРАТЦЕ",
     "statsTitle": "Измеримая технологическая компания",
     "stats": {
@@ -846,13 +852,9 @@
     "toolsLabel": "(Daily Stack)",
     "toolsTitle": "Как мы строим",
     "toolsBadge": "CORE",
-    "proofEyebrow": "(Факты)",
+    "proofEyebrow": "ФАКТЫ",
     "proofTitle": "Что нас определяет",
-    "proofSubtitle": "Чёткие сигналы того, как WeeComi работает как продуктовая компания — не агентство.",
-    "ctaTitle": "Есть проект?",
-    "ctaAccent": "Давайте обсудим",
-    "ctaText": "Подберём нужный продукт WeeComi вместе — короткого брифа достаточно.",
-    "ctaStart": "Начать",
+    "proofSubtitle": "Чёткие сигналы того, как WeeComi работает как продуктовая компания, а не агентство.",
     "faqEyebrow": "(FAQ)",
     "faqTitle": "Ответы на вопросы",
     "faqSubtitle": "Коротко о подходе WeeComi и выборе продукта.",

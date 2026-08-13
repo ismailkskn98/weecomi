@@ -764,8 +764,8 @@
     "eyebrow": "ABOUT",
     "title": "A technology company that builds its own digital products",
     "subtitle": "WeeComi is not a software agency; it is an international technology company building independent products across commerce, AI, finance, and business operations.",
-    "missionTitle": "Mission",
-    "missionText": "Help businesses and users grow faster, clearer, and stronger in the digital world.",
+    "missionTitle": "We exist to grow products",
+    "missionText": "WeeComi builds, supports, and updates its own digital products. Each product stands in its domain; all of them move with the same corporate discipline.",
     "visionTitle": "Vision",
     "visionText": "Build a reliable, modern technology ecosystem from local needs to global scale.",
     "storyEyebrow": "STORY",
@@ -774,10 +774,15 @@
     "storyTextSecondary": "Our goal is practical technology that helps businesses and users grow faster, clearer, and stronger.",
     "valuesEyebrow": "APPROACH",
     "valuesTitle": "How we work",
+    "valueTags": {
+      "product": "INDEPENDENT",
+      "clear": "CLEAR",
+      "global": "GLOBAL"
+    },
     "values": {
       "craft": {
         "title": "Product-first building",
-        "text": "Not agency projects—durable products that stand on their own."
+        "text": "Not agency work. We build durable products that stand on their own."
       },
       "independence": {
         "title": "Clear boundaries",
@@ -788,6 +793,7 @@
         "text": "We grow with multilingual experience and careful market expansion."
       }
     },
+    "proofProductMark": "product",
     "statsEyebrow": "IN SHORT",
     "statsTitle": "A measurable technology company",
     "stats": {
@@ -875,13 +881,9 @@
     "toolsLabel": "(Daily Stack)",
     "toolsTitle": "How we build",
     "toolsBadge": "CORE",
-    "proofEyebrow": "(Proof)",
+    "proofEyebrow": "PROOF",
     "proofTitle": "What defines us",
-    "proofSubtitle": "Clear signals of how WeeComi operates as a product company — not an agency.",
-    "ctaTitle": "Project in mind?",
-    "ctaAccent": "Get in touch",
-    "ctaText": "Let’s pick the right WeeComi product together — a short brief is enough.",
-    "ctaStart": "Get started",
+    "proofSubtitle": "Clear signals of how WeeComi operates as a product company, not an agency.",
     "faqEyebrow": "(FAQ)",
     "faqTitle": "Your questions, answered",
     "faqSubtitle": "Short answers about WeeComi’s approach and product selection.",

@@ -1,8 +1,9 @@
 import { getTranslations } from "next-intl/server";
+import { BracketTag } from "@/components/home/_shared";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import BlurText from "@/components/ui/blur-text";
+import TextScrollReveal from "@/components/ui/text-scroll-reveal";
 import MissionValues from "./values";
-import MissionCta from "./cta";
 
 export default async function Mission() {
   const t = await getTranslations("Corporate");
@@ -10,19 +11,29 @@ export default async function Mission() {
   return (
     <ScrollReveal
       itemSelector="[data-about-mv]"
-      className="relative z-30 rounded-t-[32px] bg-white pt-16 md:rounded-t-[44px] md:pt-24"
+      className="relative z-30 rounded-t-[32px] bg-white pt-16 pb-20 md:rounded-t-[44px] md:pt-24 md:pb-28"
     >
       <div className="gridContainer">
-        <div data-about-mv className="mx-auto max-w-3xl text-center">
-          <p className="font-heading text-sm text-muted-foreground">{t("valuesEyebrow")}</p>
-          <h2 className="mt-4 font-heading text-[clamp(1.85rem,4vw,3.25rem)] leading-display text-weecomi-dark-gray">
+        <div data-about-mv className="max-w-3xl text-left">
+          <BracketTag>{t("valuesEyebrow")}</BracketTag>
+          <h2 className="mt-6 font-heading text-3xl leading-display text-weecomi-dark-gray text-balance md:text-5xl lg:text-[62px]">
             <BlurText text={t("missionTitle")} delay={30} stepDuration={0.25} direction="bottom" animateBy="letters" />
           </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">{t("missionText")}</p>
+        </div>
+
+        <div data-about-mv className="mt-8 max-w-4xl text-left md:mt-10">
+          <TextScrollReveal
+            scrub={1}
+            baseOpacity={0.12}
+            blurStrength={0}
+            baseRotation={0}
+            textClassName="font-heading text-[clamp(1.25rem,2.8vw,2rem)] font-semibold leading-display text-weecomi-dark-gray"
+          >
+            {t("missionText")}
+          </TextScrollReveal>
         </div>
 
         <MissionValues />
-        <MissionCta />
       </div>
     </ScrollReveal>
   );
