@@ -21,8 +21,6 @@ export default async function Benefits() {
           eyebrow={t("bracketTag")}
           title={t("title")}
           subtitle={t("subtitle")}
-          titleClassName="mt-6 md:text-5xl lg:text-[62px]"
-          subtitleClassName="mx-auto mt-5 max-w-2xl text-black/50"
         />
 
         <div className="mt-[var(--sp-5)] grid gap-5 sm:grid-cols-2 lg:grid-cols-4">

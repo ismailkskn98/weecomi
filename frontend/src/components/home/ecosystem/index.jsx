@@ -28,12 +28,10 @@ export default async function Ecosystem() {
     <section id="ecosystem" className="relative section-y-bottom">
       <div className="relative z-10 gridContainer min-w-0">
         <SectionHeader
-          align="left"
           className="max-w-3xl"
           eyebrow={t("bracketTag")}
           title={t("title")}
           subtitle={t("subtitle")}
-          titleClassName="md:text-5xl lg:text-5xl"
         />
         <ScrollReveal
           as="div"

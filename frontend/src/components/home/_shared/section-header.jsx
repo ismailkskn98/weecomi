@@ -1,19 +1,20 @@
 import { cn } from "@/lib/utils";
 import SectionIntroMotion from "./section-intro-motion";
 
-const defaultTitleClass =
-  "mt-5 font-heading text-3xl font-normal leading-display text-weecomi-dark-gray md:text-4xl lg:text-[2.75rem]";
-const defaultSubtitleClass = "mt-4 text-base leading-relaxed text-muted-foreground md:text-lg";
+const titleBySize = {
+  default: "mt-5 font-heading text-3xl font-normal leading-[1.12] tracking-[-0.03em] text-weecomi-dark-gray md:text-4xl lg:text-[2.75rem]",
+  compact: "mt-5 font-heading text-3xl font-normal leading-[1.12] tracking-[-0.03em] text-weecomi-dark-gray md:text-4xl lg:text-[2.25rem]",
+};
+
+const defaultSubtitleClass = "mt-4 max-w-2xl text-base leading-7 text-muted-foreground md:text-lg";
 
 export default function SectionHeader({
   eyebrow,
   title,
   subtitle,
-  align = "center",
+  align = "left",
+  size = "default",
   className,
-  eyebrowClassName,
-  titleClassName,
-  subtitleClassName,
   children,
 }) {
   return (
@@ -22,9 +23,8 @@ export default function SectionHeader({
         eyebrow={eyebrow}
         title={title}
         subtitle={subtitle}
-        eyebrowClassName={eyebrowClassName}
-        titleClassName={cn(defaultTitleClass, titleClassName)}
-        subtitleClassName={cn(defaultSubtitleClass, subtitleClassName)}
+        titleClassName={titleBySize[size] ?? titleBySize.default}
+        subtitleClassName={defaultSubtitleClass}
       />
       {children}
     </div>

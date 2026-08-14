@@ -28,13 +28,10 @@ export default async function ProductShowcase() {
     <ScrollReveal itemSelector="[data-showcase-item]" className="section-y-top pb-10 md:pb-12 lg:pb-14">
       <div className="gridContainer">
         <SectionHeader
-          align="left"
           className="max-w-3xl"
           eyebrow={t("bracketTag")}
           title={t("title")}
           subtitle={t("subtitle")}
-          titleClassName="md:text-5xl lg:text-5xl"
-          subtitleClassName="max-w-2xl"
         />
 
         <div className="mt-10 md:mt-12 lg:mt-14">

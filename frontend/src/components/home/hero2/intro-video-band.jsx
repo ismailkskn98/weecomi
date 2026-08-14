@@ -47,14 +47,11 @@ export default async function IntroVideoBand() {
 
           <div className="order-1 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:text-left">
             <SectionHeader
-              align="left"
+              size="compact"
               className="max-w-none"
               eyebrow={t("videoEyebrow")}
               title={t("videoTitle")}
               subtitle={t("videoSubtitle")}
-              eyebrowClassName="text-weecomi-orange"
-              titleClassName="mt-4 font-heading text-[1.75rem] tracking-normal md:text-[2.25rem] lg:text-[2.25rem] xl:text-[2.65rem]"
-              subtitleClassName="mt-4 text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] text-weecomi-dark-gray/70 md:text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] md:leading-7"
             />
           </div>
         </div>

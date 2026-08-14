@@ -27,7 +27,6 @@ export default async function LatestNewsSection() {
       <div className="gridContainer">
         <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-end">
           <SectionHeader
-            align="left"
             className="md:max-w-xl"
             title={t("title")}
             subtitle={t("subtitle")}

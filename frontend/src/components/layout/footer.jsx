@@ -58,12 +58,16 @@ export default async function Footer() {
       />
 
       <div className="relative gridContainer py-14 md:py-20">
-        <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center md:gap-8">
-          <p className="font-heading text-[11px] font-medium tracking-[0.14em] text-weecomi-orange">[ {t("ctaEyebrow")} ]</p>
-          <h2 className="font-heading text-[clamp(1.85rem,4.2vw,3.75rem)] leading-display text-white">{t("ctaTitle")}</h2>
-          <ActionButton href="/contact" variant="inverse" showArrow>
-            {t("ctaButton")}
-          </ActionButton>
+        <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
+          <p className="font-heading text-[11px] font-normal text-weecomi-orange md:text-xs">[ {t("ctaEyebrow")} ]</p>
+          <h2 className="mt-5 font-heading text-3xl font-normal leading-[1.12] tracking-[-0.03em] text-white md:text-4xl lg:text-[2.75rem]">
+            {t("ctaTitle")}
+          </h2>
+          <div className="mt-8">
+            <ActionButton href="/contact" variant="inverse" showArrow>
+              {t("ctaButton")}
+            </ActionButton>
+          </div>
         </div>
       </div>
 

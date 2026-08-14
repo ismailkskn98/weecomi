@@ -3,7 +3,6 @@ import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import { listPublicGallery } from "@/lib/api/gallery";
 import { getEcosystemCarouselSlides } from "@/data/ecosystemCarouselSlides";
 import StatsCarousel from "./stats-carousel";
-import BlurText from "@/components/ui/blur-text";
 
 const STAT_KEYS = ["products", "countries", "languages"];
 
@@ -40,7 +39,7 @@ export default async function Stats() {
         <div className="gridContainer">
           <div className="grid gap-10 md:gap-12 lg:grid-cols-4 lg:items-stretch lg:gap-0">
             <h2 className="text-center font-heading text-[clamp(2.1rem,3.6vw,2.75rem)] leading-display lg:self-start lg:pr-6 lg:text-left xl:pr-8">
-              <BlurText text={t("aboutHeading")} as="span" delay={40} stepDuration={0.22} direction="bottom" animateBy="words" />
+              {t("aboutHeading")}
             </h2>
 
             {STAT_KEYS.map((key) => (

@@ -29,14 +29,10 @@ export default async function Testimonials() {
 
       <div className="relative z-10 gridContainer">
         <SectionHeader
-          align="left"
           className="max-w-[42rem]"
           eyebrow={t("bracketTag")}
           title={t("title")}
           subtitle={t("subtitle")}
-          eyebrowClassName="text-weecomi-orange"
-          titleClassName="mt-4 max-w-4xl md:text-[3.4rem] lg:text-[3.85rem]"
-          subtitleClassName="max-w-[34rem] md:text-[1.02rem]"
         />
       </div>
 
