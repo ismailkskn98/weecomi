@@ -1,5 +1,4 @@
 import { getTranslations } from "next-intl/server";
-import { ScrollReveal } from "@/components/home/_shared";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
 import ManifestoQuote from "./manifesto-quote";
 
@@ -19,7 +18,7 @@ export default async function Manifesto() {
   const t = await getTranslations("Manifesto");
 
   return (
-    <ScrollReveal
+    <article
       itemSelector="[data-manifesto]"
       className="relative overflow-hidden py-20 md:py-28 lg:py-32 [mask-image:linear-gradient(to_bottom,transparent_0%,black_20%,black_80%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_20%,black_80%,transparent_100%)]"
       aria-labelledby="manifesto-quote"
@@ -52,19 +51,19 @@ export default async function Manifesto() {
       <HatchBlock className="pointer-events-none absolute bottom-[18%] right-[14%] z-0 hidden h-40 w-28 opacity-[0.42] md:block lg:bottom-[22%] lg:right-[18%] lg:h-48 lg:w-32" />
 
       <div className="relative z-10 gridContainer">
-        <div data-manifesto className="mx-auto max-w-[46rem] text-center">
+        <div data-manifesto className="mx-auto w-full text-center sm:max-w-11/12 lg:max-w-5xl">
           <p className="font-heading text-[11px] font-medium uppercase tracking-[0.14em] text-weecomi-dark-gray/45">{t("eyebrow")}</p>
 
           <blockquote id="manifesto-quote" className="mt-8 md:mt-10">
             <ManifestoQuote text={`“${t("text")}”`} />
           </blockquote>
 
-          <footer data-manifesto className="mt-10 space-y-1 md:mt-12">
-            <p className="font-mono text-[13px] font-medium tracking-[0.02em] text-weecomi-blue md:text-sm">{t("authorName")}</p>
-            <p className="font-mono text-[12px] tracking-[0.01em] text-weecomi-blue/80 md:text-[13px]">{t("authorRole")}</p>
+          <footer data-manifesto className="mt-4 md:mt-8">
+            <p className="font-heading text-xs font-light text-weecomi-blue md:text-sm">{t("authorName")}</p>
+            <p className="font-heading text-xs font-light text-weecomi-blue md:text-sm">{t("authorRole")}</p>
           </footer>
         </div>
       </div>
-    </ScrollReveal>
+    </article>
   );
 }
