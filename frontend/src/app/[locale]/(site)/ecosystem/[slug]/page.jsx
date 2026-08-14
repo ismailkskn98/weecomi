@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import EcosystemDetail from "@/components/ecosystem/ecosystem-detail";
+import EcosystemDetail from "@/components/ecosystem/detail";
 import { getProductBySlug, products } from "@/data/products";
 import { routing } from "@/i18n/routing";
 

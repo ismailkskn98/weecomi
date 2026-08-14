@@ -1,5 +1,5 @@
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import EcosystemOverview from "@/components/ecosystem/ecosystem-overview";
+import EcosystemOverview from "@/components/ecosystem";
 
 export async function generateMetadata({ params }) {
   const { locale } = await params;

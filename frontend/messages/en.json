@@ -68,26 +68,26 @@
       "International",
       "technology company"
     ],
-    "subtitle": "WeeComi develops, supports and updates independent products across commerce, AI, finance and business management.",
-    "subtitleSecondary": "Under our corporate umbrella we build, support, and continuously update independent products. Each solution runs in its own field — WeeComi grows them all under one corporate standard.",
+    "subtitle": "Since 2013 we have built independent digital products for commerce, AI, finance and business operations.",
+    "subtitleSecondary": "We are not an agency. Each product follows its own roadmap. WeeComi handles development, support and updates under one corporate standard.",
     "ctaPrimary": "EXPLORE PRODUCTS",
     "ctaSecondary": "ABOUT US",
-    "clientsLabel": "Independent products built under the WeeComi umbrella",
+    "clientsLabel": "Independent products under the WeeComi umbrella",
     "playLabel": "Play intro video",
     "videoEyebrow": "Intro",
-    "videoTitle": "Get to know WeeComi",
-    "videoSubtitle": "A short look at our products, team, and the way WeeComi builds."
+    "videoTitle": "How WeeComi builds products",
+    "videoSubtitle": "A short look at how we create, support and update our own products."
   },
   "Ecosystem": {
     "eyebrow": "Ecosystem",
-    "bracketTag": "ECOSYSTEM — 03",
+    "bracketTag": "ECOSYSTEM",
     "title": "INDEPENDENT TECHNOLOGY PRODUCTS",
     "titleParts": [
       "Independent",
       "technology",
       "products"
     ],
-    "subtitle": "Solutions developed, supported and updated by WeeComi — each operating independently in its own field.",
+    "subtitle": "Commerce, AI, finance and business operations. Each product works in its own field. WeeComi builds, supports and updates them.",
     "learnMore": "Explore",
     "visit": "Visit product",
     "disclaimer": "The information provided is not investment advice. Trading in financial markets involves risk.",
@@ -99,14 +99,14 @@
       "conjunction": "&",
       "trailing": "",
       "liveLabel": "Live · 4 products",
-      "cardDescription": "Digital business cards, QR menus and smart catalogs united in one platform.",
+      "cardDescription": "WeeCard, WeeMenu and WeeCatalog. Digital business cards, QR menus and catalogs under one WeeNetwork roof.",
       "collaborator1": "WeeCard",
       "collaborator2": "WeeMenu"
     },
     "alisveriskapidaCard": {
       "badge": "E-commerce",
       "title": "Shopping delivered to your door",
-      "description": "A consumer commerce experience with product discovery, campaigns and mobile shopping flows.",
+      "description": "Campaigns, product discovery and mobile shopping. An independent WeeComi product that brings consumer commerce to the door.",
       "searchPhrases": [
         "Doorstep delivery deals",
         "Online shopping campaigns",
@@ -120,7 +120,7 @@
     },
     "weecoinsCard": {
       "title": "WEECOINS & WEECOINS PREMIUM",
-      "description": "Two independent digital assets operating on the WeeGold network. Used in transfer, payment and reward scenarios.",
+      "description": "WeeCoins and WeeCoins Premium on the WeeGold network. Two independent digital assets for transfer, payment and in-ecosystem use.",
       "ribbonBadge": "CRYPTO",
       "ribbonItems": [
         "Peer to Peer",
@@ -429,7 +429,7 @@
     },
     "weekobi": {
       "title": "Manage Your Business From One Panel",
-      "description": "A digital business platform that helps SMEs manage products, stores, orders and operations.",
+      "description": "An independent business platform that helps SMEs run stores, products, orders and operations from one panel.",
       "features": [
         "Store management",
         "Product management",
@@ -503,7 +503,7 @@
       ]
     },
     "weezard": {
-      "title": "Play and Earn — WeeCoins Game Hub",
+      "title": "Play, collect, share. The WeeCoins game layer",
       "description": "The game layer of the WeeCoins ecosystem — Scratch, Jackpot, Miner and WeeCandy connect fun with WCP accumulation.",
       "features": [
         "Scratch and Jackpot",
@@ -600,50 +600,50 @@
     "title": "A measurable technology company",
     "subtitle": "We move forward with independent products, multilingual experiences and international focus.",
     "productsHeading": "11+ INDEPENDENT DIGITAL PRODUCTS",
-    "productsDesc": "WeeComi builds independent digital products across commerce, AI, finance and business management. Each product follows its own roadmap — you pick only what you need.",
-    "countriesHeading": "5+ ACTIVE MARKET FOCUS",
-    "countriesDesc": "From our Turkey-based foundation we strengthen products locally and expand with control into Azerbaijan, Georgia, Russia and Europe.",
+    "productsDesc": "Independent products for commerce, AI, finance and business operations. Each follows its own roadmap. You choose only what you need.",
+    "countriesHeading": "10+ COUNTRY NETWORK",
+    "countriesDesc": "We have an investor network in more than 10 countries worldwide. From our Turkey-based structure we grow with control into the Caucasus, Central Asia, Europe and beyond.",
     "languagesHeading": "5 LANGUAGE SUPPORT",
-    "languagesDesc": "We deliver clear local experiences in Turkish, English, Azerbaijani, Russian and Georgian — more than translation: content and communication shaped for each market.",
+    "languagesDesc": "Turkish, English, Azerbaijani, Russian and Georgian. Not just translation: content and communication shaped for each market.",
     "platforms": "Independent platforms",
     "carouselLabel": "Moments from WeeComi"
   },
   "Benefits": {
     "eyebrow": "WHY WEECOMI",
     "bracketTag": "WORLD-CLASS TEAM, INDEPENDENT PRODUCTS",
-    "title": "WE TURN ATTENTION INTO GROWTH",
-    "subtitle": "Each product does its own job. WeeComi develops and updates them all under one corporate standard.",
+    "title": "INDEPENDENT PRODUCTS, ONE STANDARD",
+    "subtitle": "You pick the product that fits. Development, support and updates run at the same quality under WeeComi.",
     "cta": "EXPLORE PRODUCTS",
     "independent": {
       "tag": "INDEPENDENT",
       "title": "Separate products, clear focus",
       "cardTitle": "SEPARATE PRODUCTS, CLEAR FOCUS",
-      "description": "WeeMenu, WeeCard, WeeSale and others are not interconnected — each runs in its own domain."
+      "description": "WeeMenu, WeeCard, WeeSale and the others are not locked together. Each product works in its own field."
     },
     "scale": {
       "tag": "SCALE",
       "title": "International growth",
       "cardTitle": "INTERNATIONAL GROWTH",
-      "description": "We bring products to different markets with multilingual structure and regional focus."
+      "description": "With 5 languages and regional focus we take products from Turkey to Azerbaijan, Georgia, Russia and Europe."
     },
     "speed": {
       "tag": "SPEED",
       "title": "Faster delivery",
       "cardTitle": "FASTER DELIVERY",
-      "description": "Modern infrastructure and product-focused teams keep solutions moving quickly."
+      "description": "Product teams and modern infrastructure. Updates follow the product roadmap, not an agency project."
     },
     "trust": {
       "tag": "TRUST",
       "title": "Corporate standard",
       "cardTitle": "CORPORATE STANDARD",
-      "description": "Consistent quality, support and continuous improvement under one brand."
+      "description": "One roof since 2013. Consistent quality, support and continuous improvement."
     }
   },
   "ProductShowcase": {
     "eyebrow": "Product showcase",
     "bracketTag": "PRODUCT SHOWCASE",
-    "title": "FEATURED INDEPENDENT SOLUTIONS",
-    "subtitle": "Separate products for different needs. Each delivers measurable results in its own field.",
+    "title": "FEATURED INDEPENDENT PRODUCTS",
+    "subtitle": "Algorithmic panel, exchange, games and marketplace. Each product does its own job under the WeeComi roof.",
     "cta": "ALL PRODUCTS",
     "learnMore": "Explore",
     "cursorLabel": "VIEW PRODUCT →",
@@ -696,12 +696,12 @@
           "label": "Seller tools"
         }
       ],
-      "title": "SECURE COMMERCE, WCP-POWERED SALES AND A GLOBAL SHOWCASE",
+      "title": "NEW AND SECOND-HAND, A MULTILINGUAL MARKETPLACE WITH WCP",
       "mediaTitle": "Marketplace",
       "paragraphs": [
-        "A multilingual marketplace for new and second-hand products that combines seller visibility, WCP-enabled sales flows and safer digital commerce.",
-        "Sellers list products quickly while buyers shop through clearer storefronts and secure checkout; referrals help the marketplace grow.",
-        "With multilingual UX and ecosystem-ready payments, WeeSale turns local selling into global visibility."
+        "List new and second-hand products. WCP sales flow and seller storefronts sit on one platform.",
+        "Sellers publish listings. Buyers shop through a clear storefront and secure checkout.",
+        "A multilingual interface takes local selling to a wider market."
       ]
     },
     "weecomibot": {
@@ -723,7 +723,7 @@
           "label": "Encrypted API vault"
         }
       ],
-      "title": "FROM STRATEGY TO EXECUTION, ONE PANEL",
+      "title": "STRATEGY, BACKTEST AND PAPER TRADING IN ONE PANEL",
       "mediaTitle": "Trading panel"
     },
     "criptoswaps": {
@@ -745,7 +745,7 @@
           "label": "Token markets"
         }
       ],
-      "title": "24/7 CRYPTO EXCHANGE, SPOT TRADING IN ONE VIEW",
+      "title": "24/7 CRYPTO AND FAN TOKEN EXCHANGE",
       "mediaTitle": "Trading desk"
     },
     "weezard": {
@@ -767,19 +767,19 @@
           "label": "Mobile hub"
         }
       ],
-      "title": "READY FOR FUN — PLAY, EARN, SHARE",
+      "title": "PLAY, COLLECT, SHARE. THE WEEZARD GAME LAYER",
       "mediaTitle": "Play",
       "paragraphs": [
-        "The game layer of the WeeCoins ecosystem — Scratch, Jackpot, Miner and WeeCandy connect fun with WCP accumulation.",
-        "Explore games from one hub, track progress and grow with the referral system.",
-        "Mobile-first play, clear reward loops and ecosystem links turn WeeZard into a lasting entertainment layer."
+        "The game layer of the WeeCoins ecosystem. Scratch, Jackpot, Miner and WeeCandy connect play with WCP use.",
+        "Explore games from one hub, track scores and join the community through referrals.",
+        "Mobile-first play and ecosystem links make WeeZard the game layer for WeeCoins."
       ]
     }
   },
   "Testimonials": {
     "bracketTag": "USER STORIES",
-    "title": "Let real user experiences do the talking",
-    "subtitle": "Short notes selected from feedback shared by people inside the WeeComi ecosystem.",
+    "title": "Users describe WeeComi in their own words",
+    "subtitle": "Short excerpts from approved users. These are personal experiences.",
     "memberLabel": "WeeComi user",
     "sectionLabel": "WeeComi user testimonials",
     "prev": "Previous testimonial",
@@ -789,7 +789,7 @@
   },
   "Manifesto": {
     "eyebrow": "Who we are",
-    "text": "WEECOMI BUILDS INDEPENDENT PRODUCTS, KEEPS EVERY SOLUTION STRONG IN ITS OWN FIELD, AND DELIVERS MODERN TECHNOLOGY THAT HELPS BRANDS GROW DIGITALLY — WITH CONSISTENT QUALITY AND CONTINUOUS IMPROVEMENT."
+    "text": "WEECOMI INTERNATIONAL BUILDS INDEPENDENT DIGITAL PRODUCTS. EACH PRODUCT WORKS IN ITS OWN FIELD. ALL ARE SUPPORTED AND UPDATED TO THE SAME CORPORATE STANDARD."
   },
   "Global": {
     "eyebrow": "GLOBAL PRESENCE",
@@ -859,13 +859,13 @@
     "filterHint": "Filter moments from events, products, office, and team."
   },
   "CTA": {
-    "title": "ACCELERATE DIGITAL GROWTH WITH THE RIGHT PRODUCT",
-    "subtitle": "Let's choose the right WeeComi product for your business or project.",
+    "title": "LET'S CHOOSE THE RIGHT PRODUCT TOGETHER",
+    "subtitle": "Explore an independent WeeComi product for your business, or talk with the team.",
     "primary": "EXPLORE PRODUCTS",
     "secondary": "CONTACT US"
   },
   "Footer": {
-    "tagline": "An international company building independent technology products for business, commerce and digital life.",
+    "tagline": "An international company building independent technology products for commerce, AI, finance and business operations since 2013.",
     "pages": "PAGES",
     "products": "PRODUCTS",
     "legal": "LEGAL",
@@ -879,8 +879,8 @@
     "risk": "Risk Disclosure",
     "copyright": "© 2026 WeeComi International. All rights reserved.",
     "ctaEyebrow": "GROW TOGETHER",
-    "ctaTitle": "READY TO GROW WITH INDEPENDENT PRODUCTS?",
-    "ctaSubtitle": "Let's plan the right independent WeeComi product for your business.",
+    "ctaTitle": "LET'S PICK THE RIGHT INDEPENDENT PRODUCT",
+    "ctaSubtitle": "Corporate contact or product discovery. We will clarify the WeeComi product that fits.",
     "ctaButton": "CONTACT US",
     "whyUs": "Why Us",
     "faqLink": "FAQ",
@@ -890,8 +890,8 @@
       "INTERNATIONAL",
       "BUSINESS-FOCUSED",
       "ARTIFICIAL INTELLIGENCE",
-      "DIGITAL SOLUTIONS",
-      "SCALABLE",
+      "PRODUCT COMPANY",
+      "CORPORATE STANDARD",
       "ONE ROOF"
     ]
   },
@@ -1165,7 +1165,7 @@
     "faqSubtitle": "Short, clear answers about this product.",
     "relatedTitle": "Check other products",
     "ctaTitle": "Ready to join the WeeComi ecosystem?",
-    "ctaSubtitle": "Let's clarify the right product for your needs — a short conversation is enough.",
+    "ctaSubtitle": "Let's clarify the right product for your needs. A short conversation is enough.",
     "visitProduct": "Visit product site",
     "contactCta": "Let's talk",
     "learnMore": "View details"
@@ -1268,23 +1268,23 @@
   "Faq": {
     "eyebrow": "ANSWERS TO YOUR QUESTIONS",
     "title": "FREQUENTLY ASKED QUESTIONS",
-    "subtitle": "Key things to know before getting started with WeeComi.",
+    "subtitle": "What WeeComi builds, how the products work, and how to choose the right one.",
     "items": [
       {
         "q": "WHAT KIND OF PRODUCTS DO YOU BUILD?",
-        "a": "WeeComi builds, supports and updates independent digital products across commerce, artificial intelligence, finance and business management."
+        "a": "WeeComi International builds independent digital products for commerce, AI, finance and business operations. The portfolio includes WeeNetwork, WeeKobi, WeeSale, Alışveriş Kapıda, WeeComi Bot, WeeCoins, WeeZard and CriptoSwaps."
       },
       {
         "q": "ARE THE PRODUCTS CONNECTED TO EACH OTHER?",
-        "a": "No. Each product works independently in its own domain. The shared layer is WeeComi's technology, support and corporate quality standard."
+        "a": "No. Products are not locked together. WeeMenu or WeeCard can be used on their own. What they share is WeeComi's development, security and support standard."
       },
       {
         "q": "WHICH MARKETS DO YOU FOCUS ON?",
-        "a": "We operate from Turkey and support multilingual experiences for Azerbaijan, Georgia, Russia and broader European growth targets."
+        "a": "We are based in Turkey. We offer Turkish, English, Azerbaijani, Russian and Georgian experiences for Azerbaijan, Georgia, Russia and Europe-focused markets."
       },
       {
-        "q": "HOW DO WE CHOOSE THE RIGHT PRODUCT FOR OUR BUSINESS?",
-        "a": "We review your need together and recommend the most suitable independent WeeComi product, along with a clear starting path when needed."
+        "q": "HOW DO WE CHOOSE THE RIGHT PRODUCT?",
+        "a": "We clarify your need together and recommend the independent product that fits. You can go to the product site, or contact the corporate team."
       }
     ]
   },

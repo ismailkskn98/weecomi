@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import PageHero from "@/components/common/page-hero";
 import { BracketTag } from "@/components/home/_shared";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
-import { SolutionAreaCard } from "@/components/ecosystem/ecosystem-product-card";
+import SolutionAreaCard from "@/components/solutions/solution-area-card";
 import { solutionAreas, getSolutionPath, getProductsBySolutionArea } from "@/data/products";
 import { HIKARI_HERO_MD } from "@/data/hikariImages";
 

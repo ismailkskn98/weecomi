@@ -40,11 +40,11 @@ export default async function Hero2() {
         className="pointer-events-none absolute inset-0 z-0 opacity-[0.07]"
         aria-hidden
         style={{
-          backgroundImage: "linear-gradient(rgba(13,13,13,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(13,13,13,0.35) 1px, transparent 1px)",
+          backgroundImage: "linear-gradient(rgba(13,13,13,0.45) 1px, transparent 1px), linear-gradient(90deg, rgba(13,13,13,0.45) 1px, transparent 1px)",
           backgroundSize: "80px 80px",
         }}
       />
-      <TextureOverlay texture="noise" tone="dark" opacity={0.05} className="z-0" />
+      <TextureOverlay texture="noise" tone="dark" opacity={0.08} className="z-0" />
 
       <div
         className="pointer-events-none absolute right-[4%] top-[46%] z-0 hidden h-36 w-44 opacity-[0.12] lg:block lg:right-[6%] lg:h-48 lg:w-56 xl:h-52 xl:w-64"

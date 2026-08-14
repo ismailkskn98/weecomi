@@ -40,11 +40,20 @@
   "Hero": {
     "eyebrow": "ULUSLARARASI TEKNOLOJİ ŞİRKETİ",
     "title": "Kendi ürünlerini geliştiren uluslararası teknoloji şirketi",
-    "titleLines": ["KENDİ ÜRÜNLERİNİ", "GELİŞTİREN ULUSLARARASI", "TEKNOLOJİ ŞİRKETİ"],
+    "titleLines": [
+      "KENDİ ÜRÜNLERİNİ",
+      "GELİŞTİREN ULUSLARARASI",
+      "TEKNOLOJİ ŞİRKETİ"
+    ],
     "titleAccent": "Bağımsız ürünler.",
     "titleSecondary": "Tek bir teknoloji şirketi.",
     "rotatingPrefix": "Çözümlerimiz:",
-    "rotatingWords": ["ticaret", "yapay zekâ", "finans", "iş yönetimi"],
+    "rotatingWords": [
+      "ticaret",
+      "yapay zekâ",
+      "finans",
+      "iş yönetimi"
+    ],
     "subtitle": "WeeComi; ticaret, yapay zekâ, finans ve iş yönetimi alanlarında kendi başına çalışan ürünler geliştirir, destekler ve günceller.",
     "ctaPrimary": "PROJE BAŞLAT",
     "ctaSecondary": "ÜRÜNLERİ GÖR",
@@ -55,23 +64,30 @@
   },
   "Hero2": {
     "title": "Uluslararası teknoloji şirketi",
-    "titleLines": ["Uluslararası", "teknoloji şirketi"],
-    "subtitle": "WeeComi; ticaret, yapay zekâ, finans ve iş yönetimi alanlarında kendi başına çalışan ürünler geliştirir, destekler ve günceller.",
-    "subtitleSecondary": "Çatı markamız altında bağımsız ürünler geliştiriyor, destekliyor ve sürekli güncelliyoruz. Her ürün kendi alanında çalışır; WeeComi ise hepsini aynı kurumsal standartta büyütür.",
+    "titleLines": [
+      "Uluslararası",
+      "teknoloji şirketi"
+    ],
+    "subtitle": "2013’ten beri ticaret, yapay zekâ, finans ve iş yönetimi için bağımsız dijital ürünler geliştiriyoruz.",
+    "subtitleSecondary": "Ajans değiliz. Her ürün kendi yol haritasıyla ilerler; WeeComi geliştirme, destek ve güncellemeyi aynı kurumsal standartta yürütür.",
     "ctaPrimary": "ÜRÜNLERİ KEŞFET",
     "ctaSecondary": "HAKKIMIZDA",
-    "clientsLabel": "WeeComi çatısı altında geliştirdiğimiz bağımsız ürün ailesi",
+    "clientsLabel": "WeeComi çatısı altında bağımsız ürün ailesi",
     "playLabel": "Tanıtım videosunu oynat",
     "videoEyebrow": "Tanıtım",
-    "videoTitle": "WeeComi’yi yakından tanıyın",
-    "videoSubtitle": "Ürünlerimiz, ekibimiz ve WeeComi’nin çalışma biçimine kısa bir bakış."
+    "videoTitle": "WeeComi nasıl ürün geliştirir",
+    "videoSubtitle": "Kendi ürünlerimizi nasıl kurduğumuzu, desteklediğimizi ve güncellediğimizi kısaca izleyin."
   },
   "Ecosystem": {
     "eyebrow": "Ekosistem",
-    "bracketTag": "EKOSİSTEM — 03",
+    "bracketTag": "EKOSİSTEM",
     "title": "BAĞIMSIZ TEKNOLOJİ ÜRÜNLERİ",
-    "titleParts": ["Bağımsız", "teknoloji", "ürünleri"],
-    "subtitle": "Her biri kendi alanında çalışan; WeeComi tarafından geliştirilen, desteklenen ve güncellenen çözümler.",
+    "titleParts": [
+      "Bağımsız",
+      "teknoloji",
+      "ürünleri"
+    ],
+    "subtitle": "Ticaret, yapay zekâ, finans ve iş yönetimi. Her ürün kendi alanında çalışır; WeeComi geliştirir, destekler ve günceller.",
     "learnMore": "İncele",
     "visit": "Ürünü ziyaret et",
     "disclaimer": "Sunulan bilgiler yatırım tavsiyesi değildir. Finansal piyasalardaki işlemler risk içerir.",
@@ -83,22 +99,36 @@
       "conjunction": "&",
       "trailing": "",
       "liveLabel": "Canlı · 4 ürün",
-      "cardDescription": "Dijital kartvizit, QR menü ve akıllı katalog çözümlerini tek bir platformda sunar.",
+      "cardDescription": "WeeCard, WeeMenu ve WeeCatalog. Dijital kartvizit, QR menü ve katalog tek WeeNetwork çatısında.",
       "collaborator1": "WeeCard",
       "collaborator2": "WeeMenu"
     },
     "alisveriskapidaCard": {
       "badge": "E-ticaret",
       "title": "Kapınıza gelen alışveriş",
-      "description": "Ürün keşfi, kampanya fırsatları ve mobil uyumlu alışveriş akışıyla kapınıza gelen e-ticaret deneyimi.",
-      "searchPhrases": ["Kapıda teslimat fırsatları", "Online alışveriş kampanyaları", "Yerel satıcılardan sipariş"],
-      "tags": ["Online alışveriş", "Kampanya", "Kapıda"]
+      "description": "Kampanya, ürün keşfi ve mobil alışveriş. Tüketici e-ticaretini kapıya kadar taşıyan bağımsız WeeComi ürünü.",
+      "searchPhrases": [
+        "Kapıda teslimat fırsatları",
+        "Online alışveriş kampanyaları",
+        "Yerel satıcılardan sipariş"
+      ],
+      "tags": [
+        "Online alışveriş",
+        "Kampanya",
+        "Kapıda"
+      ]
     },
     "weecoinsCard": {
       "title": "WEECOINS & WEECOINS PREMIUM",
-      "description": "WeeGold ağı üzerinde işlem gören iki bağımsız dijital varlık. Transfer, ödeme ve ödül senaryolarında kullanılır.",
+      "description": "WeeGold ağı üzerinde WeeCoins ve WeeCoins Premium. Transfer, ödeme ve ekosistem içi kullanım için iki bağımsız dijital varlık.",
       "ribbonBadge": "CRYPTO",
-      "ribbonItems": ["Peer to Peer", "Decentralized", "Digital Currency", "WeeGold Network", "Blockchain"]
+      "ribbonItems": [
+        "Peer to Peer",
+        "Decentralized",
+        "Digital Currency",
+        "WeeGold Network",
+        "Blockchain"
+      ]
     },
     "weenetwork": {
       "metrics": [
@@ -150,7 +180,11 @@
     },
     "pageEyebrow": "EKOSİSTEM",
     "pageTitle": "Bağımsız teknoloji ürünleri tek çatı altında",
-    "pageTitleLines": ["Bağımsız teknoloji", "ürünleri tek çatı", "altında"],
+    "pageTitleLines": [
+      "Bağımsız",
+      "teknoloji",
+      "ürünleri"
+    ],
     "pageSubtitle": "WeeComi; ticaret, yapay zekâ, finans ve işletme yönetimi için birbirinden bağımsız dijital ürünler geliştirir, destekler ve günceller.",
     "heroCta": "Ürünleri gör",
     "introEyebrow": "NASIL ÇALIŞIR",
@@ -328,7 +362,6 @@
         }
       ]
     },
-    "pageTitleLines": ["Bağımsız", "teknoloji", "ürünleri"],
     "guideEyebrow": "REHBER",
     "guideTitle": "Nasıl ürün seçersiniz",
     "guideSubtitle": "Kısa yanıtlar — doğru çözüme daha hızlı ulaşmak için.",
@@ -353,62 +386,133 @@
     "weenetwork": {
       "title": "Dijital İş Kimliği Platformu",
       "description": "İşletmelerin dijital kimlik ihtiyaçları için geliştirilen bağımsız iş kimliği çözümü.",
-      "features": ["Dijital kimlik", "İş profili", "Paylaşılabilir bağlantılar", "Bağımsız ürün"]
+      "features": [
+        "Dijital kimlik",
+        "İş profili",
+        "Paylaşılabilir bağlantılar",
+        "Bağımsız ürün"
+      ]
     },
     "weemenu": {
       "title": "Menünüzü Dijital Bir Deneyime Dönüştürün",
       "description": "Restoranlar ve işletmeler için QR tabanlı, çok dilli ve kolay yönetilebilir dijital menü platformu.",
-      "features": ["QR menü", "Çoklu dil", "Tema özelleştirme", "Anlık fiyat güncelleme", "PDF dışa aktarma", "Masa / garson / mutfak / kurye rolleri", "WebSocket ile anlık takip"]
+      "features": [
+        "QR menü",
+        "Çoklu dil",
+        "Tema özelleştirme",
+        "Anlık fiyat güncelleme",
+        "PDF dışa aktarma",
+        "Masa / garson / mutfak / kurye rolleri",
+        "WebSocket ile anlık takip"
+      ]
     },
     "weecard": {
       "title": "Profesyonel Kimliğiniz, Tek Dokunuşla Paylaşılır",
       "description": "QR ve NFC destekli dijital kartvizit çözümü. İletişim, sosyal medya ve bağlantıları tek kartta birleştirir.",
-      "features": ["QR ve NFC paylaşımı", "Dijital kartvizit", "Sosyal medya bağlantıları", "Tema seçenekleri", "Tıklama ve görüntülenme analizi"]
+      "features": [
+        "QR ve NFC paylaşımı",
+        "Dijital kartvizit",
+        "Sosyal medya bağlantıları",
+        "Tema seçenekleri",
+        "Tıklama ve görüntülenme analizi"
+      ]
     },
     "weecatalog": {
       "title": "Modern Dijital Ürün Kataloğu",
       "description": "Ürünlerinizi paylaşılabilir dijital katalog deneyimiyle sunun. Şu anda geliştirme aşamasında.",
-      "features": ["Modern katalog düzenleri", "Ürün vitrin sayfaları", "Paylaşılabilir bağlantılar", "Yakında"]
+      "features": [
+        "Modern katalog düzenleri",
+        "Ürün vitrin sayfaları",
+        "Paylaşılabilir bağlantılar",
+        "Yakında"
+      ]
     },
     "weekobi": {
       "title": "İşletmenizi Tek Panelden Yönetin",
-      "description": "KOBİ’lerin ürün, mağaza, sipariş ve operasyon süreçlerini daha düzenli yönetmesine yardımcı olan dijital işletme platformu.",
-      "features": ["Mağaza yönetimi", "Ürün yönetimi", "Operasyon takibi", "Merkezi panel", "Raporlama altyapısı"]
+      "description": "KOBİ’lerin mağaza, ürün, sipariş ve operasyon süreçlerini tek panelden yönetmesine yardımcı olan bağımsız işletme platformu.",
+      "features": [
+        "Mağaza yönetimi",
+        "Ürün yönetimi",
+        "Operasyon takibi",
+        "Merkezi panel",
+        "Raporlama altyapısı"
+      ]
     },
     "weesale": {
       "title": "WeeCoins Ekosistemi İçin Güvenli E-Ticaret Katmanı",
       "description": "Sıfır ve ikinci el ürünleri listelemeyi, WCP ile satış akışlarını ve satıcı görünürlüğünü aynı platformda birleştiren çok dilli pazar yeri deneyimi.",
-      "features": ["Sıfır ve ikinci el ürünler", "WCP ile satış akışı", "Güvenli alışveriş", "Referans gelir modeli", "Çok dilli pazar yeri"]
+      "features": [
+        "Sıfır ve ikinci el ürünler",
+        "WCP ile satış akışı",
+        "Güvenli alışveriş",
+        "Referans gelir modeli",
+        "Çok dilli pazar yeri"
+      ]
     },
     "alisveriskapida": {
       "title": "Kapınıza Gelen Alışveriş Deneyimi",
       "description": "Kazan-kazan fırsatlarıyla zenginleştirilmiş, kullanıcı dostu e-ticaret alışveriş platformu.",
-      "features": ["Online alışveriş", "Kampanya fırsatları", "Mobil uyumlu deneyim", "Hızlı keşif"]
+      "features": [
+        "Online alışveriş",
+        "Kampanya fırsatları",
+        "Mobil uyumlu deneyim",
+        "Hızlı keşif"
+      ]
     },
     "weecomibot": {
       "title": "Stratejiden İşleme, Tüm Süreç Tek Panelde",
       "description": "Yapay zekâ sinyalleri, strateji oluşturma, backtest, paper trading ve risk yönetimini bir araya getiren algoritmik işlem platformu.",
-      "features": ["YZ destekli piyasa sinyalleri", "No-code strateji oluşturucu", "Backtest", "Paper trading", "Risk ve portföy yönetimi", "Otomatik işlem altyapısı"]
+      "features": [
+        "YZ destekli piyasa sinyalleri",
+        "No-code strateji oluşturucu",
+        "Backtest",
+        "Paper trading",
+        "Risk ve portföy yönetimi",
+        "Otomatik işlem altyapısı"
+      ]
     },
     "weecoins": {
       "title": "Bağımsız Dijital Varlık Çözümü",
       "description": "Transfer ve ödeme senaryoları için geliştirilen bağımsız dijital varlık ürünü.",
-      "features": ["Dijital transfer", "Ödeme altyapısı", "Cüzdan uyumluluğu", "Bağımsız ürün"]
+      "features": [
+        "Dijital transfer",
+        "Ödeme altyapısı",
+        "Cüzdan uyumluluğu",
+        "Bağımsız ürün"
+      ]
     },
     "weecoinspremium": {
       "title": "Premium Dijital Varlık Deneyimi",
       "description": "WeeCoins için genişletilmiş kullanım senaryoları sunan bağımsız premium katman.",
-      "features": ["Premium erişim", "Gelişmiş özellikler", "Dijital varlık yönetimi"]
+      "features": [
+        "Premium erişim",
+        "Gelişmiş özellikler",
+        "Dijital varlık yönetimi"
+      ]
     },
     "criptoswaps": {
       "title": "7/24 Dijital Varlık ve Kripto Para Borsası",
       "description": "Türkiye merkezli; mobil uygulama, fan token işlemleri, gelişmiş güvenlik ve 7/24 destek sunan dijital varlık platformu.",
-      "features": ["7/24 işlem altyapısı", "iOS ve Android uygulamaları", "İki faktörlü doğrulama", "Fan token işlemleri", "WeeGold Blockchain altyapısı", "Telefon ve e-posta desteği"]
+      "features": [
+        "7/24 işlem altyapısı",
+        "iOS ve Android uygulamaları",
+        "İki faktörlü doğrulama",
+        "Fan token işlemleri",
+        "WeeGold Blockchain altyapısı",
+        "Telefon ve e-posta desteği"
+      ]
     },
     "weezard": {
-      "title": "Eğlenirken Kazan — WeeCoins Oyun Hub’ı",
+      "title": "Oyna, biriktir, paylaş. WeeCoins oyun katmanı",
       "description": "WeeCoins ekosisteminin oyun katmanı; Kazı Kazan, Jackpot, Miner ve WeeCandy ile eğlenceyi WCP birikimine bağlar.",
-      "features": ["Kazı Kazan ve Jackpot", "Miner ve Cryptonaut", "WeeCandy", "Referans sistemi", "WeeCoins ekosistemi", "Mobil oyun hub’ı"]
+      "features": [
+        "Kazı Kazan ve Jackpot",
+        "Miner ve Cryptonaut",
+        "WeeCandy",
+        "Referans sistemi",
+        "WeeCoins ekosistemi",
+        "Mobil oyun hub’ı"
+      ]
     }
   },
   "Solutions": {
@@ -483,7 +587,11 @@
         "text": "Ürün sitesine geçiş veya ekiple planlama ile uygulamaya geçeriz."
       }
     },
-    "pageTitleLines": ["İhtiyacına göre", "WeeComi", "çözümü"],
+    "pageTitleLines": [
+      "İhtiyacına göre",
+      "WeeComi",
+      "çözümü"
+    ],
     "productsCount": "{count} ürün"
   },
   "Stats": {
@@ -492,50 +600,50 @@
     "title": "Ölçülebilir bir teknoloji şirketi",
     "subtitle": "Bağımsız ürünler, çok dilli deneyim ve uluslararası büyüme odağıyla ilerliyoruz.",
     "productsHeading": "11+ BAĞIMSIZ DİJİTAL ÜRÜN",
-    "productsDesc": "WeeComi; ticaret, yapay zekâ, finans ve işletme yönetimi alanlarında birbirinden bağımsız dijital ürünler geliştirir. Her ürün kendi yol haritasıyla ilerler; ihtiyacınız olan çözümü seçersiniz.",
-    "countriesHeading": "5+ AKTİF PAZAR ODAĞI",
-    "countriesDesc": "Türkiye merkezli yapımızla ürünleri yerelde güçlendiriyor, Azerbaycan, Gürcistan, Rusya ve Avrupa odaklı pazarlara kontrollü şekilde açılıyoruz.",
+    "productsDesc": "Ticaret, yapay zekâ, finans ve iş yönetimi için bağımsız ürünler. Her ürün kendi yol haritasıyla ilerler; ihtiyacınız olanı seçersiniz.",
+    "countriesHeading": "10+ ÜLKE AĞI",
+    "countriesDesc": "Dünya genelinde 10’dan fazla ülkede yatırımcı ağımız var. Türkiye merkezli yapımızla Kafkasya, Orta Asya, Avrupa ve ötesine kontrollü büyüyoruz.",
     "languagesHeading": "5 DİL DESTEĞİ",
-    "languagesDesc": "Türkçe, İngilizce, Azerbaycan Türkçesi, Rusça ve Gürcüce ile yerel, anlaşılır bir deneyim sunuyoruz; çeviriden öte pazara uyumlu içerik ve iletişim kurguluyoruz.",
+    "languagesDesc": "Türkçe, İngilizce, Azerbaycan Türkçesi, Rusça ve Gürcüce. Çeviri değil; pazara uyumlu içerik ve iletişim.",
     "platforms": "Bağımsız platform",
     "carouselLabel": "WeeComi’den kareler"
   },
   "Benefits": {
     "eyebrow": "NEDEN WEECOMI",
     "bracketTag": "KÜRESEL EKİP, BAĞIMSIZ ÜRÜNLER",
-    "title": "DİKKAT ÇEKMEKTEN BÜYÜMEYE",
-    "subtitle": "Her ürün kendi işini yapar. WeeComi ise hepsini aynı kurumsal standartta geliştirir ve günceller.",
+    "title": "BAĞIMSIZ ÜRÜN, TEK STANDART",
+    "subtitle": "İhtiyacınıza uygun ürünü seçersiniz. Geliştirme, destek ve güncelleme WeeComi çatısında aynı kalitede yürür.",
     "cta": "ÜRÜNLERİ KEŞFET",
     "independent": {
       "tag": "BAĞIMSIZ",
       "title": "Ayrı ürünler, net odak",
       "cardTitle": "AYRI ÜRÜNLER, NET ODAK",
-      "description": "WeeMenu, WeeCard, WeeSale ve diğerleri birbirine bağlı değildir; her biri kendi alanında çalışır."
+      "description": "WeeMenu, WeeCard, WeeSale ve diğerleri kilitlenmez. Her ürün kendi alanında çalışır."
     },
     "scale": {
       "tag": "ÖLÇEK",
       "title": "Uluslararası büyüme",
       "cardTitle": "ULUSLARARASI BÜYÜME",
-      "description": "Çok dilli yapı ve bölgesel odaklarla ürünleri farklı pazarlara taşıyoruz."
+      "description": "5 dil ve bölgesel odakla ürünleri Türkiye’den Azerbaycan, Gürcistan, Rusya ve Avrupa’ya taşıyoruz."
     },
     "speed": {
       "tag": "HIZ",
       "title": "Daha hızlı teslim",
       "cardTitle": "DAHA HIZLI TESLİM",
-      "description": "Modern altyapı ve ürün odaklı ekiplerle çözümleri hızlı güncelliyoruz."
+      "description": "Ürün ekipleri ve modern altyapı. Güncelleme ajans projesine değil, ürün yol haritasına bağlıdır."
     },
     "trust": {
       "tag": "GÜVEN",
       "title": "Kurumsal standart",
       "cardTitle": "KURUMSAL STANDART",
-      "description": "Tek marka çatısı altında tutarlı kalite, destek ve sürekli iyileştirme."
+      "description": "2013’ten beri tek çatı. Tutarlı kalite, destek ve sürekli iyileştirme."
     }
   },
   "ProductShowcase": {
     "eyebrow": "Ürün vitrini",
     "bracketTag": "ÜRÜN VİTRİNİ",
-    "title": "ÖNE ÇIKAN BAĞIMSIZ ÇÖZÜMLER",
-    "subtitle": "Farklı ihtiyaçlar için ayrı ürünler. Her biri kendi alanında ölçülebilir sonuç üretir.",
+    "title": "ÖNE ÇIKAN BAĞIMSIZ ÜRÜNLER",
+    "subtitle": "Algoritmik panel, borsa, oyun ve pazar yeri. Her ürün kendi işini yapar; hepsi WeeComi çatısında durur.",
     "cta": "TÜM ÜRÜNLER",
     "learnMore": "İncele",
     "cursorLabel": "ÜRÜNÜ İNCELE →",
@@ -588,12 +696,12 @@
           "label": "Satıcı araçları"
         }
       ],
-      "title": "GÜVENLİ TİCARET, WCP ODAKLI SATIŞ VE GLOBAL VİTRİN",
+      "title": "SIFIR VE İKİNCİ EL, WCP İLE ÇOK DİLLİ PAZAR YERİ",
       "mediaTitle": "Marketplace",
       "paragraphs": [
-        "Sıfır ve ikinci el ürünleri listelemeyi, WCP ile satış akışlarını ve satıcı görünürlüğünü aynı platformda birleştiren çok dilli pazar yeri deneyimi.",
-        "Satıcılar ürünlerini kolayca yayınlar, alıcılar güvenli ödeme ve net vitrin düzeniyle alışveriş eder; referans modeli büyümeyi destekler.",
-        "Çok dilli arayüz ve ekosistem odaklı ödeme katmanı sayesinde WeeSale, yerel satışı global görünürlüğe taşır."
+        "Sıfır ve ikinci el ürünleri listeleyin. WCP satış akışı ve satıcı vitrini aynı platformda.",
+        "Satıcılar ürün yayınlar; alıcılar net vitrin ve güvenli ödeme ile alışveriş eder.",
+        "Çok dilli arayüz, yerel satışı daha geniş bir pazara taşır."
       ]
     },
     "weecomibot": {
@@ -615,7 +723,7 @@
           "label": "Şifreli API kasası"
         }
       ],
-      "title": "STRATEJİDEN İŞLEME, TÜM SÜREÇ TEK PANELDE",
+      "title": "STRATEJİ, BACKTEST VE PAPER TRADING TEK PANELDE",
       "mediaTitle": "Trading panel"
     },
     "criptoswaps": {
@@ -637,7 +745,7 @@
           "label": "Token işlemleri"
         }
       ],
-      "title": "7/24 KRİPTO BORSA, SPOT İŞLEM TEK EKRANDA",
+      "title": "7/24 KRİPTO VE FAN TOKEN BORSASI",
       "mediaTitle": "Trading desk"
     },
     "weezard": {
@@ -659,19 +767,19 @@
           "label": "Mobil hub"
         }
       ],
-      "title": "EĞLENCEYE HAZIR MISIN — OYNA, BİRİKTİR, PAYLAŞ",
+      "title": "OYNA, BİRİKTİR, PAYLAŞ. WEEZARD OYUN KATMANI",
       "mediaTitle": "Play",
       "paragraphs": [
-        "WeeCoins ekosisteminin oyun katmanı; Kazı Kazan, Jackpot, Miner ve WeeCandy ile eğlenceyi WCP birikimine bağlar.",
-        "Tek hub üzerinden oyunları keşfedin, skorları takip edin ve referans sistemiyle topluluk büyümesine katkı sağlayın.",
-        "Mobil odaklı deneyim, net ödül döngüsü ve ekosistem bağlantısıyla WeeZard eğlenceyi sürdürülebilir bir oyun katmanına dönüştürür."
+        "WeeCoins ekosisteminin oyun katmanı. Kazı Kazan, Jackpot, Miner ve WeeCandy eğlenceyi WCP kullanımına bağlar.",
+        "Tek hub üzerinden oyunları keşfedin, skorları takip edin ve referans sistemiyle topluluğa katılın.",
+        "Mobil odaklı deneyim ve ekosistem bağlantısıyla WeeZard, WeeCoins için oyun katmanıdır."
       ]
     }
   },
   "Testimonials": {
     "bracketTag": "KULLANICI YORUMLARI",
-    "title": "Sözü kullanıcıların gerçek deneyimlerine bırakalım",
-    "subtitle": "WeeComi ekosistemine katılan kullanıcıların paylaştığı yorumlardan seçilmiş kısa notlar.",
+    "title": "Kullanıcılar WeeComi’yi kendi sözleriyle anlatıyor",
+    "subtitle": "Onaylı kullanıcılardan kısa alıntılar. Deneyimler kişiseldir.",
     "memberLabel": "WeeComi kullanıcısı",
     "sectionLabel": "WeeComi kullanıcı yorumları",
     "prev": "Önceki yorum",
@@ -681,7 +789,7 @@
   },
   "Manifesto": {
     "eyebrow": "Kim olduğumuz",
-    "text": "WEECOMI; BAĞIMSIZ ÜRÜNLER GELİŞTİRİR, HER ÇÖZÜMÜ KENDİ ALANINDA GÜÇLÜ TUTAR VE MARKALARI DİJİTAL DÜNYADA BÜYÜTMEK İÇİN MODERN TEKNOLOJİ SUNAR — TUTARLI KALİTE VE SÜREKLİ İYİLEŞTİRME İLE."
+    "text": "WEECOMI INTERNATIONAL BAĞIMSIZ DİJİTAL ÜRÜNLER GELİŞTİRİR. HER ÜRÜN KENDİ ALANINDA ÇALIŞIR. HEPSİ AYNI KURUMSAL STANDARTLA DESTEKLENİR VE GÜNCELLENİR."
   },
   "Global": {
     "eyebrow": "GLOBAL YAPI",
@@ -743,18 +851,21 @@
       "team": "Ekip",
       "other": "Diğer"
     },
-    "pageTitleLines": ["Görsellerle", "WeeComi"],
+    "pageTitleLines": [
+      "Görsellerle",
+      "WeeComi"
+    ],
     "filterEyebrow": "KATEGORİLER",
     "filterHint": "Etkinlik, ürün, ofis ve ekip karelerini filtreleyin."
   },
   "CTA": {
-    "title": "DOĞRU ÜRÜNLE DİJİTAL BÜYÜMENİZİ HIZLANDIRIN",
-    "subtitle": "İşletmeniz veya projeniz için doğru WeeComi ürününü birlikte seçelim.",
+    "title": "DOĞRU ÜRÜNÜ BİRLİKTE SEÇELİM",
+    "subtitle": "İşletmeniz için bağımsız WeeComi ürününü keşfedin veya ekiple iletişime geçin.",
     "primary": "ÜRÜNLERİ KEŞFET",
     "secondary": "İLETİŞİME GEÇ"
   },
   "Footer": {
-    "tagline": "İş, ticaret ve dijital yaşam için bağımsız teknoloji ürünleri geliştiren uluslararası şirket.",
+    "tagline": "2013’ten beri ticaret, yapay zekâ, finans ve iş yönetimi için bağımsız teknoloji ürünleri geliştiren uluslararası şirket.",
     "pages": "SAYFALAR",
     "products": "ÜRÜNLER",
     "legal": "YASAL",
@@ -768,12 +879,21 @@
     "risk": "Risk Bildirimi",
     "copyright": "© 2026 WeeComi International. Tüm hakları saklıdır.",
     "ctaEyebrow": "BİRLİKTE BÜYÜYELİM",
-    "ctaTitle": "BAĞIMSIZ ÜRÜNLERLE BÜYÜMEYE HAZIR MISINIZ?",
-    "ctaSubtitle": "İşletmeniz için doğru bağımsız WeeComi ürününü birlikte planlayalım.",
+    "ctaTitle": "DOĞRU BAĞIMSIZ ÜRÜNÜ BİRLİKTE SEÇELİM",
+    "ctaSubtitle": "Kurumsal iletişim veya ürün keşfi. İhtiyacınıza uygun WeeComi ürününü netleştirelim.",
     "ctaButton": "İLETİŞİME GEÇ",
     "whyUs": "Neden Biz",
     "faqLink": "SSS",
-    "marqueeTags": ["BAĞIMSIZ ÜRÜNLER", "ÇOK DİLLİ", "ULUSLARARASI", "İŞ ODAKLI", "YAPAY ZEKÂ", "DİJİTAL ÇÖZÜMLER", "ÖLÇEKLENEBİLİR", "TEK ÇATI"]
+    "marqueeTags": [
+      "BAĞIMSIZ ÜRÜNLER",
+      "ÇOK DİLLİ",
+      "ULUSLARARASI",
+      "İŞ ODAKLI",
+      "YAPAY ZEKÂ",
+      "ÜRÜN ŞİRKETİ",
+      "KURUMSAL STANDART",
+      "TEK ÇATI"
+    ]
   },
   "Corporate": {
     "eyebrow": "HAKKIMIZDA",
@@ -828,7 +948,11 @@
     "ecosystemTitle": "Doğru ürünü keşfedin",
     "ecosystemText": "Ekosistem sayfasında tüm bağımsız ürünleri kategorilere göre inceleyebilir, detay sayfalarına geçebilirsiniz.",
     "ecosystemCta": "Ekosistemi gör",
-    "pageTitleLines": ["Kendi ürünlerini", "geliştiren", "teknoloji şirketi"],
+    "pageTitleLines": [
+      "Kendi ürünlerini",
+      "geliştiren",
+      "teknoloji şirketi"
+    ],
     "meetLabel": "WeeComi",
     "heroPrefix": "Bağımsız",
     "heroSuffix": "ürünler",
@@ -838,8 +962,19 @@
     "circularText": "WEECOMI • BAĞIMSIZ ÜRÜNLER",
     "ribbonBadge": "YENİ",
     "ribbonCta": "Ekosistem",
-    "introTags": ["Ticaret", "Yapay zekâ", "Finans", "İşletme", "Uluslararası", "Bağımsız ürünler"],
-    "timeline": ["Bağımsız ürün geliştirme disiplini", "Çok dilli ve çok pazarlı büyüme", "Kurumsal standartta destek ve güncelleme"],
+    "introTags": [
+      "Ticaret",
+      "Yapay zekâ",
+      "Finans",
+      "İşletme",
+      "Uluslararası",
+      "Bağımsız ürünler"
+    ],
+    "timeline": [
+      "Bağımsız ürün geliştirme disiplini",
+      "Çok dilli ve çok pazarlı büyüme",
+      "Kurumsal standartta destek ve güncelleme"
+    ],
     "heroAccent1": "Cesur fikirler",
     "heroMuted": "Gerçek etki",
     "heroAccent2": "Bağımsız ürünler",
@@ -972,7 +1107,11 @@
       "consent": "KVKK onayını işaretlemeniz gerekir."
     },
     "supportPhone": "+90 (850) 302 0731",
-    "pageTitleLines": ["Birlikte", "bir şeyler", "kuralım"],
+    "pageTitleLines": [
+      "Birlikte",
+      "bir şeyler",
+      "kuralım"
+    ],
     "formEyebrow": "MESAJ",
     "formTitle": "Projenizi veya sorunuzu yazın",
     "supportLabel": "DESTEK HATTI",
@@ -1026,7 +1165,7 @@
     "faqSubtitle": "Bu ürün hakkında kısa ve net yanıtlar.",
     "relatedTitle": "Diğer ürünleri inceleyin",
     "ctaTitle": "WeeComi ekosistemine katılmaya hazır mısınız?",
-    "ctaSubtitle": "İhtiyacınıza uygun ürünü birlikte netleştirelim — kısa bir görüşme yeterli.",
+    "ctaSubtitle": "İhtiyacınıza uygun ürünü birlikte netleştirelim. Kısa bir görüşme yeterli.",
     "visitProduct": "Ürün sitesine git",
     "contactCta": "Hadi konuşalım",
     "learnMore": "Detayı incele"
@@ -1129,23 +1268,23 @@
   "Faq": {
     "eyebrow": "SORULARINIZA YANITLAR",
     "title": "SIKÇA SORULAN SORULAR",
-    "subtitle": "WeeComi ile çalışmaya başlamadan önce merak edilen temel noktalar.",
+    "subtitle": "WeeComi’nin ne yaptığı, ürünlerin nasıl çalıştığı ve sizin için hangisinin uygun olduğu.",
     "items": [
       {
         "q": "HANGİ TÜR ÜRÜNLER GELİŞTİRİYORSUNUZ?",
-        "a": "WeeComi; ticaret, yapay zekâ, finans ve iş yönetimi alanlarında birbirinden bağımsız dijital ürünler geliştirir, destekler ve günceller."
+        "a": "WeeComi International; ticaret, yapay zekâ, finans ve iş yönetimi için bağımsız dijital ürünler geliştirir. Portföyde WeeNetwork, WeeKobi, WeeSale, Alışveriş Kapıda, WeeComi Bot, WeeCoins, WeeZard ve CriptoSwaps bulunur."
       },
       {
         "q": "ÜRÜNLER BİRBİRİNE BAĞLI MI?",
-        "a": "Hayır. Her ürün kendi alanında bağımsız çalışır. Ortak nokta; tasarım, teknoloji, destek ve kurumsal kalite standartlarının WeeComi tarafından yönetilmesidir."
+        "a": "Hayır. Ürünler birbirine kilitlenmez; WeeMenu veya WeeCard tek başına kullanılabilir. Ortak nokta WeeComi’nin geliştirme, güvenlik ve destek standardıdır."
       },
       {
         "q": "HANGİ PAZARLARDA HİZMET VERİYORSUNUZ?",
-        "a": "Türkiye merkezli ilerliyoruz; Azerbaycan, Gürcistan, Rusya ve Avrupa odaklı çok dilli deneyimler sunuyoruz."
+        "a": "Türkiye merkezliyiz. Azerbaycan, Gürcistan, Rusya ve Avrupa odaklı pazarlarda Türkçe, İngilizce, Azerbaycan Türkçesi, Rusça ve Gürcüce deneyim sunuyoruz."
       },
       {
         "q": "BİZİM İÇİN DOĞRU ÜRÜNÜ NASIL SEÇİYORUZ?",
-        "a": "İhtiyacınızı birlikte değerlendirip size en uygun bağımsız WeeComi ürününü öneriyoruz. Gerekirse ürün bazlı yol haritası da paylaşıyoruz."
+        "a": "İhtiyacınızı birlikte netleştiririz ve size uygun bağımsız ürünü öneririz. İsterseniz ürün sitesine geçersiniz, isterseniz kurumsal ekiple iletişime geçersiniz."
       }
     ]
   },

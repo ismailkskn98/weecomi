@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import FullBleedHero from "@/components/common/full-bleed-hero";
 import { BracketTag } from "@/components/home/_shared";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
-import EcosystemProductCard from "@/components/ecosystem/ecosystem-product-card";
+import ProductRow from "@/components/ecosystem/catalog/product-row";
 import { getProductsBySolutionArea, getProductPath } from "@/data/products";
 import { HIKARI_HERO } from "@/data/hikariImages";
 
@@ -59,19 +59,20 @@ export default async function SolutionAreaDetail({ area }) {
         <div className="gridContainer">
           <BracketTag>{t("productsEyebrow")}</BracketTag>
           <h2 className="mt-4 font-heading text-[clamp(1.7rem,3.2vw,2.75rem)] leading-display text-weecomi-dark-gray">{t("productsHeading")}</h2>
-          <div className="mt-8 space-y-4">
+          <div className="mt-8 border-b border-black/10">
             {related.map((product, index) => (
-              <EcosystemProductCard
-                key={product.id}
-                index={index + 1}
-                href={getProductPath(product)}
-                productId={product.id}
-                nameCaps={product.nameCaps}
-                title={tProducts(`${product.id}.title`)}
-                description={tProducts(`${product.id}.description`)}
-                ctaLabel={tEco("cursorLabel")}
-                compact
-              />
+              <div key={product.id}>
+                <ProductRow
+                  href={getProductPath(product)}
+                  productId={product.id}
+                  nameCaps={product.nameCaps}
+                  title={tProducts(`${product.id}.title`)}
+                  description={tProducts(`${product.id}.description`)}
+                  ctaLabel={tEco("cursorLabel")}
+                  compact
+                  className={index === 0 ? "border-t-0" : undefined}
+                />
+              </div>
             ))}
           </div>
         </div>

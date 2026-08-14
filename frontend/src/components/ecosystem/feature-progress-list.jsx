@@ -1,4 +1,4 @@
-/** Numbered hairline feature list — no decorative progress bars. */
+/** Numbered hairline feature list - no decorative progress bars. */
 export default function FeatureProgressList({ items = [] }) {
   if (!items.length) return null;
 
