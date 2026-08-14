@@ -5,7 +5,7 @@ import TextScrollReveal from "@/components/ui/text-scroll-reveal";
 export default function ManifestoQuote({ text }) {
   return (
     <TextScrollReveal
-      // scrub={1}
+      scrub={2}
       // baseOpacity={0.12}
       // blurStrength={0}
       // baseRotation={0}
