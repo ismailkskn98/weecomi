@@ -52,15 +52,15 @@ export default async function Manifesto() {
 
       <div className="relative z-10 gridContainer">
         <div data-manifesto className="mx-auto w-full text-center sm:max-w-11/12 lg:max-w-5xl">
-          <p className="font-heading text-[11px] font-medium uppercase tracking-[0.14em] text-weecomi-dark-gray/45">{t("eyebrow")}</p>
+          <ManifestoQuote text={t("eyebrow")} className="font-heading text-[11px] font-medium uppercase tracking-[0.14em] text-weecomi-dark-gray/45" />
 
           <blockquote id="manifesto-quote" className="mt-6 md:mt-8">
-            <ManifestoQuote text={`“${t("text")}”`} />
+            <ManifestoQuote text={t("text")} />
           </blockquote>
 
           <footer data-manifesto className="mt-6 md:mt-8">
-            <p className="font-heading text-xs font-light text-weecomi-blue md:text-sm">{t("authorName")}</p>
-            <p className="font-heading text-xs font-light text-weecomi-blue md:text-sm">{t("authorRole")}</p>
+            <ManifestoQuote text={t("authorName")} className="font-heading text-xs font-light text-weecomi-blue md:text-sm" />
+            <ManifestoQuote text={t("authorRole")} className="font-heading text-xs font-light text-weecomi-blue md:text-sm" />
           </footer>
         </div>
       </div>
