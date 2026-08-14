@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { products, getProductPath } from "@/data/products";
-import { BracketTag } from "@/components/home/_shared";
+import { SectionHeader } from "@/components/home/_shared";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import AlisverisKapidaCard from "./alisveriskapida";
 import WeecoinsCard from "./weecoins";
@@ -27,11 +27,14 @@ export default async function Ecosystem() {
   return (
     <section id="ecosystem" className="relative section-y-bottom">
       <div className="relative z-10 gridContainer min-w-0">
-        <div className="max-w-3xl">
-          <BracketTag>{t("bracketTag")}</BracketTag>
-          <h2 className="mt-5 font-heading text-3xl leading-display text-weecomi-dark-gray md:text-5xl">{t("title")}</h2>
-          <p className="mt-4 text-base leading-relaxed text-muted-foreground md:text-lg">{t("subtitle")}</p>
-        </div>
+        <SectionHeader
+          align="left"
+          className="max-w-3xl"
+          eyebrow={t("bracketTag")}
+          title={t("title")}
+          subtitle={t("subtitle")}
+          titleClassName="md:text-5xl lg:text-5xl"
+        />
         <ScrollReveal
           as="div"
           itemSelector="[data-eco-card]"

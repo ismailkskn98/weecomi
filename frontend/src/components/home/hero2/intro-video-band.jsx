@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { BracketTag, ScrollReveal } from "@/components/home/_shared";
+import { SectionHeader, ScrollReveal } from "@/components/home/_shared";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
 import Hero2Video from "./hero2-video";
 
@@ -45,10 +45,17 @@ export default async function IntroVideoBand() {
             <Hero2Video playLabel={t("playLabel")} />
           </div>
 
-          <div data-intro-video className="order-1 flex flex-col gap-4 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:items-start lg:gap-[clamp(1rem,1.5vw,1.25rem)] lg:text-left">
-            <BracketTag className="text-weecomi-orange">{t("videoEyebrow")}</BracketTag>
-            <h2 className="font-heading text-[1.75rem] leading-display tracking-normal text-weecomi-dark-gray md:text-[2.25rem] xl:text-[2.65rem]">{t("videoTitle")}</h2>
-            <p className="text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] leading-relaxed text-weecomi-dark-gray/70 md:leading-7">{t("videoSubtitle")}</p>
+          <div className="order-1 md:max-w-md lg:order-2 lg:col-span-5 lg:ml-auto lg:max-w-lg lg:text-left">
+            <SectionHeader
+              align="left"
+              className="max-w-none"
+              eyebrow={t("videoEyebrow")}
+              title={t("videoTitle")}
+              subtitle={t("videoSubtitle")}
+              eyebrowClassName="text-weecomi-orange"
+              titleClassName="mt-4 font-heading text-[1.75rem] tracking-normal md:text-[2.25rem] lg:text-[2.25rem] xl:text-[2.65rem]"
+              subtitleClassName="mt-4 text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] text-weecomi-dark-gray/70 md:text-[clamp(0.95rem,0.85rem+0.4vw,1.125rem)] md:leading-7"
+            />
           </div>
         </div>
       </div>

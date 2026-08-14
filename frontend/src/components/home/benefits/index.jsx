@@ -1,9 +1,8 @@
 import Image from "next/image";
 import { getTranslations } from "next-intl/server";
 import ActionButton from "@/components/common/actionButton";
-import { BracketTag } from "@/components/home/_shared";
+import { SectionHeader } from "@/components/home/_shared";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
-import BlurText from "@/components/ui/blur-text";
 
 const BENEFITS = [
   { key: "independent", image: "/images/hikari/benefits/reach.svg" },
@@ -18,13 +17,13 @@ export default async function Benefits() {
   return (
     <ScrollReveal id="benefits" itemSelector="[data-benefit]" className="section-y bg-white">
       <div className="gridContainer">
-        <div className="mx-auto max-w-3xl text-center">
-          <BracketTag>{t("bracketTag")}</BracketTag>
-          <h2 className="mt-6 font-heading text-3xl leading-display text-weecomi-dark-gray md:text-5xl lg:text-[62px]">
-            <BlurText text={t("title")} delay={30} stepDuration={0.25} direction="bottom" animateBy="letters" />
-          </h2>
-          <p className="mx-auto mt-5 max-w-2xl text-base leading-relaxed text-black/50 md:text-lg">{t("subtitle")}</p>
-        </div>
+        <SectionHeader
+          eyebrow={t("bracketTag")}
+          title={t("title")}
+          subtitle={t("subtitle")}
+          titleClassName="mt-6 md:text-5xl lg:text-[62px]"
+          subtitleClassName="mx-auto mt-5 max-w-2xl text-black/50"
+        />
 
         <div className="mt-[var(--sp-5)] grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map((item) => (

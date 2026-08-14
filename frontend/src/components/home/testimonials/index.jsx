@@ -1,5 +1,5 @@
 import { getLocale, getTranslations } from "next-intl/server";
-import { BracketTag, ScrollReveal } from "@/components/home/_shared";
+import { SectionHeader, ScrollReveal } from "@/components/home/_shared";
 import { TextureOverlay } from "@/components/ui/texture-overlay";
 import { data as testimonialData } from "./data";
 import TestimonialsCarousel from "./testimonials-carousel";
@@ -28,11 +28,16 @@ export default async function Testimonials() {
       <TextureOverlay texture="noise" tone="dark" opacity={0.05} className="z-0" />
 
       <div className="relative z-10 gridContainer">
-        <div data-testimonial-item className="max-w-[42rem]">
-          <BracketTag className="text-weecomi-orange">{t("bracketTag")}</BracketTag>
-          <h2 className="mt-4 max-w-4xl font-heading text-3xl leading-display text-weecomi-dark-gray md:text-[3.4rem] lg:text-[3.85rem]">{t("title")}</h2>
-          <p className="mt-4 max-w-[34rem] text-base leading-relaxed text-muted-foreground md:text-[1.02rem]">{t("subtitle")}</p>
-        </div>
+        <SectionHeader
+          align="left"
+          className="max-w-[42rem]"
+          eyebrow={t("bracketTag")}
+          title={t("title")}
+          subtitle={t("subtitle")}
+          eyebrowClassName="text-weecomi-orange"
+          titleClassName="mt-4 max-w-4xl md:text-[3.4rem] lg:text-[3.85rem]"
+          subtitleClassName="max-w-[34rem] md:text-[1.02rem]"
+        />
       </div>
 
       <div data-testimonial-item className="relative z-10 mt-10 md:mt-12">
