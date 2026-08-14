@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import { requestPasswordReset } from "@/lib/api/auth";
 import { useToast } from "@/components/ui/toast";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 
 export default function ForgotPasswordForm() {
   const { toast } = useToast();
@@ -31,25 +33,29 @@ export default function ForgotPasswordForm() {
   }
 
   return (
-    <form className="mt-8 space-y-4" onSubmit={onSubmit}>
-      <div>
-        <label className="mb-1.5 block text-sm font-semibold text-slate-700">Email</label>
-        <input
+    <form className="space-y-5" onSubmit={onSubmit}>
+      <div className="space-y-2">
+        <label htmlFor="email" className="block text-sm font-medium text-weecomi-dark-gray">
+          Email
+        </label>
+        <Input
+          id="email"
+          name="email"
           type="email"
+          autoComplete="email"
           required
           value={email}
           onChange={(event) => setEmail(event.target.value)}
-          className="w-full rounded-xl border border-slate-200 px-3 py-2.5 outline-none focus:border-[#346C92]"
+          className="h-12 bg-white px-3.5 text-base md:text-base"
         />
       </div>
-      <button
-        type="submit"
-        disabled={loading}
-        className="w-full rounded-xl bg-[#346C92] px-4 py-2.5 text-sm font-semibold text-white disabled:opacity-60"
-      >
+      <Button type="submit" disabled={loading} className="h-12 w-full rounded-md font-heading text-sm font-medium">
         {loading ? "Gönderiliyor..." : "Sıfırlama bağlantısı gönder"}
-      </button>
-      <Link href="/admin/login" className="block text-center text-sm font-semibold text-[#346C92]/70">
+      </Button>
+      <Link
+        href="/admin/login"
+        className="block text-center font-heading text-sm text-weecomi-blue underline decoration-weecomi-blue/35 underline-offset-4 transition hover:text-weecomi-orange hover:decoration-weecomi-orange"
+      >
         Girişe dön
       </Link>
     </form>

@@ -38,7 +38,7 @@ export default async function Stats() {
       <ScrollReveal itemSelector="[data-about-col]" className="section-y bg-weecomi-orange text-white">
         <div className="gridContainer">
           <div className="grid gap-10 md:gap-12 lg:grid-cols-4 lg:items-stretch lg:gap-0">
-            <h2 className="text-center font-heading text-[clamp(2.1rem,3.6vw,2.75rem)] leading-display lg:self-start lg:pr-6 lg:text-left xl:pr-8">
+            <h2 className="text-center font-heading text-[clamp(2.1rem,3.6vw,2.75rem)] font-normal normal-case leading-display lg:self-start lg:pr-6 lg:text-left xl:pr-8">
               {t("aboutHeading")}
             </h2>
 

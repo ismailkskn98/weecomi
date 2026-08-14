@@ -81,7 +81,7 @@
   "Ecosystem": {
     "eyebrow": "Ecosystem",
     "bracketTag": "ECOSYSTEM",
-    "title": "INDEPENDENT TECHNOLOGY PRODUCTS",
+    "title": "Independent technology products",
     "titleParts": [
       "Independent",
       "technology",
@@ -596,7 +596,7 @@
   },
   "Stats": {
     "eyebrow": "A little about us",
-    "aboutHeading": "A LITTLE ABOUT US",
+    "aboutHeading": "A little about us",
     "title": "A measurable technology company",
     "subtitle": "We move forward with independent products, multilingual experiences and international focus.",
     "productsHeading": "11+ INDEPENDENT DIGITAL PRODUCTS",
@@ -611,7 +611,7 @@
   "Benefits": {
     "eyebrow": "WHY WEECOMI",
     "bracketTag": "WORLD-CLASS TEAM, INDEPENDENT PRODUCTS",
-    "title": "INDEPENDENT PRODUCTS, ONE STANDARD",
+    "title": "Independent products, one standard",
     "subtitle": "You pick the product that fits. Development, support and updates run at the same quality under WeeComi.",
     "cta": "EXPLORE PRODUCTS",
     "independent": {
@@ -642,7 +642,7 @@
   "ProductShowcase": {
     "eyebrow": "Product showcase",
     "bracketTag": "PRODUCT SHOWCASE",
-    "title": "FEATURED INDEPENDENT PRODUCTS",
+    "title": "Featured independent products",
     "subtitle": "Algorithmic panel, exchange, games and marketplace. Each product does its own job under the WeeComi roof.",
     "cta": "ALL PRODUCTS",
     "learnMore": "Explore",
@@ -817,7 +817,7 @@
   },
   "News": {
     "eyebrow": "NEWS",
-    "title": "NEWS & UPDATES",
+    "title": "News and updates",
     "subtitle": "Announcements, media coverage and product updates from WeeComi.",
     "readMore": "READ MORE",
     "allNews": "ALL NEWS",
@@ -881,7 +881,7 @@
     "risk": "Risk Disclosure",
     "copyright": "© 2026 WeeComi International. All rights reserved.",
     "ctaEyebrow": "GROW TOGETHER",
-    "ctaTitle": "LET'S PICK THE RIGHT INDEPENDENT PRODUCT",
+    "ctaTitle": "Let's pick the right independent product",
     "ctaSubtitle": "Corporate contact or product discovery. We will clarify the WeeComi product that fits.",
     "ctaButton": "CONTACT US",
     "whyUs": "Why Us",
@@ -1269,7 +1269,7 @@
   },
   "Faq": {
     "eyebrow": "ANSWERS TO YOUR QUESTIONS",
-    "title": "FREQUENTLY ASKED QUESTIONS",
+    "title": "Frequently asked questions",
     "subtitle": "What WeeComi builds, how the products work, and how to choose the right one.",
     "items": [
       {

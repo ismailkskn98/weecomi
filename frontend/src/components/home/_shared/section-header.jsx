@@ -2,8 +2,8 @@ import { cn } from "@/lib/utils";
 import SectionIntroMotion from "./section-intro-motion";
 
 const titleBySize = {
-  default: "mt-5 font-heading text-3xl font-normal leading-[1.12] tracking-[-0.03em] text-weecomi-dark-gray md:text-4xl lg:text-[2.75rem]",
-  compact: "mt-5 font-heading text-3xl font-normal leading-[1.12] tracking-[-0.03em] text-weecomi-dark-gray md:text-4xl lg:text-[2.25rem]",
+  default: "mt-5 font-heading text-3xl font-normal normal-case leading-[1.12] tracking-[-0.03em] text-weecomi-dark-gray md:text-4xl lg:text-[2.75rem]",
+  compact: "mt-5 font-heading text-3xl font-normal normal-case leading-[1.12] tracking-[-0.03em] text-weecomi-dark-gray md:text-4xl lg:text-[2.25rem]",
 };
 
 const defaultSubtitleClass = "mt-4 max-w-2xl text-base leading-7 text-muted-foreground md:text-lg";

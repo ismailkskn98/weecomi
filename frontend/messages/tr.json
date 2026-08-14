@@ -81,7 +81,7 @@
   "Ecosystem": {
     "eyebrow": "Ekosistem",
     "bracketTag": "EKOSİSTEM",
-    "title": "BAĞIMSIZ TEKNOLOJİ ÜRÜNLERİ",
+    "title": "Bağımsız teknoloji ürünleri",
     "titleParts": [
       "Bağımsız",
       "teknoloji",
@@ -596,7 +596,7 @@
   },
   "Stats": {
     "eyebrow": "Kısaca biz",
-    "aboutHeading": "KISACA BİZ",
+    "aboutHeading": "Kısaca biz",
     "title": "Ölçülebilir bir teknoloji şirketi",
     "subtitle": "Bağımsız ürünler, çok dilli deneyim ve uluslararası büyüme odağıyla ilerliyoruz.",
     "productsHeading": "11+ BAĞIMSIZ DİJİTAL ÜRÜN",
@@ -611,7 +611,7 @@
   "Benefits": {
     "eyebrow": "NEDEN WEECOMI",
     "bracketTag": "KÜRESEL EKİP, BAĞIMSIZ ÜRÜNLER",
-    "title": "BAĞIMSIZ ÜRÜN, TEK STANDART",
+    "title": "Bağımsız ürün, tek standart",
     "subtitle": "İhtiyacınıza uygun ürünü seçersiniz. Geliştirme, destek ve güncelleme WeeComi çatısında aynı kalitede yürür.",
     "cta": "ÜRÜNLERİ KEŞFET",
     "independent": {
@@ -642,7 +642,7 @@
   "ProductShowcase": {
     "eyebrow": "Ürün vitrini",
     "bracketTag": "ÜRÜN VİTRİNİ",
-    "title": "ÖNE ÇIKAN BAĞIMSIZ ÜRÜNLER",
+    "title": "Öne çıkan bağımsız ürünler",
     "subtitle": "Algoritmik panel, borsa, oyun ve pazar yeri. Her ürün kendi işini yapar; hepsi WeeComi çatısında durur.",
     "cta": "TÜM ÜRÜNLER",
     "learnMore": "İncele",
@@ -817,7 +817,7 @@
   },
   "News": {
     "eyebrow": "HABERLER",
-    "title": "HABERLER VE GELİŞMELER",
+    "title": "Haberler ve gelişmeler",
     "subtitle": "WeeComi’den güncel duyurular, medya ve ürün güncellemeleri.",
     "readMore": "DEVAMINI OKU",
     "allNews": "TÜM HABERLER",
@@ -881,7 +881,7 @@
     "risk": "Risk Bildirimi",
     "copyright": "© 2026 WeeComi International. Tüm hakları saklıdır.",
     "ctaEyebrow": "BİRLİKTE BÜYÜYELİM",
-    "ctaTitle": "DOĞRU BAĞIMSIZ ÜRÜNÜ BİRLİKTE SEÇELİM",
+    "ctaTitle": "Doğru bağımsız ürünü birlikte seçelim",
     "ctaSubtitle": "Kurumsal iletişim veya ürün keşfi. İhtiyacınıza uygun WeeComi ürününü netleştirelim.",
     "ctaButton": "İLETİŞİME GEÇ",
     "whyUs": "Neden Biz",
@@ -1269,7 +1269,7 @@
   },
   "Faq": {
     "eyebrow": "SORULARINIZA YANITLAR",
-    "title": "SIKÇA SORULAN SORULAR",
+    "title": "Sıkça sorulan sorular",
     "subtitle": "WeeComi’nin ne yaptığı, ürünlerin nasıl çalıştığı ve sizin için hangisinin uygun olduğu.",
     "items": [
       {

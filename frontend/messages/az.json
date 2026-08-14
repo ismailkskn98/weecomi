@@ -81,7 +81,7 @@
   "Ecosystem": {
     "eyebrow": "Ekosistem",
     "bracketTag": "EKOSİSTEM",
-    "title": "MÜSTƏQİL TEXNOLOGİYA MƏHSULLARI",
+    "title": "Müstəqil texnologiya məhsulları",
     "titleParts": [
       "Müstəqil",
       "texnologiya",
@@ -596,7 +596,7 @@
   },
   "Stats": {
     "eyebrow": "Qısaca biz",
-    "aboutHeading": "QISACA BİZ",
+    "aboutHeading": "Qısaca biz",
     "title": "Ölçülə bilən texnologiya şirkəti",
     "subtitle": "Müstəqil məhsullar, çoxdilli təcrübə və beynəlxalq fokusla irəliləyirik.",
     "productsHeading": "11+ MÜSTƏQİL RƏQƏMSAL MƏHSUL",
@@ -638,7 +638,7 @@
   },
   "News": {
     "eyebrow": "XƏBƏRLƏR",
-    "title": "XƏBƏRLƏR VƏ YENİLİKLƏR",
+    "title": "Xəbərlər və yeniliklər",
     "subtitle": "WeeComi ekosistemindən elanlar, media və məhsul yenilikləri.",
     "readMore": "DAVAMINI OXU",
     "allNews": "BÜTÜN XƏBƏRLƏR",
@@ -702,7 +702,7 @@
     "risk": "Risk Bildirimi",
     "copyright": "© 2026 WeeComi International. Bütün hüquqlar qorunur.",
     "ctaEyebrow": "BİRLİKDƏ BÖYÜYƏK",
-    "ctaTitle": "DOĞRU MÜSTƏQİL MƏHSULU BİRLİKDƏ SEÇƏK",
+    "ctaTitle": "Doğru müstəqil məhsulu birlikdə seçək",
     "ctaSubtitle": "Korporativ əlaqə və ya məhsul kəşfi. Sizə uyğun WeeComi məhsulunu netləşdirək.",
     "ctaButton": "BİZİMLƏ ƏLAQƏ",
     "whyUs": "Niyə biz",
@@ -1091,7 +1091,7 @@
   "Benefits": {
     "eyebrow": "NİYƏ WEECOMI",
     "bracketTag": "QLOBAL KOMANDA, MÜSTƏQİL MƏHSULLAR",
-    "title": "MÜSTƏQİL MƏHSUL, TƏK STANDART",
+    "title": "Müstəqil məhsul, tək standart",
     "subtitle": "Ehtiyacınıza uyğun məhsulu seçirsiniz. İnkişaf, dəstək və yeniləmə WeeComi çatısı altında eyni keyfiyyətdə gedir.",
     "cta": "MƏHSULLARI KƏŞF ET",
     "independent": {
@@ -1122,7 +1122,7 @@
   "ProductShowcase": {
     "eyebrow": "Məhsul vitrini",
     "bracketTag": "MƏHSUL VİTRİNİ",
-    "title": "SEÇİLMİŞ MÜSTƏQİL MƏHSULLAR",
+    "title": "Seçilmiş müstəqil məhsullar",
     "subtitle": "Alqoritmik panel, birja, oyun və marketplace. Hər məhsul öz işini görür; hamısı WeeComi çatısı altındadır.",
     "cta": "BÜTÜN MƏHSULLAR",
     "learnMore": "Bax",
@@ -1269,7 +1269,7 @@
   },
   "Faq": {
     "eyebrow": "SUALLARINIZIN CAVABLARI",
-    "title": "TEZ-TEZ VERİLƏN SUALLAR",
+    "title": "Tez-tez verilən suallar",
     "subtitle": "WeeComi nə qurur, məhsullar necə işləyir və sizin üçün hansı uyğundur.",
     "items": [
       {

@@ -59,8 +59,8 @@ export default async function Footer() {
 
       <div className="relative gridContainer py-14 md:py-20">
         <div className="mx-auto flex max-w-3xl flex-col items-center text-center">
-          <p className="font-heading text-[11px] font-normal text-weecomi-orange md:text-xs">[ {t("ctaEyebrow")} ]</p>
-          <h2 className="mt-5 font-heading text-3xl font-normal leading-[1.12] tracking-[-0.03em] text-white md:text-4xl lg:text-[2.75rem]">
+          <p className="font-heading text-[11px] font-normal uppercase tracking-[0.08em] text-weecomi-orange md:text-xs">[ {t("ctaEyebrow")} ]</p>
+          <h2 className="mt-5 font-heading text-3xl font-normal normal-case leading-[1.12] tracking-[-0.03em] text-white md:text-4xl lg:text-[2.75rem]">
             {t("ctaTitle")}
           </h2>
           <div className="mt-8">
