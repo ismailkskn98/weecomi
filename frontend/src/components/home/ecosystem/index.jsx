@@ -36,7 +36,7 @@ export default async function Ecosystem() {
         <ScrollReveal
           as="div"
           itemSelector="[data-eco-card]"
-          className="mt-10 grid min-w-0 gap-3 md:mt-12 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-[auto_auto] lg:gap-4"
+          className="section-gap grid min-w-0 gap-3 md:grid-cols-2 lg:grid-cols-3 lg:grid-rows-[auto_auto] lg:gap-4"
           y={36}
           start="top 80%"
           stagger={0.12}

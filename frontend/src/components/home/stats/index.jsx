@@ -56,7 +56,7 @@ export default async function Stats() {
         </div>
       </ScrollReveal>
 
-      <section className="bg-white pt-[var(--sp-5)] md:pt-[var(--sp-6)]">
+      <section className="bg-white section-y-top">
         <div className="gridContainer">
           <div className="fluid pl-[max(1rem,calc((100%-min(92%,90rem))/2))]">
             <StatsCarousel slides={slides} label={t("carouselLabel")} />

@@ -9,7 +9,7 @@ export default async function IntroVideoBand() {
   return (
     <ScrollReveal
       itemSelector="[data-intro-video]"
-      className="relative overflow-hidden bg-[#f6f7f8] pb-12 pt-8 md:pb-14 md:pt-10 lg:pb-16 lg:pt-10 xl:pb-20 xl:pt-12 2xl:pb-[var(--sp-6)] 2xl:pt-14"
+      className="relative overflow-hidden bg-[#f6f7f8] pt-8 section-y-bottom md:pt-10"
       aria-label={t("videoTitle")}
     >
       <div
@@ -40,7 +40,7 @@ export default async function IntroVideoBand() {
       />
 
       <div className="relative z-10 gridContainer">
-        <div className="grid items-center gap-8 md:gap-10 lg:grid-cols-12 lg:gap-[clamp(2rem,3vw,4rem)]">
+        <div className="grid items-center gap-8 md:gap-10 lg:grid-cols-12 lg:gap-12">
           <div data-intro-video className="order-2 relative lg:order-1 lg:col-span-7">
             <Hero2Video playLabel={t("playLabel")} />
           </div>

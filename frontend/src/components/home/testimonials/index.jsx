@@ -36,7 +36,7 @@ export default async function Testimonials() {
         />
       </div>
 
-      <div data-testimonial-item className="relative z-10 mt-10 md:mt-12">
+      <div data-testimonial-item className="relative z-10 section-gap">
         <TestimonialsCarousel
           testimonials={testimonials}
           memberLabel={t("memberLabel")}

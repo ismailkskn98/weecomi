@@ -19,8 +19,7 @@ export default async function Manifesto() {
 
   return (
     <article
-      itemSelector="[data-manifesto]"
-      className="relative overflow-hidden py-20 md:py-28 lg:py-32 [mask-image:linear-gradient(to_bottom,transparent_0%,black_20%,black_80%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_20%,black_80%,transparent_100%)]"
+      className="relative overflow-hidden section-y [mask-image:linear-gradient(to_bottom,transparent_0%,black_20%,black_80%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,transparent_0%,black_20%,black_80%,transparent_100%)]"
       aria-labelledby="manifesto-quote"
     >
       <div
@@ -54,7 +53,7 @@ export default async function Manifesto() {
         <div data-manifesto className="mx-auto w-full text-center sm:max-w-11/12 lg:max-w-5xl">
           <ManifestoQuote text={t("eyebrow")} className="font-heading text-[11px] font-medium uppercase tracking-[0.14em] text-weecomi-dark-gray/45" />
 
-          <blockquote id="manifesto-quote" className="mt-6 md:mt-8">
+          <blockquote id="manifesto-quote" className="mt-5">
             <ManifestoQuote text={t("text")} />
           </blockquote>
 

@@ -7,11 +7,11 @@ export default async function Faq() {
   const items = t.raw("items");
 
   return (
-    <ScrollReveal id="faq" itemSelector="[data-faq-item]" className="section-y bg-white">
+    <ScrollReveal id="faq" itemSelector="[data-faq-item]" className="section-y-bottom bg-white">
       <div className="gridContainer">
-        <SectionHeader eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} titleClassName="mt-6 md:text-5xl lg:text-[62px]" subtitleClassName="mx-auto mt-5 max-w-2xl" align="center" />
+        <SectionHeader align="center" eyebrow={t("eyebrow")} title={t("title")} subtitle={t("subtitle")} />
 
-        <div data-faq-item className="mt-10 md:mt-12 lg:mt-14">
+        <div data-faq-item className="section-gap">
           <FaqAccordion items={Array.isArray(items) ? items : []} />
         </div>
       </div>

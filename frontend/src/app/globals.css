@@ -218,6 +218,15 @@
   }
 }
 
+/* Header → içerik. Bölüm padding’inden küçük tutulsun ki intro içerikle gruplansın. */
+@utility section-gap {
+  margin-top: var(--sp-4);
+
+  @media (min-width: 768px) {
+    margin-top: var(--sp-5);
+  }
+}
+
 /*
   Display / heading multi-line type.
   0.9–1.05 crashes Turkish diacritics (İ Ğ Ü Ş Ç Ö); 1.3+ feels too airy.

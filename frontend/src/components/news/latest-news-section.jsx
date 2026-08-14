@@ -38,7 +38,7 @@ export default async function LatestNewsSection() {
           </div>
         </div>
 
-        <div data-news-item className="mt-12">
+        <div data-news-item className="section-gap">
           <NewsCardsCarousel items={items} locale={locale} viewLabel={t("view")} label={t("title")} />
         </div>
       </div>

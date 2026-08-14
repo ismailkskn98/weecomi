@@ -21,7 +21,7 @@ export default async function Hero2() {
   return (
     <HeroReveal
       mask={false}
-      className="relative flex flex-col overflow-x-hidden bg-[#f6f7f8] pb-6 pt-28 md:pb-7 md:pt-32 lg:min-h-[100svh] lg:pb-6 lg:pt-[7.25rem] xl:pb-7 xl:pt-[7.75rem] 2xl:pb-8 2xl:pt-[var(--sp-8)]"
+      className="relative flex flex-col overflow-x-hidden bg-[#f6f7f8] pb-8 pt-28 md:pb-10 md:pt-32 lg:min-h-[100svh] lg:pb-10 lg:pt-[7.25rem] xl:pt-[7.75rem] 2xl:pt-[var(--sp-8)]"
     >
       <div
         className="pointer-events-none absolute inset-0 z-0"

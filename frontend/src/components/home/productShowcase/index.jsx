@@ -25,7 +25,7 @@ export default async function ProductShowcase() {
   const productMap = new Map(products.map((product) => [product.id, product]));
 
   return (
-    <ScrollReveal itemSelector="[data-showcase-item]" className="section-y-top pb-10 md:pb-12 lg:pb-14">
+    <ScrollReveal itemSelector="[data-showcase-item]" className="pb-10 md:pb-12 lg:pb-14">
       <div className="gridContainer">
         <SectionHeader
           className="max-w-3xl"
@@ -34,7 +34,7 @@ export default async function ProductShowcase() {
           subtitle={t("subtitle")}
         />
 
-        <div className="mt-10 md:mt-12 lg:mt-14">
+        <div className="section-gap">
           <StackedSections stackOffset={52} paneGap={false} minDramaWidth={768} className="gap-6 md:gap-7 lg:gap-8 -mb-[4.5rem] md:-mb-[6rem] lg:-mb-[7rem]">
             {showcaseConfig.map(({ id, Card, useMetrics, useDisclaimer, useParagraphs }, index) => {
               const product = productMap.get(id);

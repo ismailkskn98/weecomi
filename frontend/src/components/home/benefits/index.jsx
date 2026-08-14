@@ -23,7 +23,7 @@ export default async function Benefits() {
           subtitle={t("subtitle")}
         />
 
-        <div className="mt-[var(--sp-5)] grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="section-gap grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {BENEFITS.map((item) => (
             <article key={item.key} data-benefit className="flex flex-col items-center gap-6 rounded-xl bg-[#f5f5f5] px-4 py-6">
               <span className="inline-flex items-center justify-center rounded-xl bg-black px-3 py-[5px]">
@@ -45,7 +45,7 @@ export default async function Benefits() {
           ))}
         </div>
 
-        <div className="mt-[var(--sp-5)] flex justify-center">
+        <div className="section-gap flex justify-center">
           <ActionButton href="/ecosystem" variant="inverse" size="lg" showArrow>
             {t("cta")}
           </ActionButton>
