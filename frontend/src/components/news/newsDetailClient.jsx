@@ -1,10 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 import { getPublicNewsBySlug, listPublicNews } from "@/lib/api/news";
-import { fallbackNews } from "@/data/products";
+import { getFallbackNews } from "@/data/fallbackNews";
 import { Link } from "@/i18n/navigation";
 import ActionButton from "@/components/common/actionButton";
 import NewsCard from "@/components/news/newsCard";
@@ -32,24 +32,26 @@ export default function NewsDetailClient({ slug }) {
   const [item, setItem] = useState(null);
   const [related, setRelated] = useState([]);
 
+  const localizedFallback = useMemo(() => getFallbackNews(locale), [locale]);
+
   useEffect(() => {
     getPublicNewsBySlug(slug, locale)
       .then(setItem)
       .catch(() => {
-        setItem(fallbackNews.find((entry) => entry.slug === slug) || null);
+        setItem(localizedFallback.find((entry) => entry.slug === slug) || null);
       });
-  }, [slug, locale]);
+  }, [slug, locale, localizedFallback]);
 
   useEffect(() => {
     listPublicNews({ locale, page: 1, pageSize: 6 })
       .then((data) => {
         const items = (data?.items || []).filter((entry) => entry.slug !== slug).slice(0, 3);
-        setRelated(items.length ? items : fallbackNews.filter((entry) => entry.slug !== slug).slice(0, 3));
+        setRelated(items.length ? items : localizedFallback.filter((entry) => entry.slug !== slug).slice(0, 3));
       })
       .catch(() => {
-        setRelated(fallbackNews.filter((entry) => entry.slug !== slug).slice(0, 3));
+        setRelated(localizedFallback.filter((entry) => entry.slug !== slug).slice(0, 3));
       });
-  }, [slug, locale]);
+  }, [slug, locale, localizedFallback]);
 
   if (!item) {
     return <p className="text-muted-foreground">{t("empty")}</p>;

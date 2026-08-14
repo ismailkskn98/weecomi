@@ -3,21 +3,23 @@ const details = {
   weenetwork: {
     tr: {
       longDescription:
-        "WeeNetwork, WeeComi ekosisteminin dijital iş kimliği katmanıdır. Menü, kartvizit ve katalog çözümlerini aynı çatı altında sunarak işletmelerin müşteriyle buluşma noktalarını modernleştirir.",
-      audience: ["Restoran ve cafe zincirleri", "Kurumsal satış ekipleri", "Perakende markaları", "Ajanslar ve franchise yapılar"],
+        "WeeNetwork, WeeComi International'ın dijital iş kimliği platform katmanıdır. WeeMenu, WeeCard ve WeeCatalog çözümlerini aynı çatı altında sunarak işletmelerin müşteriyle buluşma noktalarını modernleştirir. QR, link ve NFC paylaşımı tek panelden yönetilir.",
+      audience: ["Restoran ve cafe zincirleri", "Kurumsal satış ekipleri", "Perakende markaları", "Ajanslar ve franchise yapılar", "Çok şubeli işletmeler"],
       howItWorks: [
         { title: "Hesap oluşturun", text: "WeeNetwork üzerinden işletme profilinizi tanımlayın." },
         { title: "Ürünü seçin", text: "WeeMenu, WeeCard veya WeeCatalog ile ihtiyacınıza uygun deneyimi açın." },
         { title: "Paylaşın ve yönetin", text: "QR, link veya NFC ile paylaşın; içerikleri tek panelden güncelleyin." },
       ],
       faqs: [
-        { q: "WeeNetwork tek başına bir ürün mü?", a: "WeeNetwork, WeeComi ekosistemindeki dijital kimlik ürünlerini bir araya getiren platform katmanıdır." },
-        { q: "Ayrı ayrı ürün kullanabilir miyim?", a: "Evet. WeeMenu, WeeCard ve WeeCatalog ihtiyaçlarınıza göre bağımsız kullanılabilir." },
+        { q: "WeeNetwork nedir?", a: "WeeNetwork, WeeComi International tarafından sunulan dijital iş kimliği platform katmanıdır. WeeMenu, WeeCard ve WeeCatalog ürünlerini aynı marka ve panel mantığında bir araya getirir." },
+        { q: "WeeNetwork tek başına bir ürün mü?", a: "WeeNetwork, WeeComi ekosistemindeki dijital kimlik ürünlerini bir araya getiren platform katmanıdır. İşletmeler ihtiyaçlarına göre alt ürünlerden birini veya birkaçını kullanabilir." },
+        { q: "Ayrı ayrı ürün kullanabilir miyim?", a: "Evet. WeeMenu, WeeCard ve WeeCatalog ihtiyaçlarınıza göre bağımsız kullanılabilir; WeeNetwork ortak profil ve yönetim deneyimini sağlar." },
+        { q: "Kurulum ne kadar sürer?", a: "Temel profil ve ilk ürün kurulumu genellikle kısa sürede tamamlanır. Çok şubeli yapılarda şube ve rol yapılandırması ek süre gerektirebilir." },
       ],
     },
     en: {
       longDescription:
-        "WeeNetwork is the digital business identity layer of the WeeComi ecosystem. It brings menu, card and catalog experiences under one roof.",
+        "WeeNetwork is WeeComi International's digital business identity platform layer. It brings WeeMenu, WeeCard and WeeCatalog under one roof so businesses can modernize customer touchpoints. QR, link and NFC sharing are managed from one panel.",
       audience: ["Restaurant groups", "Corporate sales teams", "Retail brands", "Agencies and franchises"],
       howItWorks: [
         { title: "Create an account", text: "Define your business profile on WeeNetwork." },
@@ -33,7 +35,7 @@ const details = {
   weemenu: {
     tr: {
       longDescription:
-        "WeeMenu, restoran ve hizmet işletmelerinin basılı menüye bağlı kalmadan ürün, fiyat ve operasyonu yönetmesini sağlar. QR erişim, çoklu dil, tema özelleştirme ve anlık güncelleme aynı panelde birleşir. Masa siparişi, garson çağırma, mutfak ve kurye rolleri WebSocket ile anlık takip edilir; ödeme modülü ayrıdır.",
+        "WeeMenu, WeeComi International'ın restoran ve hizmet işletmeleri için geliştirdiği dijital menü platformudur. Basılı menüye bağlı kalmadan ürün, fiyat ve operasyonu yönetmenizi sağlar. QR erişim, çoklu dil, tema özelleştirme ve anlık güncelleme aynı panelde birleşir.",
       audience: ["Restoranlar ve cafeler", "Oteller ve restoran zincirleri", "Cafe & quick service markaları", "Catering işletmeleri"],
       howItWorks: [
         { title: "Menüyü oluşturun", text: "Kategoriler, ürünler, fiyatlar ve görselleri panelden ekleyin." },
@@ -95,7 +97,7 @@ const details = {
   weecatalog: {
     tr: {
       longDescription:
-        "WeeCatalog, ürünlerinizi modern ve paylaşılabilir bir dijital katalog deneyimiyle sunmak için geliştirilmektedir. WeeComi ekosisteminin ürün vitrin katmanı olarak konumlanır.",
+        "WeeCatalog, WeeComi International tarafından geliştirilen paylaşılabilir dijital ürün kataloğu platformudur. Üreticiler, toptancılar ve perakende markaları ürün vitrinlerini modern bir katalog deneyimiyle sunabilir. Şu anda geliştirme aşamasındadır.",
       audience: ["Üreticiler", "Toptancılar", "Perakende markaları", "Showroom işletmeleri"],
       howItWorks: [
         { title: "Katalog yapısını kurun", text: "Ürün gruplarını ve vitrin düzenini tanımlayın." },
@@ -103,7 +105,9 @@ const details = {
         { title: "Bağlantıyla paylaşın", text: "Katalog linkini müşterilerinizle paylaşın." },
       ],
       faqs: [
-        { q: "Ne zaman kullanılabilir olacak?", a: "WeeCatalog şu anda geliştirme aşamasındadır. Duyurular WeeComi haberleri üzerinden paylaşılır." },
+        { q: "WeeCatalog nedir?", a: "WeeCatalog, WeeComi International ekosisteminde ürünlerinizi paylaşılabilir dijital katalog formatında sunmanızı hedefleyen bağımsız bir vitrin ürünüdür." },
+        { q: "Ne zaman kullanılabilir olacak?", a: "WeeCatalog şu anda geliştirme aşamasındadır. Lansman ve erken erişim duyuruları WeeComi haber merkezi üzerinden paylaşılır." },
+        { q: "WeeMenu veya WeeSale ile birlikte kullanılır mı?", a: "Evet. Katalog vitrini WeeMenu veya WeeSale operasyon katmanlarıyla birlikte değerlendirilebilir; her ürün bağımsız olarak da çalışır." },
       ],
     },
     en: {
@@ -153,7 +157,7 @@ const details = {
   weesale: {
     tr: {
       longDescription:
-        "WeeSale, satıcılarla müşterileri buluşturan ve ürün keşfini kolaylaştıran WeeComi e-ticaret katmanıdır. Online mağaza, kampanya ve satıcı çözümleriyle dijital satış deneyimini destekler.",
+        "WeeSale, WeeComi International'ın satıcı odaklı e-ticaret katmanıdır. Online mağaza, kampanya ve satıcı çözümleriyle dijital satış deneyimini destekler. Sıfır ve ikinci el ürün listeleme ile çok dilli pazar yeri senaryolarını kapsar.",
       audience: ["Online satıcılar", "Marka mağazaları", "Pazar yeri girişimleri", "Dijital ticaret ekipleri"],
       howItWorks: [
         { title: "Mağazanızı açın", text: "Satıcı profili ve ürün vitrininizi oluşturun." },
@@ -161,7 +165,9 @@ const details = {
         { title: "Satışı yönetin", text: "Sipariş ve satış süreçlerini dijital olarak takip edin." },
       ],
       faqs: [
-        { q: "Alışveriş Kapıda ile farkı nedir?", a: "WeeSale satıcı odaklı ticaret platformu katmanıyken Alışveriş Kapıda tüketici alışveriş deneyimine odaklanır. İkisi de WeeComi ekosistemindedir." },
+        { q: "WeeSale nedir?", a: "WeeSale, WeeComi International tarafından sunulan satıcı odaklı e-ticaret platform katmanıdır. Mağaza açma, ürün listeleme ve kampanya yönetimi sağlar." },
+        { q: "Alışveriş Kapıda ile farkı nedir?", a: "WeeSale satıcı operasyonlarına odaklanır; Alışveriş Kapıda tüketici keşfi ve alışveriş deneyimine odaklanır. İkisi de WeeComi ticaret ekosisteminin parçasıdır." },
+        { q: "WCP ile satış ne anlama gelir?", a: "WeeCoins ekosistemindeki kullanım senaryoları WeeSale akışlarıyla ilişkilendirilebilir. Bu yapı gelir veya değer artışı vaadi içermez." },
       ],
     },
     en: {
@@ -181,7 +187,7 @@ const details = {
   alisveriskapida: {
     tr: {
       longDescription:
-        "Alışveriş Kapıda, WeeComi ekosisteminin tüketiciye dönük e-ticaret deneyimidir. Ürün keşfi, kampanya fırsatları ve mobil uyumlu alışveriş akışıyla kullanıcıları satıcılara bağlar.",
+        "Alışveriş Kapıda, WeeComi International'ın tüketiciye dönük e-ticaret platformudur. Ürün keşfi, kampanya fırsatları ve mobil uyumlu alışveriş akışıyla kullanıcıları satıcılara bağlar.",
       audience: ["Online alışveriş yapan kullanıcılar", "Kampanya odaklı markalar", "Yerel ve ulusal satıcılar"],
       howItWorks: [
         { title: "Ürünleri keşfedin", text: "Kategoriler ve vitrinler üzerinden gezinin." },
@@ -189,7 +195,9 @@ const details = {
         { title: "Alışverişi tamamlayın", text: "Mobil uyumlu akışla sipariş sürecini sürdürün." },
       ],
       faqs: [
-        { q: "WeeSale ile birlikte mi çalışır?", a: "Evet. İkisi de WeeComi ticaret katmanının parçasıdır ve farklı kullanıcı dokunuşlarına hizmet eder." },
+        { q: "Alışveriş Kapıda nedir?", a: "Alışveriş Kapıda, WeeComi International'ın tüketici odaklı e-ticaret deneyimidir. Keşif, kampanya ve sipariş akışlarını bir araya getirir." },
+        { q: "WeeSale ile birlikte mi çalışır?", a: "Evet. WeeSale satıcı operasyon katmanıyken Alışveriş Kapıda tüketici tarafını güçlendirir; ikisi birlikte WeeComi ticaret stratejisini tamamlar." },
+        { q: "Mobil uyumlu mu?", a: "Evet. Alışveriş akışı mobil cihazlarda hızlı keşif ve sipariş tamamlama için optimize edilmiştir." },
       ],
     },
     en: {
@@ -209,7 +217,7 @@ const details = {
   weecomibot: {
     tr: {
       longDescription:
-        "WeeComi Bot; strateji oluşturma, yapay zekâ sinyalleri, backtest, paper trading ve risk yönetimini tek panelde birleştiren algoritmik işlem platformudur. Amaç, süreçleri daha kontrollü yönetmektir. Yatırım tavsiyesi vermez ve kazanç garantisi sunmaz.",
+        "WeeComi Bot, WeeComi International tarafından sunulan algoritmik işlem platformudur. Strateji oluşturma, yapay zekâ sinyalleri, backtest, paper trading ve risk yönetimini tek panelde birleştirir. Yatırım tavsiyesi vermez ve kazanç garantisi sunmaz.",
       audience: ["Algoritmik işlem meraklıları", "Strateji geliştiriciler", "Risk süreçlerini panelden izlemek isteyen kullanıcılar"],
       howItWorks: [
         { title: "Strateji tanımlayın", text: "No-code kurallar veya indikatör kombinasyonlarıyla strateji oluşturun." },
@@ -239,7 +247,7 @@ const details = {
   weecoins: {
     tr: {
       longDescription:
-        "WeeCoins, WeeComi ürün ve hizmetlerinde kullanım senaryoları için geliştirilen dijital varlık katmanıdır. Transfer, ödeme altyapısı ve platform entegrasyonlarına odaklanır. Fiyat artışı veya gelir garantisi vaadi içermez.",
+        "WeeCoins, WeeComi International ekosisteminde transfer, ödeme ve platform entegrasyonları için geliştirilen bağımsız dijital varlık katmanıdır. WeeComi ürün ve hizmetlerindeki kullanım senaryolarına odaklanır. Fiyat artışı veya gelir garantisi vaadi içermez.",
       audience: ["WeeComi ekosistemi kullanıcıları", "Platform entegrasyonu arayan ekipler", "Dijital varlık altyapısı inceleyen işletmeler"],
       howItWorks: [
         { title: "Ekosistem kullanımını anlayın", text: "WeeComi ürünlerindeki kullanım senaryolarını inceleyin." },
@@ -269,7 +277,7 @@ const details = {
   weecoinspremium: {
     tr: {
       longDescription:
-        "WeeCoins Premium, WeeCoins ekosisteminde genişletilmiş kullanım senaryoları sunan premium katmandır. WeeComi ürün ailesinin parçasıdır; yatırım getirisi veya değer artışı vaadi içermez.",
+        "WeeCoins Premium, WeeComi International ekosisteminde WeeCoins için genişletilmiş kullanım senaryoları sunan premium katmandır. Ek erişim ve yönetim araçları sağlar; yatırım getirisi veya değer artışı vaadi içermez.",
       audience: ["Genişletilmiş ekosistem kullanımı isteyen kullanıcılar", "Premium erişim ihtiyacı olan ekipler"],
       howItWorks: [
         { title: "Premium erişimi inceleyin", text: "Kapsamı ve kullanım senaryolarını değerlendirin." },
@@ -277,7 +285,9 @@ const details = {
         { title: "Yönetim araçlarını kullanın", text: "Dijital varlık yönetimine dair süreçleri takip edin." },
       ],
       faqs: [
-        { q: "Gelir garantisi var mı?", a: "Hayır. Premium katman gelir veya değer artışı garantisi sunmaz." },
+        { q: "WeeCoins Premium nedir?", a: "WeeCoins Premium, WeeComi International ekosisteminde WeeCoins için genişletilmiş erişim ve kullanım senaryoları sunan premium katmandır." },
+        { q: "Gelir garantisi var mı?", a: "Hayır. Premium katman gelir veya değer artışı garantisi sunmaz; yatırım tavsiyesi niteliği taşımaz." },
+        { q: "WeeCoins ile nasıl ilişkilidir?", a: "Premium, WeeCoins altyapısı üzerinde ek özellik ve erişim katmanıdır. Temel transfer ve ekosistem kullanımı WeeCoins ile devam eder." },
       ],
     },
     en: {
@@ -297,7 +307,7 @@ const details = {
   weezard: {
     tr: {
       longDescription:
-        "WeeZard, WeeCoins ekosistemine dahil eğlence ve kazanç odaklı bir oyun platformudur. Kazı Kazan, Mayın Tarlası, Jackpot, Miner, Çarkıfelek ve WeeCandy gibi oyunlarla kullanıcılar eğlenirken WCP biriktirebilir; referans sistemiyle topluluk büyümesine katkı sağlar.",
+        "WeeZard, WeeComi International / WeeCoins ekosisteminin oyun ve eğlence platformudur. Kazı Kazan, Mayın Tarlası, Jackpot, Miner, Çarkıfelek ve WeeCandy gibi oyunlarla kullanıcılar eğlenirken WCP biriktirebilir. Yatırım tavsiyesi vermez ve kazanç garantisi sunmaz.",
       audience: ["Oyun ve eğlence odaklı kullanıcılar", "WeeCoins ekosistemine katılmak isteyenler", "Pasif birikim senaryoları arayan kullanıcılar", "Referans ile büyüyen topluluklar"],
       howItWorks: [
         { title: "Uygulamayı açın", text: "WeeZard hub üzerinden hesabınıza giriş yapın." },
@@ -331,7 +341,7 @@ const details = {
   criptoswaps: {
     tr: {
       longDescription:
-        "CriptoSwaps, Türkiye merkezli dijital varlık ve kripto para borsasıdır. 7/24 işlem altyapısı, mobil uygulama desteği, fan token listelemeleri ve WeeGold Blockchain tabanlı özel proje yapısıyla dijital varlık ekosisteminde yenilikçi bir işlem deneyimi sunar.",
+        "CriptoSwaps, WeeComi International ekosisteminde yer alan Türkiye merkezli dijital varlık ve kripto para borsasıdır. 7/24 işlem altyapısı, mobil uygulama desteği, fan token listelemeleri ve WeeGold Blockchain tabanlı özel proje yapısıyla dijital varlık ekosisteminde işlem deneyimi sunar. Yatırım tavsiyesi değildir.",
       audience: ["Kripto varlık yatırımcıları", "Fan token işlemleriyle ilgilenen kullanıcılar", "Mobil işlem deneyimi arayan kullanıcılar", "7/24 destek bekleyen dijital varlık toplulukları"],
       howItWorks: [
         { title: "Hesabınızı oluşturun", text: "Web veya mobil uygulama üzerinden kayıt olarak hesabınızı aktive edin." },

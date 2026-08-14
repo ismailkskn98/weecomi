@@ -15,6 +15,20 @@ function canSendMail() {
   return Boolean(process.env.SMTP_HOST && process.env.SMTP_USER && process.env.SMTP_PASS && process.env.CONTACT_TO_EMAIL);
 }
 
+async function saveToBackend(data) {
+  const baseURL = process.env.NEXT_PUBLIC_BACKEND_API_URL || "http://localhost:8000/api/v1";
+  const response = await fetch(`${baseURL}/public/contact`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(data),
+  });
+
+  if (!response.ok) {
+    const payload = await response.json().catch(() => ({}));
+    throw new Error(payload.error || "Backend contact save failed.");
+  }
+}
+
 export async function POST(request) {
   try {
     const body = await request.json();
@@ -37,6 +51,12 @@ export async function POST(request) {
       "",
       data.message,
     ].join("\n");
+
+    try {
+      await saveToBackend(data);
+    } catch (error) {
+      console.error("[contact] backend save failed:", error.message);
+    }
 
     if (!canSendMail()) {
       console.log("[contact] SMTP not configured. Mock success payload:");

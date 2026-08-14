@@ -90,7 +90,14 @@ export default function StatsCarousel({ slides, label }) {
           {loopSlides.map((slide, index) => (
             <div key={slide.id} className="min-w-0 shrink-0 grow-0 basis-[86%] pl-3 sm:basis-[62%] md:basis-[48%] md:pl-4 lg:basis-[42%] lg:pl-5 xl:basis-[40%]">
               <figure className="relative aspect-[4/3] overflow-hidden rounded-[1.25rem] md:rounded-[1.5rem] lg:rounded-[1.75rem]">
-                <Image src={slide.src} alt={slide.alt || ""} fill sizes="(max-width: 640px) 85vw, (max-width: 1024px) 45vw, 40vw" className="object-cover" />
+                <Image
+                  src={slide.src}
+                  alt={slide.alt || ""}
+                  fill
+                  sizes="(max-width: 640px) 85vw, (max-width: 1024px) 45vw, 40vw"
+                  className="object-cover"
+                  priority={index === 0}
+                />
               </figure>
             </div>
           ))}

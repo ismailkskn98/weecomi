@@ -385,7 +385,7 @@
   "Products": {
     "weenetwork": {
       "title": "Digital Business Identity Platform",
-      "description": "An independent business identity product for digital presence and shareable company profiles.",
+      "description": "WeeComi International ecosystem digital business identity platform; WeeMenu, WeeCard and WeeCatalog under one roof.",
       "features": [
         "Digital identity",
         "Business profile",
@@ -395,7 +395,7 @@
     },
     "weemenu": {
       "title": "Turn Your Menu Into a Digital Experience",
-      "description": "A QR-based, multilingual and easy-to-manage digital menu platform for restaurants and businesses.",
+      "description": "WeeComi International QR-based, multilingual digital menu platform for restaurants and service businesses.",
       "features": [
         "QR menu",
         "Multi-language",
@@ -440,7 +440,7 @@
     },
     "weesale": {
       "title": "A Secure Commerce Layer for the WeeCoins Ecosystem",
-      "description": "A multilingual marketplace for new and second-hand products that combines seller visibility, WCP-enabled sales flows and safer digital commerce.",
+      "description": "WeeComi International seller-focused commerce layer with WCP-enabled sales flows and a multilingual marketplace.",
       "features": [
         "New and second-hand products",
         "WCP sales flow",
@@ -461,7 +461,7 @@
     },
     "weecomibot": {
       "title": "From Strategy to Execution, One Panel",
-      "description": "An algorithmic trading platform combining AI signals, strategy building, backtesting, paper trading and risk control.",
+      "description": "WeeComi International algorithmic trading platform; not investment advice.",
       "features": [
         "AI market signals",
         "No-code strategy builder",
@@ -789,7 +789,9 @@
   },
   "Manifesto": {
     "eyebrow": "Who we are",
-    "text": "WEECOMI INTERNATIONAL BUILDS INDEPENDENT DIGITAL PRODUCTS. EACH PRODUCT WORKS IN ITS OWN FIELD. ALL ARE SUPPORTED AND UPDATED TO THE SAME CORPORATE STANDARD."
+    "text": "Our focus is on building independent digital products that empower businesses, streamline operations and support growth in the digital era.",
+    "authorName": "WeeComi International",
+    "authorRole": "Independent digital product ecosystem"
   },
   "Global": {
     "eyebrow": "GLOBAL PRESENCE",

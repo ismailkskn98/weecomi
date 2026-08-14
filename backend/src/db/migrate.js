@@ -139,6 +139,25 @@ const statements = [
     CONSTRAINT fk_news_created_by FOREIGN KEY (created_by) REFERENCES users(id) ON DELETE SET NULL,
     CONSTRAINT fk_news_updated_by FOREIGN KEY (updated_by) REFERENCES users(id) ON DELETE SET NULL
   ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
+
+  `CREATE TABLE IF NOT EXISTS contact_submissions (
+    id BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+    full_name VARCHAR(120) NOT NULL,
+    email VARCHAR(160) NOT NULL,
+    phone VARCHAR(40) NOT NULL,
+    company VARCHAR(160) NULL,
+    product_interest VARCHAR(120) NOT NULL,
+    message TEXT NOT NULL,
+    status ENUM('NEW', 'READ', 'ARCHIVED') NOT NULL DEFAULT 'NEW',
+    ip_address VARCHAR(80) NULL,
+    user_agent VARCHAR(255) NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+    PRIMARY KEY (id),
+    KEY idx_contact_submissions_status (status),
+    KEY idx_contact_submissions_created_at (created_at),
+    KEY idx_contact_submissions_email (email)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci`,
 ];
 
 async function addColumnIfMissing(connection, table, column, definition) {

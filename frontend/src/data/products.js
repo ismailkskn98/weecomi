@@ -174,65 +174,7 @@ export const socialLinks = [
   { id: "youtube", label: "YouTube", href: "https://www.youtube.com/" },
 ];
 
-export const fallbackNews = [
-  {
-    id: 1,
-    slug: "weecomi-ecosystem-expanding",
-    category: "company",
-    isFeatured: true,
-    author: "WeeComi",
-    title: "WeeComi ekosistemi büyümeye devam ediyor",
-    summary: "Yeni ürün güncellemeleri ve uluslararası erişim ile WeeComi dijital ekosistemini güçlendiriyor.",
-    highlight: "Bağımsız ürünlerle ticaret, yapay zekâ ve işletme yönetimi için güçlü bir teknoloji portföyü geliştiriyoruz.",
-    content:
-      "WeeComi; WeeMenu, WeeCard, WeeCatalog ve diğer çözümleriyle işletmelerin dijital dönüşümünü hızlandırıyor.\n\nUluslararası pazarlarda çok dilli deneyim ve ölçeklenebilir altyapı ile büyümeyi sürdürülebilir hale getiriyoruz.",
-    publishedAt: "2026-06-10",
-    coverImageUrl: null,
-    authorImageUrl: null,
-  },
-  {
-    id: 2,
-    slug: "weemenu-realtime-operations",
-    category: "weemenu",
-    isFeatured: false,
-    author: "WeeComi",
-    title: "WeeMenu ile anlık operasyon yönetimi",
-    summary: "Mutfak, garson ve kurye rollerini tek panelde takip edebilen yeni operasyon akışları.",
-    highlight: "Restoran operasyonlarını tek panelden yöneterek hız ve görünürlük kazanın.",
-    content: "WeeMenu, siparişten servise kadar süreci sadeleştirir.\n\nAnlık durum takibi sayesinde ekipler daha hızlı karar alır ve müşteri deneyimi güçlenir.",
-    publishedAt: "2026-05-22",
-    coverImageUrl: null,
-    authorImageUrl: null,
-  },
-  {
-    id: 3,
-    slug: "weecard-digital-identity",
-    category: "weecard",
-    isFeatured: false,
-    author: "WeeComi",
-    title: "WeeCard ile dijital kimlik deneyimi",
-    summary: "Modern NFC kart deneyimiyle marka görünürlüğünü ve paylaşımı kolaylaştırın.",
-    highlight: "Tek dokunuşla iletişim ve marka bilgisini paylaşın.",
-    content: "WeeCard, fiziksel kart ile dijital profili birleştirir.\n\nEtkinliklerde, satış görüşmelerinde ve networking anlarında hızlı paylaşım sağlar.",
-    publishedAt: "2026-05-05",
-    coverImageUrl: null,
-    authorImageUrl: null,
-  },
-  {
-    id: 4,
-    slug: "innovation-ai-operations",
-    category: "innovation",
-    isFeatured: false,
-    author: "WeeComi",
-    title: "Yenilikler: AI destekli operasyon yaklaşımları",
-    summary: "Ekosistem ürünlerinde veri odaklı karar alma ve otomasyon güncellemeleri.",
-    highlight: "Veriye dayalı kararlar, daha verimli operasyonlar.",
-    content: "WeeComi ürün ailesinde yenilikler; ölçülebilir büyüme ve daha akıllı iş akışları için tasarlanıyor.\n\nMedya, ürün ve ortaklık duyurularını aynı haber merkezinden takip edebilirsiniz.",
-    publishedAt: "2026-04-18",
-    coverImageUrl: null,
-    authorImageUrl: null,
-  },
-];
+export { fallbackNews, getFallbackNews } from "./fallbackNews";
 
 export function getProductBySlug(slug) {
   return products.find((item) => item.slug === slug) || null;

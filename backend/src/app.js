@@ -10,6 +10,7 @@ const authRoutes = require("./routes/authRoutes");
 const galleryRoutes = require("./routes/galleryRoutes");
 const newsRoutes = require("./routes/newsRoutes");
 const mediaRoutes = require("./routes/mediaRoutes");
+const contactRoutes = require("./routes/contactRoutes");
 const publicRoutes = require("./routes/publicRoutes");
 
 const app = express();
@@ -59,6 +60,7 @@ app.use("/api/v1/admin/auth", authRoutes);
 app.use("/api/v1/admin/gallery", galleryRoutes);
 app.use("/api/v1/admin/news", newsRoutes);
 app.use("/api/v1/admin/media", mediaRoutes);
+app.use("/api/v1/admin/contact", contactRoutes);
 app.use("/api/v1/public", publicRoutes);
 
 app.use(notFound);

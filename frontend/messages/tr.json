@@ -385,7 +385,7 @@
   "Products": {
     "weenetwork": {
       "title": "Dijital İş Kimliği Platformu",
-      "description": "İşletmelerin dijital kimlik ihtiyaçları için geliştirilen bağımsız iş kimliği çözümü.",
+      "description": "WeeComi International'ın dijital iş kimliği platformu; WeeMenu, WeeCard ve WeeCatalog deneyimlerini tek çatı altında sunar.",
       "features": [
         "Dijital kimlik",
         "İş profili",
@@ -395,7 +395,7 @@
     },
     "weemenu": {
       "title": "Menünüzü Dijital Bir Deneyime Dönüştürün",
-      "description": "Restoranlar ve işletmeler için QR tabanlı, çok dilli ve kolay yönetilebilir dijital menü platformu.",
+      "description": "WeeComi International'ın restoran ve hizmet işletmeleri için QR tabanlı, çok dilli dijital menü platformu.",
       "features": [
         "QR menü",
         "Çoklu dil",
@@ -440,7 +440,7 @@
     },
     "weesale": {
       "title": "WeeCoins Ekosistemi İçin Güvenli E-Ticaret Katmanı",
-      "description": "Sıfır ve ikinci el ürünleri listelemeyi, WCP ile satış akışlarını ve satıcı görünürlüğünü aynı platformda birleştiren çok dilli pazar yeri deneyimi.",
+      "description": "WeeComi International'ın satıcı odaklı e-ticaret katmanı; WCP destekli satış akışları ve çok dilli pazar yeri deneyimi.",
       "features": [
         "Sıfır ve ikinci el ürünler",
         "WCP ile satış akışı",
@@ -461,7 +461,7 @@
     },
     "weecomibot": {
       "title": "Stratejiden İşleme, Tüm Süreç Tek Panelde",
-      "description": "Yapay zekâ sinyalleri, strateji oluşturma, backtest, paper trading ve risk yönetimini bir araya getiren algoritmik işlem platformu.",
+      "description": "WeeComi International'ın algoritmik işlem platformu; yatırım tavsiyesi değildir.",
       "features": [
         "YZ destekli piyasa sinyalleri",
         "No-code strateji oluşturucu",
@@ -789,7 +789,9 @@
   },
   "Manifesto": {
     "eyebrow": "Kim olduğumuz",
-    "text": "WEECOMI INTERNATIONAL BAĞIMSIZ DİJİTAL ÜRÜNLER GELİŞTİRİR. HER ÜRÜN KENDİ ALANINDA ÇALIŞIR. HEPSİ AYNI KURUMSAL STANDARTLA DESTEKLENİR VE GÜNCELLENİR."
+    "text": "Odak noktamız; işletmeleri güçlendiren, operasyonları sadeleştiren ve dijital çağda büyümeyi destekleyen bağımsız ürünler geliştirmektir.",
+    "authorName": "WeeComi International",
+    "authorRole": "Bağımsız dijital ürün ekosistemi"
   },
   "Global": {
     "eyebrow": "GLOBAL YAPI",

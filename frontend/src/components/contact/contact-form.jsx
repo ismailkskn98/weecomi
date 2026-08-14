@@ -8,7 +8,6 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { products } from "@/data/products";
 
-/** Hikari contact form: label above, 44px inputs, 2-col rows, orange CTA */
 const inputClass =
   "h-11 w-full rounded-lg border border-black/[0.1] bg-white px-3.5 text-sm text-weecomi-dark-gray outline-none transition placeholder:text-muted-foreground/60 focus:border-weecomi-orange";
 

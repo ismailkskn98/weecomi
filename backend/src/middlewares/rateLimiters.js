@@ -30,8 +30,15 @@ const authResetPasswordLimiter = createLimiter({
   message: "Too many password reset attempts. Please try again later.",
 });
 
+const contactLimiter = createLimiter({
+  windowMs: 15 * 60 * 1000,
+  max: 15,
+  message: "Too many contact requests. Please try again later.",
+});
+
 module.exports = {
   authLoginLimiter,
   authForgotPasswordLimiter,
   authResetPasswordLimiter,
+  contactLimiter,
 };

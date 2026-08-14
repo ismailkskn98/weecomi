@@ -8,7 +8,7 @@ import NewsCard from "@/components/news/newsCard";
 import NewsCarousel from "@/components/news/newsCarousel";
 import MagneticHover, { MagneticBadge } from "@/components/common/magneticHover";
 import { listPublicNews } from "@/lib/api/news";
-import { fallbackNews } from "@/data/products";
+import { getFallbackNews } from "@/data/fallbackNews";
 import { formatNewsDate, getNewsCategoryLabel, newsCategoryKeys } from "@/data/newsCategories";
 
 export default function NewsPageClient() {
@@ -17,14 +17,15 @@ export default function NewsPageClient() {
   const [category, setCategory] = useState("");
   const latestKey = `${locale}-latest`;
   const filteredKey = `${locale}-${category || "all"}`;
+  const localizedFallback = useMemo(() => getFallbackNews(locale), [locale]);
   const [latestState, setLatestState] = useState(() => ({
     key: latestKey,
-    items: fallbackNews,
+    items: getFallbackNews(locale),
     loading: true,
   }));
   const [filteredState, setFilteredState] = useState(() => ({
     key: filteredKey,
-    items: fallbackNews,
+    items: getFallbackNews(locale),
     loading: true,
   }));
 
@@ -36,7 +37,7 @@ export default function NewsPageClient() {
         if (!active) return;
         setLatestState({
           key: latestKey,
-          items: data?.items?.length ? data.items : fallbackNews,
+          items: data?.items?.length ? data.items : localizedFallback,
           loading: false,
         });
       })
@@ -44,7 +45,7 @@ export default function NewsPageClient() {
         if (!active) return;
         setLatestState({
           key: latestKey,
-          items: fallbackNews,
+          items: localizedFallback,
           loading: false,
         });
       });
@@ -52,7 +53,7 @@ export default function NewsPageClient() {
     return () => {
       active = false;
     };
-  }, [latestKey, locale]);
+  }, [latestKey, locale, localizedFallback]);
 
   useEffect(() => {
     let active = true;
@@ -62,7 +63,7 @@ export default function NewsPageClient() {
         if (!active) return;
         setFilteredState({
           key: filteredKey,
-          items: data?.items?.length ? data.items : !category ? fallbackNews : [],
+          items: data?.items?.length ? data.items : !category ? localizedFallback : [],
           loading: false,
         });
       })
@@ -70,7 +71,7 @@ export default function NewsPageClient() {
         if (!active) return;
         setFilteredState({
           key: filteredKey,
-          items: !category ? fallbackNews : [],
+          items: !category ? localizedFallback : [],
           loading: false,
         });
       });
@@ -78,13 +79,13 @@ export default function NewsPageClient() {
     return () => {
       active = false;
     };
-  }, [filteredKey, locale, category]);
+  }, [filteredKey, locale, category, localizedFallback]);
 
-  const latestItems = useMemo(() => (latestState.key === latestKey ? latestState.items : fallbackNews), [latestKey, latestState]);
+  const latestItems = useMemo(() => (latestState.key === latestKey ? latestState.items : localizedFallback), [latestKey, latestState, localizedFallback]);
   const filteredItems = useMemo(() => {
     if (filteredState.key === filteredKey) return filteredState.items;
-    return !category ? fallbackNews : [];
-  }, [category, filteredKey, filteredState]);
+    return !category ? localizedFallback : [];
+  }, [category, filteredKey, filteredState, localizedFallback]);
   const loadingLatest = latestState.key !== latestKey || latestState.loading;
   const loadingFiltered = filteredState.key !== filteredKey || filteredState.loading;
 

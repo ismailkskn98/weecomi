@@ -1,19 +1,13 @@
 import { getLocale, getTranslations } from "next-intl/server";
 import ScrollReveal from "@/components/home/_shared/scroll-reveal";
 import { listPublicGallery } from "@/lib/api/gallery";
+import { getEcosystemCarouselSlides } from "@/data/ecosystemCarouselSlides";
 import StatsCarousel from "./stats-carousel";
 import BlurText from "@/components/ui/blur-text";
-import { HIKARI_HERO_MD } from "@/data/hikariImages";
 
 const STAT_KEYS = ["products", "countries", "languages"];
 
-const FALLBACK_SLIDES = [
-  { id: "about-1", src: HIKARI_HERO_MD, alt: "WeeComi team collaboration" },
-  { id: "about-2", src: "/images/hikari/campaign-1.jpg", alt: "WeeComi product campaign" },
-  { id: "about-3", src: "/images/example.jpg", alt: "WeeComi workplace" },
-];
-
-async function getAboutSlides(locale) {
+async function getAboutSlides(locale, ecosystemSlides) {
   try {
     const data = await listPublicGallery({ locale, page: 1, pageSize: 8 });
     const items = Array.isArray(data?.items) ? data.items : [];
@@ -27,16 +21,18 @@ async function getAboutSlides(locale) {
 
     if (mapped.length >= 3) return mapped;
   } catch {
-    // Gallery API optional — keep static fallbacks.
+    // Gallery API optional — use ecosystem carousel slides.
   }
 
-  return FALLBACK_SLIDES;
+  return ecosystemSlides;
 }
 
 export default async function Stats() {
   const locale = await getLocale();
   const t = await getTranslations("Stats");
-  const slides = await getAboutSlides(locale);
+  const tProducts = await getTranslations("Products");
+  const ecosystemSlides = getEcosystemCarouselSlides(tProducts);
+  const slides = await getAboutSlides(locale, ecosystemSlides);
 
   return (
     <>
@@ -61,7 +57,7 @@ export default async function Stats() {
         </div>
       </ScrollReveal>
 
-      <section className="bg-white py-[var(--sp-5)] md:py-[var(--sp-6)]">
+      <section className="bg-white pt-[var(--sp-5)] md:pt-[var(--sp-6)]">
         <div className="gridContainer">
           <div className="fluid pl-[max(1rem,calc((100%-min(92%,90rem))/2))]">
             <StatsCarousel slides={slides} label={t("carouselLabel")} />

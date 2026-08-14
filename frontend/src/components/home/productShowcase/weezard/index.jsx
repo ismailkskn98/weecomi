@@ -39,7 +39,7 @@ export default function WeezardCard({ index, title, paragraphs, href, disclaimer
       mediaClassName={showcaseTallCardClasses.mediaClassName}
       backgroundDiv={
         <div className="pointer-events-none absolute inset-0 z-0">
-          <div className="absolute inset-0 z-0 bg-[linear-gradient(290deg,#F28C28_0%,transparent_55%)] opacity-90" />
+          <div className="absolute inset-0 z-0 bg-[linear-gradient(290deg,#F28C28_0%,transparent_55%)]" />
           <TextureOverlay
             texture="grid"
             tone="light"

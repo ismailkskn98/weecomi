@@ -4,7 +4,7 @@ import ActionButton from "@/components/common/actionButton";
 import NewsCardsCarousel from "@/components/news/news-cards-carousel";
 import { ScrollReveal, SectionHeader } from "@/components/home/_shared";
 import { listPublicNews } from "@/lib/api/news";
-import { fallbackNews } from "@/data/products";
+import { getFallbackNews } from "@/data/fallbackNews";
 
 const NEWS_LIMIT = 10;
 
@@ -15,7 +15,7 @@ async function loadLatestNews(locale) {
   } catch {
     // Keep fallback news when API is offline.
   }
-  return fallbackNews.slice(0, NEWS_LIMIT);
+  return getFallbackNews(locale).slice(0, NEWS_LIMIT);
 }
 
 export default async function LatestNewsSection() {
