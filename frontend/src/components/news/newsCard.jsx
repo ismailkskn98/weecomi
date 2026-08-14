@@ -46,12 +46,8 @@ export default function NewsCard({ item, locale, viewLabel = "View", compact = f
             )}
           </MagneticHover.Anchor>
 
-          <div className={`flex flex-1 flex-col ${compact ? "mt-4" : "mt-5"}`}>
-            <h3
-              className={`font-heading leading-display text-weecomi-dark-gray transition group-hover:text-weecomi-orange ${
-                compact ? "text-base md:text-lg" : "text-xl md:text-[1.35rem]"
-              }`}
-            >
+          <div className={`flex flex-1 flex-col justify-between ${compact ? "mt-4" : "mt-5"}`}>
+            <h3 className={`font-heading leading-display text-weecomi-dark-gray transition group-hover:text-weecomi-orange ${compact ? "text-base md:text-lg" : "text-xl md:text-[1.35rem]"}`}>
               {item.title}
             </h3>
 
@@ -59,10 +55,7 @@ export default function NewsCard({ item, locale, viewLabel = "View", compact = f
 
             {!compact ? (
               <div className="mt-5 flex items-center gap-2">
-                <span
-                  className="inline-flex size-[30px] shrink-0 items-center justify-center rounded-full bg-weecomi-dark-gray font-heading text-[10px] font-medium uppercase text-white"
-                  aria-hidden
-                >
+                <span className="inline-flex size-[30px] shrink-0 items-center justify-center rounded-full bg-weecomi-dark-gray font-heading text-[10px] font-medium uppercase text-white" aria-hidden>
                   {authorInitials(authorName)}
                 </span>
                 <p className="truncate text-sm leading-none text-black/50">
